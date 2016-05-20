@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.comment="Path lifecycle." org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="6_SignalDependency_C"/>
+<org.eventb.core.constant name="(" org.eventb.core.comment="[Abstract] Path exclusions." org.eventb.core.identifier="PATH_EXCL"/>
+<org.eventb.core.axiom name=")" org.eventb.core.label="PATH_EXCL·type" org.eventb.core.predicate="PATH_EXCL ∈ PATH_ENUM ↔ PATH_ENUM"/>
+<org.eventb.core.axiom name="axm1" org.eventb.core.comment="Path exclusions are symmetric." org.eventb.core.label="PATH_EXCL·symm" org.eventb.core.predicate="PATH_EXCL = PATH_EXCL∼"/>
+<org.eventb.core.axiom name="axm2" org.eventb.core.comment="Path exclusions are irreflexive." org.eventb.core.label="PATH_EXCL_irreflexive" org.eventb.core.predicate="PATH_EXCL ∩ id = ∅"/>
+</org.eventb.core.contextFile>

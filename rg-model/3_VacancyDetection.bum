@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.comment="Track vacancy detection." org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="2_ElementPosition"/>
+<org.eventb.core.seesContext name=")" org.eventb.core.target="3_VacancyDetection_C"/>
+<org.eventb.core.variable name="var1" org.eventb.core.comment="Inherited" org.eventb.core.identifier="RAIL_ELEM_POS_CURR"/>
+<org.eventb.core.event name="var2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="TVDS_STATE_CURR ≔ TVD_SECT × {TVD_STATE_VACANT}" org.eventb.core.label="TVDS_STATE_CURR·value"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var3" org.eventb.core.comment="Set new current Element Position of the particular Rail Element." org.eventb.core.convergence="2" org.eventb.core.extended="true" org.eventb.core.label="set_RAIL_ELEM_POS_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_RAIL_ELEM_POS_CURR"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="var4" org.eventb.core.comment="Current state of the particular TVD Section." org.eventb.core.identifier="TVDS_STATE_CURR"/>
+<org.eventb.core.invariant name="var5" org.eventb.core.label="TVDS_STATE_CURR·type" org.eventb.core.predicate="TVDS_STATE_CURR ∈ TVD_SECT → TVD_STATE_ENUM"/>
+<org.eventb.core.event name="var6" org.eventb.core.comment="Set new current state of the particular TVD Section." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="set_TVDS_STATE_CURR">
+<org.eventb.core.parameter name="'" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="sect"/>
+<org.eventb.core.parameter name="(" org.eventb.core.comment="New state." org.eventb.core.identifier="stat"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="sect·type" org.eventb.core.predicate="sect ∈ TVD_SECT"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="stat·type" org.eventb.core.predicate="stat ∈ TVD_STATE_ENUM"/>
+<org.eventb.core.guard name="+" org.eventb.core.comment="New TVD State is different from the old one." org.eventb.core.label="stat·diff" org.eventb.core.predicate="stat ≠ TVDS_STATE_CURR(sect)"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="TVDS_STATE_CURR(sect) ≔ stat" org.eventb.core.label="TVDS_STATE_CURR·value"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

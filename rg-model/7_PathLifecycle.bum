@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.comment="Path lifecycle." org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="6_SignalDependency"/>
+<org.eventb.core.event name="(" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="act5" org.eventb.core.assignment="PATH_REQ ≔ ∅" org.eventb.core.label="PATH_REQ·value"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="inv1" org.eventb.core.label="PATH_REQ·type" org.eventb.core.predicate="PATH_REQ ∈ ℙ(PATH_ENUM)"/>
+<org.eventb.core.invariant name="inv2" org.eventb.core.comment="No Rail Element belongs to two Requested Paths at once." org.eventb.core.label="PATH_ELEM_POS·disjunct·req" org.eventb.core.predicate="∀ path1, path2&#10;· path1 ∈ PATH_REQ&#10;∧ path2 ∈ PATH_REQ&#10;∧ path1 ≠ path2&#10;⇒ dom(PATH_ELEM_POS(path1)) ∩ dom(PATH_ELEM_POS(path2)) = ∅"/>
+<org.eventb.core.invariant name="inv3" org.eventb.core.comment="No Rail Element belongs to some Requested Path and some Current Path at once." org.eventb.core.label="PATH_ELEM_POS·disjunct·curr" org.eventb.core.predicate="∀ path&#10;· path ∈ PATH_REQ&#10;⇒ dom(PATH_ELEM_POS(path)) ∩ dom(RAIL_ELEM_PATH_CURR) = ∅"/>
+<org.eventb.core.seesContext name=")" org.eventb.core.target="7_PathLifecycle_C"/>
+<org.eventb.core.variable name="var1" org.eventb.core.comment="Inherited" org.eventb.core.identifier="RAIL_ELEM_POS_CURR"/>
+<org.eventb.core.variable name="var5" org.eventb.core.comment="Inherited" org.eventb.core.identifier="TVDS_STATE_CURR"/>
+<org.eventb.core.variable name="var2" org.eventb.core.comment="Inherited" org.eventb.core.identifier="SIGNAL_ASPECT_CURR"/>
+<org.eventb.core.variable name="var3" org.eventb.core.comment="Inherited" org.eventb.core.identifier="PATH_CURR"/>
+<org.eventb.core.variable name="var6" org.eventb.core.comment="Inherited" org.eventb.core.identifier="RAIL_ELEM_PATH_CURR"/>
+<org.eventb.core.variable name="var4" org.eventb.core.comment="Requested Paths." org.eventb.core.identifier="PATH_REQ"/>
+<org.eventb.core.event name="evt1" org.eventb.core.comment="Set new current Element Position of the particular Rail Element which isn't a part of a Path." org.eventb.core.convergence="2" org.eventb.core.extended="true" org.eventb.core.label="set_RAIL_ELEM_POS_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_RAIL_ELEM_POS_CURR"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.comment="The element doesn't belong to any requested path." org.eventb.core.label="elem·path·req" org.eventb.core.predicate="elem ∉ dom(union(PATH_ELEM_POS[PATH_REQ]))"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt2" org.eventb.core.comment="Set the proper Element Position of the particular Rail Element which is a part of a Path." org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="set_RAIL_ELEM_PATH">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_RAIL_ELEM_POS_CURR"/>
+<org.eventb.core.parameter name="'" org.eventb.core.comment="Element" org.eventb.core.identifier="elem"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="RAIL_ELEM_POS_CURR(elem) ≔ union(PATH_ELEM_POS[PATH_REQ])(elem)" org.eventb.core.label="RAIL_ELEM_POS·value"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="The element belongs to some requested path." org.eventb.core.label="elem·path·req" org.eventb.core.predicate="elem ∈ dom(union(PATH_ELEM_POS[PATH_REQ]))"/>
+<org.eventb.core.witness name="internal3" org.eventb.core.label="pos" org.eventb.core.predicate="pos = union(PATH_ELEM_POS[PATH_REQ])(elem)"/>
+<org.eventb.core.guard name="internal2" org.eventb.core.comment="The element doesn't belong to any current path." org.eventb.core.label="elem·path·curr" org.eventb.core.predicate="elem ∉ dom(RAIL_ELEM_PATH_CURR)" org.eventb.core.theorem="true"/>
+<org.eventb.core.guard name="internal1" org.eventb.core.label="elem·type" org.eventb.core.predicate="elem ∈ RAIL_ELEM" org.eventb.core.theorem="true"/>
+<org.eventb.core.guard name="internal4" org.eventb.core.comment="Requested position is different from the current one." org.eventb.core.label="pos·diff" org.eventb.core.predicate="union(PATH_ELEM_POS[PATH_REQ])(elem) ≠ RAIL_ELEM_POS_CURR(elem)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt8" org.eventb.core.comment="Set new current state of the particular TVD Section which isn't a part of a Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_TVDS_STATE_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_TVDS_STATE_CURR"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="TVD Section doesn't belong to any current path." org.eventb.core.label="elem·curr" org.eventb.core.predicate="RAIL_SGMT_ELEM[TVD_SECT_SGMT(sect)] ∩ dom(RAIL_ELEM_PATH_CURR) = ∅"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var7" org.eventb.core.comment="Set new current state of the particular TVD Section which is a part of a Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_TVDS_STATE_PATH">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_TVDS_STATE_CURR"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.comment="TVD Section belongs to some current path." org.eventb.core.label="elem·curr" org.eventb.core.predicate="RAIL_SGMT_ELEM[TVD_SECT_SGMT(sect)] ∩ dom(RAIL_ELEM_PATH_CURR) ≠ ∅"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt5" org.eventb.core.comment="Set Signal to some Proceed signal aspect." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_SIGNAL_ASPECT_PROCEED">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_SIGNAL_ASPECT_PROCEED"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var8" org.eventb.core.comment="Set Signal to Default signal aspect." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_SIGNAL_ASPECT_DEFAULT">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_SIGNAL_ASPECT_DEFAULT"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt3" org.eventb.core.comment="Add a new Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="add_PATH_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="add_PATH_CURR"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="Path is a requested one." org.eventb.core.label="path·req" org.eventb.core.predicate="path ∈ PATH_REQ"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="PATH_REQ ≔ PATH_REQ ∖ {path}" org.eventb.core.label="PATH_REQ·value"/>
+<org.eventb.core.guard name="*" org.eventb.core.comment="Path is not excluded." org.eventb.core.label="path·excl" org.eventb.core.predicate="PATH_EXCL[{path}] ∩ PATH_CURR = ∅"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt9" org.eventb.core.comment="Modify an existing Path - Remove a Rail Element from the Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="mod_PATH_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="mod_PATH_CURR"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt4" org.eventb.core.comment="Remove an existing Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="rem_PATH_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="rem_PATH_CURR"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt6" org.eventb.core.comment="Add a requested Path." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="add_PATH_REQ">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="path"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.label="path·type" org.eventb.core.predicate="path ∈ PATH_ENUM"/>
+<org.eventb.core.guard name="grd2" org.eventb.core.comment="Path is not a current or requested one." org.eventb.core.label="path·valid·curr" org.eventb.core.predicate="path ∉ (PATH_CURR ∪ PATH_REQ)"/>
+<org.eventb.core.guard name="grd4" org.eventb.core.comment="Requested path is disjunct with all other current paths." org.eventb.core.label="path·elem·disjunct·curr" org.eventb.core.predicate="dom(PATH_ELEM_POS(path)) ∩ dom(RAIL_ELEM_PATH_CURR) = ∅ "/>
+<org.eventb.core.guard name="grd5" org.eventb.core.comment="Requested path is disjunct with all other requested paths." org.eventb.core.label="path·elem·disjunct·req" org.eventb.core.predicate="dom(PATH_ELEM_POS(path)) ∩ dom(union(PATH_ELEM_POS[PATH_REQ])) = ∅ "/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="PATH_REQ ≔ PATH_REQ ∪ {path}" org.eventb.core.label="PATH_REQ·value"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt7" org.eventb.core.comment="Remove a required Path." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="rem_PATH_REQ">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="path"/>
+<org.eventb.core.guard name="grd2" org.eventb.core.comment="Path is a requested one." org.eventb.core.label="path·valid" org.eventb.core.predicate="path ∈ PATH_REQ"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="PATH_REQ ≔ PATH_REQ ∖ {path}" org.eventb.core.label="PATH_REQ·value"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.label="path·type" org.eventb.core.predicate="path ∈ PATH_ENUM" org.eventb.core.theorem="true"/>
+</org.eventb.core.event>
+<org.eventb.core.variant name="var9" org.eventb.core.expression="{elem ∣ elem ∈ dom(union(PATH_ELEM_POS[PATH_REQ])) ∧ union(PATH_ELEM_POS[PATH_REQ])(elem) ≠ RAIL_ELEM_POS_CURR(elem)}"/>
+<org.eventb.core.invariant name="var:" org.eventb.core.comment="No Current Path is excluded by any other Current Path." org.eventb.core.label="PATH_EXCL·curr" org.eventb.core.predicate="∀ path&#10;· path ∈ PATH_CURR&#10;⇒ PATH_EXCL[{path}] ∩ PATH_CURR = ∅"/>
+</org.eventb.core.machineFile>

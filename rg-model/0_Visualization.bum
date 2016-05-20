@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.comment="Model visualization and animation." org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="7_PathLifecycle"/>
+<org.eventb.core.event name="(" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="act6" org.eventb.core.assignment="PATH_ACT ≔ ∅" org.eventb.core.label="PATH_ACT·value"/>
+<org.eventb.core.action name="act7" org.eventb.core.assignment="PATH_SGMT_CURR ≔ ∅" org.eventb.core.label="PATH_SGMT_CURR·value"/>
+<org.eventb.core.action name="act8" org.eventb.core.assignment="PATH_SGMT_REQ ≔ ∅" org.eventb.core.label="PATH_SGMT_REQ·value"/>
+<org.eventb.core.action name="act9" org.eventb.core.assignment="PATH_SGMT_ACT ≔ ∅" org.eventb.core.label="PATH_SGMT_ACT·value"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt1" org.eventb.core.comment="Set new current Element Position of the particular Rail Element which isn't a part of a Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_RAIL_ELEM_POS_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_RAIL_ELEM_POS_CURR"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt2" org.eventb.core.comment="Set the proper Element Position of the particular Rail Element which is a part of a Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_RAIL_ELEM_PATH">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_RAIL_ELEM_PATH"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt8" org.eventb.core.comment="Set new current state of the particular TVD Section which isn't a part of a Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_TVDS_STATE_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_TVDS_STATE_CURR"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt10" org.eventb.core.comment="Set new current state of the particular TVD Section which is a part of a Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_TVDS_STATE_PATH">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_TVDS_STATE_PATH"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt3" org.eventb.core.comment="Set Signal to some Proceed signal aspect." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_SIGNAL_ASPECT_PROCEED">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_SIGNAL_ASPECT_PROCEED"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt11" org.eventb.core.comment="Set Signal to Default signal aspect." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_SIGNAL_ASPECT_DEFAULT">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_SIGNAL_ASPECT_DEFAULT"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt4" org.eventb.core.comment="Add a new Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="add_PATH_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="add_PATH_CURR"/>
+<org.eventb.core.action name="act2" org.eventb.core.assignment="PATH_SGMT_CURR ≔ PATH_SGMT_CURR ∪ PATH_SGMT_ALL(path)" org.eventb.core.label="PATH_SGMT_CURR·value"/>
+<org.eventb.core.action name="act5" org.eventb.core.assignment="PATH_SGMT_REQ ≔ PATH_SGMT_REQ ∖ PATH_SGMT_ALL(path)" org.eventb.core.label="PATH_SGMT_REQ·value"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt9" org.eventb.core.comment="Modify an existing Path - Remove a Rail Element from the Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="mod_PATH_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="mod_PATH_CURR"/>
+<org.eventb.core.action name="act3" org.eventb.core.assignment="PATH_SGMT_CURR ≔ PATH_SGMT_CURR ∖ RAIL_SGMT_ELEM∼[{elem}]" org.eventb.core.label="PATH_SGMT_CURR·value"/>
+<org.eventb.core.action name="act4" org.eventb.core.assignment="PATH_SGMT_ACT ≔ PATH_SGMT_ACT ∖ RAIL_SGMT_ELEM∼[{elem}]" org.eventb.core.label="PATH_SGMT_ACT·value"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt5" org.eventb.core.comment="Remove an existing Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="rem_PATH_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="rem_PATH_CURR"/>
+<org.eventb.core.action name="act5" org.eventb.core.assignment="PATH_ACT ≔ PATH_CURR ∪ PATH_REQ" org.eventb.core.label="PATH_ACT·value"/>
+<org.eventb.core.action name="act4" org.eventb.core.assignment="PATH_SGMT_CURR ≔ PATH_SGMT_CURR ∖ RAIL_SGMT_ELEM∼[RAIL_ELEM_PATH_CURR∼[{path}]]" org.eventb.core.label="PATH_SGMT_CURR·value"/>
+<org.eventb.core.action name="act6" org.eventb.core.assignment="PATH_SGMT_ACT ≔ PATH_SGMT_ACT ∖ RAIL_SGMT_ELEM∼[RAIL_ELEM_PATH_CURR∼[{path}]]" org.eventb.core.label="PATH_SGMT_ACT·value"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt6" org.eventb.core.comment="Add a requested Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="add_PATH_REQ">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="add_PATH_REQ"/>
+<org.eventb.core.action name="act4" org.eventb.core.assignment="PATH_ACT ≔ PATH_ACT ∪ {path}" org.eventb.core.label="PATH_ACT·value"/>
+<org.eventb.core.action name="act3" org.eventb.core.assignment="PATH_SGMT_REQ ≔ PATH_SGMT_REQ ∪ PATH_SGMT_ALL(path)" org.eventb.core.label="PATH_SGMT_REQ·value"/>
+<org.eventb.core.action name="act5" org.eventb.core.assignment="PATH_SGMT_ACT ≔ PATH_SGMT_ACT ∪ PATH_SGMT_ALL(path)" org.eventb.core.label="PATH_SGMT_ACT·value"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt7" org.eventb.core.comment="Remove a required Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="rem_PATH_REQ">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="rem_PATH_REQ"/>
+<org.eventb.core.action name="act4" org.eventb.core.assignment="PATH_ACT ≔ PATH_ACT ∖ {path}" org.eventb.core.label="PATH_ACT·value"/>
+<org.eventb.core.action name="act3" org.eventb.core.assignment="PATH_SGMT_REQ ≔ PATH_SGMT_REQ ∖ PATH_SGMT_ALL(path)" org.eventb.core.label="PATH_SGMT_REQ·value"/>
+<org.eventb.core.action name="act5" org.eventb.core.assignment="PATH_SGMT_ACT ≔ PATH_SGMT_ACT ∖ PATH_SGMT_ALL(path)" org.eventb.core.label="PATH_SGMT_ACT·value"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name=")" org.eventb.core.target="0_Visualization_C"/>
+<org.eventb.core.variable name="var1" org.eventb.core.comment="Inherited" org.eventb.core.identifier="RAIL_ELEM_POS_CURR"/>
+<org.eventb.core.variable name="var9" org.eventb.core.comment="Inherited" org.eventb.core.identifier="TVDS_STATE_CURR"/>
+<org.eventb.core.variable name="var2" org.eventb.core.comment="Inherited" org.eventb.core.identifier="SIGNAL_ASPECT_CURR"/>
+<org.eventb.core.variable name="var3" org.eventb.core.comment="Inherited" org.eventb.core.identifier="PATH_CURR"/>
+<org.eventb.core.variable name="var10" org.eventb.core.comment="Inherited" org.eventb.core.identifier="RAIL_ELEM_PATH_CURR"/>
+<org.eventb.core.invariant name="inv1" org.eventb.core.comment="PATH_ACT = PATH_REQ ∪ PATH_CURR" org.eventb.core.label="PATH_ACT·type" org.eventb.core.predicate="PATH_ACT ∈ ℙ(PATH_ENUM)"/>
+<org.eventb.core.invariant name="inv2" org.eventb.core.comment="PATH_SGMT_CURR = union(PATH_SGMT_ALL[PATH_CURR])" org.eventb.core.label="PATH_SGMT_CURR·type" org.eventb.core.predicate="PATH_SGMT_CURR ∈ ℙ(RAIL_SGMT)"/>
+<org.eventb.core.invariant name="inv3" org.eventb.core.comment="PATH_SGMT_REQ = union(PATH_SGMT_ALL[PATH_REQ])" org.eventb.core.label="PATH_SGMT_REQ·type" org.eventb.core.predicate="PATH_SGMT_REQ ∈ ℙ(RAIL_SGMT)"/>
+<org.eventb.core.invariant name="inv4" org.eventb.core.comment="PATH_SGMT_ACT = union(PATH_SGMT_ALL[PATH_ACT])" org.eventb.core.label="PATH_SGMT_ACT·type" org.eventb.core.predicate="PATH_SGMT_ACT ∈ ℙ(RAIL_SGMT)"/>
+<org.eventb.core.variable name="var4" org.eventb.core.comment="Inherited" org.eventb.core.identifier="PATH_REQ"/>
+<org.eventb.core.variable name="var5" org.eventb.core.comment="Active (current or requested) Paths." org.eventb.core.identifier="PATH_ACT"/>
+<org.eventb.core.variable name="var6" org.eventb.core.comment="Segments of current Paths." org.eventb.core.identifier="PATH_SGMT_CURR"/>
+<org.eventb.core.variable name="var7" org.eventb.core.comment="Segments of requested Paths." org.eventb.core.identifier="PATH_SGMT_REQ"/>
+<org.eventb.core.variable name="var8" org.eventb.core.comment="Segments of active Paths." org.eventb.core.identifier="PATH_SGMT_ACT"/>
+</org.eventb.core.machineFile>

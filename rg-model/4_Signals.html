@@ -1,0 +1,133 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Signals</title>
+</head>
+<body>
+
+<h1>Signals</h1>
+<p>This layer introduces the concept of associated entities and defines signals as a special kind thereof.</p> 
+
+<h2>Definitions</h2>
+
+<dl>
+<dt>Associated Entity</dt>
+<dd>
+  An Associated Entity is an entity, which is not a part of a topology, rather is associated to a connector and hence to
+  a specific location within the topology. The associated entities are valid only for one traversal direction, namely
+  for the way into the element this connector belongs to (i.e. to the segment starting at this connector). For the
+  opposite direction the entity shall be associated to the other connector of this double-vertex (linked via Rail Link). 
+</dd>
+<dt>Signal</dt>
+<dd>
+  A Signal is an Associated Entity capable of passing information to a train.
+</dd>
+<dt>Signal Aspect</dt>
+<dd>
+  A Signal Aspect is an (abstract) information conveyed by a Signal.
+</dd>
+</dl>
+
+<h2>Model</h2>
+
+<h3>Carrier Sets</h3>
+
+<dl>
+<dt>SIGNAL</dt>
+<dd>
+  All Signals of the particular station.
+</dd>
+<dt>SIGNAL_ASPECT_ENUM</dt>
+<dd>
+  Enumeration of all possible signal aspects.
+</dd>
+</dl>
+
+<h3>Constants</h3>
+
+<dl>
+<dt>SIGNAL_CTOR : SIGNAL → RAIL_CTOR</dt>
+<dd>
+  Association of Signals to the particular Rail Connector.
+</dd>
+<dt>SIGNAL_ASPECT_AVAIL : SIGNAL → ℙ1(SIGNAL_ASPECT_ENUM)</dt>
+<dd>
+  Available Signal Aspects of the particular Signal.
+</dd>
+<dt>SIGNAL_ASPECT_DEFAULT : SIGNAL_ASPECT_ENUM</dt>
+<dd>
+  Default Signal Aspects of all Signals.
+</dd>
+</dl>
+
+<h3>Variables</h3>
+
+<dl>
+<dt><em>RAIL_ELEM_POS_CURR : RAIL_ELEM → RAIL_POS_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>TVDS_STATE_CURR : TVD_SECT → TVD_STATE_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>SIGNAL_ASPECT_CURR : SIGNAL → SIGNAL_ASPECT_ENUM</dt>
+<dd>
+  Current Signal Aspect of the particular Signal.
+</dd>
+</dl>
+
+<h3>Events</h3>
+
+<dl>
+<dt><em>set_RAIL_ELEM_POS_CURR : (RAIL_ELEM, RAIL_POS_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_TVDS_STATE_CURR : (TVD_SECT, TVD_STATE_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>set_SIGNAL_ASPECT_CURR : (SIGNAL, SIGNAL_ASPECT_ENUM)</dt>
+<dd>
+  Set new current Signal Aspect of the particular Signal.
+</dd>
+</dl>
+
+<h3>Invariants</h3>
+
+<ul>
+<li>Current Signal Aspect is available for all Signals.</li>
+</ul>
+
+<h2>Example</h2>
+
+<pre>
+Simple example with one track and two points as well as two terminators on both ends:
+
+  S1      S3       i j
+               ----*+*----
+  =|      =|  /           \
+   *+*-----*+*-----*+*-----*+*
+   a b     c d     e f     g h
+
+     |=      |=
+
+  X1 S2 T    S4 P1      P2   X2
+
+Associated Entity is represented by |= or =| (expressing the direction it is valid for)
+
+* partition(SIGNAL, {S1}, {S2}, {S3}, {S4})
+* SIGNAL_CTOR = {S1 ↦ a, S2 ↦ b, S3 ↦ c, S4 ↦ d}
+
+Signals (as an example of Associated Entity) are valid for the following directions (determined by the connector the
+entity is associated to:
+
+* S1: T -> X1
+* S2: X1 -> T
+* S3: P1 -> T
+* S4: T -> P1
+</pre>
+
+</body>
+</html>

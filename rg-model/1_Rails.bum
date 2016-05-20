@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.comment="Rail entities and rail topology." org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="act1" org.eventb.core.assignment="RAIL_ELEM_CONN_CURR ≔ RAIL_ELEM_CONN_DEFAULT" org.eventb.core.label="RAIL_ELEM_CONN_CURR·value"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt1" org.eventb.core.comment="Set new current Rail Element Connectivity of the particular Rail Element." org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="set_RAIL_ELEM_CONN_CURR">
+<org.eventb.core.parameter name="'" org.eventb.core.comment="Element" org.eventb.core.identifier="elem"/>
+<org.eventb.core.parameter name="(" org.eventb.core.comment="New connectivity" org.eventb.core.identifier="conn"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="elem·type" org.eventb.core.predicate="elem ∈ RAIL_ELEM"/>
+<org.eventb.core.guard name="*" org.eventb.core.comment="New connectivity is defined for this element." org.eventb.core.label="conn·valid" org.eventb.core.predicate="conn ∈ RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="RAIL_ELEM_CONN_CURR(elem) ≔ conn" org.eventb.core.label="RAIL_ELEM_CONN_CURR·value"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="conn·type" org.eventb.core.predicate="conn ∈ ℙ(RAIL_SGMT)" org.eventb.core.theorem="true"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="1_Rails_C"/>
+<org.eventb.core.variable name="var1" org.eventb.core.comment="Current Rail Element Connectivity of the particular Rail Element." org.eventb.core.identifier="RAIL_ELEM_CONN_CURR"/>
+<org.eventb.core.invariant name="inv1" org.eventb.core.label="RAIL_ELEM_CONN·type" org.eventb.core.predicate="RAIL_ELEM_CONN_CURR ∈ RAIL_ELEM → ℙ(RAIL_SGMT)"/>
+<org.eventb.core.invariant name="inv2" org.eventb.core.comment="Current connectivity is defined." org.eventb.core.label="RAIL_ELEM_CONN·valid" org.eventb.core.predicate="∀ elem · elem ∈ RAIL_ELEM ⇒ RAIL_ELEM_CONN_CURR(elem) ∈ RAIL_ELEM_CONN_ALL(elem)"/>
+</org.eventb.core.machineFile>

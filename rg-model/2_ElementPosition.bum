@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.comment="Movable elements position." org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="1_Rails"/>
+<org.eventb.core.event name="(" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="act2" org.eventb.core.assignment="RAIL_ELEM_POS_CURR ≔ RAIL_ELEM_POS_DEFAULT" org.eventb.core.label="RAIL_ELEM_POS_CURR·value"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt1" org.eventb.core.comment="Set new current Element Position of the particular Rail Element." org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="set_RAIL_ELEM_POS_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_RAIL_ELEM_CONN_CURR"/>
+<org.eventb.core.parameter name="'" org.eventb.core.comment="Element" org.eventb.core.identifier="elem"/>
+<org.eventb.core.parameter name="(" org.eventb.core.comment="New position" org.eventb.core.identifier="pos"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="elem·type" org.eventb.core.predicate="elem ∈ RAIL_ELEM"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="RAIL_ELEM_POS_CURR(elem) ≔ pos" org.eventb.core.label="RAIL_ELEM_POS·value"/>
+<org.eventb.core.guard name="/" org.eventb.core.comment="New current position is defined." org.eventb.core.label="pos·valid" org.eventb.core.predicate="pos ∈ dom(RAIL_ELEM_POS_CONN(elem))"/>
+<org.eventb.core.guard name="," org.eventb.core.comment="New position is different from the old one." org.eventb.core.label="pos·diff" org.eventb.core.predicate="pos ≠ RAIL_ELEM_POS_CURR(elem)"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="pos·type" org.eventb.core.predicate="pos ∈ RAIL_POS_ENUM" org.eventb.core.theorem="true"/>
+<org.eventb.core.witness name="." org.eventb.core.label="conn" org.eventb.core.predicate="conn = RAIL_ELEM_POS_CONN(elem)(pos)"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name=")" org.eventb.core.target="2_ElementPosition_C"/>
+<org.eventb.core.variable name="var1" org.eventb.core.comment="Current Element Position of the particular Rail Element." org.eventb.core.identifier="RAIL_ELEM_POS_CURR"/>
+<org.eventb.core.invariant name="inv1" org.eventb.core.label="RAIL_ELEM_POS_CURR·type" org.eventb.core.predicate="RAIL_ELEM_POS_CURR ∈ RAIL_ELEM → RAIL_POS_ENUM"/>
+<org.eventb.core.invariant name="inv2" org.eventb.core.comment="Currect position is defined." org.eventb.core.label="RAIL_ELEM_POS_CURR·valid" org.eventb.core.predicate="∀ elem · elem ∈ RAIL_ELEM ⇒ RAIL_ELEM_POS_CURR(elem) ∈ dom(RAIL_ELEM_POS_CONN(elem))"/>
+<org.eventb.core.invariant name="inv3" org.eventb.core.comment="Connectivity is consistent with the position." org.eventb.core.label="RAIL_ELEM_CONN_CURR·glue" org.eventb.core.predicate="∀ elem · elem ∈ RAIL_ELEM ⇒ RAIL_ELEM_CONN_CURR(elem) = RAIL_ELEM_POS_CONN(elem)(RAIL_ELEM_POS_CURR(elem))"/>
+</org.eventb.core.machineFile>

@@ -1,0 +1,185 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rails</title>
+</head>
+<body>
+
+<h1>Rails</h1>
+<p>This layer defines the rail entities and constructs the railway topology thereof.</p>
+
+<h2>Definitions</h2>
+
+<dl>
+<dt>Rail Element</dt>
+<dd>
+  A Rail Element is a unit which provides a physical running path for the trains, i.e. rails (e.g. track, point,
+  crossing).
+</dd>
+<dt>Rail Terminator</dt>
+<dd>
+  A Rail Terminator is a pseudo unit used on the topology boundary.
+</dd>
+<dt>Rail Item</dt>
+<dd>
+  Rail Item is a common name for a Rail Element or a Rail Terminator.
+  <em>Note: Rail Item is not explicitly modeled.</em>
+</dd>
+<dt>Rail Connector</dt>
+<dd>
+  A Rail Connector is a port of a Rail Item used to define the element's connectivity via Rail Segments as well as to
+  link this element with the adjacent ones via Rail Links. A Rail Element has usually 2..4 Rail Connectors (depending
+  on the element type), a Rail Terminator has only one Rail Connector. Each Rail Connector belongs to exactly one Rail
+  Item (Rail Element or Rail Terminator).
+</dd>
+<dt>Rail Link</dt>
+<dd>
+  A Rail Link is a link from a Rail Connector of some Rail Item to a Rail Connector belonging to the (in topological
+  sense) adjacent Rail Item. Each Rail Connector is bidirectionally linked (via two Rail Links in opposite direction)
+  with exactly one Rail Connector belonging to some other Rail Item.
+</dd>
+<dt>Rail Segment</dt>
+<dd>
+  A Rail Segment is a connection from a Rail Connector of some Rail Element to another Rail Connector of the same Rail
+  Element. A Rail Terminator has only one Rail Connector and therefore doesn`t provide any Rail Segments.
+</dd>
+<dt>Rail Element Connectivity</dt>
+<dd>
+  A Rail Element Connectivity is a collection of Rail Segments offered by one Rail Element at any point in time. A Rail
+  Element may offer several Rail Element Connectivities (at different points in time). Each Rail Connectivity may leave
+  some (or even all) Rail Element Connectors unconnected. However, each Rail Element Connector must be involved in at
+  least one Rail Element Connectivity of that Rail Element. For all Rail Element Connectivities of every Rail Element
+  holds, that each Rail Connector of that Rail Element is bidirectionally connected (via two Rail Segments in opposite
+  direction) with at most one other Rail Connector belonging to the same Rail Element. A Rail Terminator doesn`t provide
+  any connectivity. <em>Note: This model doesn't cover elements with distinct direction like trailable points.</em>
+</dd>
+<dt>Fixed Rail Element</dt>
+<dd>
+  A Fixed Rail Element is a Rail Element which provides one Rail Element Connectivity only (which, however, may comprise
+  more Rail Segments). This Rail Element Connectivity must not be empty, i.e. must involve at least one Rail Segment.
+</dd>
+<dt>Movable Rail Element</dt>
+<dd>
+  A Movable Rail Element is a Rail Element which provides several Rail Element Connectivities, one of them being empty,
+  i.e. not containing any Rail Segments (disconnected).
+</dd>
+</dl>
+
+<p>
+  The Railway Topology Formal Model representation is based on double vertex graph. The vertices represent the element
+  connectors and the edges the segments within the elements. Two linked vertices of adjacent elements build the
+  double-vertex. The railway elements themselves are not contained in the graph, but are derived from the element
+  connectors as each connector belongs to one element.
+</p>
+
+<h2>Model</h2>
+
+<h3>Carrier Sets</h3>
+
+<dl>
+<dt>RAIL_ELEM</dt>
+<dd>
+  Enumeration of all Rail Elements of the particular station.
+</dd>
+<dt>RAIL_TERM</dt>
+<dd>
+  Enumeration of all Rail Terminators of the particular station.
+</dd>
+<dt>RAIL_CTOR</dt>
+<dd>
+  Enumeration of all Rail Connectors of the particular station.
+</dd>
+<dt>RAIL_SGMT</dt>
+<dd>
+  Enumeration of all Rail Segments of the particular station.
+</dd>
+</dl>
+
+<h3>Constants</h3>
+
+<dl>
+<dt>RAIL_ELEM_CTOR : RAIL_ELEM → ℙ1(RAIL_CTOR)</dt>
+<dd>
+  Assignment of Rail Connectors to the particular Rail Element.
+</dd>
+<dt>RAIL_TERM_CTOR : RAIL_TERM → RAIL_CTOR</dt>
+<dd>
+  Assignment of Rail Connector to the particular Rail Terminator.
+</dd>
+<dt>RAIL_SGMT_CTOR : RAIL_SGMT → (RAIL_CTOR × RAIL_CTOR)</dt>
+<dd>
+  Assignment of Rail Connectors to the particular Rail Segment.
+</dd>
+<dt>RAIL_LINK : RAIL_CTOR ⤖ RAIL_CTOR</dt>
+<dd>
+  Set of all Rail Links of the particular station.
+</dd>
+<dt>RAIL_ELEM_CONN_ALL : RAIL_ELEM → ℙ(ℙ(RAIL_SGMT))</dt>
+<dd>
+  All defined Rail Element Connectivities of the particular Rail Element.
+</dd>
+<dt>RAIL_ELEM_CONN_DEFAULT : RAIL_ELEM → ℙ(RAIL_SGMT)</dt>
+<dd>
+  Default Rail Element Connectivity of the particular Rail Element.
+</dd>
+<dt>RAIL_SGMT_ELEM : RAIL_SGMT → RAIL_ELEM</dt>
+<dd>
+  Rail Element the particular Rail Segment belongs to.
+</dd>
+</dl>
+
+<h3>Variables</h3>
+
+<dl>
+<dt>RAIL_ELEM_CONN_CURR : RAIL_ELEM → ℙ(RAIL_SGMT)</dt>
+<dd>
+  Current Rail Element Connectivity of the particular Rail Element.
+</dd>
+</dl>
+
+<h3>Events</h3>
+
+<dl>
+<dt>set_RAIL_ELEM_CONN_CURR : (RAIL_ELEM, ℙ(RAIL_SGMT))</dt>
+<dd>
+  Set new current Rail Element Connectivity of the particular Rail Element.
+</dd>
+</dl>
+
+<h3>Invariants</h3>
+
+<ul>
+<li>Current Rail Element Connectivity is a defined one for this Rail Element.</li> 
+</ul>
+
+<h2>Example</h2>
+
+<pre>
+Simple example with one track and two points as well as two terminators on both ends:
+
+                   i j
+               ----*+*----
+              /           \
+   *+*-----*+*-----*+*-----*+*
+   a b     c d     e f     g h
+
+  X1    T       P1      P2   X2
+
+Rail connectors are represented by *
+Rail Link pairs (both directions) are represented by +
+Rail Segment pairs (both directions) are represented by a line \ / -
+
+* partition(RAIL_ELEM, {T}, {P1}, {P2})
+* partition(RAIL_TERM, {X1}, {X2})
+* partition(RAIL_CTOR, {a}, {b}, {c}, {d}, {e}, {f}, {g}, {h}, {i}, {j})
+* partition(RAIL_SGMT, {bc}, {cb}, {de}, {ed}, {di}, {id}, {gf}, {fg}, {gj}, {jg}) 
+* RAIL_ELEM_CTOR = {T ↦ {b, c}, P1 ↦ {d, e, i}, P2 ↦ {f, g, j})
+* RAIL_TERM_CTOR = {X1 ↦ a, X2 ↦ h}
+* RAIL_SGMT_CTOR = {bc ↦ (b ↦ c), cb ↦ (c ↦ b), de ↦ (d ↦ e), ed ↦ (e ↦ d), di ↦ (d ↦ i), id ↦ (i ↦ d), gf ↦ (g ↦ f), fg ↦ (f ↦ g), gj ↦ (g ↦ j), jg ↦ (j ↦ g))
+* RAIL_LINK = {a ↦ b, b ↦ a, c ↦ d, d ↦ c, e ↦ f, f ↦ e, g ↦ h, h ↦ g, i ↦ j, j ↦ i}
+* RAIL_ELEM_CONN_ALL = (T ↦ {{bc, cb}}, P1 ↦ {{}, {de, ed}, {di, id}}, P2 ↦ {{}, {gf, fg}, {gj, jg}})
+* RAIL_ELEM_CONN_DEFAULT = (T ↦ {bc, cb}, P1 ↦ {}, P2 ↦ {})
+</pre>
+
+</body>
+</html>

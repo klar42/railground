@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.comment="Signals." org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="3_VacancyDetection"/>
+<org.eventb.core.event name="(" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="act3" org.eventb.core.assignment="SIGNAL_ASPECT_CURR ≔ {sig ↦ asp ∣ sig ∈ SIGNAL ∧ asp = SIGNAL_ASPECT_DEFAULT}" org.eventb.core.label="SIGNAL_ASPECT_CURR·value"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name=")" org.eventb.core.target="4_Signals_C"/>
+<org.eventb.core.variable name="var1" org.eventb.core.comment="Inherited" org.eventb.core.identifier="RAIL_ELEM_POS_CURR"/>
+<org.eventb.core.variable name="var3" org.eventb.core.comment="Inherited" org.eventb.core.identifier="TVDS_STATE_CURR"/>
+<org.eventb.core.variable name="var2" org.eventb.core.comment="Current Signal Aspect of the particular Signal." org.eventb.core.identifier="SIGNAL_ASPECT_CURR"/>
+<org.eventb.core.invariant name="inv1" org.eventb.core.label="SIGNAL_ASPECT_CURR·type" org.eventb.core.predicate="SIGNAL_ASPECT_CURR ∈ SIGNAL → SIGNAL_ASPECT_ENUM"/>
+<org.eventb.core.invariant name="inv2" org.eventb.core.comment="Current Signal Aspect is available for all Signals." org.eventb.core.label="SIGNAL_ASPECT_CURR·value" org.eventb.core.predicate="∀ sig · sig ∈ SIGNAL ⇒ SIGNAL_ASPECT_CURR(sig) ∈ SIGNAL_ASPECT_AVAIL(sig)"/>
+<org.eventb.core.event name="evt1" org.eventb.core.comment="Set new current Element Position of the particular Rail Element." org.eventb.core.convergence="2" org.eventb.core.extended="true" org.eventb.core.label="set_RAIL_ELEM_POS_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_RAIL_ELEM_POS_CURR"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt3" org.eventb.core.comment="Set new current state of the particular TVD Section." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_TVDS_STATE_CURR">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_TVDS_STATE_CURR"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt2" org.eventb.core.comment="Set new current Signal Aspect of the particular Signal." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="set_SIGNAL_ASPECT_CURR">
+<org.eventb.core.parameter name="'" org.eventb.core.comment="Signal" org.eventb.core.identifier="sig"/>
+<org.eventb.core.parameter name="(" org.eventb.core.comment="Aspect" org.eventb.core.identifier="asp"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="sig·type" org.eventb.core.predicate="sig ∈ SIGNAL"/>
+<org.eventb.core.guard name="," org.eventb.core.comment="New aspect is available." org.eventb.core.label="asp·avail" org.eventb.core.predicate="asp ∈ SIGNAL_ASPECT_AVAIL(sig)"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="SIGNAL_ASPECT_CURR(sig) ≔ asp" org.eventb.core.label="SIGNAL_ASPECT·value"/>
+<org.eventb.core.guard name="." org.eventb.core.comment="New aspect is different from the current one." org.eventb.core.label="asp·diff" org.eventb.core.predicate="asp ≠ SIGNAL_ASPECT_CURR(sig)"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="asp·type" org.eventb.core.predicate="asp ∈ SIGNAL_ASPECT_ENUM" org.eventb.core.theorem="true"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

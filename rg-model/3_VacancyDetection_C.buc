@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.comment="Track vacancy detection." org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="2_ElementPosition_C"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.comment="[Abstract] All Track Vacancy Detection (TVD) Sections of the particular station." org.eventb.core.identifier="TVD_SECT"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="TVD_SECT·finite" org.eventb.core.predicate="finite(TVD_SECT)"/>
+<org.eventb.core.axiom name=")" org.eventb.core.label="TVD_SECT_SGMT·type" org.eventb.core.predicate="TVD_SECT_SGMT ∈ TVD_SECT → ℙ(RAIL_SGMT)"/>
+<org.eventb.core.constant name="*" org.eventb.core.comment="[Abstract] Assignment of Rail Segments to TVD Sections." org.eventb.core.identifier="TVD_SECT_SGMT"/>
+<org.eventb.core.axiom name="+" org.eventb.core.comment="Rail Segmenrs of different TVD Sections are disjunct." org.eventb.core.label="TVD_SECT_SGMT·disjunct" org.eventb.core.predicate="∀ sect1, sect2&#10;· sect1 ∈ TVD_SECT&#10;∧ sect2 ∈ TVD_SECT&#10;∧ sect1 ≠ sect2&#10;⇒ TVD_SECT_SGMT(sect1) ∩ TVD_SECT_SGMT(sect2) = ∅"/>
+<org.eventb.core.axiom name="," org.eventb.core.comment="Each Rail Segment belongs to some TVD Section." org.eventb.core.label="TVD_SECT_SGMT·all" org.eventb.core.predicate="union(ran(TVD_SECT_SGMT)) = RAIL_SGMT"/>
+<org.eventb.core.carrierSet name="-" org.eventb.core.comment="Enumeration of possible TVD states." org.eventb.core.identifier="TVD_STATE_ENUM"/>
+<org.eventb.core.constant name="2" org.eventb.core.comment="Assigment of TVD Section to Rail Segments (derived from TVD_SECT_SGMT)." org.eventb.core.identifier="TVD_SGMT_SECT"/>
+<org.eventb.core.constant name="0" org.eventb.core.comment="TVDS_STATE_ENUM" org.eventb.core.identifier="TVD_STATE_VACANT"/>
+<org.eventb.core.constant name="1" org.eventb.core.comment="TVDS_STATE_ENUM" org.eventb.core.identifier="TVD_STATE_OCCUPIED"/>
+<org.eventb.core.axiom name="3" org.eventb.core.comment="Mapping of TVD Segmens to Rail Sections." org.eventb.core.label="TVD_SGMT_SECT·value" org.eventb.core.predicate="TVD_SGMT_SECT = {sgmt, sect · sgmt ∈ RAIL_SGMT ∧ sect ∈ TVD_SECT ∧ sgmt ∈ TVD_SECT_SGMT(sect) ∣ sgmt ↦ sect}"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="TVD_SGMT_SECT·type" org.eventb.core.predicate="TVD_SGMT_SECT ∈ RAIL_SGMT → TVD_SECT" org.eventb.core.theorem="true"/>
+<org.eventb.core.axiom name="/" org.eventb.core.label="TVDS_STATE_ENUM·data" org.eventb.core.predicate="partition(TVD_STATE_ENUM, {TVD_STATE_VACANT}, {TVD_STATE_OCCUPIED})"/>
+</org.eventb.core.contextFile>
