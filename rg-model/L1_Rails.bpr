@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="RAIL_ELEM_CONN·valid/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="elem" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="RAIL_ELEM,RAIL_SGMT">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p31"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p32"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p35" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p51">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p36"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p42"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p44,p45"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p46"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p31" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p49"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p50"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p51" org.eventb.core.prHyps="p45,p44">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p52">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p52" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p53">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p53" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p54">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees elem)" org.eventb.core.prGoal="p54" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p55">
+<org.eventb.core.prIdent name="elem" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p55" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p56">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p56" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p57">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p57" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p58">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p58" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_ALL" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(ℙ(RAIL_SGMT)))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_CURR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·⊤∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧¬conn1=conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·¬RAIL_TERM_CTOR(term)∈RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="RAIL_ELEM_CONN_CURR∈RAIL_ELEM → ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈dom(RAIL_ELEM_CONN_CURR)"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒¬conn1 ↦ conn2∈RAIL_LINK">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_LINK" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈dom(RAIL_ELEM_CONN_ALL)"/>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="(∀elem⦂RAIL_ELEM·elem∈dom(RAIL_ELEM_CONN_CURR))∧RAIL_ELEM_CONN_CURR∈RAIL_ELEM ⇸ ℙ(RAIL_SGMT)∧(∀elem⦂RAIL_ELEM·elem∈dom(RAIL_ELEM_CONN_ALL))∧RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒elem∈dom(RAIL_ELEM_CONN_ALL)∧RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·⊤∧⊤∧¬term1=term2⇒¬RAIL_TERM_CTOR(term1)=RAIL_TERM_CTOR(term2)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈dom(RAIL_ELEM_CONN_CURR)∧RAIL_ELEM_CONN_CURR∈RAIL_ELEM ⇸ ℙ(RAIL_SGMT)∧elem∈dom(RAIL_ELEM_CONN_ALL)∧RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧¬conn1=conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}">
+<org.eventb.core.prIdent name="RAIL_SGMT_ELEM" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)">
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_DEFAULT" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·elem∈RAIL_ELEM∧sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}">
+<org.eventb.core.prIdent name="RAIL_SGMT_ELEM" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·⊤∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒¬conn1 ↦ conn2∈RAIL_LINK">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_LINK" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="(∀elem⦂RAIL_ELEM·elem∈dom(RAIL_ELEM_CONN_CURR))∧RAIL_ELEM_CONN_CURR∈RAIL_ELEM ⇸ ℙ(RAIL_SGMT)∧⊤∧⊤"/>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="RAIL_ELEM_CONN_CURR∈RAIL_ELEM ⇸ ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·⊤∧⊤∧¬elem1=elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·term1∈RAIL_TERM∧term2∈RAIL_TERM∧term1≠term2⇒RAIL_TERM_CTOR(term1)≠RAIL_TERM_CTOR(term2)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·¬term1=term2⇒¬RAIL_TERM_CTOR(term1)=RAIL_TERM_CTOR(term2)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)">
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_DEFAULT" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·¬elem1=elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="elem∈dom(RAIL_ELEM_CONN_CURR)">
+<org.eventb.core.prIdent name="elem" org.eventb.core.type="RAIL_ELEM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧conn1≠conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="elem∈RAIL_ELEM">
+<org.eventb.core.prIdent name="elem" org.eventb.core.type="RAIL_ELEM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒conn1 ↦ conn2∉RAIL_LINK">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_LINK" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈dom(RAIL_ELEM_CONN_ALL)∧RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·term∈RAIL_TERM∧elem∈RAIL_ELEM⇒¬RAIL_TERM_CTOR(term)∈RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·elem1∈RAIL_ELEM∧elem2∈RAIL_ELEM∧¬elem1=elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒¬conn1 ↦ conn2∈RAIL_LINK">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_LINK" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·term∈RAIL_TERM∧elem∈RAIL_ELEM⇒RAIL_TERM_CTOR(term)∉RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·⊤∧sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}">
+<org.eventb.core.prIdent name="RAIL_SGMT_ELEM" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="(∀elem⦂RAIL_ELEM·elem∈dom(RAIL_ELEM_CONN_CURR))∧RAIL_ELEM_CONN_CURR∈RAIL_ELEM ⇸ ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·term1∈RAIL_TERM∧term2∈RAIL_TERM∧¬term1=term2⇒¬RAIL_TERM_CTOR(term1)=RAIL_TERM_CTOR(term2)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧¬conn1=conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·elem1∈RAIL_ELEM∧elem2∈RAIL_ELEM∧elem1≠elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒elem∈dom(RAIL_ELEM_CONN_CURR)∧RAIL_ELEM_CONN_CURR∈RAIL_ELEM ⇸ ℙ(RAIL_SGMT)∧elem∈dom(RAIL_ELEM_CONN_ALL)∧RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)">
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_DEFAULT" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·⊤∧⊤⇒¬RAIL_TERM_CTOR(term)∈RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="RAIL_ELEM"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/RAIL_ELEM_CONN·type/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0" org.eventb.core.prSets="RAIL_ELEM,RAIL_SGMT">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_DEFAULT" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="RAIL_ELEM_CONN_DEFAULT∈RAIL_ELEM → ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/RAIL_ELEM_CONN·valid/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0" org.eventb.core.prSets="RAIL_ELEM,RAIL_SGMT">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_ALL" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(ℙ(RAIL_SGMT)))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_DEFAULT" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="set_RAIL_ELEM_CONN_CURR/conn·valid/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="RAIL_ELEM,RAIL_SGMT">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p31"/>
+<org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p32"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
+<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p36"/>
+<org.eventb.core.prHypAction name="REWRITE15" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p42"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p44"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p45"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p46,p47"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p31" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p49"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p50"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p51"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p52"/>
+<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p47">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p54">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p54" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p55">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p55" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p32" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p56">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p56" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_ALL" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(ℙ(RAIL_SGMT)))"/>
+<org.eventb.core.prIdent name="elem" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·⊤∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧¬conn1=conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·¬RAIL_TERM_CTOR(term)∈RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·RAIL_ELEM_CONN_CURR(elem)∈RAIL_ELEM_CONN_ALL(elem)">
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_CURR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒¬conn1 ↦ conn2∈RAIL_LINK">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_LINK" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈dom(RAIL_ELEM_CONN_ALL)"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒elem∈dom(RAIL_ELEM_CONN_ALL)∧RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·⊤∧⊤∧¬term1=term2⇒¬RAIL_TERM_CTOR(term1)=RAIL_TERM_CTOR(term2)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧¬conn1=conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}">
+<org.eventb.core.prIdent name="RAIL_SGMT_ELEM" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="elem∈dom(RAIL_ELEM_CONN_ALL)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)">
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_DEFAULT" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·elem∈RAIL_ELEM∧sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}">
+<org.eventb.core.prIdent name="RAIL_SGMT_ELEM" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·⊤∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒¬conn1 ↦ conn2∈RAIL_LINK">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_LINK" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·⊤∧⊤∧¬elem1=elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·¬term1=term2⇒¬RAIL_TERM_CTOR(term1)=RAIL_TERM_CTOR(term2)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·term1∈RAIL_TERM∧term2∈RAIL_TERM∧term1≠term2⇒RAIL_TERM_CTOR(term1)≠RAIL_TERM_CTOR(term2)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·¬elem1=elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)">
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_DEFAULT" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="RAIL_ELEM_CONN_ALL∈RAIL_ELEM → ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧conn1≠conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="elem∈RAIL_ELEM"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒conn1 ↦ conn2∉RAIL_LINK">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_LINK" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈dom(RAIL_ELEM_CONN_ALL)∧RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·term∈RAIL_TERM∧elem∈RAIL_ELEM⇒¬RAIL_TERM_CTOR(term)∈RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·elem1∈RAIL_ELEM∧elem2∈RAIL_ELEM∧¬elem1=elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒¬conn1 ↦ conn2∈RAIL_LINK">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_LINK" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·term∈RAIL_TERM∧elem∈RAIL_ELEM⇒RAIL_TERM_CTOR(term)∉RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="elem∈dom(RAIL_ELEM_CONN_ALL)∧⊤"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·⊤∧sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}">
+<org.eventb.core.prIdent name="RAIL_SGMT_ELEM" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·term1∈RAIL_TERM∧term2∈RAIL_TERM∧¬term1=term2⇒¬RAIL_TERM_CTOR(term1)=RAIL_TERM_CTOR(term2)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒RAIL_ELEM_CONN_CURR(elem)∈RAIL_ELEM_CONN_ALL(elem)">
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_CURR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧¬conn1=conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·elem1∈RAIL_ELEM∧elem2∈RAIL_ELEM∧elem1≠elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒RAIL_ELEM_CONN_CURR(elem)∈RAIL_ELEM_CONN_ALL(elem)">
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_CURR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)">
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_DEFAULT" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·⊤∧⊤⇒¬RAIL_TERM_CTOR(term)∈RAIL_ELEM_CTOR(elem)">
+<org.eventb.core.prIdent name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="elem∈dom(RAIL_ELEM_CONN_ALL)∧RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="RAIL_ELEM"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="set_RAIL_ELEM_CONN_CURR/RAIL_ELEM_CONN·type/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32" org.eventb.core.prSets="RAIL_CTOR,RAIL_ELEM,RAIL_SGMT,RAIL_TERM">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p24" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p36"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p42"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p44"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p31" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p45"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p46"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48"/>
+<org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p49"/>
+<org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p50"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p51"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p52"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
+<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54"/>
+<org.eventb.core.prHypAction name="REWRITE15" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p55"/>
+<org.eventb.core.prHypAction name="REWRITE16" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p57"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p41" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p58"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p42" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p59"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p43" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p60"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p44" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p61"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p45" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p62"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p46" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p63"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p47" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p64"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p48" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p65"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p51" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p66"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p52" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p67"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p53" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p68"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p54" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p69"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p55" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p70"/>
+<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p56" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p71"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p13,p14,p26,p6,p12,p25,p8,p3,p20,p17,p2,p1,p19,p4,p23,p18,p24,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_ALL" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(ℙ(RAIL_SGMT)))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_CURR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_DEFAULT" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_LINK" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_ELEM" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="conn" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prIdent name="elem" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="RAIL_ELEM_CONN_DEFAULT∈RAIL_ELEM → ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="RAIL_SGMT_CTOR∈RAIL_SGMT → RAIL_CTOR × RAIL_CTOR"/>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·⊤∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧¬conn1=conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p68" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·¬RAIL_TERM_CTOR(term)∈RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="RAIL_ELEM_CONN_CURR∈RAIL_ELEM → ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p65" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·RAIL_ELEM_CONN_CURR(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒¬conn1 ↦ conn2∈RAIL_LINK"/>
+<org.eventb.core.prPred name="p71" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈dom(RAIL_ELEM_CONN_ALL)"/>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·⊤∧⊤∧¬term1=term2⇒¬RAIL_TERM_CTOR(term1)=RAIL_TERM_CTOR(term2)"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="finite(RAIL_ELEM)"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="RAIL_ELEM_CTOR∈RAIL_ELEM → ℙ1(RAIL_CTOR)"/>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="finite(RAIL_TERM)"/>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧¬conn1=conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="elem∈dom(RAIL_ELEM_CONN_ALL)"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="RAIL_LINK=RAIL_LINK∼"/>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="RAIL_LINK∈RAIL_CTOR ⤖ RAIL_CTOR"/>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·elem∈RAIL_ELEM∧sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·⊤∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒¬conn1 ↦ conn2∈RAIL_LINK"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="conn∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="finite(RAIL_CTOR)"/>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·⊤∧⊤∧¬elem1=elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p67" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·¬term1=term2⇒¬RAIL_TERM_CTOR(term1)=RAIL_TERM_CTOR(term2)"/>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·term1∈RAIL_TERM∧term2∈RAIL_TERM∧term1≠term2⇒RAIL_TERM_CTOR(term1)≠RAIL_TERM_CTOR(term2)"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p66" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·¬elem1=elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="RAIL_ELEM_CONN_ALL∈RAIL_ELEM → ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="conn∈ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧conn1≠conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="finite(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="elem∈RAIL_ELEM"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒conn1 ↦ conn2∉RAIL_LINK"/>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈dom(RAIL_ELEM_CONN_ALL)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="union(ran(RAIL_ELEM_CTOR))∪ran(RAIL_TERM_CTOR)=RAIL_CTOR"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈dom(RAIL_ELEM_CONN_ALL)∧RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·term∈RAIL_TERM∧elem∈RAIL_ELEM⇒¬RAIL_TERM_CTOR(term)∈RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·elem1∈RAIL_ELEM∧elem2∈RAIL_ELEM∧¬elem1=elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p69" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒¬conn1 ↦ conn2∈RAIL_LINK"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·term∈RAIL_TERM∧elem∈RAIL_ELEM⇒RAIL_TERM_CTOR(term)∉RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·⊤∧sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒elem∈dom(RAIL_ELEM_CONN_ALL)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="RAIL_SGMT_ELEM∈RAIL_SGMT → RAIL_ELEM"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="RAIL_ELEM_CONN_CURR{elem ↦ conn}∈RAIL_ELEM → ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·term1∈RAIL_TERM∧term2∈RAIL_TERM∧¬term1=term2⇒¬RAIL_TERM_CTOR(term1)=RAIL_TERM_CTOR(term2)"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="RAIL_TERM_CTOR∈RAIL_TERM → RAIL_CTOR"/>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒RAIL_ELEM_CONN_CURR(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈dom(RAIL_ELEM_CONN_ALL)∧⊤"/>
+<org.eventb.core.prPred name="p70" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧¬conn1=conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·elem1∈RAIL_ELEM∧elem2∈RAIL_ELEM∧elem1≠elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒RAIL_ELEM_CONN_CURR(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·⊤∧⊤⇒¬RAIL_TERM_CTOR(term)∈RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="set_RAIL_ELEM_CONN_CURR/RAIL_ELEM_CONN·valid/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="elem0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32" org.eventb.core.prSets="RAIL_CTOR,RAIL_ELEM,RAIL_SGMT,RAIL_TERM">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p24" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p36"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p57">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p42"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p44"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p31" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p45"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p46"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48"/>
+<org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p49"/>
+<org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p50"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p51"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p52"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
+<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54"/>
+<org.eventb.core.prHypAction name="REWRITE15" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p55"/>
+<org.eventb.core.prHypAction name="REWRITE16" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p57" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p73">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p58"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p41" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p59"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p42" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p60"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p43" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p61"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p44" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p62"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p45" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p63"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p46" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p64"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p47" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p65"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p48" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p66"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p51" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p67"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p52" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p68"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p53" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p69"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p54" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p70"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p55" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p71"/>
+<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p56" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p72"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees elem0)" org.eventb.core.prGoal="p73" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p74">
+<org.eventb.core.prIdent name="elem0" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ovr in goal" org.eventb.core.prGoal="p74" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p76" org.eventb.core.prHyps="p75">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with elem0=elem" org.eventb.core.prGoal="p76" org.eventb.core.prHyps="p75">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p23">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p23" org.eventb.core.prHyps="p23"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p78" org.eventb.core.prHyps="p77">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Functional image simplification in goal" org.eventb.core.prGoal="p78" org.eventb.core.prHyps="p4">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p79">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p79" org.eventb.core.prHyps="p13,p14,p25,p6,p12,p26,p8,p3,p20,p17,p2,p1,p19,p4,p23,p18,p24,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p77">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_ALL" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(ℙ(RAIL_SGMT)))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_CURR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CONN_DEFAULT" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_LINK" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+<org.eventb.core.prIdent name="RAIL_SGMT_ELEM" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+<org.eventb.core.prIdent name="conn" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prIdent name="elem" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="RAIL_ELEM_CONN_DEFAULT∈RAIL_ELEM → ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="RAIL_SGMT_CTOR∈RAIL_SGMT → RAIL_CTOR × RAIL_CTOR"/>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·⊤∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧¬conn1=conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p69" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·¬RAIL_TERM_CTOR(term)∈RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="RAIL_ELEM_CONN_CURR∈RAIL_ELEM → ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p66" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·RAIL_ELEM_CONN_CURR(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒¬conn1 ↦ conn2∈RAIL_LINK"/>
+<org.eventb.core.prPred name="p73" org.eventb.core.predicate="∀elem0⦂RAIL_ELEM·(RAIL_ELEM_CONN_CURR{elem ↦ conn})(elem0)∈RAIL_ELEM_CONN_ALL(elem0)"/>
+<org.eventb.core.prPred name="p72" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈dom(RAIL_ELEM_CONN_ALL)"/>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·⊤∧⊤∧¬term1=term2⇒¬RAIL_TERM_CTOR(term1)=RAIL_TERM_CTOR(term2)"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="finite(RAIL_ELEM)"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="RAIL_ELEM_CTOR∈RAIL_ELEM → ℙ1(RAIL_CTOR)"/>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="finite(RAIL_TERM)"/>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧¬conn1=conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p65" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="elem∈dom(RAIL_ELEM_CONN_ALL)"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="RAIL_LINK=RAIL_LINK∼"/>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="RAIL_LINK∈RAIL_CTOR ⤖ RAIL_CTOR"/>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·elem∈RAIL_ELEM∧sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·⊤∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒¬conn1 ↦ conn2∈RAIL_LINK"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="conn∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="finite(RAIL_CTOR)"/>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀elem0⦂RAIL_ELEM·elem0∈RAIL_ELEM⇒(RAIL_ELEM_CONN_CURR{elem ↦ conn})(elem0)∈RAIL_ELEM_CONN_ALL(elem0)"/>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="∀elem0⦂RAIL_ELEM·⊤⇒(RAIL_ELEM_CONN_CURR{elem ↦ conn})(elem0)∈RAIL_ELEM_CONN_ALL(elem0)"/>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·⊤∧⊤∧¬elem1=elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p79" org.eventb.core.predicate="RAIL_ELEM_CONN_CURR(elem0)∈RAIL_ELEM_CONN_ALL(elem0)">
+<org.eventb.core.prIdent name="elem0" org.eventb.core.type="RAIL_ELEM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p68" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·¬term1=term2⇒¬RAIL_TERM_CTOR(term1)=RAIL_TERM_CTOR(term2)"/>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·term1∈RAIL_TERM∧term2∈RAIL_TERM∧term1≠term2⇒RAIL_TERM_CTOR(term1)≠RAIL_TERM_CTOR(term2)"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p67" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·¬elem1=elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p74" org.eventb.core.predicate="(RAIL_ELEM_CONN_CURR{elem ↦ conn})(elem0)∈RAIL_ELEM_CONN_ALL(elem0)">
+<org.eventb.core.prIdent name="elem0" org.eventb.core.type="RAIL_ELEM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="RAIL_ELEM_CONN_ALL∈RAIL_ELEM → ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·⊤∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="conn∈ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧conn1≠conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="finite(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="elem∈RAIL_ELEM"/>
+<org.eventb.core.prPred name="p78" org.eventb.core.predicate="({elem} ⩤ RAIL_ELEM_CONN_CURR)(elem0)∈RAIL_ELEM_CONN_ALL(elem0)">
+<org.eventb.core.prIdent name="elem0" org.eventb.core.type="RAIL_ELEM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒conn1 ↦ conn2∉RAIL_LINK"/>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈dom(RAIL_ELEM_CONN_ALL)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="union(ran(RAIL_ELEM_CTOR))∪ran(RAIL_TERM_CTOR)=RAIL_CTOR"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈dom(RAIL_ELEM_CONN_ALL)∧RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·term∈RAIL_TERM∧elem∈RAIL_ELEM⇒¬RAIL_TERM_CTOR(term)∈RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·elem1∈RAIL_ELEM∧elem2∈RAIL_ELEM∧¬elem1=elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p70" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒¬conn1 ↦ conn2∈RAIL_LINK"/>
+<org.eventb.core.prPred name="p76" org.eventb.core.predicate="conn∈RAIL_ELEM_CONN_ALL(elem0)">
+<org.eventb.core.prIdent name="elem0" org.eventb.core.type="RAIL_ELEM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·term∈RAIL_TERM∧elem∈RAIL_ELEM⇒RAIL_TERM_CTOR(term)∉RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p75" org.eventb.core.predicate="elem0=elem">
+<org.eventb.core.prIdent name="elem0" org.eventb.core.type="RAIL_ELEM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·⊤∧sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}"/>
+<org.eventb.core.prPred name="p77" org.eventb.core.predicate="¬elem0=elem">
+<org.eventb.core.prIdent name="elem0" org.eventb.core.type="RAIL_ELEM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒elem∈dom(RAIL_ELEM_CONN_ALL)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="RAIL_SGMT_ELEM∈RAIL_SGMT → RAIL_ELEM"/>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·term1∈RAIL_TERM∧term2∈RAIL_TERM∧¬term1=term2⇒¬RAIL_TERM_CTOR(term1)=RAIL_TERM_CTOR(term2)"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="RAIL_TERM_CTOR∈RAIL_TERM → RAIL_CTOR"/>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒RAIL_ELEM_CONN_CURR(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈dom(RAIL_ELEM_CONN_ALL)∧⊤"/>
+<org.eventb.core.prPred name="p71" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧¬conn1=conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·elem1∈RAIL_ELEM∧elem2∈RAIL_ELEM∧elem1≠elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒RAIL_ELEM_CONN_CURR(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)"/>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·⊤∧⊤⇒¬RAIL_TERM_CTOR(term)∈RAIL_ELEM_CTOR(elem)"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r8" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.funOvr:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.funImgSimplifies:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

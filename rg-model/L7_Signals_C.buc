@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.comment="Signals." org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="L6_OccupationImpact_C"/>
+<org.eventb.core.carrierSet name="set1" org.eventb.core.comment="[Abstract] All Signals of the particular station." org.eventb.core.identifier="SIGNAL"/>
+<org.eventb.core.carrierSet name="set2" org.eventb.core.comment="[Abstract] Enumeration of possible signal aspects." org.eventb.core.identifier="SIGNAL_ASPECT_ENUM"/>
+<org.eventb.core.constant name="cst1" org.eventb.core.comment="[Abstract] Association of Signals to the particular Rail Connector." org.eventb.core.identifier="SIGNAL_CTOR"/>
+<org.eventb.core.constant name="cst2" org.eventb.core.comment="[Abstract] Available Signal Aspects of the particular Signal." org.eventb.core.identifier="SIGNAL_ASPECT_AVAIL"/>
+<org.eventb.core.constant name="cst3" org.eventb.core.comment="[Abstract] Default Signal Aspect of all Signals." org.eventb.core.identifier="SIGNAL_ASPECT_DEFAULT"/>
+<org.eventb.core.axiom name="axm1" org.eventb.core.label="SIGNAL·finite" org.eventb.core.predicate="finite(SIGNAL)"/>
+<org.eventb.core.axiom name="axm2" org.eventb.core.label="SIGNAL_ASPECT_ENUM·finite" org.eventb.core.predicate="finite(SIGNAL_ASPECT_ENUM)"/>
+<org.eventb.core.axiom name="axm3" org.eventb.core.label="SIGNAL_CTOR·type" org.eventb.core.predicate="SIGNAL_CTOR ∈ SIGNAL → RAIL_CTOR"/>
+<org.eventb.core.axiom name="axm4" org.eventb.core.label="SIGNAL_ASPECT_AVAIL·type" org.eventb.core.predicate="SIGNAL_ASPECT_AVAIL ∈ SIGNAL → ℙ1(SIGNAL_ASPECT_ENUM)"/>
+<org.eventb.core.axiom name="axm5" org.eventb.core.label="SIGNAL_ASPECT_DEFAULT·type" org.eventb.core.predicate="SIGNAL_ASPECT_DEFAULT ∈ SIGNAL_ASPECT_ENUM"/>
+<org.eventb.core.axiom name="axm6" org.eventb.core.comment="Default Signal Aspect is available for all Signals." org.eventb.core.label="SIGNAL_ASPECT_DEFAULT·avail" org.eventb.core.predicate="∀ sig · sig ∈ SIGNAL ⇒ SIGNAL_ASPECT_DEFAULT ∈ SIGNAL_ASPECT_AVAIL(sig)"/>
+</org.eventb.core.contextFile>

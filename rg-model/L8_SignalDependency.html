@@ -1,0 +1,124 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Signal Dependency</title>
+</head>
+<body>
+
+<h1>Signal Dependency</h1>
+<p>This layer adds the dependency of the signal on the path.</p>
+
+<h2>Definitions</h2>
+
+<dl>
+<dt>Signal Dependency</dt>
+<dd>
+  A Signal depends on a Path, so that the Signal may be set to any Aspect other than the default one only if there is
+  a current Path in rear of this Signal.
+</dd>
+</dl>
+
+<h2>Model</h2>
+
+<h3>Carrier Sets</h3>
+
+<p><em>None.</em></p>
+
+<h3>Constants.</h3>
+
+<p><em>None.</em></p>
+
+<h3>Variables</h3>
+
+<dl>
+<dt><em>RAIL_ELEM_POS_CURR : RAIL_ELEM → RAIL_POS_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>PATH_CURR : ℙ(PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>RAIL_ELEM_PATH_CURR : RAIL_ELEM ⇸ PATH_CURR</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>PATH_REQ : ℙ(PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>PATH_REL : ℙ(PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>TVDS_STATE_CURR : TVD_SECT → TVD_STATE_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>SIGNAL_ASPECT_CURR : SIGNAL → SIGNAL_ASPECT_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+</dl>
+
+<h3>Events</h3>
+
+<dl>
+<dt><em>set_RAIL_ELEM_POS_CURR : (RAIL_ELEM, RAIL_POS_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_RAIL_ELEM_PATH : (RAIL_ELEM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>add_PATH_CURR : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>rem_PATH_CURR : (PATH_ENUM) <em>«refines» rem_PATH_CURR</em></dt>
+<dd>
+  Refinement: A Path can be removed only if there is no Signal which depends on this path.
+</dd>
+<dt><em>add_PATH_REQ : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>rem_PATH_REQ : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_PATH_REL : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_TVDS_STATE_CURR : (TVD_SECT, TVD_STATE_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_TVDS_STATE_PATH : (TVD_SECT, TVD_STATE_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>set_SIGNAL_ASPECT_PROCEED : (SIGNAL, SIGNAL_ASPECT_ENUM) <em>«refines» set_SIGNAL_ASPECT_CURR</em></dt>
+<dd>
+  Refinement: Set Signal to some Proceed signal aspect.
+</dd>
+<dt>set_SIGNAL_ASPECT_DEFAULT : (SIGNAL) <em>«refines» set_SIGNAL_ASPECT_CURR</em></dt>
+<dd>
+  Refinement: Set Signal to Default signal aspect.
+</dd>
+</dl>
+
+<h3>Invariants</h3>
+
+<ul>
+<li>For all Signals in non-default Aspect there is a Path starting at the connector this signal is associated to.</li>
+</ul>
+
+<h2>Example</h2>
+
+<p><em>None.</em></p>
+
+</body>
+</html>

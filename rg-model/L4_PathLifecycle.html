@@ -1,0 +1,114 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Path Lifecycle</title>
+</head>
+<body>
+
+<h1>Path Lifecycle</h1>
+<p>This layer adds the path lifecycle and demonstrate the sequence of events leading to the desired status.</p>
+
+<h2>Definitions</h2>
+
+<dl>
+<dt>Requested Path</dt>
+<dd>
+  A Requested Path is an ancestor of a Path for which not all conditions are fulfilled (yet). As soon as all conditions
+  are met, the Requested Path can become a Path.
+</dd>
+<dt>Excluded Paths</dt>
+<dd>
+  Excluded Paths are paths which must not be set if a particular different path is set (even if they share no common
+  elements). It is assumed, that path exclusions are symmetric and irreflexive.
+</dd>
+</dl>
+
+<h2>Model</h2>
+
+<h3>Carrier Sets</h3>
+
+<p><em>None.</em></p>
+
+<h3>Constants</h3>
+
+<dl>
+<dt>PATH_EXCL : PATH_ENUM ↔ PATH_ENUM</dt>
+<dd>
+  Path exclusions.
+</dd>
+</dl>
+
+<h3>Variables</h3>
+
+<dl>
+<dt><em>RAIL_ELEM_POS_CURR : RAIL_ELEM → RAIL_POS_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>PATH_CURR : ℙ(PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>RAIL_ELEM_PATH_CURR : RAIL_ELEM ⇸ PATH_CURR</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>PATH_REQ : ℙ(PATH_ENUM)</dt>
+<dd>
+  Set of requested paths.
+</dd>
+<dt>PATH_REL : ℙ(PATH_ENUM)</dt>
+<dd>
+  Set of paths being released.
+</dd>
+</dl>
+
+<h3>Events</h3>
+
+<dl>
+<dt>set_RAIL_ELEM_POS_CURR : (RAIL_ELEM, RAIL_POS_ENUM) <em>«refines» set_RAIL_ELEM_POS_CURR</em></dt>
+<dd>
+  Refinement: Only Rail Elements, which do not belong to any Requested Path may be set to new position.
+</dd>
+<dt>set_RAIL_ELEM_PATH : (RAIL_ELEM) <em>«refines» set_RAIL_ELEM_POS_CURR</em></dt>
+<dd>
+  Set new current Position of a Rail Element which belong to some Requested Path to the requested Position.
+</dd>
+<dt>add_PATH_CURR : (PATH_ENUM) <em>«refines» add_PATH_CURR</em></dt>
+<dd>
+  Refinement: Only requested paths which are not excluded can become Paths.
+</dd>
+<dt><em>rem_PATH_CURR : (PATH_ENUM)</em></dt>
+<dd>
+  Refinement: Only paths being released may be removed.
+</dd>
+<dt>add_PATH_REQ : (PATH_ENUM) <em>«refines» add_PATH_REQ</em></dt>
+<dd>
+  Add a new requested path.
+</dd>
+<dt>rem_PATH_REQ : (PATH_ENUM)</dt>
+<dd>
+  Remove an existing requested path.
+</dd>
+<dt>set_PATH_REL : (PATH_ENUM)</dt>
+<dd>
+  Set a path as being released.
+</dd>
+</dl>
+
+<h3>Invariants</h3>
+
+<ul>
+<li>Requested and Current Paths are disjunct.</li>
+<li>No Rail Element belongs to two Requested Paths at once.</li>
+<li>No Rail Element belongs to some Requested Path and some Current Path at once.</li>
+<li>Path being released is still a Current Path.</li>
+<li>No Current Path is excluded by any other Current Path.</li>
+</ul>
+
+<h2>Example</h2>
+
+<p><em>None.</em></p>
+
+</body>
+</html>

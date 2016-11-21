@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.poIdentifier name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.poIdentifier name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
+<org.eventb.core.poIdentifier name="RAIL_TERM" org.eventb.core.type="ℙ(RAIL_TERM)"/>
+<org.eventb.core.poIdentifier name="RAIL_ELEM_CONN_ALL" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(ℙ(RAIL_SGMT)))"/>
+<org.eventb.core.poIdentifier name="RAIL_ELEM_CONN_DEFAULT" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+<org.eventb.core.poIdentifier name="RAIL_ELEM_CTOR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_CTOR))"/>
+<org.eventb.core.poIdentifier name="RAIL_LINK" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
+<org.eventb.core.poIdentifier name="RAIL_SGMT_CTOR" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+<org.eventb.core.poIdentifier name="RAIL_SGMT_ELEM" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+<org.eventb.core.poIdentifier name="RAIL_TERM_CTOR" org.eventb.core.type="ℙ(RAIL_TERM×RAIL_CTOR)"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULU" org.eventb.core.predicate="finite(RAIL_ELEM)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm1"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULV" org.eventb.core.predicate="finite(RAIL_TERM)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm2"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULW" org.eventb.core.predicate="finite(RAIL_CTOR)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm3"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULX" org.eventb.core.predicate="finite(RAIL_SGMT)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm25"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULY" org.eventb.core.predicate="RAIL_ELEM_CTOR∈RAIL_ELEM → ℙ1(RAIL_CTOR)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm4"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULZ" org.eventb.core.predicate="RAIL_TERM_CTOR∈RAIL_TERM → RAIL_CTOR" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm5"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUL[" org.eventb.core.predicate="union(ran(RAIL_ELEM_CTOR))∪ran(RAIL_TERM_CTOR)=RAIL_CTOR" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm6"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUL\" org.eventb.core.predicate="∀elem1⦂RAIL_ELEM,elem2⦂RAIL_ELEM·elem1∈RAIL_ELEM∧elem2∈RAIL_ELEM∧elem1≠elem2⇒RAIL_ELEM_CTOR(elem1)∩RAIL_ELEM_CTOR(elem2)=(∅ ⦂ ℙ(RAIL_CTOR))" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm7"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUL]" org.eventb.core.predicate="∀term1⦂RAIL_TERM,term2⦂RAIL_TERM·term1∈RAIL_TERM∧term2∈RAIL_TERM∧term1≠term2⇒RAIL_TERM_CTOR(term1)≠RAIL_TERM_CTOR(term2)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm8"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUL^" org.eventb.core.predicate="∀term⦂RAIL_TERM,elem⦂RAIL_ELEM·term∈RAIL_TERM∧elem∈RAIL_ELEM⇒RAIL_TERM_CTOR(term)∉RAIL_ELEM_CTOR(elem)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm9"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUL_" org.eventb.core.predicate="RAIL_SGMT_CTOR∈RAIL_SGMT → RAIL_CTOR × RAIL_CTOR" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm27"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUL`" org.eventb.core.predicate="RAIL_LINK∈RAIL_CTOR ⤖ RAIL_CTOR" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm10"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULa" org.eventb.core.predicate="RAIL_LINK=RAIL_LINK∼" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm11"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULb" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂RAIL_CTOR,conn2⦂RAIL_CTOR·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CTOR(elem)∧conn2∈RAIL_ELEM_CTOR(elem)⇒conn1 ↦ conn2∉RAIL_LINK" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm12"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULc" org.eventb.core.predicate="RAIL_ELEM_CONN_ALL∈RAIL_ELEM → ℙ(ℙ(RAIL_SGMT))" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm13"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULd" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]=(RAIL_SGMT_CTOR[conn])∼" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm14"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULe" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒RAIL_SGMT_CTOR[conn]∩(id ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))=(∅ ⦂ ℙ(RAIL_CTOR×RAIL_CTOR))" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm15"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULf" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒dom(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm19"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULg" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒ran(RAIL_SGMT_CTOR[union(RAIL_ELEM_CONN_ALL(elem))])=RAIL_ELEM_CTOR(elem)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm20"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULh" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒dom(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm16"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULi" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn∈RAIL_ELEM_CONN_ALL(elem)⇒ran(RAIL_SGMT_CTOR[conn])⊆RAIL_ELEM_CTOR(elem)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm17"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULj" org.eventb.core.predicate="∀elem⦂RAIL_ELEM,conn1⦂ℙ(RAIL_SGMT),conn2⦂ℙ(RAIL_SGMT)·elem∈RAIL_ELEM∧conn1∈RAIL_ELEM_CONN_ALL(elem)∧conn2∈RAIL_ELEM_CONN_ALL(elem)∧conn1≠conn2⇒conn1∩conn2=(∅ ⦂ ℙ(RAIL_SGMT))" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm18"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULk" org.eventb.core.predicate="RAIL_ELEM_CONN_DEFAULT∈RAIL_ELEM → ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm21"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULl" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm22"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULm" org.eventb.core.predicate="RAIL_SGMT_ELEM={sgmt⦂RAIL_SGMT,elem⦂RAIL_ELEM·elem∈RAIL_ELEM∧sgmt∈union(RAIL_ELEM_CONN_ALL(elem)) ∣ sgmt ↦ elem}" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm23"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAULn" org.eventb.core.predicate="RAIL_SGMT_ELEM∈RAIL_SGMT → RAIL_ELEM" org.eventb.core.source="/RailGround/L1_Rails_C.buc|org.eventb.core.contextFile#L1_Rails_C|org.eventb.core.axiom#axm29"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="RAIL_ELEM_CONN_CURR" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="RAIL_ELEM_CONN·valid/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#HYPL1_Rails_D"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈dom(RAIL_ELEM_CONN_CURR)∧RAIL_ELEM_CONN_CURR∈RAIL_ELEM ⇸ ℙ(RAIL_SGMT)∧elem∈dom(RAIL_ELEM_CONN_ALL)∧RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.invariant#inv2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.invariant#inv2"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#HYPL1_Rails_D"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/RAIL_ELEM_CONN·type/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#EVTALLHYPRAIL_ELEM_CONN_CURS"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="RAIL_ELEM_CONN_DEFAULT∈RAIL_ELEM → ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poSequent#INITIALISATION\/RAIL_ELEM_CONN·type\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#HYPL1_Rails_D|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/RAIL_ELEM_CONN·valid/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#EVTALLHYPRAIL_ELEM_CONN_CURS"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒RAIL_ELEM_CONN_DEFAULT(elem)∈RAIL_ELEM_CONN_ALL(elem)" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.invariant#inv2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.invariant#inv2"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poSequent#INITIALISATION\/RAIL_ELEM_CONN·valid\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTRAIL_ELEM_CONN_CURS" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="RAIL_ELEM_CONN_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPRAIL_ELEM_CONN_CURS" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#EVTIDENTRAIL_ELEM_CONN_CURS" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="set_RAIL_ELEM_CONN_CURR/conn·valid/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#EVTHYPRAIL_ELEM_CONN_CURT'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="elem∈dom(RAIL_ELEM_CONN_ALL)∧RAIL_ELEM_CONN_ALL∈RAIL_ELEM ⇸ ℙ(ℙ(RAIL_SGMT))" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.event#evt1|org.eventb.core.guard#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.event#evt1|org.eventb.core.guard#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#EVTHYPRAIL_ELEM_CONN_CURT'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="set_RAIL_ELEM_CONN_CURR/RAIL_ELEM_CONN·type/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#EVTALLHYPRAIL_ELEM_CONN_CURT"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="RAIL_ELEM_CONN_CURR{elem ↦ conn}∈RAIL_ELEM → ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.event#evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poSequent#set_RAIL_ELEM_CONN_CURR\/RAIL_ELEM_CONN·type\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#HYPL1_Rails_D|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="set_RAIL_ELEM_CONN_CURR/RAIL_ELEM_CONN·valid/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#EVTALLHYPRAIL_ELEM_CONN_CURT"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀elem0⦂RAIL_ELEM·elem0∈RAIL_ELEM⇒(RAIL_ELEM_CONN_CURR{elem ↦ conn})(elem0)∈RAIL_ELEM_CONN_ALL(elem0)" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.invariant#inv2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.event#evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.invariant#inv2"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poSequent#set_RAIL_ELEM_CONN_CURR\/RAIL_ELEM_CONN·valid\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTRAIL_ELEM_CONN_CURT" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="conn" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
+<org.eventb.core.poIdentifier name="RAIL_ELEM_CONN_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+<org.eventb.core.poIdentifier name="elem" org.eventb.core.type="RAIL_ELEM"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPRAIL_ELEM_CONN_CURT'" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#EVTIDENTRAIL_ELEM_CONN_CURT" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="elem∈RAIL_ELEM" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.event#evt1|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPRAIL_ELEM_CONN_CURT" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#EVTHYPRAIL_ELEM_CONN_CURT'" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="conn∈RAIL_ELEM_CONN_ALL(elem)" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.event#evt1|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="conn∈ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.event#evt1|org.eventb.core.guard#\/"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPL1_Rails_D" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="RAIL_ELEM_CONN_CURR∈RAIL_ELEM → ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.invariant#inv1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#HYPL1_Rails_D" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒RAIL_ELEM_CONN_CURR(elem)∈RAIL_ELEM_CONN_ALL(elem)" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.invariant#inv2"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

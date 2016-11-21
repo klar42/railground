@@ -1,0 +1,158 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vacancy Detection</title>
+</head>
+<body>
+
+<h1>Vacancy Detection</h1>
+<p>This layer adds the track vacancy detection.</p>
+
+<h2>Definitions</h2>
+
+<dl>
+<dt>Track Vacancy Detection Section</dt>
+<dd>
+  A Track Vacancy Detection (TVD) Section is a scope of one Track Vacancy Detector. A TVD Section consists of multiple
+  Rail Segments (belonging to one or more Rail Elements); Each Rail Segment belongs to exactly one TVD Section, but Rail
+  Segments of one Rail Element may belong to one or more TVD Sections. Rail Segments of one TVP Section are either all
+  vacant or all occupied.
+</dd>
+<dt>TVD State</dt>
+<dd>
+  There are two TVD states defines - vacant and occupied.
+</dd>
+</dl>
+
+<h2>Model</h2>
+
+<h3>Carrier Sets</h3>
+
+<dl>
+<dt>TVD_SECT</dt>
+<dd>
+  All TVD Sections of the particular Station.
+</dd>
+<dt>TVD_STATE_ENUM</dt>
+<dd>
+  Enumeration of possible TVD Section states.
+</dd>
+</dl>
+
+<h3>Constants</h3>
+
+<dl>
+<dt>TVD_SECT_SGMT : TVD_SECT → ℙ(RAIL_SGMT)</dt>
+<dd>
+  Assignment of Rail Segments to TVD Sections.
+</dd>
+<dt>TVD_SGMT_SECT : RAIL_SGMT → TVD_SECT</dt>
+<dd>
+  Assigment of TVD Section to Rail Segments (derived from TVD_SECT_SGMT).
+</dd>
+<dt>TVD_STATE_VACANT : TVD_STATE_ENUM</dt>
+<dd>
+  TVD Section state - Vacant.
+</dd>
+<dt>TVD_STATE_OCCUPIED : TVD_STATE_ENUM</dt>
+<dd>
+  TVD Section state - Occupied.
+</dd>
+</dl>
+
+<h3>Variables</h3>
+
+<dl>
+<dt><em>RAIL_ELEM_POS_CURR : RAIL_ELEM → RAIL_POS_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>PATH_CURR : ℙ(PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>RAIL_ELEM_PATH_CURR : RAIL_ELEM ⇸ PATH_CURR</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>PATH_REQ : ℙ(PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>PATH_REL : ℙ(PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>TVDS_STATE_CURR : TVD_SECT → TVD_STATE_ENUM</dt>
+<dd>
+  Current state of the particular TVD Section.
+</dd>
+</dl>
+
+<h3>Events</h3>
+
+<dl>
+<dt><em>set_RAIL_ELEM_POS_CURR : (RAIL_ELEM, RAIL_POS_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_RAIL_ELEM_PATH : (RAIL_ELEM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>add_PATH_CURR : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>rem_PATH_CURR : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>add_PATH_REQ : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>rem_PATH_REQ : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_PATH_REL : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>set_TVDS_STATE_CURR : (TVD_SECT, TVD_STATE_ENUM)</dt>
+<dd>
+  Set new current state of the particular TVD Section.
+</dd>
+</dl>
+
+<h3>Invariants</h3>
+
+<p><em>None.</em></p>
+
+<h2>Example</h2>
+
+<pre>
+Simple example with one track and two points as well as two terminators on both ends:
+
+                   i j
+               ----*+*----
+              /           \
+   *+*-----*+*-----*+*-----*+*
+   a b     c d     e f     g h
+
+  X1    T       P1      P2   X2
+
+Rail connectors are represented by *
+Rail Link pairs (both directions) are represented by +
+Rail Segment pairs (both directions) are represented by a line \ / -
+
+Assumption: There is 1:1 mapping between the elements and TVD Sections.
+
+* partition(TVD_SECT, {VT1}, {VP1}, {VP2})
+* TVD_SECT_SGMT = {VT ↦ {bc, cb}, VP1 ↦ {di, id, de, ed}, VP2 ↦ {gf, fg, gj, jg}}
+* TVD_SGMT_SECT = {bc ↦ VT, cb ↦ VT, di ↦ VP1, id ↦ VP1, de ↦ VP1, ed ↦ VP1, gf ↦ VP2, fg ↦ VP2, gj ↦ VP2, jg ↦ VP2}
+</pre>
+
+</body>
+</html>

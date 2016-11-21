@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.comment="Movable elements position." org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="L1_Rails_C"/>
+<org.eventb.core.carrierSet name="set1" org.eventb.core.comment="[Abstract] Enumeration of all possible Element Positions." org.eventb.core.identifier="RAIL_POS_ENUM"/>
+<org.eventb.core.constant name="cst1" org.eventb.core.comment="[Abstract] Connectivity of the particular Rail Element for individual Element Positions." org.eventb.core.identifier="RAIL_ELEM_POS_CONN"/>
+<org.eventb.core.constant name="cst2" org.eventb.core.comment="[Abstract] Default Element Position of the particular Rail Element." org.eventb.core.identifier="RAIL_ELEM_POS_DEFAULT"/>
+<org.eventb.core.axiom name="axm1" org.eventb.core.label="RAIL_POS_ENUM·finite" org.eventb.core.predicate="finite(RAIL_POS_ENUM)"/>
+<org.eventb.core.axiom name="axm2" org.eventb.core.comment="Abstract." org.eventb.core.label="RAIL_ELEM_POS_CONN·type" org.eventb.core.predicate="RAIL_ELEM_POS_CONN ∈ RAIL_ELEM → (RAIL_POS_ENUM ⇸ ℙ(RAIL_SGMT))"/>
+<org.eventb.core.axiom name="axm3" org.eventb.core.comment="Connectivities for different positions are different." org.eventb.core.label="RAIL_ELEM_POS_CONN·diff" org.eventb.core.predicate="∀ elem, pos1, pos2&#10;· elem ∈ RAIL_ELEM&#10;∧ pos1 ∈ dom(RAIL_ELEM_POS_CONN(elem))&#10;∧ pos2 ∈ dom(RAIL_ELEM_POS_CONN(elem))&#10;∧ pos1 ≠ pos2&#10;⇒ RAIL_ELEM_POS_CONN(elem)(pos1) ≠ RAIL_ELEM_POS_CONN(elem)(pos2)"/>
+<org.eventb.core.axiom name="axm4" org.eventb.core.comment="Connectivity is consistent with the position." org.eventb.core.label="RAIL_ELEM_CONN_ALL·glue" org.eventb.core.predicate="RAIL_ELEM_CONN_ALL = {elem ↦ conn ∣ elem ∈ RAIL_ELEM ∧ conn = ran(RAIL_ELEM_POS_CONN(elem))}"/>
+<org.eventb.core.axiom name="axm5" org.eventb.core.comment="Connectivity is consistent with the position." org.eventb.core.label="RAIL_ELEM_CONN_ALL·valid" org.eventb.core.predicate="∀ elem · elem ∈ RAIL_ELEM ⇒ RAIL_ELEM_CONN_ALL(elem) = ran(RAIL_ELEM_POS_CONN(elem))" org.eventb.core.theorem="true"/>
+<org.eventb.core.axiom name="axm6" org.eventb.core.label="RAIL_ELEM_POS_DEFAULT·type" org.eventb.core.predicate="RAIL_ELEM_POS_DEFAULT ∈ RAIL_ELEM → RAIL_POS_ENUM"/>
+<org.eventb.core.axiom name="axm7" org.eventb.core.comment="Default position is valid." org.eventb.core.label="RAIL_ELEM_POS_DEFAULT·valid" org.eventb.core.predicate="∀ elem · elem ∈ RAIL_ELEM ⇒ RAIL_ELEM_POS_DEFAULT(elem) ∈ dom(RAIL_ELEM_POS_CONN(elem))"/>
+<org.eventb.core.axiom name="axm8" org.eventb.core.comment="Default connectivity for default positions." org.eventb.core.label="RAIL_ELEM_CONN_DEFAULT·glue" org.eventb.core.predicate="∀ elem · elem ∈ RAIL_ELEM ⇒ RAIL_ELEM_CONN_DEFAULT(elem) = RAIL_ELEM_POS_CONN(elem)(RAIL_ELEM_POS_DEFAULT(elem))"/>
+</org.eventb.core.contextFile>
