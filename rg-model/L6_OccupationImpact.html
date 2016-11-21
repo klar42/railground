@@ -1,0 +1,102 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Occupation Impact</title>
+</head>
+<body>
+
+<h1>Occupation Impact</h1>
+<p>This layer adds the impact of the track occupation on paths and signals.</p>
+
+<h2>Definitions</h2>
+
+<h2>Model</h2>
+
+<h3>Carrier Sets</h3>
+
+<p><em>None.</em></p>
+
+<h3>Constants</h3>
+
+<p><em>None.</em></p>
+
+<h3>Variables</h3>
+
+<dl>
+<dt><em>RAIL_ELEM_POS_CURR : RAIL_ELEM → RAIL_POS_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>PATH_CURR : ℙ(PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>RAIL_ELEM_PATH_CURR : RAIL_ELEM ⇸ PATH_CURR</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>PATH_REQ : ℙ(PATH_ENUM)</dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>PATH_REL : ℙ(PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>TVDS_STATE_CURR : TVD_SECT → TVD_STATE_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+</dl>
+
+<h3>Events</h3>
+
+<dl>
+<dt>set_RAIL_ELEM_POS_CURR : (RAIL_ELEM, RAIL_POS_ENUM)</dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>set_RAIL_ELEM_PATH : (RAIL_ELEM)</dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>add_PATH_CURR : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>rem_PATH_CURR : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>add_PATH_REQ : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>rem_PATH_REQ : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_PATH_REL : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>set_TVDS_STATE_CURR : (TVD_SECT, TVD_STATE_ENUM) <em>«refines» set_TVDS_STATE_CURR</em></dt>
+<dd>
+  Refinement: Set new current state of the particular TVD Section which isn't a part of any path.
+</dd>
+<dt>set_TVDS_STATE_PATH : (TVD_SECT, TVD_STATE_ENUM) <em>«refines» set_TVDS_STATE_CURR</em></dt>
+<dd>
+  Set new current state of the particular TVD Section which is a part of some path.
+</dd>
+</dl>
+
+<h3>Invariants</h3>
+
+<p><em>None.</em></p>
+
+<h2>Example</h2>
+
+<p><em>None.</em></p>
+
+</body>
+</html>

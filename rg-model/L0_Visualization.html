@@ -1,0 +1,230 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Visualization</title>
+</head>
+<body>
+
+<h1>Visualization</h1>
+<p>This layer adds support for model animation and visualization.</p>
+
+<h2>Model</h2>
+
+<h3>Carrier Sets</h3>
+
+<p><em>None.</em></p>
+
+<h3>Constants.</h3>
+
+<p><em>None.</em></p>
+
+<h3>Variables</h3>
+
+<dl>
+<dt><em>RAIL_ELEM_POS_CURR : RAIL_ELEM → RAIL_POS_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>PATH_CURR : ℙ(PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>RAIL_ELEM_PATH_CURR : RAIL_ELEM ⇸ PATH_CURR</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>PATH_REQ : ℙ(PATH_ENUM)</dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>PATH_REL : ℙ(PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>TVDS_STATE_CURR : TVD_SECT → TVD_STATE_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>SIGNAL_ASPECT_CURR : SIGNAL → SIGNAL_ASPECT_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>PATH_ACT : ℙ(PATH_ENUM)</dt>
+<dd>
+  Set of all active (requested or current) paths.
+</dd>
+<dt>PATH_SGMT_CURR : ℙ(RAIL_SGMT)</dt>
+<dd>
+  Set of all segments in all current paths.
+</dd>
+<dt>PATH_SGMT_REQ : ℙ(RAIL_SGMT)</dt>
+<dd>
+  Set of all segments in all requested paths.
+</dd>
+<dt>PATH_SGMT_REL : ℙ(RAIL_SGMT)</dt>
+<dd>
+  Set of all segments in all paths being released.
+</dd>
+<dt>PATH_SGMT_ACT : ℙ(RAIL_SGMT)</dt>
+<dd>
+  Set of all segments in all active paths.
+</dd>
+<dt>PATH_TVDS_CURR : ℙ(TVD_SECT)</dt>
+<dd>
+  Set of all TVD sections in all current paths.
+</dd>
+</dl>
+
+<h3>Events.</h3>
+
+<dl>
+<dt><em>set_RAIL_ELEM_POS_CURR : (RAIL_ELEM, RAIL_POS_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_RAIL_ELEM_PATH : (RAIL_ELEM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>add_PATH_CURR : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>rem_PATH_CURR : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>add_PATH_REQ : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>rem_PATH_REQ : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_PATH_REL : (PATH_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_TVDS_STATE_CURR : (TVD_SECT, TVD_STATE_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_TVDS_STATE_PATH : (TVD_SECT, TVD_STATE_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_SIGNAL_ASPECT_PROCEED : (SIGNAL, SIGNAL_ASPECT_ENUM)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt><em>set_SIGNAL_ASPECT_DEFAULT : (SIGNAL)</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+</dl>
+
+<h3>Invariants.</h3>
+
+<p><em>None.</em></p>
+
+<h2>Visualization</h2>
+
+<p>
+<table border="1">
+  <caption>Visualization of variables</caption>
+  <thead>
+    <th>Variable</th>
+    <th>Usage</th>
+  </thead>
+  <tbody>
+    <tr>
+      <th>RAIL_ELEM_POS_CURR  </th> <td>Current segments are visible</td>
+    </tr>
+    <tr>
+      <th>PATH_CURR           </th> <td>Controls path-related events</td>
+    </tr>
+    <tr>
+      <th>RAIL_ELEM_PATH_CURR </th> <td>---</td>
+    </tr>
+    <tr>
+      <th>PATH_REQ            </th> <td>Controls path-related events</td>
+    </tr>
+    <tr>
+      <th>PATH_REL            </th> <td>Controls path-related events</td>
+    </tr>
+    <tr>
+      <th>PATH_ACT            </th> <td>---</td>
+    </tr>
+    <tr>
+      <th>PATH_SGMT_CURR      </th> <td>---</td>
+    </tr>
+    <tr>
+      <th>PATH_SGMT_REQ       </th> <td>Path segment is shown dashed</td>
+    </tr>
+    <tr>
+      <th>PATH_SGMT_REL       </th> <td>Path segment is shown dotted</td>
+    </tr>
+    <tr>
+      <th>PATH_SGMT_ACT       </th> <td>Path segment is shown bold with arrow</td>
+    </tr>
+    <tr>
+      <th>PATH_TVDS_CURR     </th> <td>---</td>
+    </tr>
+    <tr>
+      <th>TVDS_STATE_CURR     </th> <td>Occupied segments are red</td>
+    </tr>
+    <tr>
+      <th>SIGNAL_ASPECT_CURR  </th> <td>Signal aspect is shown as read / green light</td>
+    </tr>
+  </tbody>
+</table>
+</p>
+
+<p>
+<table border="1">
+  <caption>Invocation of events</caption>
+  <thead>
+    <th>Event</th>
+    <th>Usage</th>
+  </thead>
+  <tbody>
+    <tr>
+      <th>set_RAIL_ELEM_POS_CURR   </th> <td>Point button "L" / "R" / "X" (Enabled if operation is enabled)</td>
+    </tr>
+    <tr>
+      <th>set_RAIL_ELEM_PATH       </th> <td>Point button "M" (Visible if operation is enabled)</td>
+    </tr>
+    <tr>
+      <th>add_PATH_CURR            </th> <td>Signal button "Sx !" (Enabled if operation is enabled)</td>
+    </tr>
+    <tr>
+      <th>rem_PATH_CURR            </th> <td>Signal button "#" (Visible if operation is enabled)</td>
+    </tr>
+    <tr>
+      <th>add_PATH_REQ             </th> <td>Signal button "Sx ?" (Enabled if operation is enabled)</td>
+    </tr>
+    <tr>
+      <th>rem_PATH_REQ             </th> <td>Signal button "#" (Visible if operation is enabled)</td>
+    </tr>
+    <tr>
+      <th>set_PATH_REL             </th> <td>Signal button "Sx %" (Enabled if operation is enabled)</td>
+    </tr>
+    <tr>
+      <th>set_TVDS_STATE_CURR      </th> <td>Track / Point / Crossing name</td>
+    </tr>
+    <tr>
+      <th>set_TVDS_STATE_PATH      </th> <td>Track / Point / Crossing name</td>
+    </tr>
+    <tr>
+      <th>set_SIGNAL_ASPECT_PROCEED</th> <td>Green signal light</td>
+    </tr>
+    <tr>
+      <th>set_SIGNAL_ASPECT_DEFAULT</th> <td>Red signal light</td>
+    </tr>
+  </tbody>
+</table>
+</p>
+
+</body>
+</html>

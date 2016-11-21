@@ -154,6 +154,20 @@
                         <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                         <isExpressionMode>false</isExpressionMode>
                       </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                      <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                        <type>#PREDICATE</type>
+                        <eval>P1T_P1L : PATH_SGMT_REL</eval>
+                        <value class="int">2</value>
+                        <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                        <isExpressionMode>false</isExpressionMode>
+                      </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                      <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                        <type>#PREDICATE</type>
+                        <eval>P1L_P1T : PATH_SGMT_REL</eval>
+                        <value class="int">2</value>
+                        <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                        <isExpressionMode>false</isExpressionMode>
+                      </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                     </setAttributeObjects>
                   </de.bmotionstudio.gef.editor.observer.SetAttribute>
                 </entry>
@@ -401,6 +415,20 @@
                                 <blue>0</blue>
                               </value>
                               <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
+                              <isExpressionMode>false</isExpressionMode>
+                            </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                            <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                              <type>#PREDICATE</type>
+                              <eval>C1C_C1B : PATH_SGMT_REL</eval>
+                              <value class="int">2</value>
+                              <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                              <isExpressionMode>false</isExpressionMode>
+                            </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                            <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                              <type>#PREDICATE</type>
+                              <eval>C1B_C1C : PATH_SGMT_REL</eval>
+                              <value class="int">2</value>
+                              <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
                               <isExpressionMode>false</isExpressionMode>
                             </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                           </setAttributeObjects>
@@ -660,6 +688,20 @@
                                       <blue>0</blue>
                                     </value>
                                     <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
+                                    <isExpressionMode>false</isExpressionMode>
+                                  </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                  <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                    <type>#PREDICATE</type>
+                                    <eval>C1A_C1D : PATH_SGMT_REL</eval>
+                                    <value class="int">2</value>
+                                    <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                    <isExpressionMode>false</isExpressionMode>
+                                  </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                  <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                    <type>#PREDICATE</type>
+                                    <eval>C1D_C1A : PATH_SGMT_REL</eval>
+                                    <value class="int">2</value>
+                                    <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
                                     <isExpressionMode>false</isExpressionMode>
                                   </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                 </setAttributeObjects>
@@ -931,6 +973,20 @@
                                           <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                                           <isExpressionMode>false</isExpressionMode>
                                         </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                        <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                          <type>#PREDICATE</type>
+                                          <eval>P2T_P2R : PATH_SGMT_REL</eval>
+                                          <value class="int">2</value>
+                                          <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                          <isExpressionMode>false</isExpressionMode>
+                                        </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                        <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                          <type>#PREDICATE</type>
+                                          <eval>P2R_P2T : PATH_SGMT_REL</eval>
+                                          <value class="int">2</value>
+                                          <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                          <isExpressionMode>false</isExpressionMode>
+                                        </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                       </setAttributeObjects>
                                     </de.bmotionstudio.gef.editor.observer.SetAttribute>
                                   </entry>
@@ -1187,6 +1243,20 @@
                                                 <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                                                 <isExpressionMode>false</isExpressionMode>
                                               </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                              <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                <type>#PREDICATE</type>
+                                                <eval>T3A_T3B : PATH_SGMT_REL</eval>
+                                                <value class="int">2</value>
+                                                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                <isExpressionMode>false</isExpressionMode>
+                                              </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                              <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                <type>#PREDICATE</type>
+                                                <eval>T3B_T3A : PATH_SGMT_REL</eval>
+                                                <value class="int">2</value>
+                                                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                <isExpressionMode>false</isExpressionMode>
+                                              </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                             </setAttributeObjects>
                                           </de.bmotionstudio.gef.editor.observer.SetAttribute>
                                         </entry>
@@ -1202,7 +1272,7 @@
                                         <entry>
                                           <string>de.bmotionstudio.gef.editor.attribute.BAttributeLabel</string>
                                           <de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
-                                            <value class="string">T3</value>
+                                            <value class="string"></value>
                                           </de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
                                         </entry>
                                         <entry>
@@ -1452,6 +1522,20 @@
                                                       <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                                                       <isExpressionMode>false</isExpressionMode>
                                                     </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                    <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                      <type>#PREDICATE</type>
+                                                      <eval>T4A_T4B : PATH_SGMT_REL</eval>
+                                                      <value class="int">2</value>
+                                                      <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                      <isExpressionMode>false</isExpressionMode>
+                                                    </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                    <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                      <type>#PREDICATE</type>
+                                                      <eval>T4B_T4A : PATH_SGMT_REL</eval>
+                                                      <value class="int">2</value>
+                                                      <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                      <isExpressionMode>false</isExpressionMode>
+                                                    </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                                   </setAttributeObjects>
                                                 </de.bmotionstudio.gef.editor.observer.SetAttribute>
                                               </entry>
@@ -1467,7 +1551,7 @@
                                               <entry>
                                                 <string>de.bmotionstudio.gef.editor.attribute.BAttributeLabel</string>
                                                 <de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
-                                                  <value class="string">T4</value>
+                                                  <value class="string"></value>
                                                 </de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
                                               </entry>
                                               <entry>
@@ -1733,6 +1817,20 @@
                                                   <blue>0</blue>
                                                 </value>
                                                 <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
+                                                <isExpressionMode>false</isExpressionMode>
+                                              </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                              <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                <type>#PREDICATE</type>
+                                                <eval>P2T_P2L : PATH_SGMT_REL</eval>
+                                                <value class="int">2</value>
+                                                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                <isExpressionMode>false</isExpressionMode>
+                                              </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                              <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                <type>#PREDICATE</type>
+                                                <eval>P2L_P2T : PATH_SGMT_REL</eval>
+                                                <value class="int">2</value>
+                                                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
                                                 <isExpressionMode>false</isExpressionMode>
                                               </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                             </setAttributeObjects>
@@ -2005,6 +2103,20 @@
                                                       <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                                                       <isExpressionMode>false</isExpressionMode>
                                                     </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                    <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                      <type>#PREDICATE</type>
+                                                      <eval>P1T_P1R : PATH_SGMT_REL</eval>
+                                                      <value class="int">2</value>
+                                                      <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                      <isExpressionMode>false</isExpressionMode>
+                                                    </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                    <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                      <type>#PREDICATE</type>
+                                                      <eval>P1R_P1T : PATH_SGMT_REL</eval>
+                                                      <value class="int">2</value>
+                                                      <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                      <isExpressionMode>false</isExpressionMode>
+                                                    </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                                   </setAttributeObjects>
                                                 </de.bmotionstudio.gef.editor.observer.SetAttribute>
                                               </entry>
@@ -2186,6 +2298,20 @@
                                       <blue>0</blue>
                                     </value>
                                     <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
+                                    <isExpressionMode>false</isExpressionMode>
+                                  </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                  <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                    <type>#PREDICATE</type>
+                                    <eval>C1B_C1C : PATH_SGMT_REL</eval>
+                                    <value class="int">2</value>
+                                    <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                    <isExpressionMode>false</isExpressionMode>
+                                  </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                  <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                    <type>#PREDICATE</type>
+                                    <eval>C1C_C1B : PATH_SGMT_REL</eval>
+                                    <value class="int">2</value>
+                                    <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
                                     <isExpressionMode>false</isExpressionMode>
                                   </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                 </setAttributeObjects>
@@ -2457,6 +2583,20 @@
                                           <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                                           <isExpressionMode>false</isExpressionMode>
                                         </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                        <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                          <type>#PREDICATE</type>
+                                          <eval>P3T_P3L : PATH_SGMT_REL</eval>
+                                          <value class="int">2</value>
+                                          <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                          <isExpressionMode>false</isExpressionMode>
+                                        </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                        <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                          <type>#PREDICATE</type>
+                                          <eval>P3L_P3T : PATH_SGMT_REL</eval>
+                                          <value class="int">2</value>
+                                          <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                          <isExpressionMode>false</isExpressionMode>
+                                        </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                       </setAttributeObjects>
                                     </de.bmotionstudio.gef.editor.observer.SetAttribute>
                                   </entry>
@@ -2718,6 +2858,20 @@
                                                   <blue>0</blue>
                                                 </value>
                                                 <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
+                                                <isExpressionMode>false</isExpressionMode>
+                                              </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                              <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                <type>#PREDICATE</type>
+                                                <eval>P3T_P3R : PATH_SGMT_REL</eval>
+                                                <value class="int">2</value>
+                                                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                <isExpressionMode>false</isExpressionMode>
+                                              </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                              <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                <type>#PREDICATE</type>
+                                                <eval>P3R_P3T : PATH_SGMT_REL</eval>
+                                                <value class="int">2</value>
+                                                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
                                                 <isExpressionMode>false</isExpressionMode>
                                               </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                             </setAttributeObjects>
@@ -2990,6 +3144,20 @@
                                                       <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                                                       <isExpressionMode>false</isExpressionMode>
                                                     </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                    <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                      <type>#PREDICATE</type>
+                                                      <eval>P4T_P4L : PATH_SGMT_REL</eval>
+                                                      <value class="int">2</value>
+                                                      <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                      <isExpressionMode>false</isExpressionMode>
+                                                    </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                    <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                      <type>#PREDICATE</type>
+                                                      <eval>P4L_P4T : PATH_SGMT_REL</eval>
+                                                      <value class="int">2</value>
+                                                      <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                      <isExpressionMode>false</isExpressionMode>
+                                                    </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                                   </setAttributeObjects>
                                                 </de.bmotionstudio.gef.editor.observer.SetAttribute>
                                               </entry>
@@ -3252,6 +3420,20 @@
                                                             <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                                                             <isExpressionMode>false</isExpressionMode>
                                                           </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                          <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                            <type>#PREDICATE</type>
+                                                            <eval>P4T_P4R : PATH_SGMT_REL</eval>
+                                                            <value class="int">2</value>
+                                                            <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                            <isExpressionMode>false</isExpressionMode>
+                                                          </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                          <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                            <type>#PREDICATE</type>
+                                                            <eval>P4R_P4T : PATH_SGMT_REL</eval>
+                                                            <value class="int">2</value>
+                                                            <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                            <isExpressionMode>false</isExpressionMode>
+                                                          </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                                         </setAttributeObjects>
                                                       </de.bmotionstudio.gef.editor.observer.SetAttribute>
                                                     </entry>
@@ -3501,6 +3683,20 @@
                                                                   <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                                                                   <isExpressionMode>false</isExpressionMode>
                                                                 </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                                <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                                  <type>#PREDICATE</type>
+                                                                  <eval>C1A_C1D : PATH_SGMT_REL</eval>
+                                                                  <value class="int">2</value>
+                                                                  <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                                  <isExpressionMode>false</isExpressionMode>
+                                                                </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                                <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                                  <type>#PREDICATE</type>
+                                                                  <eval>C1D_C1A : PATH_SGMT_REL</eval>
+                                                                  <value class="int">2</value>
+                                                                  <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                                  <isExpressionMode>false</isExpressionMode>
+                                                                </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                                               </setAttributeObjects>
                                                             </de.bmotionstudio.gef.editor.observer.SetAttribute>
                                                           </entry>
@@ -3684,6 +3880,20 @@
                                                             <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                                                             <isExpressionMode>false</isExpressionMode>
                                                           </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                          <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                            <type>#PREDICATE</type>
+                                                            <eval>T7A_T7B : PATH_SGMT_REL</eval>
+                                                            <value class="int">2</value>
+                                                            <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                            <isExpressionMode>false</isExpressionMode>
+                                                          </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                          <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                            <type>#PREDICATE</type>
+                                                            <eval>T7B_T7A : PATH_SGMT_REL</eval>
+                                                            <value class="int">2</value>
+                                                            <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                            <isExpressionMode>false</isExpressionMode>
+                                                          </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                                         </setAttributeObjects>
                                                       </de.bmotionstudio.gef.editor.observer.SetAttribute>
                                                     </entry>
@@ -3699,7 +3909,7 @@
                                                     <entry>
                                                       <string>de.bmotionstudio.gef.editor.attribute.BAttributeLabel</string>
                                                       <de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
-                                                        <value class="string">T7</value>
+                                                        <value class="string"></value>
                                                       </de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
                                                     </entry>
                                                     <entry>
@@ -3949,6 +4159,20 @@
                                                                   <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                                                                   <isExpressionMode>false</isExpressionMode>
                                                                 </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                                <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                                  <type>#PREDICATE</type>
+                                                                  <eval>T8A_T8B : PATH_SGMT_REL</eval>
+                                                                  <value class="int">2</value>
+                                                                  <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                                  <isExpressionMode>false</isExpressionMode>
+                                                                </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                                <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                                  <type>#PREDICATE</type>
+                                                                  <eval>T8B_T8A : PATH_SGMT_REL</eval>
+                                                                  <value class="int">2</value>
+                                                                  <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                                  <isExpressionMode>false</isExpressionMode>
+                                                                </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                                               </setAttributeObjects>
                                                             </de.bmotionstudio.gef.editor.observer.SetAttribute>
                                                           </entry>
@@ -3964,7 +4188,7 @@
                                                           <entry>
                                                             <string>de.bmotionstudio.gef.editor.attribute.BAttributeLabel</string>
                                                             <de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
-                                                              <value class="string">T8</value>
+                                                              <value class="string"></value>
                                                             </de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
                                                           </entry>
                                                           <entry>
@@ -4238,6 +4462,20 @@
                                                 <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                                                 <isExpressionMode>false</isExpressionMode>
                                               </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                              <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                <type>#PREDICATE</type>
+                                                <eval>T6A_T6B : PATH_SGMT_REL</eval>
+                                                <value class="int">2</value>
+                                                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                <isExpressionMode>false</isExpressionMode>
+                                              </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                              <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                <type>#PREDICATE</type>
+                                                <eval>T6B_T6A : PATH_SGMT_REL</eval>
+                                                <value class="int">2</value>
+                                                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                <isExpressionMode>false</isExpressionMode>
+                                              </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                             </setAttributeObjects>
                                           </de.bmotionstudio.gef.editor.observer.SetAttribute>
                                         </entry>
@@ -4253,7 +4491,7 @@
                                         <entry>
                                           <string>de.bmotionstudio.gef.editor.attribute.BAttributeLabel</string>
                                           <de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
-                                            <value class="string">T6</value>
+                                            <value class="string"></value>
                                           </de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
                                         </entry>
                                         <entry>
@@ -4505,6 +4743,20 @@
                                                       <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                                                       <isExpressionMode>false</isExpressionMode>
                                                     </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                    <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                      <type>#PREDICATE</type>
+                                                      <eval>T5A_T5B : PATH_SGMT_REL</eval>
+                                                      <value class="int">2</value>
+                                                      <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                      <isExpressionMode>false</isExpressionMode>
+                                                    </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                    <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                                                      <type>#PREDICATE</type>
+                                                      <eval>T5B_T5A : PATH_SGMT_REL</eval>
+                                                      <value class="int">2</value>
+                                                      <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                                                      <isExpressionMode>false</isExpressionMode>
+                                                    </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                                                   </setAttributeObjects>
                                                 </de.bmotionstudio.gef.editor.observer.SetAttribute>
                                               </entry>
@@ -4520,7 +4772,7 @@
                                               <entry>
                                                 <string>de.bmotionstudio.gef.editor.attribute.BAttributeLabel</string>
                                                 <de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
-                                                  <value class="string">T5</value>
+                                                  <value class="string"></value>
                                                 </de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
                                               </entry>
                                               <entry>
@@ -4807,6 +5059,20 @@
                         <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                         <isExpressionMode>false</isExpressionMode>
                       </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                      <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                        <type>#PREDICATE</type>
+                        <eval>T2A_T2B : PATH_SGMT_REL</eval>
+                        <value class="int">2</value>
+                        <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                        <isExpressionMode>false</isExpressionMode>
+                      </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                      <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                        <type>#PREDICATE</type>
+                        <eval>T2B_T2A : PATH_SGMT_REL</eval>
+                        <value class="int">2</value>
+                        <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                        <isExpressionMode>false</isExpressionMode>
+                      </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                     </setAttributeObjects>
                   </de.bmotionstudio.gef.editor.observer.SetAttribute>
                 </entry>
@@ -4822,7 +5088,7 @@
                 <entry>
                   <string>de.bmotionstudio.gef.editor.attribute.BAttributeLabel</string>
                   <de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
-                    <value class="string">T2</value>
+                    <value class="string"></value>
                   </de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
                 </entry>
                 <entry>
@@ -5074,6 +5340,20 @@
                               <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeForegroundColor</attribute>
                               <isExpressionMode>false</isExpressionMode>
                             </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                            <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                              <type>#PREDICATE</type>
+                              <eval>T1A_T1B : PATH_SGMT_REL</eval>
+                              <value class="int">2</value>
+                              <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                              <isExpressionMode>false</isExpressionMode>
+                            </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                            <de.bmotionstudio.gef.editor.observer.SetAttributeObject>
+                              <type>#PREDICATE</type>
+                              <eval>T1B_T1A : PATH_SGMT_REL</eval>
+                              <value class="int">2</value>
+                              <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeLineStyle</attribute>
+                              <isExpressionMode>false</isExpressionMode>
+                            </de.bmotionstudio.gef.editor.observer.SetAttributeObject>
                           </setAttributeObjects>
                         </de.bmotionstudio.gef.editor.observer.SetAttribute>
                       </entry>
@@ -5089,7 +5369,7 @@
                       <entry>
                         <string>de.bmotionstudio.gef.editor.attribute.BAttributeLabel</string>
                         <de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
-                          <value class="string">T1</value>
+                          <value class="string"></value>
                         </de.bmotionstudio.gef.editor.attribute.BAttributeLabel>
                       </entry>
                       <entry>
@@ -5476,7 +5756,47 @@
     <de.bmotionstudio.gef.editor.model.BText>
       <children/>
       <observers/>
-      <events/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VP1 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP1)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VP1 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VP1 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP1)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VP1 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VP1 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP1)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VP1 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VP1 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP1)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VP1 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
       <attributes>
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
@@ -6111,7 +6431,47 @@
     <de.bmotionstudio.gef.editor.model.BText>
       <children/>
       <observers/>
-      <events/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VP2 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP2)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VP2 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VP2 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP2)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VP2 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VP2 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP2)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VP2 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VP2 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP2)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VP2 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
       <attributes>
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
@@ -6226,7 +6586,47 @@
     <de.bmotionstudio.gef.editor.model.BText>
       <children/>
       <observers/>
-      <events/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VP3 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP3)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VP3 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VP3 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP3)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VP3 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VP3 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP3)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VP3 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VP3 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP3)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VP3 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
       <attributes>
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
@@ -6341,7 +6741,47 @@
     <de.bmotionstudio.gef.editor.model.BText>
       <children/>
       <observers/>
-      <events/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VP4 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP4)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VP4 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VP4 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP4)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VP4 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VP4 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP4)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VP4 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VP4 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VP4)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VP4 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
       <attributes>
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
@@ -6457,7 +6897,47 @@
     <de.bmotionstudio.gef.editor.model.BText>
       <children/>
       <observers/>
-      <events/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VC1 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VC1)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VC1 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VC1 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VC1)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VC1 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VC1 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VC1)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VC1 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VC1 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VC1)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VC1 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
       <attributes>
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
@@ -11420,8 +11900,8 @@
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
             <value class="org.eclipse.draw2d.geometry.Point">
-              <x>890</x>
-              <y>95</y>
+              <x>870</x>
+              <y>100</y>
             </value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
         </entry>
@@ -11440,13 +11920,13 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeY>
-            <value class="int">95</value>
+            <value class="int">100</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeY>
         </entry>
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeX>
-            <value class="int">890</value>
+            <value class="int">870</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeX>
         </entry>
         <entry>
@@ -11535,8 +12015,8 @@
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
             <value class="org.eclipse.draw2d.geometry.Point">
-              <x>60</x>
-              <y>100</y>
+              <x>80</x>
+              <y>105</y>
             </value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
         </entry>
@@ -11561,7 +12041,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeX>
-            <value class="int">60</value>
+            <value class="int">80</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeX>
         </entry>
         <entry>
@@ -11650,7 +12130,7 @@
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
             <value class="org.eclipse.draw2d.geometry.Point">
-              <x>60</x>
+              <x>80</x>
               <y>280</y>
             </value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
@@ -11676,7 +12156,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeX>
-            <value class="int">60</value>
+            <value class="int">80</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeX>
         </entry>
         <entry>
@@ -11765,7 +12245,7 @@
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
             <value class="org.eclipse.draw2d.geometry.Point">
-              <x>890</x>
+              <x>870</x>
               <y>275</y>
             </value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
@@ -11791,7 +12271,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeX>
-            <value class="int">890</value>
+            <value class="int">870</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeX>
         </entry>
         <entry>
@@ -14121,7 +14601,9 @@
                 <entry>
                   <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
                   <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
-                    <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+                    <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+                      <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+                    </value>
                   </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
                 </entry>
                 <entry>
@@ -14977,6 +15459,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R01</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">S4 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R01</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -14998,6 +15498,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R01 : PATH_REQ &amp; R01 /: PATH_CURR</executePredicate>
+                <predicate>path=R01</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R01 : PATH_CURR &amp; R01 /: PATH_REL</executePredicate>
                 <predicate>path=R01</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -15154,6 +15662,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R02</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">S0 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R02</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -15175,6 +15701,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R02 : PATH_REQ &amp; R02 /: PATH_CURR</executePredicate>
+                <predicate>path=R02</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R02 : PATH_CURR &amp; R02 /: PATH_REL</executePredicate>
                 <predicate>path=R02</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -15331,6 +15865,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R09</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">E2 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R09</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -15352,6 +15904,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R09 : PATH_REQ &amp; R09 /: PATH_CURR</executePredicate>
+                <predicate>path=R09</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R09 : PATH_CURR &amp; R09 /: PATH_REL</executePredicate>
                 <predicate>path=R09</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -15508,6 +16068,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R06</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">S8 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R06</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -15529,6 +16107,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R06 : PATH_REQ &amp; R06 /: PATH_CURR</executePredicate>
+                <predicate>path=R06</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R06 : PATH_CURR &amp; R06 /: PATH_REL</executePredicate>
                 <predicate>path=R06</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -15685,6 +16271,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R07</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">S9 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R07</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -15706,6 +16310,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R07 : PATH_REQ &amp; R07 /: PATH_CURR</executePredicate>
+                <predicate>path=R07</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R07 : PATH_CURR &amp; R07 /: PATH_REL</executePredicate>
                 <predicate>path=R07</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -15862,6 +16474,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R03</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">E1 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R03</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -15883,6 +16513,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R03 : PATH_REQ &amp; R03 /: PATH_CURR</executePredicate>
+                <predicate>path=R03</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R03 : PATH_CURR &amp; R03 /: PATH_REL</executePredicate>
                 <predicate>path=R03</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -15955,7 +16593,7 @@
           <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
             <value class="org.eclipse.draw2d.geometry.Point">
               <x>775</x>
-              <y>115</y>
+              <y>125</y>
             </value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
         </entry>
@@ -15968,7 +16606,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeY>
-            <value class="int">115</value>
+            <value class="int">125</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeY>
         </entry>
         <entry>
@@ -16039,6 +16677,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R04</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">S2 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R04</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -16060,6 +16716,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R04 : PATH_REQ &amp; R04 /: PATH_CURR</executePredicate>
+                <predicate>path=R04</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R04 : PATH_CURR &amp; R04 /: PATH_REL</executePredicate>
                 <predicate>path=R04</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -16216,6 +16880,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R05</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">S4 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R05</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -16237,6 +16919,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R05 : PATH_REQ &amp; R05 /: PATH_CURR</executePredicate>
+                <predicate>path=R05</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R05 : PATH_CURR &amp; R05 /: PATH_REL</executePredicate>
                 <predicate>path=R05</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -16393,6 +17083,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R12</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">E3 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R12</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -16414,6 +17122,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R12 : PATH_REQ &amp; R12 /: PATH_CURR</executePredicate>
+                <predicate>path=R12</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R12 : PATH_CURR &amp; R12 /: PATH_REL</executePredicate>
                 <predicate>path=R12</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -16570,6 +17286,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R10</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">S6 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R10</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -16591,6 +17325,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R10 : PATH_REQ &amp; R10 /: PATH_CURR</executePredicate>
+                <predicate>path=R10</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R10 : PATH_CURR &amp; R10 /: PATH_REL</executePredicate>
                 <predicate>path=R10</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -16747,6 +17489,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R11</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">S8 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R11</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -16768,6 +17528,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R11 : PATH_REQ &amp; R11 /: PATH_CURR</executePredicate>
+                <predicate>path=R11</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R11 : PATH_CURR &amp; R11 /: PATH_REL</executePredicate>
                 <predicate>path=R11</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -16924,6 +17692,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R08</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">E4 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R08</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -16945,6 +17731,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R08 : PATH_REQ &amp; R08 /: PATH_CURR</executePredicate>
+                <predicate>path=R08</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R08 : PATH_CURR &amp; R08 /: PATH_REL</executePredicate>
                 <predicate>path=R08</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -17017,7 +17811,7 @@
           <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
             <value class="org.eclipse.draw2d.geometry.Point">
               <x>775</x>
-              <y>295</y>
+              <y>305</y>
             </value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
         </entry>
@@ -17030,7 +17824,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeY>
-            <value class="int">295</value>
+            <value class="int">305</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeY>
         </entry>
         <entry>
@@ -17101,6 +17895,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R13</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">S6 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R13</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -17122,6 +17934,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R13 : PATH_REQ &amp; R13 /: PATH_CURR</executePredicate>
+                <predicate>path=R13</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R13 : PATH_CURR &amp; R13 /: PATH_REL</executePredicate>
                 <predicate>path=R13</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -17278,6 +18098,24 @@
                 <random>false</random>
                 <maxrandom>1</maxrandom>
               </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="boolean">true</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeEnabled</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R14</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <value class="string">S2 %</value>
+                <attribute>de.bmotionstudio.gef.editor.attribute.BAttributeText</attribute>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <predicate>path=R14</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
             </list>
           </de.bmotionstudio.gef.editor.observer.ListenOperationByPredicate>
         </entry>
@@ -17299,6 +18137,14 @@
                 <isExpressionMode>false</isExpressionMode>
                 <operationName>add_PATH_CURR</operationName>
                 <executePredicate>R14 : PATH_REQ &amp; R14 /: PATH_CURR</executePredicate>
+                <predicate>path=R14</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_PATH_REL</operationName>
+                <executePredicate>R14 : PATH_CURR &amp; R14 /: PATH_REL</executePredicate>
                 <predicate>path=R14</predicate>
                 <random>false</random>
                 <maxrandom>1</maxrandom>
@@ -17368,7 +18214,12 @@
         </entry>
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
-          <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates/>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>490</x>
+              <y>125</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
         </entry>
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeHeight</string>
@@ -17379,7 +18230,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeY>
-            <value class="int">115</value>
+            <value class="int">125</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeY>
         </entry>
         <entry>
@@ -18817,8 +19668,8 @@
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
             <value class="org.eclipse.draw2d.geometry.Point">
-              <x>890</x>
-              <y>115</y>
+              <x>870</x>
+              <y>127</y>
             </value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
         </entry>
@@ -18831,7 +19682,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeY>
-            <value class="int">115</value>
+            <value class="int">127</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeY>
         </entry>
         <entry>
@@ -18843,7 +19694,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeX>
-            <value class="int">890</value>
+            <value class="int">870</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeX>
         </entry>
         <entry>
@@ -18997,7 +19848,7 @@
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
             <value class="org.eclipse.draw2d.geometry.Point">
-              <x>60</x>
+              <x>80</x>
               <y>70</y>
             </value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
@@ -19023,7 +19874,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeX>
-            <value class="int">60</value>
+            <value class="int">80</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeX>
         </entry>
         <entry>
@@ -19177,7 +20028,7 @@
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
             <value class="org.eclipse.draw2d.geometry.Point">
-              <x>60</x>
+              <x>80</x>
               <y>250</y>
             </value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
@@ -19203,7 +20054,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeX>
-            <value class="int">60</value>
+            <value class="int">80</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeX>
         </entry>
         <entry>
@@ -19357,8 +20208,8 @@
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
             <value class="org.eclipse.draw2d.geometry.Point">
-              <x>890</x>
-              <y>295</y>
+              <x>870</x>
+              <y>305</y>
             </value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
         </entry>
@@ -19371,7 +20222,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeY>
-            <value class="int">295</value>
+            <value class="int">305</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeY>
         </entry>
         <entry>
@@ -19383,7 +20234,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeX>
-            <value class="int">890</value>
+            <value class="int">870</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeX>
         </entry>
         <entry>
@@ -19423,7 +20274,9 @@
                 <entry>
                   <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
                   <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
-                    <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+                    <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+                      <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+                    </value>
                   </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
                 </entry>
                 <entry>
@@ -19524,7 +20377,9 @@
                 <entry>
                   <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
                   <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
-                    <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+                    <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+                      <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+                    </value>
                   </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
                 </entry>
                 <entry>
@@ -19726,7 +20581,9 @@
                 <entry>
                   <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
                   <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
-                    <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+                    <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+                      <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+                    </value>
                   </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
                 </entry>
                 <entry>
@@ -19899,7 +20756,7 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeID</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeID>
-            <value class="string">control_188</value>
+            <value class="string">EXCL_table</value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeID>
         </entry>
         <entry>
@@ -19911,7 +20768,9 @@
         <entry>
           <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
           <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
-            <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+            <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+              <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+            </value>
           </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
         </entry>
         <entry>
@@ -19977,6 +20836,1241 @@
       <sourceConnections/>
       <targetConnections/>
     </de.bmotionstudio.gef.editor.model.BTable>
+    <de.bmotionstudio.gef.editor.model.BText>
+      <children/>
+      <observers/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT1 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT1)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT1 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT1 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT1)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT1 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT1 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT1)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT1 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT1 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT1)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT1 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
+      <attributes>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeFont</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+            <value class="string">1||9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|0|0|0|0|</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeTextColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeID</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeID>
+            <value class="string">T1_label</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeID>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeWidth</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+            <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+              <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeText</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeText>
+            <value class="string">T1</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeText>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>800</x>
+              <y>90</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeHeight</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCustom</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+            <value class="string"></value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeY>
+            <value class="int">90</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeY>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeX>
+            <value class="int">800</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeX>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeSize</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>20</x>
+              <y>20</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+        </entry>
+      </attributes>
+      <sourceConnections/>
+      <targetConnections/>
+    </de.bmotionstudio.gef.editor.model.BText>
+    <de.bmotionstudio.gef.editor.model.BText>
+      <children/>
+      <observers/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT2 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT2)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT2 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT2 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT2)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT2 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT2 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT2)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT2 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT2 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT2)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT2 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
+      <attributes>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeFont</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+            <value class="string">1||9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|0|0|0|0|</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeTextColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeID</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeID>
+            <value class="string">T2_label</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeID>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeWidth</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+            <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+              <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeText</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeText>
+            <value class="string">T2</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeText>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>700</x>
+              <y>90</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeHeight</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCustom</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+            <value class="string"></value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeY>
+            <value class="int">90</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeY>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeX>
+            <value class="int">700</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeX>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeSize</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>20</x>
+              <y>20</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+        </entry>
+      </attributes>
+      <sourceConnections/>
+      <targetConnections/>
+    </de.bmotionstudio.gef.editor.model.BText>
+    <de.bmotionstudio.gef.editor.model.BText>
+      <children/>
+      <observers/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT3 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT3)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT3 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT3 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT3)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT3 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT3 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT3)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT3 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT3 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT3)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT3 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
+      <attributes>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeFont</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+            <value class="string">1||9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|0|0|0|0|</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeTextColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeID</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeID>
+            <value class="string">T3_label</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeID>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeWidth</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+            <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+              <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeText</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeText>
+            <value class="string">T3</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeText>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>250</x>
+              <y>90</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeHeight</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCustom</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+            <value class="string"></value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeY>
+            <value class="int">90</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeY>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeX>
+            <value class="int">250</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeX>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeSize</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>20</x>
+              <y>20</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+        </entry>
+      </attributes>
+      <sourceConnections/>
+      <targetConnections/>
+    </de.bmotionstudio.gef.editor.model.BText>
+    <de.bmotionstudio.gef.editor.model.BText>
+      <children/>
+      <observers/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT4 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT4)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT4 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT4 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT4)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT4 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT4 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT4)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT4 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT4 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT4)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT4 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
+      <attributes>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeFont</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+            <value class="string">1||9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|0|0|0|0|</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeTextColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeID</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeID>
+            <value class="string">T4_label</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeID>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeWidth</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+            <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+              <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeText</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeText>
+            <value class="string">T4</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeText>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>150</x>
+              <y>90</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeHeight</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCustom</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+            <value class="string"></value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeY>
+            <value class="int">90</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeY>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeX>
+            <value class="int">150</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeX>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeSize</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>20</x>
+              <y>20</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+        </entry>
+      </attributes>
+      <sourceConnections/>
+      <targetConnections/>
+    </de.bmotionstudio.gef.editor.model.BText>
+    <de.bmotionstudio.gef.editor.model.BText>
+      <children/>
+      <observers/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT5 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT5)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT5 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT5 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT5)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT5 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT5 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT5)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT5 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT5 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT5)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT5 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
+      <attributes>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeFont</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+            <value class="string">1||9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|0|0|0|0|</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeTextColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeID</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeID>
+            <value class="string">T5_label</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeID>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeWidth</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+            <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+              <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeText</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeText>
+            <value class="string">T5</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeText>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>150</x>
+              <y>270</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeHeight</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCustom</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+            <value class="string"></value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeY>
+            <value class="int">270</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeY>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeX>
+            <value class="int">150</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeX>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeSize</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>20</x>
+              <y>20</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+        </entry>
+      </attributes>
+      <sourceConnections/>
+      <targetConnections/>
+    </de.bmotionstudio.gef.editor.model.BText>
+    <de.bmotionstudio.gef.editor.model.BText>
+      <children/>
+      <observers/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT6 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT6)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT6 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT6 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT6)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT6 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT6 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT6)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT6 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT6 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT6)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT6 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
+      <attributes>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeFont</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+            <value class="string">1||9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|0|0|0|0|</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeTextColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeID</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeID>
+            <value class="string">T6_label</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeID>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeWidth</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+            <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+              <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeText</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeText>
+            <value class="string">T6</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeText>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates/>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeHeight</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCustom</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+            <value class="string"></value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeY>
+            <value class="int">270</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeY>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeX>
+            <value class="int">250</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeX>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeSize</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>20</x>
+              <y>20</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+        </entry>
+      </attributes>
+      <sourceConnections/>
+      <targetConnections/>
+    </de.bmotionstudio.gef.editor.model.BText>
+    <de.bmotionstudio.gef.editor.model.BText>
+      <children/>
+      <observers/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT7 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT7)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT7 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT7 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT7)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT7 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT7 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT7)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT7 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT7 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT7)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT7 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
+      <attributes>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeFont</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+            <value class="string">1||9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|0|0|0|0|</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeTextColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeID</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeID>
+            <value class="string">T7_label</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeID>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeWidth</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+            <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+              <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeText</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeText>
+            <value class="string">T7</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeText>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>700</x>
+              <y>270</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeHeight</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCustom</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+            <value class="string"></value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeY>
+            <value class="int">270</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeY>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeX>
+            <value class="int">700</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeX>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeSize</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>20</x>
+              <y>20</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+        </entry>
+      </attributes>
+      <sourceConnections/>
+      <targetConnections/>
+    </de.bmotionstudio.gef.editor.model.BText>
+    <de.bmotionstudio.gef.editor.model.BText>
+      <children/>
+      <observers/>
+      <events>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.event.OnClickEvent</string>
+          <de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+            <operationList>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT8 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT8)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT8 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_CURR</operationName>
+                <executePredicate>VT8 /: PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT8)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT8 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT8 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT8)=TVD_STATE_VACANT</executePredicate>
+                <predicate>sect=VT8 &amp; stat=TVD_STATE_OCCUPIED</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+              <de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+                <isExpressionMode>false</isExpressionMode>
+                <operationName>set_TVDS_STATE_PATH</operationName>
+                <executePredicate>VT8 : PATH_TVDS_CURR &amp; TVDS_STATE_CURR(VT8)=TVD_STATE_OCCUPIED</executePredicate>
+                <predicate>sect=VT8 &amp; stat=TVD_STATE_VACANT</predicate>
+                <random>false</random>
+                <maxrandom>1</maxrandom>
+              </de.bmotionstudio.gef.editor.scheduler.PredicateOperation>
+            </operationList>
+          </de.bmotionstudio.gef.editor.scheduler.ExecuteOperationByPredicateMulti>
+        </entry>
+      </events>
+      <attributes>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeFont</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+            <value class="string">1||9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|0|0|0|0|</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeFont>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeTextColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeTextColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+            <value class="org.eclipse.swt.graphics.RGB">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundColor>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeID</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeID>
+            <value class="string">T8_label</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeID>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeWidth</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeWidth>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeMisc</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+            <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc">
+              <value class="de.bmotionstudio.gef.editor.attribute.BAttributeMisc" reference=".."/>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeMisc>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+            <value class="boolean">true</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeBackgroundVisible>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeText</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeText>
+            <value class="string">T8</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeText>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>800</x>
+              <y>270</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCoordinates>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeHeight</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+            <value class="int">20</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeHeight>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeCustom</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+            <value class="string"></value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeCustom>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeY</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeY>
+            <value class="int">270</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeY>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeX</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeX>
+            <value class="int">800</value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeX>
+        </entry>
+        <entry>
+          <string>de.bmotionstudio.gef.editor.attribute.BAttributeSize</string>
+          <de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+            <value class="org.eclipse.draw2d.geometry.Point">
+              <x>20</x>
+              <y>20</y>
+            </value>
+          </de.bmotionstudio.gef.editor.attribute.BAttributeSize>
+        </entry>
+      </attributes>
+      <sourceConnections/>
+      <targetConnections/>
+    </de.bmotionstudio.gef.editor.model.BText>
   </children>
   <observers/>
   <events/>

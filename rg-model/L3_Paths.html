@@ -1,0 +1,144 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paths</title>
+</head>
+<body>
+
+<h1>Paths</h1>
+<p>This layer defines the topology traversal and constructs the path within the topology.</p>
+
+<h2>Definitions</h2>
+
+<dl>
+<dt>Path</dt>
+<dd>
+  A Path is a sequence of Rail Segments linked via Rail Links (i.e. two Rail Segments belonging to the same Rail Element
+  are not allowed within one Rail Path).
+</dd>
+</dl>
+
+<h2>Model</h2>
+
+<h3>Carrier Sets</h3>
+
+<dl>
+<dt>PATH_ENUM</dt>
+<dd>
+  Enumeration of all defined Paths of the particular station.
+</dd>
+</dl>
+
+<h3>Constants</h3>
+
+<dl>
+<dt>PATH_ELEM_POS : PATH_ENUM → (RAIL_ELEM ⇸ RAIL_POS_ENUM)</dt>
+<dd>
+  Rail Element Positions for all Rail Elements of every Paths of the particular station.
+</dd>
+<dt>PATH_SGMT_ALL : PATH_ENUM → ℙ(RAIL_SGMT)</dt>
+<dd>
+  All Rail Segments of every Path of the particular station.
+</dd>
+<dt>PATH_CTOR_BEG : PATH_ENUM → RAIL_CTOR</dt>
+<dd>
+  Begin Rail Connector of all Paths of the particular station.
+</dd>
+<dt>PATH_CTOR_END : PATH_ENUM → RAIL_CTOR</dt>
+<dd>
+  End Rail Connector of all Paths of the particular station.
+</dd>
+<dt>PATH_SGMT_FST : PATH_ENUM → RAIL_SGMT</dt>
+<dd>
+  First Rail Segment of all Paths of the particular station.
+</dd>
+<dt>PATH_SGMT_LST : PATH_ENUM → RAIL_SGMT</dt>
+<dd>
+  Last Rail Segment of all Paths of the particular station.
+</dd>
+<dt>PATH_SGMT_NXT : PATH_ENUM → (RAIL_SGMT ⤔ RAIL_SGMT)</dt>
+<dd>
+  Next Rail Segment of all Paths of the particular station.
+</dd>
+</dl>
+
+<h3>Variables</h3>
+
+<dl>
+<dt><em>RAIL_ELEM_POS_CURR : RAIL_ELEM → RAIL_POS_ENUM</em></dt>
+<dd>
+  <em>Inherited.</em>
+</dd>
+<dt>PATH_CURR : ℙ(PATH_ENUM)</dt>
+<dd>
+  Current Paths.
+</dd>
+<dt>RAIL_ELEM_PATH_CURR : RAIL_ELEM ⇸ PATH_CURR</dt>
+<dd>
+  Current Path the particular Rail Element belongs to. The type of this variable already assures, that one element
+  belongs to at most one current path. 
+</dd>
+</dl>
+
+<h3>Events</h3>
+
+<dl>
+<dt>set_RAIL_ELEM_POS_CURR : (RAIL_ELEM, RAIL_POS_ENUM) <em>«refines» set_RAIL_ELEM_POS_CURR</em></dt>
+<dd>
+  Refinement: Only Rail Elements, which do not belong to any Current Path may be set to new position.
+</dd>
+<dt>add_PATH_CURR : (PATH_ENUM)</dt>
+<dd>
+  Add a new Path.
+</dd>
+<dt>rem_PATH_CURR : (PATH_ENUM)</dt>
+<dd>
+  Remove an existing Path.
+</dd>
+</dl>
+
+<h3>Invariants</h3>
+
+<ul>
+<li>Elements of the current path correspond to the elements of defined paths.</li>
+<li>Elements of all current paths are in required position.</li>
+</ul>
+
+<h2>Example</h2>
+
+<pre>
+Simple example with one track and two points as well as two terminators on both ends:
+
+                   i j
+               ----*+*----
+              /           \
+   *+*-----*+*-----*+*-----*+*
+   a b     c d     e f     g h
+  X1    T       P1      P2   X2
+
+* partition(PATH, {R1}, {R2}, {R3}, {R4})
+* PATH_ELEM_POS = {
+    R1 ↦ {T ↦ RAIL_POS_F, P1 ↦ RAIL_POS_R, P2 ↦ RAIL_POS_L},
+    R2 ↦ {T ↦ RAIL_POS_F, P1 ↦ RAIL_POS_L, P2 ↦ RAIL_POS_R},
+    R3 ↦ {T ↦ RAIL_POS_F, P1 ↦ RAIL_POS_R, P2 ↦ RAIL_POS_L},
+    R4 ↦ {T ↦ RAIL_POS_F, P1 ↦ RAIL_POS_R, P2 ↦ RAIL_POS_L}
+}
+* PATH_SGMT_ALL = {
+	R1 ↦ {bc, de, fg},
+	R2 ↦ {bc, di, jg},
+	R3 ↦ {gf, ed, cb},
+	R4 ↦ {gj, id, cb},
+}
+* PATH_CTOR_BEG = {R1 ↦ b, R2 ↦ b, R3 ↦ g, R4 ↦ g}
+* PATH_CTOR_END = {R1 ↦ g, R2 ↦ g, R3 ↦ b, R4 ↦ b}
+* PATH_SGMT_FST = {R1 ↦ bc, R2 ↦ bc, R3 ↦ gf, R4 ↦ gj}
+* PATH_SGMT_LST = {R1 ↦ fg, R2 ↦ jg, R3 ↦ cb, R4 ↦ cb}
+* PATH_SGMT_NXT = {R1 ↦ {bc ↦ de, de ↦ fg}, R2 ↦ {bc ↦ di, di ↦ jg}, R3 ↦ {gf ↦ ed, ed ↦ cb}, R4 ↦ {gj ↦ id, id ↦ cb}}
+
+Note that the R1 and R3 as well as R2 and R4 consist of the same elements in the same position, which are used in the
+opposite direction. The differentiation can not be made based on the elements and their positions, rather based on the
+used segments.
+</pre>
+
+</body>
+</html>
