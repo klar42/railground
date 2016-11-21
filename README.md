@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/klar42/railground.png?label=ready&title=Ready)](https://waffle.io/klar42/railground)
 # railground
 This is a playground for studying railway models using formal methods.
 
