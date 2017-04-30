@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround_Structure/C0_RG_Paths.bpo|org.eventb.core.poFile#C0_RG_Paths|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH" org.eventb.core.source="/RailGround_Structure/C0_RG_Paths.buc|org.eventb.core.contextFile#C0_RG_Paths|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))" org.eventb.core.source="/RailGround_Structure/C0_RG_Paths.buc|org.eventb.core.contextFile#C0_RG_Paths|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Path_Exc=Path_Exc∼" org.eventb.core.source="/RailGround_Structure/C0_RG_Paths.buc|org.eventb.core.contextFile#C0_RG_Paths|org.eventb.core.axiom#+"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="finite(PATH)" org.eventb.core.source="/RailGround_Structure/C0_RG_Paths.buc|org.eventb.core.contextFile#C0_RG_Paths|org.eventb.core.axiom#,"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

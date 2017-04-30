@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C1_RG_ElementPosition"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="SIGNAL"/>
+<org.eventb.core.carrierSet name=")" org.eventb.core.identifier="SIGNAL_ASPECT"/>
+<org.eventb.core.constant name="*" org.eventb.core.identifier="Signal_Aspect_Avail"/>
+<org.eventb.core.constant name="+" org.eventb.core.identifier="Signal_Aspect_Default"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm1" org.eventb.core.predicate="finite(SIGNAL)"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="axm2" org.eventb.core.predicate="finite(SIGNAL_ASPECT)"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm3" org.eventb.core.predicate="Signal_Aspect_Avail ∈ SIGNAL → ℙ1(SIGNAL_ASPECT)"/>
+<org.eventb.core.axiom name="0" org.eventb.core.label="axm4" org.eventb.core.predicate="∀sig·sig ∈ SIGNAL ⇒ Signal_Aspect_Default ∈ Signal_Aspect_Avail(sig)"/>
+</org.eventb.core.contextFile>

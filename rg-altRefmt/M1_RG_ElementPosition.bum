@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1483701293812" org.eventb.texttools.text_representation="machine M1_RG_ElementPosition refines M0_RG_Paths  sees C1_RG_ElementPosition&#10;&#10;variables path_curr path_req path_rel rail_elem_pos_curr rail_elem_path_curr&#10;&#10;invariants&#10;  @inv1 rail_elem_pos_curr ∈ RAIL_ELEM → RAIL_POS&#10;  @inv2 rail_elem_path_curr ∈ RAIL_ELEM ⇸ path_curr&#10;  @inv3 ∀elem·elem ∈ dom(rail_elem_path_curr) ⇒ elem ∈ dom(Path_Elem_Pos(rail_elem_path_curr(elem)))&#10;  @inv4 ∀elem·elem ∈ dom(rail_elem_path_curr) ⇒ Path_Elem_Pos(rail_elem_path_curr(elem))(elem) = rail_elem_pos_curr(elem)&#10;  @inv5 ∀p1,p2·p1 ∈ path_req ∧ p2 ∈ path_req∖{p1} ⇒ dom(Path_Elem_Pos(p1)) ∩ dom(Path_Elem_Pos(p2)) = ∅&#10;  @inv6 ∀p·p ∈ path_req ⇒ dom(Path_Elem_Pos(p)) ∩ dom(rail_elem_path_curr) = ∅&#10;&#10;variant  union(Path_Elem_Pos[path_req])(dom(union(Path_Elem_Pos[path_req])))∖rail_elem_pos_curr(dom(union(Path_Elem_Pos[path_req])))&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;    then&#10;      @act4 rail_elem_pos_curr ≔ Default_Elem_Pos&#10;      @act5 rail_elem_path_curr ≔ ∅&#10;  end&#10;&#10;  event Add_Path_Req extends Add_Path_Req&#10;    where&#10;      @grd3 dom(Path_Elem_Pos(p)) ∩ dom(rail_elem_path_curr) = ∅&#10;      @grd4 ∀p2·p2 ∈ path_req ⇒ dom(Path_Elem_Pos(p))∩ dom(Path_Elem_Pos(p2)) = ∅&#10;  end&#10;&#10;  event Remove_Path_Req extends Remove_Path_Req&#10;  end&#10;&#10;  event Add_Path_Curr extends Add_Path_Curr&#10;    where&#10;      @grd3 ∀elem·elem ∈ dom(Path_Elem_Pos(p)) ⇒ Path_Elem_Pos(p)(elem) = rail_elem_pos_curr(elem)&#10;  end&#10;&#10;  event Set_Path_Rel extends Set_Path_Rel&#10;  end&#10;&#10;  event Remove_Path_Curr extends Remove_Path_Curr&#10;    then&#10;      @act3 rail_elem_path_curr ≔ rail_elem_path_curr ⩥ {p}&#10;  end&#10;event Set_Rail_Elem_Pos_Curr&#10;    any elem pos&#10;    where&#10;      @grd1 elem ∉ dom(union(Path_Elem_Pos[path_req]))&#10;      @grd2 pos ≠ rail_elem_pos_curr(elem)&#10;      @grd3 elem ∉ dom(rail_elem_path_curr)&#10;    then&#10;      @act1 rail_elem_pos_curr(elem) ≔ pos&#10;  end&#10;&#10;  convergent event Set_Rail_Elem_Path_Curr&#10;    any elem&#10;    where&#10;      @grd2 elem ∉ dom(rail_elem_path_curr)&#10;      @grd3 elem ∈ dom(union(Path_Elem_Pos[path_req]))&#10;      @grd5 union(Path_Elem_Pos[path_req])(elem) ≠ rail_elem_pos_curr(elem)&#10;    then&#10;      @act1 rail_elem_pos_curr(elem) ≔ union(Path_Elem_Pos[path_req])(elem)&#10;  end&#10;&#10;&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M0_RG_Paths"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="C1_RG_ElementPosition"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="path_curr"/>
+<org.eventb.core.variable name="0" org.eventb.core.identifier="path_req"/>
+<org.eventb.core.variable name="1" org.eventb.core.identifier="path_rel"/>
+<org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="rail_elem_pos_curr ≔ Default_Elem_Pos" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="rail_elem_path_curr ≔ ∅" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Add_Path_Req">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Add_Path_Req"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd3" org.eventb.core.predicate="dom(Path_Elem_Pos(p)) ∩ dom(rail_elem_path_curr) = ∅"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd4" org.eventb.core.predicate="∀p2·p2 ∈ path_req ⇒ dom(Path_Elem_Pos(p))∩ dom(Path_Elem_Pos(p2)) = ∅"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Remove_Path_Req">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Remove_Path_Req"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Add_Path_Curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Add_Path_Curr"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd3" org.eventb.core.predicate="∀elem·elem ∈ dom(Path_Elem_Pos(p)) ⇒ Path_Elem_Pos(p)(elem) = rail_elem_pos_curr(elem)"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="rail_elem_path_curr ≔ rail_elem_path_curr (dom(Path_Elem_Pos(p)) × {p}) " org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Set_Path_Rel">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Set_Path_Rel"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Remove_Path_Curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Remove_Path_Curr"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="rail_elem_path_curr ≔ rail_elem_path_curr ⩥ {p}" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="8" org.eventb.core.identifier="rail_elem_pos_curr"/>
+<org.eventb.core.invariant name="9" org.eventb.core.label="inv1" org.eventb.core.predicate="rail_elem_pos_curr ∈ RAIL_ELEM → RAIL_POS"/>
+<org.eventb.core.variable name=":" org.eventb.core.identifier="rail_elem_path_curr"/>
+<org.eventb.core.invariant name=";" org.eventb.core.label="inv2" org.eventb.core.predicate="rail_elem_path_curr ∈ RAIL_ELEM ⇸ path_curr"/>
+<org.eventb.core.invariant name="?" org.eventb.core.label="inv3" org.eventb.core.predicate="∀elem·elem ∈ dom(rail_elem_path_curr) ⇒ elem ∈ dom(Path_Elem_Pos(rail_elem_path_curr(elem)))"/>
+<org.eventb.core.invariant name="=" org.eventb.core.label="inv4" org.eventb.core.predicate="∀elem·elem ∈ dom(rail_elem_path_curr) ⇒ Path_Elem_Pos(rail_elem_path_curr(elem))(elem) = rail_elem_pos_curr(elem)"/>
+<org.eventb.core.event name="&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Set_Rail_Elem_Pos_Curr">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="elem"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="pos"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="elem ∉ dom(union(Path_Elem_Pos[path_req]))"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="pos ≠ rail_elem_pos_curr(elem)"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="rail_elem_pos_curr(elem) ≔ pos" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="elem ∉ dom(rail_elem_path_curr)"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="A" org.eventb.core.label="inv5" org.eventb.core.predicate="∀p1,p2·p1 ∈ path_req ∧ p2 ∈ path_req∖{p1} ⇒ dom(Path_Elem_Pos(p1)) ∩ dom(Path_Elem_Pos(p2)) = ∅"/>
+<org.eventb.core.invariant name="B" org.eventb.core.label="inv6" org.eventb.core.predicate="∀p·p ∈ path_req ⇒ dom(Path_Elem_Pos(p)) ∩ dom(rail_elem_path_curr) = ∅"/>
+<org.eventb.core.variant name="C" org.eventb.core.expression="{elem ∣ elem ∈ dom(union(Path_Elem_Pos[path_req])) ∧ union(Path_Elem_Pos[path_req])(elem) ≠ rail_elem_pos_curr(elem)}"/>
+<org.eventb.core.event name="_bFZkENP4EeaJ9OF9GeiWfQ" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="Set_Rail_Elem_Path_Curr">
+<org.eventb.core.parameter name="_PX2X0NP4EeaJ9OF9GeiWfQ" org.eventb.core.identifier="elem"/>
+<org.eventb.core.guard name="_PYAI0NP4EeaJ9OF9GeiWfQ" org.eventb.core.label="grd2" org.eventb.core.predicate="elem ∉ dom(rail_elem_path_curr)"/>
+<org.eventb.core.guard name="_PYJ50NP4EeaJ9OF9GeiWfQ" org.eventb.core.label="grd3" org.eventb.core.predicate="elem ∈ dom(union(Path_Elem_Pos[path_req]))"/>
+<org.eventb.core.guard name="_bFZkE9P4EeaJ9OF9GeiWfQ" org.eventb.core.label="grd5" org.eventb.core.predicate="union(Path_Elem_Pos[path_req])(elem) ≠ rail_elem_pos_curr(elem)"/>
+<org.eventb.core.action name="_bFZkFtP4EeaJ9OF9GeiWfQ" org.eventb.core.assignment="rail_elem_pos_curr(elem) ≔ union(Path_Elem_Pos[path_req])(elem)" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>
