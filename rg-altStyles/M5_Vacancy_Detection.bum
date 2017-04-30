@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M4_Paths_Lifecycle"/>
+<org.eventb.core.seesContext name="_K1CS8NGSEeaEEoohSjPIXg" org.eventb.core.target="C5_Vacancy_Detection"/>
+<org.eventb.core.variable name="_B3kBotGSEeaEEoohSjPIXg" org.eventb.core.identifier="rail_elem_pos_current"/>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIXj" org.eventb.core.identifier="path_curr"/>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIXl" org.eventb.core.identifier="rail_elem_path_curr"/>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIXq" org.eventb.core.identifier="path_req"/>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIXs" org.eventb.core.identifier="path_rel"/>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIXt" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="TVD_state_curr ≔ TVD_SECT × {Vacant}" org.eventb.core.label="act6"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIXu" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_rail_elem_current_pos">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_rail_elem_current_pos"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIXv" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="add_path_curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="add_path_curr"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIXw" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="remove_path_curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="remove_path_curr"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIXx" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="add_path_req">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="add_path_req"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIXy" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="remove_path_req">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="remove_path_req"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIXz" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_path_rel">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_path_rel"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIX{" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_rail_elem_path">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_rail_elem_path"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIX|" org.eventb.core.identifier="TVD_state_curr"/>
+<org.eventb.core.invariant name="_K1CS8NGSEeaEEoohSjPIX}" org.eventb.core.label="inv1" org.eventb.core.predicate="TVD_state_curr ∈ TVD_SECT → TVD_STATE"/>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIX~" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="set_TVD_state_curr">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="sect"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="sect ∈ TVD_SECT"/>
+<org.eventb.core.parameter name=")" org.eventb.core.identifier="state"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="state ≠ TVD_state_curr(sect)"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="TVD_state_curr(sect)≔ state" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

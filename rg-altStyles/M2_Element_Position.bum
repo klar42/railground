@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1483437240336" org.eventb.texttools.text_representation="machine M2_Element_Postion refines M1_Rails  sees C2_Element_Position&#10;&#10;variables rail_elem_pos_current&#10;&#10;invariants&#10;  @inv1 rail_elem_pos_current ∈ rail_elem → RAIL_ELEM_POS&#10;  @inv2 ∀ elem · elem ∈ rail_elem ⇒ rail_elem_pos_current(elem) ∈ dom(rail_elem_pos_conn(elem))&#10;  @inv3 ∀ elem · elem ∈ rail_elem ⇒ rail_elem_conn_current(elem) = rail_elem_pos_conn(elem)(rail_elem_pos_current(elem))&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 rail_elem_pos_current≔ rail_elem_pos_default&#10;  end&#10;&#10;  event set_rail_elem_current_pos refines set_rail_elem_current_conn&#10;    any elem pos&#10;    where&#10;      @grd1 elem ∈ rail_elem&#10;      @grd2 pos ∈ dom(rail_elem_pos_conn(elem))&#10;      @grd3 pos ≠ rail_elem_pos_current(elem)&#10;    with&#10;      @conn conn = rail_elem_pos_conn(elem)(pos)&#10;    then&#10;      @act1 rail_elem_pos_current(elem)≔ pos&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M1_Rails"/>
+<org.eventb.core.seesContext name="_K1CS8NGSEeaEEoohSjPIXg" org.eventb.core.target="C2_Element_Position"/>
+<org.eventb.core.variable name="_B3kBotGSEeaEEoohSjPIXg" org.eventb.core.identifier="rail_elem_pos_current"/>
+<org.eventb.core.event name="_B3kBotGSEeaEEoohSjPIXh" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_K1CS8dGSEeaEEoohSjPIXg" org.eventb.core.assignment="rail_elem_pos_current≔ rail_elem_pos_default" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_B3kBotGSEeaEEoohSjPIXi" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="set_rail_elem_current_pos">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_rail_elem_current_conn"/>
+<org.eventb.core.parameter name="_K1CS8tGSEeaEEoohSjPIXg" org.eventb.core.identifier="elem"/>
+<org.eventb.core.parameter name="_K1CS89GSEeaEEoohSjPIXg" org.eventb.core.identifier="pos"/>
+<org.eventb.core.guard name="_K1CS9NGSEeaEEoohSjPIXg" org.eventb.core.label="grd1" org.eventb.core.predicate="elem ∈ rail_elem"/>
+<org.eventb.core.guard name="_K1CS9dGSEeaEEoohSjPIXg" org.eventb.core.label="grd2" org.eventb.core.predicate="pos ∈ dom(rail_elem_pos_conn(elem))"/>
+<org.eventb.core.guard name="_K1CS9tGSEeaEEoohSjPIXg" org.eventb.core.label="grd3" org.eventb.core.predicate="pos ≠ rail_elem_pos_current(elem)"/>
+<org.eventb.core.witness name="_K1CS99GSEeaEEoohSjPIXg" org.eventb.core.label="conn" org.eventb.core.predicate="conn = rail_elem_pos_conn(elem)(pos)"/>
+<org.eventb.core.action name="_K1CS-NGSEeaEEoohSjPIXg" org.eventb.core.assignment="rail_elem_pos_current(elem)≔ pos" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="_K1CS-dGSEeaEEoohSjPIXg" org.eventb.core.label="inv1" org.eventb.core.predicate="rail_elem_pos_current ∈ rail_elem → RAIL_ELEM_POS"/>
+<org.eventb.core.invariant name="_K1CS-tGSEeaEEoohSjPIXg" org.eventb.core.label="inv2" org.eventb.core.predicate="∀ elem · elem ∈ rail_elem ⇒ rail_elem_pos_current(elem) ∈ dom(rail_elem_pos_conn(elem))"/>
+<org.eventb.core.invariant name="_K1CS-9GSEeaEEoohSjPIXg" org.eventb.core.label="inv3" org.eventb.core.predicate="∀ elem · elem ∈ rail_elem ⇒ rail_elem_conn_current(elem) = rail_elem_pos_conn(elem)(rail_elem_pos_current(elem))"/>
+</org.eventb.core.machineFile>

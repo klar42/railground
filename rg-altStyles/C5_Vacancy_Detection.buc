@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C4_Path_Lifecycle"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="TVD_SECT"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm1" org.eventb.core.predicate="TVD_seg_sect ∈ rail_sgmt→ TVD_SECT"/>
+<org.eventb.core.constant name="-" org.eventb.core.identifier="TVD_seg_sect"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm2" org.eventb.core.predicate="finite(TVD_SECT)"/>
+<org.eventb.core.carrierSet name="/" org.eventb.core.identifier="TVD_STATE"/>
+<org.eventb.core.axiom name="0" org.eventb.core.label="axm3" org.eventb.core.predicate="partition(TVD_STATE, {Vacant}, {Occupied})"/>
+<org.eventb.core.constant name="1" org.eventb.core.identifier="Vacant"/>
+<org.eventb.core.constant name="2" org.eventb.core.identifier="Occupied"/>
+</org.eventb.core.contextFile>

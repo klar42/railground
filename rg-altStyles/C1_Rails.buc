@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1486984880716" org.eventb.texttools.text_representation="context C1_Rails&#10;&#10;sets RAIL_CTOR RAIL_ITEM&#10;&#10;constants rail_elem rail_term rail_ctor_item rail_link rail_sgmt rail_elem_conn_all rail_elem_conn_default&#10;&#10;axioms&#10;  @axm1 partition(RAIL_ITEM, rail_elem, rail_term)&#10;  @axm2 rail_elem ≠ ∅&#10;  @axm3 rail_term ≠ ∅&#10;  @axm4 rail_ctor_item ∈ RAIL_CTOR → RAIL_ITEM&#10;  @axm5 finite(RAIL_CTOR)&#10;  @axm6 ∀elem· elem ∈ rail_elem ⇒ card(rail_ctor_item∼[{elem}]) ≥ 2 ∧ card(rail_ctor_item∼[{elem}]) ≤ 4&#10;  @axm7 ∀term·term ∈ rail_term ⇒ card(rail_ctor_item∼[{term}]) = 1&#10;  @axm8 rail_link ∈ RAIL_CTOR ⤖ RAIL_CTOR&#10;  @axm9 ∀ctor·ctor ∈ RAIL_CTOR ⇒ rail_ctor_item(ctor) ≠ rail_ctor_item(rail_link(ctor))&#10;  @axm10 rail_sgmt ∈ RAIL_CTOR ↔RAIL_CTOR&#10;  @axm11 ∀ctor·ctor ∈ (dom(rail_sgmt) ∪ ran(rail_sgmt)) ⇒ rail_ctor_item(ctor) ∈ rail_elem&#10;  @axm12 ∀ctor1,ctor2·ctor1 ∈ dom(rail_sgmt) ∧ ctor2 ∈ rail_sgmt[{ctor1}] ⇒rail_ctor_item(ctor1) = rail_ctor_item(ctor2)&#10;  @axm14 rail_elem_conn_all ∈ rail_elem → ℙ(ℙ(rail_sgmt))&#10;  @axm15 ∀ctor·ctor ∈ dom(rail_sgmt) ⇒ ctor ∉ rail_sgmt[{ctor}]&#10;  @axm16 rail_link = rail_link∼&#10;  @axm17 rail_sgmt = rail_sgmt∼&#10;  @axm18 finite(RAIL_ITEM)&#10;  @axm20 ∀elem,conn,ctor1,ctor2·elem ∈ rail_elem ∧ conn∈rail_elem_conn_all(elem)∧  (ctor1 ↦ ctor2)∈conn ⇒ rail_ctor_item(ctor1)=elem&#10;  @axm21 ∀elem·elem∈ rail_elem ∧ ∅ ∈ rail_elem_conn_all(elem)  ⇒ (∃conn·conn ∈ rail_elem_conn_all(elem) ∧ conn ≠ ∅)&#10;  @axm22 ∀elem,conn,ctor1,ctor2·elem∈ rail_elem ∧ conn ∈ rail_elem_conn_all(elem) ∧ (ctor1 ↦ ctor2) ∈ conn⇒ (ctor2 ↦ ctor1) ∈ conn&#10;  @axm23 ∀elem,ctor·elem∈ rail_elem ∧ rail_ctor_item(ctor)=elem⇒(∃conn·conn∈rail_elem_conn_all(elem)∧ ctor∈dom(conn))&#10;  @axm24 rail_elem_conn_default∈ rail_elem → ℙ(rail_sgmt)&#10;  @axm25 ∀elem·elem∈rail_elem ⇒ rail_elem_conn_default(elem) ∈rail_elem_conn_all(elem)&#10;  @axm26 finite(rail_sgmt)&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_xbkRYMN8Eeali-j1CbccKw" org.eventb.core.identifier="RAIL_CTOR"/>
+<org.eventb.core.carrierSet name="_xbkRYsN8Eeali-j1CbccKw" org.eventb.core.identifier="RAIL_ITEM"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccKx" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(RAIL_ITEM, rail_elem, rail_term)"/>
+<org.eventb.core.constant name="_xbkRYsN8Eeali-j1CbccK{" org.eventb.core.identifier="rail_elem"/>
+<org.eventb.core.constant name="_xbkRYsN8Eeali-j1CbccK|" org.eventb.core.identifier="rail_term"/>
+<org.eventb.core.constant name="_xbkRYsN8Eeali-j1CbccK}" org.eventb.core.identifier="rail_ctor_item"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccK~" org.eventb.core.label="axm2" org.eventb.core.predicate="rail_elem ≠ ∅"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL'" org.eventb.core.label="axm3" org.eventb.core.predicate="rail_term ≠ ∅"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL(" org.eventb.core.label="axm4" org.eventb.core.predicate="rail_ctor_item ∈ RAIL_CTOR → RAIL_ITEM"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL)" org.eventb.core.label="axm5" org.eventb.core.predicate="finite(RAIL_CTOR)"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL*" org.eventb.core.label="axm6" org.eventb.core.predicate="∀elem· elem ∈ rail_elem ⇒ card(rail_ctor_item∼[{elem}]) ≥ 2 ∧ card(rail_ctor_item∼[{elem}]) ≤ 4"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL+" org.eventb.core.label="axm7" org.eventb.core.predicate="∀term·term ∈ rail_term ⇒ card(rail_ctor_item∼[{term}]) = 1"/>
+<org.eventb.core.constant name="_xbkRYsN8Eeali-j1CbccL," org.eventb.core.identifier="rail_link"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL-" org.eventb.core.label="axm8" org.eventb.core.predicate="rail_link ∈ RAIL_CTOR ⤖ RAIL_CTOR"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL." org.eventb.core.label="axm9" org.eventb.core.predicate="∀ctor·ctor ∈ RAIL_CTOR ⇒ rail_ctor_item(ctor) ≠ rail_ctor_item(rail_link(ctor))"/>
+<org.eventb.core.constant name="_xbkRYsN8Eeali-j1CbccL/" org.eventb.core.identifier="rail_sgmt"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL0" org.eventb.core.label="axm10" org.eventb.core.predicate="rail_sgmt ∈ RAIL_CTOR ↔RAIL_CTOR"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL1" org.eventb.core.label="axm11" org.eventb.core.predicate="∀ctor·ctor ∈ (dom(rail_sgmt) ∪ ran(rail_sgmt)) ⇒ rail_ctor_item(ctor) ∈ rail_elem"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL2" org.eventb.core.label="axm12" org.eventb.core.predicate="∀ctor1,ctor2·ctor1 ∈ dom(rail_sgmt) ∧ ctor2 ∈ rail_sgmt[{ctor1}] ⇒rail_ctor_item(ctor1) = rail_ctor_item(ctor2)"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL5" org.eventb.core.label="axm14" org.eventb.core.predicate="rail_elem_conn_all ∈ rail_elem → ℙ(ℙ(rail_sgmt))"/>
+<org.eventb.core.constant name="_xbkRYsN8Eeali-j1CbccL6" org.eventb.core.identifier="rail_elem_conn_all"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL7" org.eventb.core.label="axm15" org.eventb.core.predicate="∀ctor·ctor ∈ dom(rail_sgmt) ⇒ ctor ∉ rail_sgmt[{ctor}]"/>
+<org.eventb.core.constant name="_xbkRYsN8Eeali-j1CbccL8" org.eventb.core.identifier="rail_elem_conn_default"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL9" org.eventb.core.label="axm16" org.eventb.core.predicate="rail_link = rail_link∼"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL:" org.eventb.core.label="axm17" org.eventb.core.predicate="rail_sgmt = rail_sgmt∼"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL;" org.eventb.core.label="axm18" org.eventb.core.predicate="finite(RAIL_ITEM)"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL=" org.eventb.core.label="axm20" org.eventb.core.predicate="∀elem,conn,ctor1,ctor2·elem ∈ rail_elem ∧ conn∈rail_elem_conn_all(elem)∧  (ctor1 ↦ ctor2)∈conn ⇒ rail_ctor_item(ctor1)=elem"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL&gt;" org.eventb.core.label="axm21" org.eventb.core.predicate="∀elem·elem∈ rail_elem ∧ ∅ ∈ rail_elem_conn_all(elem)  ⇒ (∃conn·conn ∈ rail_elem_conn_all(elem) ∧ conn ≠ ∅)"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL?" org.eventb.core.label="axm22" org.eventb.core.predicate="∀elem,conn,ctor1,ctor2·elem∈ rail_elem ∧ conn ∈ rail_elem_conn_all(elem) ∧ (ctor1 ↦ ctor2) ∈ conn⇒ (ctor2 ↦ ctor1) ∈ conn"/>
+<org.eventb.core.axiom name="_8-lggNGREeaEEoohSjPIXg" org.eventb.core.label="axm23" org.eventb.core.predicate="∀elem,ctor·elem∈ rail_elem ∧ rail_ctor_item(ctor)=elem⇒(∃conn·conn∈rail_elem_conn_all(elem)∧ ctor∈dom(conn))"/>
+<org.eventb.core.axiom name="_8-lggdGREeaEEoohSjPIXg" org.eventb.core.label="axm24" org.eventb.core.predicate="rail_elem_conn_default∈ rail_elem → ℙ(rail_sgmt)"/>
+<org.eventb.core.axiom name="_xbkRYsN8Eeali-j1CbccL@" org.eventb.core.label="axm25" org.eventb.core.predicate="∀elem·elem∈rail_elem ⇒ rail_elem_conn_default(elem) ∈rail_elem_conn_all(elem)"/>
+<org.eventb.core.axiom name="_lBCXoNc2EeacGaa0CP9cXA" org.eventb.core.label="axm26" org.eventb.core.predicate="finite(rail_sgmt)"/>
+</org.eventb.core.contextFile>
