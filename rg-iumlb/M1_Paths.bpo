@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+<org.eventb.core.poPredicate name="Path_Exd" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH" org.eventb.core.source="/Railground_iUML-B/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1ky17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Path_Exe" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))" org.eventb.core.source="/Railground_iUML-B/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1kC17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Path_Exf" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼" org.eventb.core.source="/Railground_iUML-B/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1kS17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Path_Exg" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)" org.eventb.core.source="/Railground_iUML-B/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1ki17EeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="path_act" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/typeof_path_rel/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(PATH))⊆(∅ ⦂ ℙ(PATH))" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#INITIALISATION\/typeof_path_rel\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/typeof_path_act/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(PATH))⊆(∅ ⦂ ℙ(PATH))" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUy2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUy2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#INITIALISATION\/typeof_path_act\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/distinct_states_in_path_state/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="partition((∅ ⦂ ℙ(PATH))∪(∅ ⦂ ℙ(PATH)),∅ ⦂ ℙ(PATH),∅ ⦂ ℙ(PATH))" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#INITIALISATION\/distinct_states_in_path_state\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="partition(∅ ⦂ ℙ(PATH),∅ ⦂ ℙ(PATH),∅ ⦂ ℙ(PATH))" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#INITIALISATION\/distinct_states_in_path_curr_statemachine1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/path_curr_invariant1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀p⦂PATH·p∈(∅ ⦂ ℙ(PATH))⇒Path_Exc[{p}]∩(∅ ⦂ ℙ(PATH))=(∅ ⦂ ℙ(PATH))" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#INITIALISATION\/path_curr_invariant1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTC1_Paths_cu(" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="path_req'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_curr'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_rel'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_act'" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC1_Paths_cu(" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTIDENTC1_Paths_cu(" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="add_path_req/distinct_states_in_path_state/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="partition((path_req∪{p})∪path_curr,path_req∪{p},path_curr)" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_NAgy0PNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#add_path_req\/distinct_states_in_path_state\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTC1_Paths_cu)" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="path_req'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="PATH"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC1_Paths_cu)" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTIDENTC1_Paths_cu)" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="p∉path_req∪path_curr" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_NAgy0PNOEeaEvfyRgzOTMA|org.eventb.core.guard#_kMiMIS2nEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="remove_path_req/distinct_states_in_path_state/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu*"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="partition((path_req ∖ {p})∪path_curr,path_req ∖ {p},path_curr)" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_NAgy0fNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#remove_path_req\/distinct_states_in_path_state\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTC1_Paths_cu*" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="path_req'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="PATH"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC1_Paths_cu*" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTIDENTC1_Paths_cu*" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="p∈path_req" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_NAgy0fNOEeaEvfyRgzOTMA|org.eventb.core.guard#_kMiMJC2nEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="add_path_curr/typeof_path_rel/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path_rel⊆path_curr∪{p}" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_Yom3UPNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#add_path_curr\/typeof_path_rel\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="add_path_curr/typeof_path_act/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path_act∪{p}⊆path_curr∪{p}" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUy2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_Yom3UPNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUy2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#add_path_curr\/typeof_path_act\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="add_path_curr/distinct_states_in_path_state/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="partition((path_req ∖ {p})∪(path_curr∪{p}),path_req ∖ {p},path_curr∪{p})" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_Yom3UPNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#add_path_curr\/distinct_states_in_path_state\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="add_path_curr/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="partition(path_curr∪{p},path_rel,path_act∪{p})" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_Yom3UPNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#add_path_curr\/distinct_states_in_path_curr_statemachine1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="add_path_curr/path_curr_invariant1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀p0⦂PATH·p0∈path_curr∪{p}⇒Path_Exc[{p0}]∩(path_curr∪{p})=(∅ ⦂ ℙ(PATH))" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_Yom3UPNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#add_path_curr\/path_curr_invariant1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTC1_Paths_cu+" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="path_req'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_curr'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="path_act'" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC1_Paths_cu+" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTIDENTC1_Paths_cu+" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_Yom3UPNOEeaEvfyRgzOTMA|org.eventb.core.guard#_kMizMC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="p∈path_req" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_Yom3UPNOEeaEvfyRgzOTMA|org.eventb.core.guard#_kMizMS2nEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="set_path_rel/typeof_path_rel/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu,"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path_rel∪{p}⊆path_curr" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_oJ3lwPNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#set_path_rel\/typeof_path_rel\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="set_path_rel/typeof_path_act/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu,"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path_act ∖ {p}⊆path_curr" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUy2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_oJ3lwPNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUy2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#set_path_rel\/typeof_path_act\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="set_path_rel/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu,"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="partition(path_curr,path_rel∪{p},path_act ∖ {p})" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_oJ3lwPNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#set_path_rel\/distinct_states_in_path_curr_statemachine1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTC1_Paths_cu," org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="path_rel'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="path_act'" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC1_Paths_cu," org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTIDENTC1_Paths_cu," org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="p∈path_act" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_oJ3lwPNOEeaEvfyRgzOTMA|org.eventb.core.guard#_kMizNi2nEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="remove_path_curr/typeof_path_rel/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu-"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path_rel ∖ {p}⊆path_curr ∖ {p}" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_oJ4M0PNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#remove_path_curr\/typeof_path_rel\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="remove_path_curr/typeof_path_act/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu-"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path_act⊆path_curr ∖ {p}" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUy2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_oJ4M0PNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUy2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#remove_path_curr\/typeof_path_act\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="remove_path_curr/distinct_states_in_path_state/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu-"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="partition(path_req∪(path_curr ∖ {p}),path_req,path_curr ∖ {p})" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_oJ4M0PNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#remove_path_curr\/distinct_states_in_path_state\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="remove_path_curr/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu-"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="partition(path_curr ∖ {p},path_rel ∖ {p},path_act)" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_oJ4M0PNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#remove_path_curr\/distinct_states_in_path_curr_statemachine1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="remove_path_curr/path_curr_invariant1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTALLHYPC1_Paths_cu-"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀p0⦂PATH·p0∈path_curr ∖ {p}⇒Path_Exc[{p0}]∩(path_curr ∖ {p})=(∅ ⦂ ℙ(PATH))" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_oJ4M0PNOEeaEvfyRgzOTMA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poSequent#remove_path_curr\/path_curr_invariant1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTC1_Paths_cu-" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="path_curr'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_rel'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="PATH"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC1_Paths_cu-" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#EVTIDENTC1_Paths_cu-" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="p∈path_rel" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_oJ4M0PNOEeaEvfyRgzOTMA|org.eventb.core.guard#_kMjaQi2nEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Railground_iUML-B/M1_Paths.bpo|org.eventb.core.poFile#M1_Paths|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="path_req⊆PATH" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="path_curr⊆PATH" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="path_rel⊆path_curr" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="path_act⊆path_curr" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUy2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVi2nEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
