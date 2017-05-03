@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M6_Occupation_Impact"/>
+<org.eventb.core.seesContext name="_K1CS8NGSEeaEEoohSjPIXg" org.eventb.core.target="C7_Signals"/>
+<org.eventb.core.variable name="_B3kBotGSEeaEEoohSjPIXg" org.eventb.core.identifier="rail_elem_pos_current"/>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIXj" org.eventb.core.identifier="path_curr"/>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIXl" org.eventb.core.identifier="rail_elem_path_curr"/>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIXq" org.eventb.core.identifier="path_req"/>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIXs" org.eventb.core.identifier="path_rel"/>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIX|" org.eventb.core.identifier="TVD_state_curr"/>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIX}" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="signal_aspect_curr ≔ SIGNAL × {signal_aspect_default}" org.eventb.core.label="act7"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIX~" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_rail_elem_current_pos">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_rail_elem_current_pos"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIY'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="add_path_curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="add_path_curr"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIY(" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="remove_path_curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="remove_path_curr"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIY)" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="add_path_req">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="add_path_req"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIY*" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="remove_path_req">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="remove_path_req"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIY+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_path_rel">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_path_rel"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIY," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_rail_elem_path">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_rail_elem_path"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIY-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_TVD_state_curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_TVD_state_curr"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIY." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_TVD_state_path">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_TVD_state_path"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIY/" org.eventb.core.identifier="signal_aspect_curr"/>
+<org.eventb.core.invariant name="_K1CS8NGSEeaEEoohSjPIY0" org.eventb.core.label="inv1" org.eventb.core.predicate="signal_aspect_curr ∈ SIGNAL → SIGNAL_ASPECT"/>
+<org.eventb.core.invariant name="_K1CS8NGSEeaEEoohSjPIY1" org.eventb.core.label="inv2" org.eventb.core.predicate="∀sig·sig∈ SIGNAL ⇒signal_aspect_curr(sig) ∈ signal_aspect_avail(sig) "/>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIY2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="set_signal_aspect_curr">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="sig"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="sig ∈ SIGNAL"/>
+<org.eventb.core.parameter name=")" org.eventb.core.identifier="asp"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="asp ∈ signal_aspect_avail(sig)"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="asp ≠ signal_aspect_curr(sig)"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="signal_aspect_curr(sig) ≔ asp" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M2_Element_Position"/>
+<org.eventb.core.seesContext name="_K1CS8NGSEeaEEoohSjPIXg" org.eventb.core.target="C3_Paths"/>
+<org.eventb.core.variable name="_B3kBotGSEeaEEoohSjPIXg" org.eventb.core.identifier="rail_elem_pos_current"/>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIXh" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="path_curr ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="rail_elem_path_curr ≔ ∅" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIXi" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_rail_elem_current_pos">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_rail_elem_current_pos"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="elem ∉ dom(rail_elem_path_curr)"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIXj" org.eventb.core.identifier="path_curr"/>
+<org.eventb.core.invariant name="_K1CS8NGSEeaEEoohSjPIXk" org.eventb.core.comment="same" org.eventb.core.label="inv1" org.eventb.core.predicate="path_curr ∈ ℙ(PATH)"/>
+<org.eventb.core.variable name="_K1CS8NGSEeaEEoohSjPIXl" org.eventb.core.identifier="rail_elem_path_curr"/>
+<org.eventb.core.invariant name="_K1CS8NGSEeaEEoohSjPIXm" org.eventb.core.comment="same" org.eventb.core.label="inv2" org.eventb.core.predicate="rail_elem_path_curr ∈ rail_elem ⇸ path_curr"/>
+<org.eventb.core.invariant name="_K1CS8NGSEeaEEoohSjPIXn" org.eventb.core.comment="same" org.eventb.core.label="inv3" org.eventb.core.predicate="∀elem·elem ∈ dom(rail_elem_path_curr) ⇒ elem ∈ dom(path_elem_pos(rail_elem_path_curr(elem))) "/>
+<org.eventb.core.invariant name="_K1CS8NGSEeaEEoohSjPIXo" org.eventb.core.comment="same" org.eventb.core.label="inv4" org.eventb.core.predicate="∀elem·elem ∈ dom(rail_elem_path_curr) ⇒ path_elem_pos(rail_elem_path_curr(elem))(elem) = rail_elem_pos_current(elem)  "/>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIXp" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="add_path_curr">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ PATH"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∉ path_curr"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="path_curr ≔ path_curr ∪ {p}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="rail_elem_path_curr ≔ rail_elem_path_curr (dom(path_elem_pos(p)) × {p}) " org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="∀elem·elem ∈ dom(path_elem_pos(p)) ⇒ path_elem_pos(p)(elem) = rail_elem_pos_current(elem)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_K1CS8NGSEeaEEoohSjPIXq" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="remove_path_curr">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ path_curr"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="path_curr ≔ path_curr∖{p}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="rail_elem_path_curr ≔ rail_elem_path_curr ⩥ {p} " org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

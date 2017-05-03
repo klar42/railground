@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C0_RG_Paths"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="RAIL_ELEM"/>
+<org.eventb.core.carrierSet name=")" org.eventb.core.identifier="RAIL_POS"/>
+<org.eventb.core.axiom name="*" org.eventb.core.label="axm1" org.eventb.core.predicate="finite(RAIL_ELEM)"/>
+<org.eventb.core.axiom name="+" org.eventb.core.label="axm2" org.eventb.core.predicate="finite(RAIL_POS)"/>
+<org.eventb.core.constant name="," org.eventb.core.identifier="Default_Elem_Pos"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="axm3" org.eventb.core.predicate="Default_Elem_Pos ∈ RAIL_ELEM → RAIL_POS"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm4" org.eventb.core.predicate="Path_Elem_Pos ∈ PATH → (RAIL_ELEM ⇸ RAIL_POS)"/>
+<org.eventb.core.constant name="/" org.eventb.core.identifier="Path_Elem_Pos"/>
+<org.eventb.core.axiom name="0" org.eventb.core.label="axm5" org.eventb.core.predicate="∀p·p ∈ PATH ⇒ Path_Elem_Pos(p) ≠ ∅"/>
+</org.eventb.core.contextFile>

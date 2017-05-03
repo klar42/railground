@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1484043220197" org.eventb.texttools.text_representation="context C5_RG_VacancyDetection extends C4_RG_SignalDependency&#10;&#10;sets TVD_SECT TVD_STATE&#10;&#10;constants  Vacant Occupied //TVD_Seg_Sect&#10;&#10;axioms&#10;  @axm1 finite(TVD_SECT) //@axm2 TVD_Seg_Sect ∈ RAIL_SGMT → TVD_SECT // don't see an impact for axm2&#10;  @axm3 partition(TVD_STATE, {Vacant}, {Occupied})&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C4_RG_SignalDependency"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="TVD_SECT"/>
+<org.eventb.core.carrierSet name=")" org.eventb.core.identifier="TVD_STATE"/>
+<org.eventb.core.constant name="*" org.eventb.core.identifier="Vacant"/>
+<org.eventb.core.constant name="+" org.eventb.core.comment="TVD_Seg_Sect" org.eventb.core.identifier="Occupied"/>
+<org.eventb.core.axiom name="-" org.eventb.core.comment="@axm2 TVD_Seg_Sect ∈ RAIL_SGMT → TVD_SECT // don't see an impact for axm2" org.eventb.core.label="axm1" org.eventb.core.predicate="finite(TVD_SECT)"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm3" org.eventb.core.predicate="partition(TVD_STATE, {Vacant}, {Occupied})"/>
+</org.eventb.core.contextFile>

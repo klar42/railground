@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C6_Occupation_Impact"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="SIGNAL"/>
+<org.eventb.core.constant name=")" org.eventb.core.identifier="signal_ctor"/>
+<org.eventb.core.carrierSet name="*" org.eventb.core.identifier="SIGNAL_ASPECT"/>
+<org.eventb.core.constant name="+" org.eventb.core.identifier="signal_aspect_avail"/>
+<org.eventb.core.constant name="," org.eventb.core.identifier="signal_aspect_default"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="axm1" org.eventb.core.predicate="signal_ctor ∈ SIGNAL → RAIL_CTOR"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm2" org.eventb.core.predicate="signal_aspect_avail ∈ SIGNAL → ℙ1(SIGNAL_ASPECT)"/>
+<org.eventb.core.axiom name="/" org.eventb.core.label="axm3" org.eventb.core.predicate="signal_aspect_default ∈ SIGNAL_ASPECT"/>
+<org.eventb.core.axiom name="0" org.eventb.core.label="axm4" org.eventb.core.predicate="∀sig·sig∈ SIGNAL ⇒ signal_aspect_default ∈ signal_aspect_avail(sig) "/>
+</org.eventb.core.contextFile>

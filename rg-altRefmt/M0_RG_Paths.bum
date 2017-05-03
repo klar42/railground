@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.seesContext name="(" org.eventb.core.target="C0_RG_Paths"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="path_curr ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="path_rel ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="path_req ≔ ∅" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="path_curr"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="path_req ⊆ PATH"/>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Add_Path_Req">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ PATH"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∉ (path_curr ∪ path_req)"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="path_req ≔ path_req ∪ {p}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Remove_Path_Req">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ path_req"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="path_req ≔ path_req∖{p}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Add_Path_Curr">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ path_req"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="path_curr ≔ path_curr ∪ {p}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="path_req ≔ path_req∖{p}" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="Path_Exc[{p}] ∩ path_curr = ∅ "/>
+</org.eventb.core.event>
+<org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Set_Path_Rel">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ path_curr"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="path_rel ≔ path_rel ∪ {p}" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∉ path_rel"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Remove_Path_Curr">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ path_rel"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="path_curr ≔ path_curr∖{p}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="path_rel ≔ path_rel∖{p}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="0" org.eventb.core.identifier="path_req"/>
+<org.eventb.core.variable name="1" org.eventb.core.identifier="path_rel"/>
+<org.eventb.core.invariant name="2" org.eventb.core.label="inv2" org.eventb.core.predicate="path_curr ⊆ PATH"/>
+<org.eventb.core.invariant name="3" org.eventb.core.label="inv3" org.eventb.core.predicate="path_rel ⊆ path_curr"/>
+<org.eventb.core.invariant name="4" org.eventb.core.label="inv4" org.eventb.core.predicate="path_req ∩ path_curr = ∅"/>
+<org.eventb.core.invariant name="5" org.eventb.core.label="inv5" org.eventb.core.predicate="∀p·p ∈ path_curr ⇒ Path_Exc[{p}] ∩ path_curr = ∅"/>
+</org.eventb.core.machineFile>

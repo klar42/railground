@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1483437180203" org.eventb.texttools.text_representation="machine M1_Rails sees C1_Rails&#10;&#10;variables rail_elem_conn_current&#10;&#10;invariants&#10;  @inv1 rail_elem_conn_current ∈ rail_elem → ℙ(rail_sgmt)&#10;  @inv2 ∀elem·elem∈rail_elem ⇒ rail_elem_conn_current(elem) ∈ rail_elem_conn_all(elem)&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 rail_elem_conn_current≔ rail_elem_conn_default&#10;  end&#10;&#10;  event set_rail_elem_current_conn&#10;    any elem conn&#10;    where&#10;      @grd1 elem ∈ rail_elem&#10;      @grd2 conn ∈ rail_elem_conn_all(elem)&#10;      @grd3 conn ≠ rail_elem_conn_current(elem)&#10;    then&#10;      @act1 rail_elem_conn_current(elem)≔ conn&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_B3kBoNGSEeaEEoohSjPIXg" org.eventb.core.target="C1_Rails"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_B3kBodGSEeaEEoohSjPIXg" org.eventb.core.assignment="rail_elem_conn_current≔ rail_elem_conn_default" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_B3kBotGSEeaEEoohSjPIXg" org.eventb.core.identifier="rail_elem_conn_current"/>
+<org.eventb.core.invariant name="_B3kBo9GSEeaEEoohSjPIXg" org.eventb.core.label="inv1" org.eventb.core.predicate="rail_elem_conn_current ∈ rail_elem → ℙ(rail_sgmt)"/>
+<org.eventb.core.invariant name="_B3kBpNGSEeaEEoohSjPIXg" org.eventb.core.label="inv2" org.eventb.core.predicate="∀elem·elem∈rail_elem ⇒ rail_elem_conn_current(elem) ∈ rail_elem_conn_all(elem)"/>
+<org.eventb.core.event name="_B3kBpdGSEeaEEoohSjPIXg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="set_rail_elem_current_conn">
+<org.eventb.core.parameter name="_B3kBptGSEeaEEoohSjPIXg" org.eventb.core.identifier="elem"/>
+<org.eventb.core.parameter name="_B3kBp9GSEeaEEoohSjPIXg" org.eventb.core.identifier="conn"/>
+<org.eventb.core.guard name="_B3kBqNGSEeaEEoohSjPIXg" org.eventb.core.label="grd1" org.eventb.core.predicate="elem ∈ rail_elem"/>
+<org.eventb.core.guard name="_B3kBqdGSEeaEEoohSjPIXg" org.eventb.core.label="grd2" org.eventb.core.predicate="conn ∈ rail_elem_conn_all(elem)"/>
+<org.eventb.core.guard name="_B3kBqtGSEeaEEoohSjPIXg" org.eventb.core.label="grd3" org.eventb.core.predicate="conn ≠ rail_elem_conn_current(elem)"/>
+<org.eventb.core.action name="_B3kBq9GSEeaEEoohSjPIXg" org.eventb.core.assignment="rail_elem_conn_current(elem)≔ conn" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

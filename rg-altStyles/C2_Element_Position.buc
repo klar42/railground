@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1483437212218" org.eventb.texttools.text_representation="context C2_Element_Position extends C1_Rails&#10;&#10;sets RAIL_ELEM_POS&#10;&#10;constants rail_elem_pos_conn rail_elem_pos_default&#10;&#10;axioms&#10;  @axm1 finite(RAIL_ELEM_POS)&#10;  @axm2 rail_elem_pos_conn ∈ rail_elem → (RAIL_ELEM_POS ⤔ ℙ(rail_sgmt))&#10;  @axm4 ∀elem·elem∈rail_elem ⇒ rail_elem_conn_all(elem) = ran(rail_elem_pos_conn(elem))&#10;  @axm5 rail_elem_pos_default ∈ rail_elem → RAIL_ELEM_POS&#10;  @axm6 ∀elem·elem ∈ rail_elem ⇒ rail_elem_pos_default(elem) ∈ dom(rail_elem_pos_conn(elem))&#10;  @axm7 ∀elem·elem ∈ rail_elem ⇒ rail_elem_conn_default(elem) = rail_elem_pos_conn(elem)(rail_elem_pos_default(elem))&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C1_Rails"/>
+<org.eventb.core.carrierSet name="_GovRoNGSEeaEEoohSjPIXg" org.eventb.core.identifier="RAIL_ELEM_POS"/>
+<org.eventb.core.constant name="_GovRodGSEeaEEoohSjPIXg" org.eventb.core.identifier="rail_elem_pos_conn"/>
+<org.eventb.core.constant name="_GovRotGSEeaEEoohSjPIXg" org.eventb.core.identifier="rail_elem_pos_default"/>
+<org.eventb.core.axiom name="_GovRo9GSEeaEEoohSjPIXg" org.eventb.core.label="axm1" org.eventb.core.predicate="finite(RAIL_ELEM_POS)"/>
+<org.eventb.core.axiom name="_GovRpNGSEeaEEoohSjPIXg" org.eventb.core.label="axm2" org.eventb.core.predicate="rail_elem_pos_conn ∈ rail_elem → (RAIL_ELEM_POS ⤔ ℙ(rail_sgmt))"/>
+<org.eventb.core.axiom name="_GovRpdGSEeaEEoohSjPIXg" org.eventb.core.label="axm4" org.eventb.core.predicate="∀elem·elem∈rail_elem ⇒ rail_elem_conn_all(elem) = ran(rail_elem_pos_conn(elem))"/>
+<org.eventb.core.axiom name="_GovRptGSEeaEEoohSjPIXg" org.eventb.core.label="axm5" org.eventb.core.predicate="rail_elem_pos_default ∈ rail_elem → RAIL_ELEM_POS"/>
+<org.eventb.core.axiom name="_GovRp9GSEeaEEoohSjPIXg" org.eventb.core.label="axm6" org.eventb.core.predicate="∀elem·elem ∈ rail_elem ⇒ rail_elem_pos_default(elem) ∈ dom(rail_elem_pos_conn(elem))"/>
+<org.eventb.core.axiom name="_GovRqNGSEeaEEoohSjPIXg" org.eventb.core.label="axm7" org.eventb.core.predicate="∀elem·elem ∈ rail_elem ⇒ rail_elem_conn_default(elem) = rail_elem_pos_conn(elem)(rail_elem_pos_default(elem))"/>
+</org.eventb.core.contextFile>

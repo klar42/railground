@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M1_RG_ElementPosition"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="C2_RG_Signal"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="path_curr"/>
+<org.eventb.core.variable name="0" org.eventb.core.identifier="path_req"/>
+<org.eventb.core.variable name="1" org.eventb.core.identifier="path_rel"/>
+<org.eventb.core.variable name="8" org.eventb.core.identifier="rail_elem_pos_curr"/>
+<org.eventb.core.variable name=":" org.eventb.core.identifier="rail_elem_path_curr"/>
+<org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="signal_aspect_curr ≔ SIGNAL × {Signal_Aspect_Default}" org.eventb.core.label="act6"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="=" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Add_Path_Req">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Add_Path_Req"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Remove_Path_Req">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Remove_Path_Req"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="?" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Add_Path_Curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Add_Path_Curr"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="@" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Set_Path_Rel">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Set_Path_Rel"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="A" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Remove_Path_Curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Remove_Path_Curr"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="B" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Set_Rail_Elem_Pos_Curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Set_Rail_Elem_Pos_Curr"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="C" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Set_Rail_Elem_Path_Curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Set_Rail_Elem_Path_Curr"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="D" org.eventb.core.identifier="signal_aspect_curr"/>
+<org.eventb.core.invariant name="E" org.eventb.core.label="inv1" org.eventb.core.predicate="signal_aspect_curr ∈ SIGNAL → SIGNAL_ASPECT"/>
+<org.eventb.core.invariant name="F" org.eventb.core.label="inv2" org.eventb.core.predicate="∀sig·sig ∈ SIGNAL ⇒ signal_aspect_curr(sig) ∈ Signal_Aspect_Avail(sig)"/>
+<org.eventb.core.event name="G" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Set_Signal_Aspect_Proceed">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="sig"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="sig ∈ SIGNAL"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="signal_aspect_curr(sig) = Signal_Aspect_Default"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="signal_aspect_curr(sig)≔ sig_asp" org.eventb.core.label="act1"/>
+<org.eventb.core.parameter name="+" org.eventb.core.identifier="sig_asp"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="sig_asp ∈ Signal_Aspect_Avail(sig)∖{Signal_Aspect_Default}"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="H" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Set_Signal_Aspect_Default">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="sig"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="sig ∈ SIGNAL"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="signal_aspect_curr(sig) ≠ Signal_Aspect_Default"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="signal_aspect_curr(sig) ≔ Signal_Aspect_Default" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

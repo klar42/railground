@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1484064670632" org.eventb.texttools.text_representation="context C1_Rails_vis extends C8_Signal_Dependency&#10;&#10;constants T P1 P2 X1 X2 a b c d e f g h i j POS_X POS_F POS_L POS_R R1 R2 R3 R4 VT VP1 VP2 S1 S2 S3 S4 SIGNAL_ASPECT_STOP SIGNAL_ASPECT_PROCEED&#10;&#10;axioms&#10;  @axm1 partition(rail_elem, {T}, {P1}, {P2})&#10;  @axm2 partition(rail_term, {X1}, {X2})&#10;  @axm3 partition(RAIL_CTOR, {a}, {b}, {c}, {d}, {e}, {f}, {g}, {h}, {i}, {j})&#10;  @axm4 rail_ctor_item = {a ↦ X1, h ↦ X2, b ↦ T, c ↦ T, d ↦ P1,e ↦ P1, i ↦ P1, f ↦ P2,g ↦ P2, j ↦ P2}&#10;  @axm5 rail_sgmt = {b↦ c, c↦b,  d↦ e, e↦d,i↦ d, d↦i,  g↦ f, f↦g,g↦j,j ↦ g}&#10;  @axm6 rail_elem_conn_all = {T ↦ {{b↦c, c↦b}}, P1 ↦ {∅, {d↦i, i↦d}, {d↦e, e↦d}}, P2 ↦ {∅, {g↦f, f↦g}, {g↦j, j↦g}}}&#10;  @axm7 partition(RAIL_ELEM_POS, {POS_X}, {POS_F}, {POS_L}, {POS_R})&#10;  @axm8 partition(PATH, {R1}, {R2}, {R3}, {R4})&#10;  @axm18 path_elem_pos = {&#10;         R1 ↦ {T ↦ POS_F, P1 ↦ POS_R, P2 ↦ POS_L},&#10;         R2 ↦ {T ↦ POS_F, P1 ↦POS_L, P2 ↦ POS_R},&#10;         R3 ↦ {T ↦ POS_F, P1 ↦ POS_R, P2 ↦ POS_L},&#10;         R4 ↦ {T ↦ POS_F, P1 ↦ POS_R, P2 ↦ POS_L}&#10;         } // @axm12 path_sgmt_nxt = {R1 ↦ {(b↦c) ↦ (d↦ e), (d↦ e) ↦ (f↦ g)}, R2 ↦ {(b↦ c) ↦ (d↦ i), (d↦ i) ↦ (j↦ g)}, R3 ↦ {(g↦ f) ↦ (e↦d), (e↦d) ↦ (c↦b)}, R4 ↦ {(g↦j) ↦ (i↦ d), (i↦ d) ↦ (c↦ b)}}@axm11 path_sgmt_fst = {R1 ↦ (b↦c), R2 ↦ (b↦c), R3 ↦ (g↦f), R4 ↦ (g↦j) @axm13 path_sgmt_lst ={R1 ↦ (f↦g), R2 ↦ (j↦g), R3 ↦ (c↦b), R4 ↦ (c↦b)}&#10;  @axm23 partition(TVD_SECT, {VT}, {VP1}, {VP2})&#10;  @axm24 TVD_seg_sect = {(b↦c) ↦ VT, (c↦b) ↦ VT, (d↦i) ↦ VP1, (i↦d) ↦ VP1, (d↦e) ↦ VP1, (e↦d) ↦ VP1, (g↦f) ↦ VP2, (f↦g) ↦ VP2, (g↦j) ↦ VP2, (j↦g) ↦ VP2}&#10;  @axm25 partition(SIGNAL, {S1}, {S2}, {S3}, {S4})&#10;  @axm36 signal_ctor = {S1 ↦ a, S2 ↦ b, S3 ↦ c, S4 ↦ d}&#10;  @SIGNAL_ASPECT_ENUM·data partition(SIGNAL_ASPECT, {SIGNAL_ASPECT_STOP}, {SIGNAL_ASPECT_PROCEED})&#10;  @sig1 signal_aspect_avail = {S1 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;                            S2 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;                            S3 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;                            S4 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED}}&#10;&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="_VuvAYNGSEeaEEoohSjPIXg" org.eventb.core.target="C8_Signal_Dependency"/>
+<org.eventb.core.constant name="_z54cAMXvEeaGmrDxKY15XA" org.eventb.core.identifier="T"/>
+<org.eventb.core.constant name="_z54cAcXvEeaGmrDxKY15XA" org.eventb.core.identifier="P1"/>
+<org.eventb.core.constant name="_z54cAsXvEeaGmrDxKY15XA" org.eventb.core.identifier="P2"/>
+<org.eventb.core.constant name="_z54cA8XvEeaGmrDxKY15XA" org.eventb.core.identifier="X1"/>
+<org.eventb.core.constant name="_z55DEMXvEeaGmrDxKY15XA" org.eventb.core.identifier="X2"/>
+<org.eventb.core.constant name="_z55DEcXvEeaGmrDxKY15XA" org.eventb.core.identifier="a"/>
+<org.eventb.core.constant name="_z55DEsXvEeaGmrDxKY15XA" org.eventb.core.identifier="b"/>
+<org.eventb.core.constant name="_z55DE8XvEeaGmrDxKY15XA" org.eventb.core.identifier="c"/>
+<org.eventb.core.constant name="_z55qIMXvEeaGmrDxKY15XA" org.eventb.core.identifier="d"/>
+<org.eventb.core.constant name="_z55qIcXvEeaGmrDxKY15XA" org.eventb.core.identifier="e"/>
+<org.eventb.core.constant name="_z55qIsXvEeaGmrDxKY15XA" org.eventb.core.identifier="f"/>
+<org.eventb.core.constant name="_z55qI8XvEeaGmrDxKY15XA" org.eventb.core.identifier="g"/>
+<org.eventb.core.constant name="_z56RMMXvEeaGmrDxKY15XA" org.eventb.core.identifier="h"/>
+<org.eventb.core.constant name="_z56RMcXvEeaGmrDxKY15XA" org.eventb.core.identifier="i"/>
+<org.eventb.core.constant name="_z56RMsXvEeaGmrDxKY15XA" org.eventb.core.identifier="j"/>
+<org.eventb.core.axiom name="_z56RM8XvEeaGmrDxKY15XA" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(rail_elem, {T}, {P1}, {P2})"/>
+<org.eventb.core.axiom name="_z564QMXvEeaGmrDxKY15XA" org.eventb.core.label="axm2" org.eventb.core.predicate="partition(rail_term, {X1}, {X2})"/>
+<org.eventb.core.axiom name="_z564QcXvEeaGmrDxKY15XA" org.eventb.core.label="axm3" org.eventb.core.predicate="partition(RAIL_CTOR, {a}, {b}, {c}, {d}, {e}, {f}, {g}, {h}, {i}, {j})"/>
+<org.eventb.core.axiom name="_BkfOAMX0EeaGmrDxKY15XA" org.eventb.core.label="axm4" org.eventb.core.predicate="rail_ctor_item = {a ↦ X1, h ↦ X2, b ↦ T, c ↦ T, d ↦ P1,e ↦ P1, i ↦ P1, f ↦ P2,g ↦ P2, j ↦ P2}"/>
+<org.eventb.core.axiom name="_VuvAZdGSEeaEEoohSjPIXg" org.eventb.core.label="axm5" org.eventb.core.predicate="rail_sgmt = {b↦ c, c↦b,  d↦ e, e↦d,i↦ d, d↦i,  g↦ f, f↦g,g↦j,j ↦ g}"/>
+<org.eventb.core.constant name="_ZGy1odHEEeaKVsI4zU0k6g" org.eventb.core.identifier="POS_X"/>
+<org.eventb.core.constant name="_ZGy1otHEEeaKVsI4zU0k6g" org.eventb.core.identifier="POS_F"/>
+<org.eventb.core.constant name="_ZGy1o9HEEeaKVsI4zU0k6g" org.eventb.core.identifier="POS_L"/>
+<org.eventb.core.constant name="_ZGy1pNHEEeaKVsI4zU0k6g" org.eventb.core.identifier="POS_R"/>
+<org.eventb.core.axiom name="_ZGy1pdHEEeaKVsI4zU0k6g" org.eventb.core.label="axm6" org.eventb.core.predicate="rail_elem_conn_all = {T ↦ {{b↦c, c↦b}}, P1 ↦ {∅, {d↦i, i↦d}, {d↦e, e↦d}}, P2 ↦ {∅, {g↦f, f↦g}, {g↦j, j↦g}}}"/>
+<org.eventb.core.axiom name="_ZGy1ptHEEeaKVsI4zU0k6g" org.eventb.core.label="axm7" org.eventb.core.predicate="partition(RAIL_ELEM_POS, {POS_X}, {POS_F}, {POS_L}, {POS_R})"/>
+<org.eventb.core.constant name="_IT7cgNJgEeaySpBrmA7_BA" org.eventb.core.identifier="R1"/>
+<org.eventb.core.constant name="_IT7cgdJgEeaySpBrmA7_BA" org.eventb.core.identifier="R2"/>
+<org.eventb.core.constant name="_IT7cgtJgEeaySpBrmA7_BA" org.eventb.core.identifier="R3"/>
+<org.eventb.core.constant name="_IT7cg9JgEeaySpBrmA7_BA" org.eventb.core.identifier="R4"/>
+<org.eventb.core.axiom name="_IT7chNJgEeaySpBrmA7_BA" org.eventb.core.label="axm8" org.eventb.core.predicate="partition(PATH, {R1}, {R2}, {R3}, {R4})"/>
+<org.eventb.core.axiom name="_IT7chdJgEeaySpBrmA7_BA" org.eventb.core.comment="@axm12 path_sgmt_nxt = {R1 ↦ {(b↦c) ↦ (d↦ e), (d↦ e) ↦ (f↦ g)}, R2 ↦ {(b↦ c) ↦ (d↦ i), (d↦ i) ↦ (j↦ g)}, R3 ↦ {(g↦ f) ↦ (e↦d), (e↦d) ↦ (c↦b)}, R4 ↦ {(g↦j) ↦ (i↦ d), (i↦ d) ↦ (c↦ b)}}@axm11 path_sgmt_fst = {R1 ↦ (b↦c), R2 ↦ (b↦c), R3 ↦ (g↦f), R4 ↦ (g↦j) @axm13 path_sgmt_lst ={R1 ↦ (f↦g), R2 ↦ (j↦g), R3 ↦ (c↦b), R4 ↦ (c↦b)}" org.eventb.core.label="axm18" org.eventb.core.predicate="path_elem_pos = {&#10;         R1 ↦ {T ↦ POS_F, P1 ↦ POS_R, P2 ↦ POS_L},&#10;         R2 ↦ {T ↦ POS_F, P1 ↦POS_L, P2 ↦ POS_R},&#10;         R3 ↦ {T ↦ POS_F, P1 ↦ POS_R, P2 ↦ POS_L},&#10;         R4 ↦ {T ↦ POS_F, P1 ↦ POS_R, P2 ↦ POS_L}&#10;         }"/>
+<org.eventb.core.axiom name="_BEBHINKKEeaySpBrmA7_BA" org.eventb.core.label="axm23" org.eventb.core.predicate="partition(TVD_SECT, {VT}, {VP1}, {VP2})"/>
+<org.eventb.core.constant name="_Hd2-ENKKEeaySpBrmA7_BA" org.eventb.core.identifier="VT"/>
+<org.eventb.core.constant name="_Hd2-EdKKEeaySpBrmA7_BA" org.eventb.core.identifier="VP1"/>
+<org.eventb.core.constant name="_Hd2-EtKKEeaySpBrmA7_BA" org.eventb.core.identifier="VP2"/>
+<org.eventb.core.axiom name="_nK4UANKLEeaySpBrmA7_BA" org.eventb.core.label="axm24" org.eventb.core.predicate="TVD_seg_sect = {(b↦c) ↦ VT, (c↦b) ↦ VT, (d↦i) ↦ VP1, (i↦d) ↦ VP1, (d↦e) ↦ VP1, (e↦d) ↦ VP1, (g↦f) ↦ VP2, (f↦g) ↦ VP2, (g↦j) ↦ VP2, (j↦g) ↦ VP2}"/>
+<org.eventb.core.constant name="_fHuAkNdGEeacGaa0CP9cXA" org.eventb.core.identifier="S1"/>
+<org.eventb.core.constant name="_fHuAkddGEeacGaa0CP9cXA" org.eventb.core.identifier="S2"/>
+<org.eventb.core.constant name="_fHuAktdGEeacGaa0CP9cXA" org.eventb.core.identifier="S3"/>
+<org.eventb.core.constant name="_fHuAk9dGEeacGaa0CP9cXA" org.eventb.core.identifier="S4"/>
+<org.eventb.core.axiom name="_fHuAlNdGEeacGaa0CP9cXA" org.eventb.core.label="axm25" org.eventb.core.predicate="partition(SIGNAL, {S1}, {S2}, {S3}, {S4})"/>
+<org.eventb.core.axiom name="_fHuAlddGEeacGaa0CP9cXA" org.eventb.core.label="axm36" org.eventb.core.predicate="signal_ctor = {S1 ↦ a, S2 ↦ b, S3 ↦ c, S4 ↦ d}"/>
+<org.eventb.core.constant name="_9PDnkNdGEeacGaa0CP9cXA" org.eventb.core.identifier="SIGNAL_ASPECT_STOP"/>
+<org.eventb.core.constant name="_9PDnkddGEeacGaa0CP9cXA" org.eventb.core.identifier="SIGNAL_ASPECT_PROCEED"/>
+<org.eventb.core.axiom name="_9PDnktdGEeacGaa0CP9cXA" org.eventb.core.label="SIGNAL_ASPECT_ENUM·data" org.eventb.core.predicate="partition(SIGNAL_ASPECT, {SIGNAL_ASPECT_STOP}, {SIGNAL_ASPECT_PROCEED})"/>
+<org.eventb.core.axiom name="_9PDnk9dGEeacGaa0CP9cXA" org.eventb.core.label="sig1" org.eventb.core.predicate="signal_aspect_avail = {S1 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;                            S2 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;                            S3 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;                            S4 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED}}"/>
+</org.eventb.core.contextFile>

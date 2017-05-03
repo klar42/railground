@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1484062716692" org.eventb.texttools.text_representation="context C4_RG_SignalDependency extends C3_RG_Rails&#10;&#10;sets RAIL_CTOR&#10;&#10;constants Elem_Ctor Rail_Elem_Ctor Sgmt_Ctor Path_Ctor_Beg Signal_Ctor&#10;&#10;axioms&#10;  @axm1 finite(RAIL_CTOR)&#10;  @axm2 Elem_Ctor ⊆ RAIL_CTOR // set of all connectors belonging to an element&#10;  @axm3 Rail_Elem_Ctor ∈ Elem_Ctor ↠ RAIL_ELEM&#10;  @axm33 ∀elem· elem ∈ RAIL_ELEM ⇒ card(Rail_Elem_Ctor∼[{elem}]) ≥ 1 //∧ card(Rail_Elem_Ctor∼[{elem}]) ≤ 4&#10;  @axm4 Sgmt_Ctor ∈ RAIL_SGMT → (Elem_Ctor × Elem_Ctor)//&#10; // @axm5 ∀sgmt,ctor1,ctor2·sgmt ∈ RAIL_SGMT ∧ Sgmt_Ctor(sgmt) = (ctor1 ↦ ctor2) ⇒ ctor1 ≠ ctor2 ∧ Rail_Elem_Ctor(ctor1) = Rail_Elem_Ctor(ctor2)&#10;&#10;  @axm6 ∀sgmt,ctor1,ctor2·sgmt ∈ RAIL_SGMT  ∧ Sgmt_Ctor(sgmt) = (ctor1 ↦ ctor2) ⇒ Rail_Elem_Ctor(ctor1) = Rail_Sgmt_Elem(sgmt)&#10;  @axm7 Path_Ctor_Beg ∈ PATH → Elem_Ctor//&#10;  @axm8 ∀path,ctor·path ∈ PATH ∧ ctor =Path_Ctor_Beg(path)⇒ (∃seg,ctor2·seg ∈ Path_Sgmt(path) ∧ (ctor ↦ ctor2)=Sgmt_Ctor(seg))&#10;  @axm9 Signal_Ctor ∈ SIGNAL → Elem_Ctor&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C3_RG_Rails"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="RAIL_CTOR"/>
+<org.eventb.core.axiom name=")" org.eventb.core.label="axm1" org.eventb.core.predicate="finite(RAIL_CTOR)"/>
+<org.eventb.core.constant name="*" org.eventb.core.identifier="Elem_Ctor"/>
+<org.eventb.core.axiom name="+" org.eventb.core.comment="set of all connectors belonging to an element" org.eventb.core.label="axm2" org.eventb.core.predicate="Elem_Ctor ⊆ RAIL_CTOR"/>
+<org.eventb.core.constant name="-" org.eventb.core.identifier="Rail_Elem_Ctor"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm3" org.eventb.core.predicate="Rail_Elem_Ctor ∈ Elem_Ctor ↠ RAIL_ELEM"/>
+<org.eventb.core.constant name="/" org.eventb.core.identifier="Sgmt_Ctor"/>
+<org.eventb.core.axiom name="0" org.eventb.core.comment="∧ card(Rail_Elem_Ctor∼[{elem}]) ≤ 4" org.eventb.core.label="axm33" org.eventb.core.predicate="∀elem· elem ∈ RAIL_ELEM ⇒ card(Rail_Elem_Ctor∼[{elem}]) ≥ 1"/>
+<org.eventb.core.axiom name="1" org.eventb.core.comment="@axm5 ∀sgmt,ctor1,ctor2·sgmt ∈ RAIL_SGMT ∧ Sgmt_Ctor(sgmt) = (ctor1 ↦ ctor2) ⇒ ctor1 ≠ ctor2 ∧ Rail_Elem_Ctor(ctor1) = Rail_Elem_Ctor(ctor2)" org.eventb.core.label="axm4" org.eventb.core.predicate="Sgmt_Ctor ∈ RAIL_SGMT → (Elem_Ctor × Elem_Ctor)"/>
+<org.eventb.core.axiom name="2" org.eventb.core.label="axm6" org.eventb.core.predicate="∀sgmt,ctor1,ctor2·sgmt ∈ RAIL_SGMT  ∧ Sgmt_Ctor(sgmt) = (ctor1 ↦ ctor2) ⇒ Rail_Elem_Ctor(ctor1) = Rail_Sgmt_Elem(sgmt)"/>
+<org.eventb.core.constant name="4" org.eventb.core.identifier="Path_Ctor_Beg"/>
+<org.eventb.core.constant name="6" org.eventb.core.identifier="Signal_Ctor"/>
+<org.eventb.core.axiom name="_T1NHUNdCEeacGaa0CP9cXA" org.eventb.core.label="axm7" org.eventb.core.predicate="Path_Ctor_Beg ∈ PATH → Elem_Ctor"/>
+<org.eventb.core.axiom name="_WLC9UNdCEeacGaa0CP9cXA" org.eventb.core.label="axm8" org.eventb.core.predicate="∀path,ctor·path ∈ PATH ∧ ctor =Path_Ctor_Beg(path)⇒ (∃seg,ctor2·seg ∈ Path_Sgmt(path) ∧ (ctor ↦ ctor2)=Sgmt_Ctor(seg))"/>
+<org.eventb.core.axiom name="_YjpzcNdCEeacGaa0CP9cXA" org.eventb.core.label="axm9" org.eventb.core.predicate="Signal_Ctor ∈ SIGNAL → Elem_Ctor"/>
+</org.eventb.core.contextFile>
