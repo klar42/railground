@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M6_VacancyDetection"/>
+<org.eventb.core.seesContext name="_tBcYsPNOEeaEvfyRgzOTMR" org.eventb.core.target="DEMO_Station_ctx"/>
+<org.eventb.core.variable name="_XiQBEC6HEeejRqf7k59b7w" org.eventb.core.comment="" org.eventb.core.identifier="path_req" org.eventb.emf.persistence.generator_ID="ac.soton.eventb.statemachines._JfYq4PNNEeaEvfyRgzOTMA" org.eventb.emf.persistence.priority="10"/>
+<org.eventb.core.variable name="_XiQBES6HEeejRqf7k59b7w" org.eventb.core.comment="" org.eventb.core.identifier="path_curr" org.eventb.emf.persistence.generator_ID="ac.soton.eventb.statemachines._JfYq4PNNEeaEvfyRgzOTMA" org.eventb.emf.persistence.priority="10"/>
+<org.eventb.core.variable name="_XiQBEi6HEeejRqf7k59b7w" org.eventb.core.comment="" org.eventb.core.identifier="path_rel" org.eventb.emf.persistence.generator_ID="ac.soton.eventb.statemachines._JfYq4PNNEeaEvfyRgzOTMA" org.eventb.emf.persistence.priority="10"/>
+<org.eventb.core.variable name="_XiQBEy6HEeejRqf7k59b7w" org.eventb.core.comment="" org.eventb.core.identifier="path_act" org.eventb.emf.persistence.generator_ID="ac.soton.eventb.statemachines._JfYq4PNNEeaEvfyRgzOTMA" org.eventb.emf.persistence.priority="10"/>
+<org.eventb.core.variable name="_h2Pw8PNhEeaEvfyRgzOTMA" org.eventb.core.comment="" org.eventb.core.identifier="rail_elem_path_curr"/>
+<org.eventb.core.variable name="_h2Pw8fNhEeaEvfyRgzOTMA" org.eventb.core.comment="" org.eventb.core.identifier="rail_elem_pos_curr"/>
+<org.eventb.core.variable name="_iqXBEBR0EeeyX-cczJsuHQ" org.eventb.core.comment="" org.eventb.core.identifier="signal_aspect_curr"/>
+<org.eventb.core.variable name="_bV1u0C6EEeejRqf7k59b7w" org.eventb.core.comment="" org.eventb.core.identifier="tvd_state_curr"/>
+<org.eventb.core.event name="_tBcYsPNOEeaEvfyRgzOTMS" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.event name="_tBcYsPNOEeaEvfyRgzOTMT" org.eventb.core.comment="" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="add_path_req">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="add_path_req"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_tBcYsPNOEeaEvfyRgzOTMU" org.eventb.core.comment="" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="remove_path_req">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="remove_path_req"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_tBcYsPNOEeaEvfyRgzOTMV" org.eventb.core.comment="" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="add_path_curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="add_path_curr"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_tBcYsPNOEeaEvfyRgzOTMW" org.eventb.core.comment="" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_path_rel">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_path_rel"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_tBcYsPNOEeaEvfyRgzOTMX" org.eventb.core.comment="" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="remove_path_curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="remove_path_curr"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_tBcYsPNOEeaEvfyRgzOTMY" org.eventb.core.comment="" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="setRailElemPos_Curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="setRailElemPos_Curr"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_tBcYsPNOEeaEvfyRgzOTMZ" org.eventb.core.comment="" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="setRailElemPathCurr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="setRailElemPathCurr"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_tBcYsPNOEeaEvfyRgzOTM[" org.eventb.core.comment="" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Set_Signal_Aspect_Default">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Set_Signal_Aspect_Default"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_tBcYsPNOEeaEvfyRgzOTM\" org.eventb.core.comment="" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Set_Signal_Aspect_Proceed">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Set_Signal_Aspect_Proceed"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_tBcYsPNOEeaEvfyRgzOTM]" org.eventb.core.comment="" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_tvd_state_curr">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_tvd_state_curr"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

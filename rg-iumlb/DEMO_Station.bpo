@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+<org.eventb.core.poPredicate name="Path_Exd" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH" org.eventb.core.source="/Railground_iUML-B/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1ky17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Path_Exe" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))" org.eventb.core.source="/Railground_iUML-B/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1kC17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Path_Exf" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼" org.eventb.core.source="/Railground_iUML-B/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1kS17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Path_Exg" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)" org.eventb.core.source="/Railground_iUML-B/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1ki17EeejRqf7k59b7w"/>
+<org.eventb.core.poIdentifier name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.poIdentifier name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.poIdentifier name="Default_Elem_Pos" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.poIdentifier name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.poPredicate name="Default_Elem_Pot" org.eventb.core.predicate="Default_Elem_Pos∈RAIL_ELEM → RAIL_POS" org.eventb.core.source="/Railground_iUML-B/C2_ElemPos_ctx.buc|org.eventb.core.contextFile#C2_ElemPos_ctx|org.eventb.core.axiom#_TE72MS2gEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Default_Elem_Pou" org.eventb.core.predicate="Path_Elem_Pos∈PATH → (RAIL_ELEM ⇸ RAIL_POS)" org.eventb.core.source="/Railground_iUML-B/C2_ElemPos_ctx.buc|org.eventb.core.contextFile#C2_ElemPos_ctx|org.eventb.core.axiom#_TE72Mi2gEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Default_Elem_Pov" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Elem_Pos(p)≠(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))" org.eventb.core.source="/Railground_iUML-B/C2_ElemPos_ctx.buc|org.eventb.core.contextFile#C2_ElemPos_ctx|org.eventb.core.axiom#_TE7PIC2gEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Default_Elem_Pow" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒finite(RAIL_ELEM)" org.eventb.core.source="/Railground_iUML-B/C2_ElemPos_ctx.buc|org.eventb.core.contextFile#C2_ElemPos_ctx|org.eventb.core.axiom#_TE7PIS2gEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Default_Elem_Pox" org.eventb.core.predicate="∀pos⦂RAIL_POS·pos∈RAIL_POS⇒finite(RAIL_POS)" org.eventb.core.source="/Railground_iUML-B/C2_ElemPos_ctx.buc|org.eventb.core.contextFile#C2_ElemPos_ctx|org.eventb.core.axiom#_TE72MC2gEeejRqf7k59b7w"/>
+<org.eventb.core.poIdentifier name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
+<org.eventb.core.poIdentifier name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
+<org.eventb.core.poIdentifier name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
+<org.eventb.core.poIdentifier name="Signal_Aspect_Default" org.eventb.core.type="SIGNAL_ASPECT"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaulu" org.eventb.core.predicate="Signal_Aspect_Avail∈SIGNAL  SIGNAL_ASPECT" org.eventb.core.source="/Railground_iUML-B/C3_Signal_ctx.buc|org.eventb.core.contextFile#C3_Signal_ctx|org.eventb.core.axiom#_gsVpYS2HEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaulv" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL⇒Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]" org.eventb.core.source="/Railground_iUML-B/C3_Signal_ctx.buc|org.eventb.core.contextFile#C3_Signal_ctx|org.eventb.core.axiom#_gsVpYC2HEeejRqf7k59b7w"/>
+<org.eventb.core.poIdentifier name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
+<org.eventb.core.poIdentifier name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
+<org.eventb.core.poIdentifier name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+<org.eventb.core.poIdentifier name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaulw" org.eventb.core.predicate="Rail_Elem_Pos_Conn∈RAIL_ELEM → (RAIL_POS ⇸ ℙ(RAIL_SGMT))" org.eventb.core.source="/Railground_iUML-B/C4_Rails_ctx.buc|org.eventb.core.contextFile#C4_Rails_ctx|org.eventb.core.axiom#_T4gLti2hEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaulx" org.eventb.core.predicate="Path_Sgmt∈PATH ↔ RAIL_SGMT" org.eventb.core.source="/Railground_iUML-B/C4_Rails_ctx.buc|org.eventb.core.contextFile#C4_Rails_ctx|org.eventb.core.axiom#_T4gLty2hEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defauly" org.eventb.core.predicate="Rail_Sgmt_Elem∈RAIL_SGMT → RAIL_ELEM" org.eventb.core.source="/Railground_iUML-B/C4_Rails_ctx.buc|org.eventb.core.contextFile#C4_Rails_ctx|org.eventb.core.axiom#_T4gywC2hEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaulz" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(Path_Elem_Pos(p))" org.eventb.core.source="/Railground_iUML-B/C4_Rails_ctx.buc|org.eventb.core.contextFile#C4_Rails_ctx|org.eventb.core.axiom#_T4gLsS2hEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaul{" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒finite(RAIL_SGMT)" org.eventb.core.source="/Railground_iUML-B/C4_Rails_ctx.buc|org.eventb.core.contextFile#C4_Rails_ctx|org.eventb.core.axiom#_T4gLtS2hEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaul|" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))⇒Path_Elem_Pos(p)(elem)∈dom(Rail_Elem_Pos_Conn(elem)))" org.eventb.core.source="/Railground_iUML-B/C4_Rails_ctx.buc|org.eventb.core.contextFile#C4_Rails_ctx|org.eventb.core.axiom#_T4fkoC2hEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaul}" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∃elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))∧Path_Sgmt[{p}]=Rail_Elem_Pos_Conn(elem)(Path_Elem_Pos(p)(elem)))" org.eventb.core.source="/Railground_iUML-B/C4_Rails_ctx.buc|org.eventb.core.contextFile#C4_Rails_ctx|org.eventb.core.axiom#_T4gLsC2hEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaul~" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))" org.eventb.core.source="/Railground_iUML-B/C4_Rails_ctx.buc|org.eventb.core.contextFile#C4_Rails_ctx|org.eventb.core.axiom#_T4gLsi2hEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum'" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧sgmt1≠sgmt2⇒Rail_Sgmt_Elem(sgmt1)≠Rail_Sgmt_Elem(sgmt2))" org.eventb.core.source="/Railground_iUML-B/C4_Rails_ctx.buc|org.eventb.core.contextFile#C4_Rails_ctx|org.eventb.core.axiom#_T4gLsy2hEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum(" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒Default_Elem_Pos(elem)∈dom(Rail_Elem_Pos_Conn(elem))" org.eventb.core.source="/Railground_iUML-B/C4_Rails_ctx.buc|org.eventb.core.contextFile#C4_Rails_ctx|org.eventb.core.axiom#_T4gLtC2hEeejRqf7k59b7w"/>
+<org.eventb.core.poIdentifier name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.poIdentifier name="Elem_Ctor" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
+<org.eventb.core.poIdentifier name="Path_Ctor_Beg" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
+<org.eventb.core.poIdentifier name="Rail_Elem_Ctor" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_ELEM)"/>
+<org.eventb.core.poIdentifier name="Sgmt_Ctor" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+<org.eventb.core.poIdentifier name="Signal_Ctor" org.eventb.core.type="ℙ(SIGNAL×RAIL_CTOR)"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum)" org.eventb.core.predicate="Elem_Ctor∈ℙ(RAIL_CTOR)" org.eventb.core.source="/Railground_iUML-B/C5_SignalDependency_ctx.buc|org.eventb.core.contextFile#C5_SignalDependency_ctx|org.eventb.core.axiom#_YhRN8S2eEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum*" org.eventb.core.predicate="Rail_Elem_Ctor∈Elem_Ctor ↠ RAIL_ELEM" org.eventb.core.source="/Railground_iUML-B/C5_SignalDependency_ctx.buc|org.eventb.core.contextFile#C5_SignalDependency_ctx|org.eventb.core.axiom#_YhRN8i2eEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum+" org.eventb.core.predicate="Sgmt_Ctor∈RAIL_SGMT → Elem_Ctor × Elem_Ctor" org.eventb.core.source="/Railground_iUML-B/C5_SignalDependency_ctx.buc|org.eventb.core.contextFile#C5_SignalDependency_ctx|org.eventb.core.axiom#_YhRN8y2eEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum," org.eventb.core.predicate="Path_Ctor_Beg∈PATH → Elem_Ctor" org.eventb.core.source="/Railground_iUML-B/C5_SignalDependency_ctx.buc|org.eventb.core.contextFile#C5_SignalDependency_ctx|org.eventb.core.axiom#_YhRN9C2eEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum-" org.eventb.core.predicate="Signal_Ctor∈SIGNAL → Elem_Ctor" org.eventb.core.source="/Railground_iUML-B/C5_SignalDependency_ctx.buc|org.eventb.core.contextFile#C5_SignalDependency_ctx|org.eventb.core.axiom#_YhRN9S2eEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum." org.eventb.core.predicate="∀ector⦂RAIL_CTOR·ector∈Elem_Ctor⇒finite(Elem_Ctor)" org.eventb.core.source="/Railground_iUML-B/C5_SignalDependency_ctx.buc|org.eventb.core.contextFile#C5_SignalDependency_ctx|org.eventb.core.axiom#_YhRN8C2eEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum/" org.eventb.core.predicate="∀ctor⦂RAIL_CTOR·ctor∈RAIL_CTOR⇒finite(RAIL_CTOR)" org.eventb.core.source="/Railground_iUML-B/C5_SignalDependency_ctx.buc|org.eventb.core.contextFile#C5_SignalDependency_ctx|org.eventb.core.axiom#_YhQm4y2eEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum0" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∃seg⦂RAIL_SGMT,ctor2⦂RAIL_CTOR·seg∈Path_Sgmt[{p}]∧Path_Ctor_Beg(p) ↦ ctor2=Sgmt_Ctor(seg))" org.eventb.core.source="/Railground_iUML-B/C5_SignalDependency_ctx.buc|org.eventb.core.contextFile#C5_SignalDependency_ctx|org.eventb.core.axiom#_YhQm4C2eEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum1" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒card(Rail_Elem_Ctor∼[{elem}])≥1" org.eventb.core.source="/Railground_iUML-B/C5_SignalDependency_ctx.buc|org.eventb.core.contextFile#C5_SignalDependency_ctx|org.eventb.core.axiom#_YhQm4S2eEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum2" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒(∀ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒Rail_Elem_Ctor(ctor1)=Rail_Sgmt_Elem(sgmt))" org.eventb.core.source="/Railground_iUML-B/C5_SignalDependency_ctx.buc|org.eventb.core.contextFile#C5_SignalDependency_ctx|org.eventb.core.axiom#_YhQm4i2eEeejRqf7k59b7w"/>
+<org.eventb.core.poIdentifier name="TVD_SECT" org.eventb.core.type="ℙ(TVD_SECT)"/>
+<org.eventb.core.poIdentifier name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
+<org.eventb.core.poIdentifier name="Occupied" org.eventb.core.type="TVD_STATE"/>
+<org.eventb.core.poIdentifier name="TVD_Seg_Sect" org.eventb.core.type="ℙ(RAIL_SGMT×TVD_SECT)"/>
+<org.eventb.core.poIdentifier name="Vacant" org.eventb.core.type="TVD_STATE"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum3" org.eventb.core.predicate="TVD_Seg_Sect∈RAIL_SGMT → TVD_SECT" org.eventb.core.source="/Railground_iUML-B/C6_VacancyDetection_ctx.buc|org.eventb.core.contextFile#C6_VacancyDetection_ctx|org.eventb.core.axiom#_367jAC2fEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum4" org.eventb.core.predicate="partition(TVD_STATE,{Vacant},{Occupied})" org.eventb.core.source="/Railground_iUML-B/C6_VacancyDetection_ctx.buc|org.eventb.core.contextFile#C6_VacancyDetection_ctx|org.eventb.core.axiom#_sNQDAPNLEeaEvfyRgzOTME"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum5" org.eventb.core.predicate="∀tvdState⦂TVD_STATE·tvdState∈TVD_STATE⇒partition(TVD_STATE,{Vacant},{Occupied})" org.eventb.core.source="/Railground_iUML-B/C6_VacancyDetection_ctx.buc|org.eventb.core.contextFile#C6_VacancyDetection_ctx|org.eventb.core.axiom#_367jAS2fEeejRqf7k59b7w"/>
+<org.eventb.core.poIdentifier name="C1" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="C1A" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="C1A_C1D" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="C1B" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="C1B_C1C" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="C1C" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="C1C_C1B" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="C1D" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="C1D_C1A" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P1" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="P1L" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="P1L_P1T" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P1R" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="P1R_P1T" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P1T" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="P1T_P1L" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P1T_P1R" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P2" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="P2L" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="P2L_P2T" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P2R" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="P2R_P2T" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P2T" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="P2T_P2L" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P2T_P2R" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P3" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="P3L" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="P3L_P3T" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P3R" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="P3R_P3T" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P3T" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="P3T_P3L" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P3T_P3R" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P4" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="P4L" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="P4L_P4T" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P4R" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="P4R_P4T" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P4T" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="P4T_P4L" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="P4T_P4R" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="R01" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R02" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R03" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R04" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R05" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R06" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R07" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R08" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R09" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R10" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R11" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R12" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R13" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R14" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="RAIL_POS_F" org.eventb.core.type="RAIL_POS"/>
+<org.eventb.core.poIdentifier name="RAIL_POS_L" org.eventb.core.type="RAIL_POS"/>
+<org.eventb.core.poIdentifier name="RAIL_POS_R" org.eventb.core.type="RAIL_POS"/>
+<org.eventb.core.poIdentifier name="RAIL_POS_X" org.eventb.core.type="RAIL_POS"/>
+<org.eventb.core.poIdentifier name="S0" org.eventb.core.type="SIGNAL"/>
+<org.eventb.core.poIdentifier name="S1" org.eventb.core.type="SIGNAL"/>
+<org.eventb.core.poIdentifier name="S2" org.eventb.core.type="SIGNAL"/>
+<org.eventb.core.poIdentifier name="S3" org.eventb.core.type="SIGNAL"/>
+<org.eventb.core.poIdentifier name="S4" org.eventb.core.type="SIGNAL"/>
+<org.eventb.core.poIdentifier name="S5" org.eventb.core.type="SIGNAL"/>
+<org.eventb.core.poIdentifier name="S6" org.eventb.core.type="SIGNAL"/>
+<org.eventb.core.poIdentifier name="S7" org.eventb.core.type="SIGNAL"/>
+<org.eventb.core.poIdentifier name="S8" org.eventb.core.type="SIGNAL"/>
+<org.eventb.core.poIdentifier name="S9" org.eventb.core.type="SIGNAL"/>
+<org.eventb.core.poIdentifier name="SIGNAL_ASPECT_PROCEED" org.eventb.core.type="SIGNAL_ASPECT"/>
+<org.eventb.core.poIdentifier name="SIGNAL_ASPECT_STOP" org.eventb.core.type="SIGNAL_ASPECT"/>
+<org.eventb.core.poIdentifier name="T1" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="T1A" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T1A_T1B" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T1B" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T1B_T1A" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T2" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="T2A" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T2A_T2B" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T2B" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T2B_T2A" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T3" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="T3A" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T3A_T3B" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T3B" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T3B_T3A" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T4" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="T4A" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T4A_T4B" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T4B" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T4B_T4A" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T5" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="T5A" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T5A_T5B" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T5B" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T5B_T5A" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T6" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="T6A" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T6A_T6B" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T6B" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T6B_T6A" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T7" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="T7A" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T7A_T7B" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T7B" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T7B_T7A" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T8" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="T8A" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T8A_T8B" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="T8B" org.eventb.core.type="RAIL_CTOR"/>
+<org.eventb.core.poIdentifier name="T8B_T8A" org.eventb.core.type="RAIL_SGMT"/>
+<org.eventb.core.poIdentifier name="VC1" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poIdentifier name="VP1" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poIdentifier name="VP2" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poIdentifier name="VP3" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poIdentifier name="VP4" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poIdentifier name="VT1" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poIdentifier name="VT2" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poIdentifier name="VT3" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poIdentifier name="VT4" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poIdentifier name="VT5" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poIdentifier name="VT6" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poIdentifier name="VT7" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poIdentifier name="VT8" org.eventb.core.type="TVD_SECT"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum6" org.eventb.core.predicate="partition(PATH,{R01},{R02},{R03},{R04},{R05},{R06},{R07},{R08},{R09},{R10},{R11},{R12},{R13},{R14})" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm1"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum7" org.eventb.core.predicate="Path_Exc={R02 ↦ R05,R02 ↦ R11,R05 ↦ R02,R05 ↦ R07,R05 ↦ R13,R05 ↦ R14,R07 ↦ R05,R07 ↦ R11,R11 ↦ R02,R11 ↦ R07,R11 ↦ R13,R11 ↦ R14,R13 ↦ R05,R13 ↦ R11,R14 ↦ R05,R14 ↦ R11}" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm2"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum8" org.eventb.core.predicate="partition(RAIL_ELEM,{T1},{T2},{T3},{T4},{T5},{T6},{T7},{T8},{P1},{P2},{P3},{P4},{C1})" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm3"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum9" org.eventb.core.predicate="partition(RAIL_POS,{RAIL_POS_X},{RAIL_POS_F},{RAIL_POS_L},{RAIL_POS_R})" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm4"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum:" org.eventb.core.predicate="Default_Elem_Pos={T1 ↦ RAIL_POS_F,T2 ↦ RAIL_POS_F,T3 ↦ RAIL_POS_F,T4 ↦ RAIL_POS_F,T5 ↦ RAIL_POS_F,T6 ↦ RAIL_POS_F,T7 ↦ RAIL_POS_F,T8 ↦ RAIL_POS_F,P1 ↦ RAIL_POS_X,P2 ↦ RAIL_POS_X,P3 ↦ RAIL_POS_X,P4 ↦ RAIL_POS_X,C1 ↦ RAIL_POS_F}" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm5"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum;" org.eventb.core.predicate="Path_Elem_Pos={R01 ↦ {T4 ↦ RAIL_POS_F,T3 ↦ RAIL_POS_F,P2 ↦ RAIL_POS_R,C1 ↦ RAIL_POS_F,P4 ↦ RAIL_POS_R,T7 ↦ RAIL_POS_F},R02 ↦ {T4 ↦ RAIL_POS_F,T3 ↦ RAIL_POS_F,P2 ↦ RAIL_POS_L},R03 ↦ {T1 ↦ RAIL_POS_F},R04 ↦ {T6 ↦ RAIL_POS_F,P3 ↦ RAIL_POS_L,C1 ↦ RAIL_POS_F,P1 ↦ RAIL_POS_L,T2 ↦ RAIL_POS_F},R05 ↦ {T6 ↦ RAIL_POS_F,P3 ↦ RAIL_POS_R,P4 ↦ RAIL_POS_L,T7 ↦ RAIL_POS_F},R06 ↦ {T1 ↦ RAIL_POS_F,T2 ↦ RAIL_POS_F,P1 ↦ RAIL_POS_L,C1 ↦ RAIL_POS_F,P3 ↦ RAIL_POS_L,T6 ↦ RAIL_POS_F},R07 ↦ {T1 ↦ RAIL_POS_F,T2 ↦ RAIL_POS_F,P1 ↦ RAIL_POS_R},R08 ↦ {T8 ↦ RAIL_POS_F},R09 ↦ {T4 ↦ RAIL_POS_F},R10 ↦ {T7 ↦ RAIL_POS_F,P4 ↦ RAIL_POS_R,C1 ↦ RAIL_POS_F,P2 ↦ RAIL_POS_R,T3 ↦ RAIL_POS_F},R11 ↦ {T7 ↦ RAIL_POS_F,P4 ↦ RAIL_POS_L,P3 ↦ RAIL_POS_R,T6 ↦ RAIL_POS_F},R12 ↦ {T5 ↦ RAIL_POS_F},R13 ↦ {P2 ↦ RAIL_POS_L,T3 ↦ RAIL_POS_F},R14 ↦ {P1 ↦ RAIL_POS_R,T2 ↦ RAIL_POS_F}}" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm6"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum=" org.eventb.core.predicate="partition(SIGNAL_ASPECT,{SIGNAL_ASPECT_STOP},{SIGNAL_ASPECT_PROCEED})" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm7"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum&gt;" org.eventb.core.predicate="partition(SIGNAL,{S1},{S2},{S3},{S4},{S5},{S6},{S7},{S8},{S9},{S0})" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm8"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum?" org.eventb.core.predicate="Signal_Aspect_Avail={S1 ↦ SIGNAL_ASPECT_STOP,S1 ↦ SIGNAL_ASPECT_PROCEED,S2 ↦ SIGNAL_ASPECT_STOP,S2 ↦ SIGNAL_ASPECT_PROCEED,S3 ↦ SIGNAL_ASPECT_STOP,S3 ↦ SIGNAL_ASPECT_PROCEED,S4 ↦ SIGNAL_ASPECT_STOP,S4 ↦ SIGNAL_ASPECT_PROCEED,S5 ↦ SIGNAL_ASPECT_STOP,S5 ↦ SIGNAL_ASPECT_PROCEED,S6 ↦ SIGNAL_ASPECT_STOP,S6 ↦ SIGNAL_ASPECT_PROCEED,S7 ↦ SIGNAL_ASPECT_STOP,S7 ↦ SIGNAL_ASPECT_PROCEED,S8 ↦ SIGNAL_ASPECT_STOP,S8 ↦ SIGNAL_ASPECT_PROCEED,S9 ↦ SIGNAL_ASPECT_STOP,S9 ↦ SIGNAL_ASPECT_PROCEED,S0 ↦ SIGNAL_ASPECT_STOP,S0 ↦ SIGNAL_ASPECT_PROCEED}" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm9"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_Defaum@" org.eventb.core.predicate="Signal_Aspect_Default=SIGNAL_ASPECT_STOP" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm10"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_DefaumA" org.eventb.core.predicate="partition(RAIL_SGMT,{T1A_T1B},{T1B_T1A},{T2A_T2B},{T2B_T2A},{T3A_T3B},{T3B_T3A},{T4A_T4B},{T4B_T4A},{T5A_T5B},{T5B_T5A},{T6A_T6B},{T6B_T6A},{T7A_T7B},{T7B_T7A},{T8A_T8B},{T8B_T8A},{P1T_P1L},{P1L_P1T},{P1T_P1R},{P1R_P1T},{P2T_P2L},{P2L_P2T},{P2T_P2R},{P2R_P2T},{P3T_P3L},{P3L_P3T},{P3T_P3R},{P3R_P3T},{P4T_P4L},{P4L_P4T},{P4T_P4R},{P4R_P4T},{C1A_C1D},{C1D_C1A},{C1B_C1C},{C1C_C1B})" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm11"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_DefaumB" org.eventb.core.predicate="Rail_Elem_Pos_Conn={T1 ↦ {RAIL_POS_F ↦ {T1A_T1B,T1B_T1A}},T2 ↦ {RAIL_POS_F ↦ {T2A_T2B,T2B_T2A}},T3 ↦ {RAIL_POS_F ↦ {T3A_T3B,T3B_T3A}},T4 ↦ {RAIL_POS_F ↦ {T4A_T4B,T4B_T4A}},T5 ↦ {RAIL_POS_F ↦ {T5A_T5B,T5B_T5A}},T6 ↦ {RAIL_POS_F ↦ {T6A_T6B,T6B_T6A}},T7 ↦ {RAIL_POS_F ↦ {T7A_T7B,T7B_T7A}},T8 ↦ {RAIL_POS_F ↦ {T8A_T8B,T8B_T8A}},P1 ↦ {RAIL_POS_X ↦ (∅ ⦂ ℙ(RAIL_SGMT)),RAIL_POS_L ↦ {P1T_P1L,P1L_P1T},RAIL_POS_R ↦ {P1T_P1R,P1R_P1T}},P2 ↦ {RAIL_POS_X ↦ (∅ ⦂ ℙ(RAIL_SGMT)),RAIL_POS_L ↦ {P2T_P2L,P2L_P2T},RAIL_POS_R ↦ {P2T_P2R,P2R_P2T}},P3 ↦ {RAIL_POS_X ↦ (∅ ⦂ ℙ(RAIL_SGMT)),RAIL_POS_L ↦ {P3T_P3L,P3L_P3T},RAIL_POS_R ↦ {P3T_P3R,P3R_P3T}},P4 ↦ {RAIL_POS_X ↦ (∅ ⦂ ℙ(RAIL_SGMT)),RAIL_POS_L ↦ {P4T_P4L,P4L_P4T},RAIL_POS_R ↦ {P4T_P4R,P4R_P4T}},C1 ↦ {RAIL_POS_F ↦ {C1A_C1D,C1D_C1A,C1B_C1C,C1C_C1B}}}" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm12"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_DefaumC" org.eventb.core.predicate="Path_Sgmt={R01 ↦ T4B_T4A,R01 ↦ T3B_T3A,R01 ↦ P2T_P2R,R01 ↦ C1A_C1D,R01 ↦ P4R_P4T,R01 ↦ T7A_T7B,R02 ↦ T4B_T4A,R02 ↦ T3B_T3A,R02 ↦ P2T_P2L,R03 ↦ T1B_T1A,R04 ↦ T6A_T6B,R04 ↦ P3T_P3L,R04 ↦ C1B_C1C,R04 ↦ P1L_P1T,R04 ↦ T2B_T2A,R05 ↦ T6A_T6B,R05 ↦ P3T_P3R,R05 ↦ P4L_P4T,R05 ↦ T7A_T7B,R06 ↦ T1A_T1B,R06 ↦ T2A_T2B,R06 ↦ P1T_P1L,R06 ↦ C1C_C1B,R06 ↦ P3L_P3T,R06 ↦ T6B_T6A,R07 ↦ T1A_T1B,R07 ↦ T2A_T2B,R07 ↦ P1T_P1R,R08 ↦ T8A_T8B,R09 ↦ T4A_T4B,R10 ↦ T7B_T7A,R10 ↦ P4T_P4R,R10 ↦ C1D_C1A,R10 ↦ P2R_P2T,R10 ↦ T3A_T3B,R11 ↦ T7B_T7A,R11 ↦ P4T_P4L,R11 ↦ P3R_P3T,R11 ↦ T6B_T6A,R12 ↦ T5B_T5A,R13 ↦ P2L_P2T,R13 ↦ T3A_T3B,R14 ↦ P1R_P1T,R14 ↦ T2B_T2A}" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm13"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_DefaumD" org.eventb.core.predicate="partition(RAIL_CTOR,{T1A},{T1B},{T2A},{T2B},{T3A},{T3B},{T4A},{T4B},{T5A},{T5B},{T6A},{T6B},{T7A},{T7B},{T8A},{T8B},{P1T},{P1L},{P1R},{P2T},{P2L},{P2R},{P3T},{P3L},{P3R},{P4T},{P4L},{P4R},{C1A},{C1B},{C1C},{C1D})" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm14"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_DefaumE" org.eventb.core.predicate="Rail_Elem_Ctor={T1A ↦ T1,T1B ↦ T1,T2A ↦ T2,T2B ↦ T2,T3A ↦ T3,T3B ↦ T3,T4A ↦ T4,T4B ↦ T4,T5A ↦ T5,T5B ↦ T5,T6A ↦ T6,T6B ↦ T6,T7A ↦ T7,T7B ↦ T7,T8A ↦ T8,T8B ↦ T8,P1T ↦ P1,P1L ↦ P1,P1R ↦ P1,P2T ↦ P2,P2L ↦ P2,P2R ↦ P2,P3T ↦ P3,P3L ↦ P3,P3R ↦ P3,P4T ↦ P4,P4L ↦ P4,P4R ↦ P4,C1A ↦ C1,C1B ↦ C1,C1C ↦ C1,C1D ↦ C1}" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm15"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_DefaumF" org.eventb.core.predicate="Sgmt_Ctor={T1A_T1B ↦ (T1A ↦ T1B),T1B_T1A ↦ (T1B ↦ T1A),T2A_T2B ↦ (T2A ↦ T2B),T2B_T2A ↦ (T2B ↦ T2A),T3A_T3B ↦ (T3A ↦ T3B),T3B_T3A ↦ (T3B ↦ T3A),T4A_T4B ↦ (T4A ↦ T4B),T4B_T4A ↦ (T4B ↦ T4A),T5A_T5B ↦ (T5A ↦ T5B),T5B_T5A ↦ (T5B ↦ T5A),T6A_T6B ↦ (T6A ↦ T6B),T6B_T6A ↦ (T6B ↦ T6A),T7A_T7B ↦ (T7A ↦ T7B),T7B_T7A ↦ (T7B ↦ T7A),T8A_T8B ↦ (T8A ↦ T8B),T8B_T8A ↦ (T8B ↦ T8A),P1T_P1L ↦ (P1T ↦ P1L),P1L_P1T ↦ (P1L ↦ P1T),P1T_P1R ↦ (P1T ↦ P1R),P1R_P1T ↦ (P1R ↦ P1T),P2T_P2L ↦ (P2T ↦ P2L),P2L_P2T ↦ (P2L ↦ P2T),P2T_P2R ↦ (P2T ↦ P2R),P2R_P2T ↦ (P2R ↦ P2T),P3T_P3L ↦ (P3T ↦ P3L),P3L_P3T ↦ (P3L ↦ P3T),P3T_P3R ↦ (P3T ↦ P3R),P3R_P3T ↦ (P3R ↦ P3T),P4T_P4L ↦ (P4T ↦ P4L),P4L_P4T ↦ (P4L ↦ P4T),P4T_P4R ↦ (P4T ↦ P4R),P4R_P4T ↦ (P4R ↦ P4T),C1A_C1D ↦ (C1A ↦ C1D),C1D_C1A ↦ (C1D ↦ C1A),C1B_C1C ↦ (C1B ↦ C1C),C1C_C1B ↦ (C1C ↦ C1B)}" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm16"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_DefaumG" org.eventb.core.predicate="Path_Ctor_Beg={R01 ↦ T4B,R02 ↦ T4B,R03 ↦ T1B,R04 ↦ T6A,R05 ↦ T6A,R06 ↦ T1A,R07 ↦ T1A,R08 ↦ T8A,R09 ↦ T4A,R10 ↦ T7B,R11 ↦ T7B,R12 ↦ T5B,R13 ↦ P2L,R14 ↦ P1R}" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm17"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_DefaumH" org.eventb.core.predicate="Signal_Ctor={S1 ↦ T4B,S2 ↦ T1B,S3 ↦ T6A,S4 ↦ T8A,S5 ↦ T1A,S6 ↦ T4A,S7 ↦ T7B,S8 ↦ T5B,S9 ↦ P2L,S0 ↦ P1R}" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm18"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_DefaumI" org.eventb.core.predicate="partition(TVD_SECT,{VT1},{VT2},{VT3},{VT4},{VT5},{VT6},{VT7},{VT8},{VP1},{VP2},{VP3},{VP4},{VC1})" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm19"/>
+<org.eventb.core.poPredicate name="Signal_Aspect_DefaumJ" org.eventb.core.predicate="TVD_Seg_Sect={T1A_T1B ↦ VT1,T1B_T1A ↦ VT1,T2A_T2B ↦ VT2,T2B_T2A ↦ VT2,T3A_T3B ↦ VT3,T3B_T3A ↦ VT3,T4A_T4B ↦ VT4,T4B_T4A ↦ VT4,T5A_T5B ↦ VT5,T5B_T5A ↦ VT5,T6A_T6B ↦ VT6,T6B_T6A ↦ VT6,T7A_T7B ↦ VT7,T7B_T7A ↦ VT7,T8A_T8B ↦ VT8,T8B_T8A ↦ VT8,P1T_P1L ↦ VP1,P1L_P1T ↦ VP1,P1T_P1R ↦ VP1,P1R_P1T ↦ VP1,P2T_P2L ↦ VP2,P2L_P2T ↦ VP2,P2T_P2R ↦ VP2,P2R_P2T ↦ VP2,P3T_P3L ↦ VP3,P3L_P3T ↦ VP3,P3T_P3R ↦ VP3,P3R_P3T ↦ VP3,P4T_P4L ↦ VP4,P4L_P4T ↦ VP4,P4T_P4R ↦ VP4,P4R_P4T ↦ VP4,C1A_C1D ↦ VC1,C1D_C1A ↦ VC1,C1B_C1C ↦ VC1,C1C_C1B ↦ VC1}" org.eventb.core.source="/Railground_iUML-B/DEMO_Station_ctx.buc|org.eventb.core.contextFile#DEMO_Station_ctx|org.eventb.core.axiom#axm20"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="path_act" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="rail_elem_path_curr" org.eventb.core.type="ℙ(RAIL_ELEM×PATH)"/>
+<org.eventb.core.poIdentifier name="rail_elem_pos_curr" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.poIdentifier name="signal_aspect_curr" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
+<org.eventb.core.poIdentifier name="tvd_state_curr" org.eventb.core.type="ℙ(TVD_SECT×TVD_STATE)"/>
+<org.eventb.core.poPredicate name="rail_elem_path_curs" org.eventb.core.predicate="path_req⊆PATH" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_curt" org.eventb.core.predicate="path_curr⊆PATH" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_curu" org.eventb.core.predicate="path_rel⊆path_curr" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_curv" org.eventb.core.predicate="path_act⊆path_curr" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBUy2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_curw" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_curx" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_cury" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.invariant#_kMkBVi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_curz" org.eventb.core.predicate="rail_elem_path_curr∈RAIL_ELEM ⇸ path_curr" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.invariant#_jWLnZC2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_cur{" org.eventb.core.predicate="rail_elem_pos_curr∈RAIL_ELEM → RAIL_POS" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.invariant#_jWLnYy2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_cur|" org.eventb.core.predicate="∀p⦂PATH·p∈path_req⇒(∀p2⦂PATH·p2∈path_req ∖ {p}⇒dom(Path_Elem_Pos(p))∩dom(Path_Elem_Pos(p2))=(∅ ⦂ ℙ(RAIL_ELEM)))" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.invariant#_jUzuYC2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_cur}" org.eventb.core.predicate="∀p⦂PATH·p∈path_req⇒dom(Path_Elem_Pos(p))∩dom(rail_elem_path_curr)=(∅ ⦂ ℙ(RAIL_ELEM))" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.invariant#_jUzuYS2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_cur~" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒(elem∈dom(rail_elem_path_curr)⇒elem∈dom(Path_Elem_Pos(rail_elem_path_curr(elem))))" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.invariant#_jWLnYS2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_cus'" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒(elem∈dom(rail_elem_path_curr)⇒Path_Elem_Pos(rail_elem_path_curr(elem))(elem)=rail_elem_pos_curr(elem))" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.invariant#_jWLnYi2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_cus(" org.eventb.core.predicate="signal_aspect_curr∈SIGNAL → SIGNAL_ASPECT" org.eventb.core.source="/Railground_iUML-B/M3_Signal.bum|org.eventb.core.machineFile#M3_Signal|org.eventb.core.invariant#_p-Qqdy24EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_cus)" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL⇒signal_aspect_curr(sig)∈Signal_Aspect_Avail[{sig}]" org.eventb.core.source="/Railground_iUML-B/M3_Signal.bum|org.eventb.core.machineFile#M3_Signal|org.eventb.core.invariant#_p-Qqdi24EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_cus*" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒rail_elem_pos_curr(elem)∈dom(Rail_Elem_Pos_Conn(elem))" org.eventb.core.source="/Railground_iUML-B/M4_Rails.bum|org.eventb.core.machineFile#M4_Rails|org.eventb.core.invariant#_s1IbwC56EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_cus+" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL⇒(signal_aspect_curr(sig)≠Signal_Aspect_Default⇒(∃path⦂PATH·path∈path_curr ∖ path_rel∧Signal_Ctor(sig)=Path_Ctor_Beg(path)))" org.eventb.core.source="/Railground_iUML-B/M5_SignalDependency.bum|org.eventb.core.machineFile#M5_SignalDependency|org.eventb.core.invariant#_-D5tgC59EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="rail_elem_path_cus," org.eventb.core.predicate="tvd_state_curr∈TVD_SECT → TVD_STATE" org.eventb.core.source="/Railground_iUML-B/M6_VacancyDetection.bum|org.eventb.core.machineFile#M6_VacancyDetection|org.eventb.core.invariant#_XjnTAy6HEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTC6_VacancyDetection_ctz" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="path_req'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="rail_elem_pos_curr'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.poIdentifier name="signal_aspect_curr'" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
+<org.eventb.core.poIdentifier name="path_curr'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="tvd_state_curr'" org.eventb.core.type="ℙ(TVD_SECT×TVD_STATE)"/>
+<org.eventb.core.poIdentifier name="path_rel'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_act'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="rail_elem_path_curr'" org.eventb.core.type="ℙ(RAIL_ELEM×PATH)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC6_VacancyDetection_ctz" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#EVTIDENTC6_VacancyDetection_ctz" org.eventb.core.poStamp="20"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTC6_VacancyDetection_ct{" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="path_req'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="PATH"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC6_VacancyDetection_ct{" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#EVTIDENTC6_VacancyDetection_ct{" org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="p∉path_req∪path_curr" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_NAgy0PNOEeaEvfyRgzOTMA|org.eventb.core.guard#_kMiMIS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="dom(Path_Elem_Pos(p))∩dom(rail_elem_path_curr)=(∅ ⦂ ℙ(RAIL_ELEM))" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.event#_tBcYsPNOEeaEvfyRgzOTMD|org.eventb.core.guard#_jUxSIC2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀p2⦂PATH·p2∈path_req⇒dom(Path_Elem_Pos(p))∩dom(Path_Elem_Pos(p2))=(∅ ⦂ ℙ(RAIL_ELEM))" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.event#_tBcYsPNOEeaEvfyRgzOTMD|org.eventb.core.guard#_jUxSIS2xEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTC6_VacancyDetection_ct|" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="path_req'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="PATH"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC6_VacancyDetection_ct|" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#EVTIDENTC6_VacancyDetection_ct\|" org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="p∈path_req" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_NAgy0fNOEeaEvfyRgzOTMA|org.eventb.core.guard#_kMiMJC2nEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTC6_VacancyDetection_ct}" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="path_req'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_curr'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="path_act'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="rail_elem_path_curr'" org.eventb.core.type="ℙ(RAIL_ELEM×PATH)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC6_VacancyDetection_ct}" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#EVTIDENTC6_VacancyDetection_ct}" org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_Yom3UPNOEeaEvfyRgzOTMA|org.eventb.core.guard#_kMizMC2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="p∈path_req" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_Yom3UPNOEeaEvfyRgzOTMA|org.eventb.core.guard#_kMizMS2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))⇒Path_Elem_Pos(p)(elem)=rail_elem_pos_curr(elem)" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.event#_tBcYsPNOEeaEvfyRgzOTMF|org.eventb.core.guard#_jUx5MC2xEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTC6_VacancyDetection_ct~" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="path_rel'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="path_act'" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC6_VacancyDetection_ct~" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#EVTIDENTC6_VacancyDetection_ct~" org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="p∈path_act" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_oJ3lwPNOEeaEvfyRgzOTMA|org.eventb.core.guard#_kMizNi2nEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL∧signal_aspect_curr(sig)≠Signal_Aspect_Default⇒Signal_Ctor(sig)≠Path_Ctor_Beg(p)" org.eventb.core.source="/Railground_iUML-B/M5_SignalDependency.bum|org.eventb.core.machineFile#M5_SignalDependency|org.eventb.core.event#_tBcYsPNOEeaEvfyRgzOTMW|org.eventb.core.guard#_-CsMkC59EeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTC6_VacancyDetection_cu'" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="path_curr'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="path_rel'" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="rail_elem_path_curr'" org.eventb.core.type="ℙ(RAIL_ELEM×PATH)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC6_VacancyDetection_cu'" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#EVTIDENTC6_VacancyDetection_cu'" org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="p∈path_rel" org.eventb.core.source="/Railground_iUML-B/M1_Paths.bum|org.eventb.core.machineFile#M1_Paths|org.eventb.core.event#_oJ4M0PNOEeaEvfyRgzOTMA|org.eventb.core.guard#_kMjaQi2nEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTC6_VacancyDetection_cu(" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="rail_elem_pos_curr'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.poIdentifier name="pos" org.eventb.core.type="RAIL_POS"/>
+<org.eventb.core.poIdentifier name="elem" org.eventb.core.type="RAIL_ELEM"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC6_VacancyDetection_cu(" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#EVTIDENTC6_VacancyDetection_cu(" org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="elem∈RAIL_ELEM" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.event#_JqnzEPNkEeaEvfyRgzOTMA|org.eventb.core.guard#_jWJyMi2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pos∈RAIL_POS" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.event#_JqnzEPNkEeaEvfyRgzOTMA|org.eventb.core.guard#_jWKZQC2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="elem∉dom(union(Path_Elem_Pos[path_req]))" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.event#_JqnzEPNkEeaEvfyRgzOTMA|org.eventb.core.guard#_jWKZQS2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="pos≠rail_elem_pos_curr(elem)" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.event#_JqnzEPNkEeaEvfyRgzOTMA|org.eventb.core.guard#_jWKZQi2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="elem∉dom(rail_elem_path_curr)" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.event#_JqnzEPNkEeaEvfyRgzOTMA|org.eventb.core.guard#_jWKZQy2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="pos∈dom(Rail_Elem_Pos_Conn(elem))" org.eventb.core.source="/Railground_iUML-B/M4_Rails.bum|org.eventb.core.machineFile#M4_Rails|org.eventb.core.event#_tBcYsPNOEeaEvfyRgzOTMY|org.eventb.core.guard#_s1H0sC56EeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTC6_VacancyDetection_cu)" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="rail_elem_pos_curr'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.poIdentifier name="elem" org.eventb.core.type="RAIL_ELEM"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC6_VacancyDetection_cu)" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#EVTIDENTC6_VacancyDetection_cu)" org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="elem∈RAIL_ELEM" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.event#_JqnzEfNkEeaEvfyRgzOTMA|org.eventb.core.guard#_jWLAUS2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="elem∉dom(rail_elem_path_curr)" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.event#_JqnzEfNkEeaEvfyRgzOTMA|org.eventb.core.guard#_jWLAUi2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="elem∈dom(union(Path_Elem_Pos[path_req]))" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.event#_JqnzEfNkEeaEvfyRgzOTMA|org.eventb.core.guard#_jWLAUy2xEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="union(Path_Elem_Pos[path_req])(elem)≠rail_elem_pos_curr(elem)" org.eventb.core.source="/Railground_iUML-B/M2_ElemPos.bum|org.eventb.core.machineFile#M2_ElemPos|org.eventb.core.event#_JqnzEfNkEeaEvfyRgzOTMA|org.eventb.core.guard#_jWLAVC2xEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTC6_VacancyDetection_cu*" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="signal_aspect_curr'" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
+<org.eventb.core.poIdentifier name="sig" org.eventb.core.type="SIGNAL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC6_VacancyDetection_cu*" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#EVTIDENTC6_VacancyDetection_cu*" org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="sig∈SIGNAL" org.eventb.core.source="/Railground_iUML-B/M3_Signal.bum|org.eventb.core.machineFile#M3_Signal|org.eventb.core.event#_hclNEBR5EeeyX-cczJsuHQ|org.eventb.core.guard#_p-QDYS24EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="signal_aspect_curr(sig)≠Signal_Aspect_Default" org.eventb.core.source="/Railground_iUML-B/M3_Signal.bum|org.eventb.core.machineFile#M3_Signal|org.eventb.core.event#_hclNEBR5EeeyX-cczJsuHQ|org.eventb.core.guard#_p-QDYi24EeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTC6_VacancyDetection_cu+" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="signal_aspect_curr'" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
+<org.eventb.core.poIdentifier name="sig_asp" org.eventb.core.type="SIGNAL_ASPECT"/>
+<org.eventb.core.poIdentifier name="sig" org.eventb.core.type="SIGNAL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC6_VacancyDetection_cu+" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#EVTIDENTC6_VacancyDetection_cu+" org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="sig∈SIGNAL" org.eventb.core.source="/Railground_iUML-B/M3_Signal.bum|org.eventb.core.machineFile#M3_Signal|org.eventb.core.event#_e1dkYBR6EeeyX-cczJsuHQ|org.eventb.core.guard#_p-Qqci24EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="sig_asp∈Signal_Aspect_Avail[{sig}] ∖ {Signal_Aspect_Default}" org.eventb.core.source="/Railground_iUML-B/M3_Signal.bum|org.eventb.core.machineFile#M3_Signal|org.eventb.core.event#_e1dkYBR6EeeyX-cczJsuHQ|org.eventb.core.guard#_p-Qqcy24EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="signal_aspect_curr(sig)=Signal_Aspect_Default" org.eventb.core.source="/Railground_iUML-B/M3_Signal.bum|org.eventb.core.machineFile#M3_Signal|org.eventb.core.event#_e1dkYBR6EeeyX-cczJsuHQ|org.eventb.core.guard#_p-QqdC24EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∃path⦂PATH·path∈path_curr ∖ path_rel∧Signal_Ctor(sig)=Path_Ctor_Beg(path)" org.eventb.core.source="/Railground_iUML-B/M5_SignalDependency.bum|org.eventb.core.machineFile#M5_SignalDependency|org.eventb.core.event#_tBcYsPNOEeaEvfyRgzOTM\\|org.eventb.core.guard#_-D5GcC59EeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTC6_VacancyDetection_cu," org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poIdentifier name="state" org.eventb.core.type="TVD_STATE"/>
+<org.eventb.core.poIdentifier name="tvd_state_curr'" org.eventb.core.type="ℙ(TVD_SECT×TVD_STATE)"/>
+<org.eventb.core.poIdentifier name="sect" org.eventb.core.type="TVD_SECT"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPC6_VacancyDetection_cu," org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#EVTIDENTC6_VacancyDetection_cu," org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="sect∈TVD_SECT" org.eventb.core.source="/Railground_iUML-B/M6_VacancyDetection.bum|org.eventb.core.machineFile#M6_VacancyDetection|org.eventb.core.event#_GjTMoC6HEeejRqf7k59b7w|org.eventb.core.guard#_Xjmr8i6HEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="state∈TVD_STATE" org.eventb.core.source="/Railground_iUML-B/M6_VacancyDetection.bum|org.eventb.core.machineFile#M6_VacancyDetection|org.eventb.core.event#_GjTMoC6HEeejRqf7k59b7w|org.eventb.core.guard#_XjnTAC6HEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="state≠tvd_state_curr(sect)" org.eventb.core.source="/Railground_iUML-B/M6_VacancyDetection.bum|org.eventb.core.machineFile#M6_VacancyDetection|org.eventb.core.event#_GjTMoC6HEeejRqf7k59b7w|org.eventb.core.guard#_XjnTAS6HEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Railground_iUML-B/DEMO_Station.bpo|org.eventb.core.poFile#DEMO_Station|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="20"/>
+</org.eventb.core.poFile>
