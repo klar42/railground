@@ -81,6 +81,10 @@ Then(~/^expression "([^"]*)" is TRUE$/) { String expr ->
     assert state.eval(expr).toString() == "TRUE"
 }
 
+Then(~/^expression "([^"]*)" is FALSE$/) { String expr ->
+    assert state.eval(expr).toString() == "FALSE"
+}
+
 And(~/^debug$/) { ->
     println(space.printState(state))
     println(space.printOps(state))
