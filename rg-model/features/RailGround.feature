@@ -29,25 +29,40 @@ Feature: Railground
     And event "add_PATH_REQ" with "path = R13" is enabled
     And event "add_PATH_REQ" with "path = R14" is enabled
 
-  Scenario Outline: Request Path
+  Scenario Outline: Request Path with points
     When fire event "add_PATH_REQ" with "path = <path>"
     Then expression "<path> : PATH_REQ" is TRUE
+    And event "add_PATH_CURR" is disabled
+    And event "rem_PATH_CURR" is disabled
+    And event "add_PATH_REQ" with "path : <paths>" is disabled
     And event "rem_PATH_REQ" with "path = <path>" is enabled
-    And event "add_PATH_REQ" with "path = <path>" is disabled
+    And event "set_RAIL_ELEM_PATH" is enabled
 
   Examples:
-    | path |
-    | R01  |
-    | R02  |
-    | R03  |
-    | R04  |
-    | R05  |
-    | R06  |
-    | R07  |
-    | R08  |
-    | R09  |
-    | R10  |
-    | R11  |
-    | R12  |
-    | R13  |
-    | R14  |
+    | path | paths |
+    | R01  | {R01, R02, R04, R05, R06, R09, R10, R11, R13} |
+    | R02  | {R01, R02, R09, R10, R13} |
+    | R04  | {R01, R04, R05, R06, R07, R10, R11, R14} |
+    | R05  | {R01, R04, R05, R06, R10, R11} |
+    | R06  | {R01, R03, R04, R05, R06, R07, R10, R11, R14} |
+    | R07  | {R03, R04, R06, R07, R14} |
+    | R10  | {R01, R02, R04, R05, R06, R10, R11, R13} |
+    | R11  | {R01, R04, R05, R06, R10, R11} |
+    | R13  | {R01, R02, R10, R13} |
+    | R14  | {R04, R06, R07, R14} |
+
+  Scenario Outline: Request Path without points
+    When fire event "add_PATH_REQ" with "path = <path>"
+    Then expression "<path> : PATH_REQ" is TRUE
+    And event "add_PATH_CURR" with "path = <path>" is enabled
+    And event "rem_PATH_CURR" is disabled
+    And event "add_PATH_REQ" with "path : <paths>" is disabled
+    And event "rem_PATH_REQ" with "path = <path>" is enabled
+    And event "set_RAIL_ELEM_PATH" is disabled
+
+  Examples:
+    | path | paths |
+    | R03  | {R03, R06, R07} |
+    | R08  | {R08} |
+    | R09  | {R01, R02, R09} |
+    | R12  | {R12} |
