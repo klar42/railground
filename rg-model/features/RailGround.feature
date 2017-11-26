@@ -4,7 +4,7 @@ Feature: Railground
   In order to try out formal modeling
 
   Background:
-    Given machine "DEMO_Station.bum"
+    Given machine
 
   Scenario: Intial value
     Then expression "PATH_CURR = {}" is TRUE

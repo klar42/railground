@@ -1,7 +1,5 @@
 import de.prob.Main
-import de.prob.model.representation.AbstractModel
 import de.prob.scripting.Api
-import de.prob.statespace.Trace
 import de.prob.statespace.State
 import de.prob.statespace.StateSpace
 
@@ -10,17 +8,13 @@ import cucumber.api.DataTable
 this.metaClass.mixin(cucumber.api.groovy.Hooks)
 this.metaClass.mixin(cucumber.api.groovy.EN)
 
-StateSpace space
-AbstractModel model
-Trace trace
+Api api = Main.getInjector().getInstance(Api.class)
+String eventb = System.getProperty("eventb")
+StateSpace space = api.eventb_load(eventb) 
 State state
 
-Given(~/^machine "([^"]*)"$/) { String fileName ->
-    Api api = Main.getInjector().getInstance(Api.class)
-    space = api.eventb_load(fileName) 
-    model = space.getModel()
-    trace = space as Trace
-    state = trace.getCurrentState()
+Given(~/^machine$/) { ->
+    state = space.getRoot()
     trans = state.findTransition("\$setup_constants")
     if (trans != null) {
         state = trans.getDestination()
@@ -31,12 +25,8 @@ Given(~/^machine "([^"]*)"$/) { String fileName ->
     }
 }
 
-Given(~/^machine "([^"]*)" with "([^"]*)"$/) { String fileName, String expr ->
-    Api api = Main.getInjector().getInstance(Api.class)
-    space = api.eventb_load(fileName) 
-    model = space.getModel()
-    trace = space as Trace
-    state = trace.getCurrentState()
+Given(~/^machine with "([^"]*)"$/) { String expr ->
+    state = space.getRoot()
     trans = state.findTransition("\$setup_constants", expr)
     if (trans != null) {
         state = trans.getDestination()
@@ -83,9 +73,4 @@ Then(~/^expression "([^"]*)" is TRUE$/) { String expr ->
 
 Then(~/^expression "([^"]*)" is FALSE$/) { String expr ->
     assert state.eval(expr).toString() == "FALSE"
-}
-
-And(~/^debug$/) { ->
-    println(space.printState(state))
-    println(space.printOps(state))
 }
