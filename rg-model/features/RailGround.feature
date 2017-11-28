@@ -71,10 +71,28 @@ Feature: Railground
     Then event "add_PATH_CURR" with "path = <path>" is enabled
     And event "rem_PATH_CURR" is disabled
     And event "set_RAIL_ELEM_PATH" is disabled
+    When fire event "add_PATH_CURR" with "path = <path>"
+    Then expression "<path> : PATH_REQ" is FALSE
+    And expression "<path> : PATH_CURR" is TRUE
+    And event "set_PATH_REL" with "path = <path>" is enabled
+    And event "set_SIGNAL_ASPECT_PROCEED" with "sig = <signal> & asp = SIGNAL_ASPECT_PROCEED" is enabled
+    When fire event "set_SIGNAL_ASPECT_PROCEED" with "sig = <signal> & asp = SIGNAL_ASPECT_PROCEED"
+    Then event "set_PATH_REL" with "path = <path>" is disabled
+    And event "set_SIGNAL_ASPECT_DEFAULT" with "sig = <signal>" is enabled
+    When fire event "set_SIGNAL_ASPECT_DEFAULT" with "sig = <signal>"
+    Then event "set_PATH_REL" with "path = <path>" is enabled
+    When fire event "set_PATH_REL" with "path = <path>"
+    Then expression "<path> : PATH_CURR" is TRUE
+    And expression "<path> : PATH_REL" is TRUE
+    And event "rem_PATH_CURR" with "path = <path>" is enabled
+    And event "set_SIGNAL_ASPECT_PROCEED" with "sig = <signal> & asp = SIGNAL_ASPECT_PROCEED" is disabled
+    When fire event "rem_PATH_CURR" with "path = <path>"
+    Then expression "<path> : PATH_CURR" is FALSE
+    And expression "<path> : PATH_REL" is FALSE
 
   Examples:
-    | path |
-    | R03  |
-    | R08  |
-    | R09  |
-    | R12  |
+    | path | signal |
+    | R03  | S2     |
+    | R08  | S4     |
+    | R09  | S6     |
+    | R12  | S8     |
