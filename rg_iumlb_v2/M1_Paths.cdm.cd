@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:classdiagrams="http://soton.ac.uk/models/eventb/classdiagrams/2015" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_1nOEQEtJEeeKDPSDiTUmqg" type="Classdiagrams" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_2E3pkEtJEeeKDPSDiTUmqg" type="2003">
+    <children xmi:type="notation:DecorationNode" xmi:id="_2E3plUtJEeeKDPSDiTUmqg" type="5007"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_2E3plktJEeeKDPSDiTUmqg" type="7006">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_2E3pl0tJEeeKDPSDiTUmqg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_2E3pmEtJEeeKDPSDiTUmqg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_2E3pmUtJEeeKDPSDiTUmqg" type="7007">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_2E3pmktJEeeKDPSDiTUmqg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_2E3pm0tJEeeKDPSDiTUmqg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_2E3pnEtJEeeKDPSDiTUmqg" type="7008">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_2E3pnUtJEeeKDPSDiTUmqg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_2E3pnktJEeeKDPSDiTUmqg"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_2E3pkUtJEeeKDPSDiTUmqg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_2E3pkktJEeeKDPSDiTUmqg" fontName=".SF NS Text"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_2E3pk0tJEeeKDPSDiTUmqg"/>
+    <element xmi:type="classdiagrams:Class" href="M1_Paths.bum#http://soton.ac.uk/models/eventb/classdiagrams/2015::Class::M1_Paths.cdm.PATH"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2E3plEtJEeeKDPSDiTUmqg" x="138" y="73"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_1nOEQUtJEeeKDPSDiTUmqg"/>
+  <element xmi:type="classdiagrams:Classdiagram" href="M1_Paths.bum#http://soton.ac.uk/models/eventb/classdiagrams/2015::Classdiagram::M1_Paths.cdm"/>
+</notation:Diagram>

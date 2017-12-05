@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:classdiagrams="http://soton.ac.uk/models/eventb/classdiagrams/2015" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_UsVJ4Ml0EeesjfHXqcTPtw" type="Classdiagrams" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_UsVJ4cl0EeesjfHXqcTPtw"/>
+  <element xmi:type="classdiagrams:Classdiagram" href="C5_Signal_ctx.buc#http://soton.ac.uk/models/eventb/classdiagrams/2015::Classdiagram::C5_Signal_ctx.cd"/>
+</notation:Diagram>
