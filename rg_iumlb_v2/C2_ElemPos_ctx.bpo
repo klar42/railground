@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+<org.eventb.core.poPredicate name="Path_Exd" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH" org.eventb.core.source="/Railground_iUML-B_TVD/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1ky17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Path_Exe" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))" org.eventb.core.source="/Railground_iUML-B_TVD/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1kC17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Path_Exf" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼" org.eventb.core.source="/Railground_iUML-B_TVD/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1kS17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Path_Exg" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)" org.eventb.core.source="/Railground_iUML-B_TVD/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1ki17EeejRqf7k59b7w"/>
+<org.eventb.core.poIdentifier name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.poIdentifier name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.poIdentifier name="Default_Elem_Pos" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.poIdentifier name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="axm5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Railground_iUML-B_TVD/C2_ElemPos_ctx.bpo|org.eventb.core.poFile#C2_ElemPos_ctx|org.eventb.core.poPredicateSet#HYPC1_Paths_ctz"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒p∈dom(Path_Elem_Pos)∧Path_Elem_Pos∈PATH ⇸ ℙ(RAIL_ELEM × RAIL_POS)" org.eventb.core.source="/Railground_iUML-B_TVD/C2_ElemPos_ctx.buc|org.eventb.core.contextFile#C2_ElemPos_ctx|org.eventb.core.axiom#_TE7PIC2gEeejRqf7k59b7w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Railground_iUML-B_TVD/C2_ElemPos_ctx.buc|org.eventb.core.contextFile#C2_ElemPos_ctx|org.eventb.core.axiom#_TE7PIC2gEeejRqf7k59b7w"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Railground_iUML-B_TVD/C2_ElemPos_ctx.bpo|org.eventb.core.poFile#C2_ElemPos_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Railground_iUML-B_TVD/C2_ElemPos_ctx.bpo|org.eventb.core.poFile#C2_ElemPos_ctx|org.eventb.core.poPredicateSet#HYPC1_Paths_ctz"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="HYPC1_Paths_ctz" org.eventb.core.parentSet="/Railground_iUML-B_TVD/C2_ElemPos_ctx.bpo|org.eventb.core.poFile#C2_ElemPos_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Default_Elem_Pos∈RAIL_ELEM → RAIL_POS" org.eventb.core.source="/Railground_iUML-B_TVD/C2_ElemPos_ctx.buc|org.eventb.core.contextFile#C2_ElemPos_ctx|org.eventb.core.axiom#_TE72MS2gEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Path_Elem_Pos∈PATH → (RAIL_ELEM ⇸ RAIL_POS)" org.eventb.core.source="/Railground_iUML-B_TVD/C2_ElemPos_ctx.buc|org.eventb.core.contextFile#C2_ElemPos_ctx|org.eventb.core.axiom#_TE72Mi2gEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Railground_iUML-B_TVD/C2_ElemPos_ctx.bpo|org.eventb.core.poFile#C2_ElemPos_ctx|org.eventb.core.poPredicateSet#HYPC1_Paths_ctz" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Elem_Pos(p)≠(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))" org.eventb.core.source="/Railground_iUML-B_TVD/C2_ElemPos_ctx.buc|org.eventb.core.contextFile#C2_ElemPos_ctx|org.eventb.core.axiom#_TE7PIC2gEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒finite(RAIL_ELEM)" org.eventb.core.source="/Railground_iUML-B_TVD/C2_ElemPos_ctx.buc|org.eventb.core.contextFile#C2_ElemPos_ctx|org.eventb.core.axiom#_TE7PIS2gEeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="∀pos⦂RAIL_POS·pos∈RAIL_POS⇒finite(RAIL_POS)" org.eventb.core.source="/Railground_iUML-B_TVD/C2_ElemPos_ctx.buc|org.eventb.core.contextFile#C2_ElemPos_ctx|org.eventb.core.axiom#_TE72MC2gEeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

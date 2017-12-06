@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Railground_iUML-B_TVD/C1_Paths_ctx.bpo|org.eventb.core.poFile#C1_Paths_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH" org.eventb.core.source="/Railground_iUML-B_TVD/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1ky17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))" org.eventb.core.source="/Railground_iUML-B_TVD/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1kC17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼" org.eventb.core.source="/Railground_iUML-B_TVD/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1kS17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)" org.eventb.core.source="/Railground_iUML-B_TVD/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1ki17EeejRqf7k59b7w"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

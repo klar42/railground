@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:classdiagrams="http://soton.ac.uk/models/eventb/classdiagrams/2015" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_gnwTsMlsEeeSnphQGsULww" type="Classdiagrams" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_BduHUMlxEeevTdvBuPzmyA" type="2003">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BduuYMlxEeevTdvBuPzmyA" type="5007"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_BduuYclxEeevTdvBuPzmyA" type="7006">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_BduuYslxEeevTdvBuPzmyA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_BduuY8lxEeevTdvBuPzmyA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_BduuZMlxEeevTdvBuPzmyA" type="7007">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_BduuZclxEeevTdvBuPzmyA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_BduuZslxEeevTdvBuPzmyA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_BduuZ8lxEeevTdvBuPzmyA" type="7008">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_BduuaMlxEeevTdvBuPzmyA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_BduuaclxEeevTdvBuPzmyA"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_BduHUclxEeevTdvBuPzmyA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BduHUslxEeevTdvBuPzmyA" fontName=".SF NS Text"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_BduHU8lxEeevTdvBuPzmyA"/>
+    <element xmi:type="classdiagrams:Class" href="M5_Signal.bum#http://soton.ac.uk/models/eventb/classdiagrams/2015::Class::M5_Signal.cdm.SIGNAL"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BduHVMlxEeevTdvBuPzmyA" x="152" y="104"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_gnwTsclsEeeSnphQGsULww"/>
+  <element xmi:type="classdiagrams:Classdiagram" href="M5_Signal.bum#http://soton.ac.uk/models/eventb/classdiagrams/2015::Classdiagram::M5_Signal.cdm"/>
+</notation:Diagram>
