@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="L0_Visualization_C"/>
+<org.eventb.core.constant name="cst1" org.eventb.core.comment="RAIL_ELEM: Track" org.eventb.core.identifier="T01"/>
+<org.eventb.core.constant name="cst2" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="T01A"/>
+<org.eventb.core.constant name="cst3" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="T01B"/>
+<org.eventb.core.constant name="cst54" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="T01A_T01B"/>
+<org.eventb.core.constant name="cst55" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="T01B_T01A"/>
+<org.eventb.core.constant name="cst4" org.eventb.core.comment="RAIL_ELEM: Track" org.eventb.core.identifier="T02"/>
+<org.eventb.core.constant name="cst5" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="T02A"/>
+<org.eventb.core.constant name="cst6" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="T02B"/>
+<org.eventb.core.constant name="cst56" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="T02A_T02B"/>
+<org.eventb.core.constant name="cst59" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="T02B_T02A"/>
+<org.eventb.core.constant name="cst7" org.eventb.core.comment="RAIL_ELEM: Track" org.eventb.core.identifier="T03"/>
+<org.eventb.core.constant name="cst8" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="T03A"/>
+<org.eventb.core.constant name="cst9" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="T03B"/>
+<org.eventb.core.constant name="cst63" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="T03A_T03B"/>
+<org.eventb.core.constant name="cst57" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="T03B_T03A"/>
+<org.eventb.core.constant name="cst10" org.eventb.core.comment="RAIL_ELEM: Track" org.eventb.core.identifier="T04"/>
+<org.eventb.core.constant name="cst11" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="T04A"/>
+<org.eventb.core.constant name="cst12" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="T04B"/>
+<org.eventb.core.constant name="cst58" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="T04A_T04B"/>
+<org.eventb.core.constant name="cst60" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="T04B_T04A"/>
+<org.eventb.core.constant name="cst13" org.eventb.core.comment="RAIL_ELEM: Track" org.eventb.core.identifier="T00"/>
+<org.eventb.core.constant name="cst14" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="T00A"/>
+<org.eventb.core.constant name="cst15" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="T00B"/>
+<org.eventb.core.constant name="cst61" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="T00A_T00B"/>
+<org.eventb.core.constant name="cst62" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="T00B_T00A"/>
+<org.eventb.core.constant name="cst25" org.eventb.core.comment="RAIL_ELEM: Point" org.eventb.core.identifier="P01"/>
+<org.eventb.core.constant name="cst26" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P01T"/>
+<org.eventb.core.constant name="cst27" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P01L"/>
+<org.eventb.core.constant name="cst28" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P01R"/>
+<org.eventb.core.constant name="cst70" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P01T_P01L"/>
+<org.eventb.core.constant name="cst71" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P01L_P01T"/>
+<org.eventb.core.constant name="cst72" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P01T_P01R"/>
+<org.eventb.core.constant name="cst73" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P01R_P01T"/>
+<org.eventb.core.constant name="cst29" org.eventb.core.comment="RAIL_ELEM: Point" org.eventb.core.identifier="P02"/>
+<org.eventb.core.constant name="cst30" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P02T"/>
+<org.eventb.core.constant name="cst31" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P02L"/>
+<org.eventb.core.constant name="cst32" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P02R"/>
+<org.eventb.core.constant name="cst74" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P02T_P02L"/>
+<org.eventb.core.constant name="cst75" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P02L_P02T"/>
+<org.eventb.core.constant name="cst81" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P02T_P02R"/>
+<org.eventb.core.constant name="cst77" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P02R_P02T"/>
+<org.eventb.core.constant name="cst33" org.eventb.core.comment="RAIL_ELEM: Point" org.eventb.core.identifier="P03"/>
+<org.eventb.core.constant name="cst34" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P03T"/>
+<org.eventb.core.constant name="cst35" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P03L"/>
+<org.eventb.core.constant name="cst36" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P03R"/>
+<org.eventb.core.constant name="cst78" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P03T_P03L"/>
+<org.eventb.core.constant name="cst79" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P03L_P03T"/>
+<org.eventb.core.constant name="cst76" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P03T_P03R"/>
+<org.eventb.core.constant name="cst85" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P03R_P03T"/>
+<org.eventb.core.constant name="cst37" org.eventb.core.comment="RAIL_ELEM: Point" org.eventb.core.identifier="P04"/>
+<org.eventb.core.constant name="cst38" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P04T"/>
+<org.eventb.core.constant name="cst39" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P04L"/>
+<org.eventb.core.constant name="cst40" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P04R"/>
+<org.eventb.core.constant name="cst80" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P04T_P04L"/>
+<org.eventb.core.constant name="cst82" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P04L_P04T"/>
+<org.eventb.core.constant name="cst83" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P04T_P04R"/>
+<org.eventb.core.constant name="cst84" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P04R_P04T"/>
+<org.eventb.core.constant name="cst129" org.eventb.core.comment="RAIL_ELEM: Point" org.eventb.core.identifier="P05"/>
+<org.eventb.core.constant name="cst130" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P05T"/>
+<org.eventb.core.constant name="cst131" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P05L"/>
+<org.eventb.core.constant name="cst132" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P05R"/>
+<org.eventb.core.constant name="cst133" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P05T_P05L"/>
+<org.eventb.core.constant name="cst134" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P05L_P05T"/>
+<org.eventb.core.constant name="cst135" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P05T_P05R"/>
+<org.eventb.core.constant name="cst176" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P05R_P05T"/>
+<org.eventb.core.constant name="cst137" org.eventb.core.comment="RAIL_ELEM: Point" org.eventb.core.identifier="P06"/>
+<org.eventb.core.constant name="cst138" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P06T"/>
+<org.eventb.core.constant name="cst139" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P06L"/>
+<org.eventb.core.constant name="cst140" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P06R"/>
+<org.eventb.core.constant name="cst141" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P06T_P06L"/>
+<org.eventb.core.constant name="cst142" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P06L_P06T"/>
+<org.eventb.core.constant name="cst143" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P06T_P06R"/>
+<org.eventb.core.constant name="cst177" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P06R_P06T"/>
+<org.eventb.core.constant name="cst145" org.eventb.core.comment="RAIL_ELEM: Point" org.eventb.core.identifier="P07"/>
+<org.eventb.core.constant name="cst146" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P07T"/>
+<org.eventb.core.constant name="cst147" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P07L"/>
+<org.eventb.core.constant name="cst148" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P07R"/>
+<org.eventb.core.constant name="cst149" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P07T_P07L"/>
+<org.eventb.core.constant name="cst150" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P07L_P07T"/>
+<org.eventb.core.constant name="cst151" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P07T_P07R"/>
+<org.eventb.core.constant name="cst178" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P07R_P07T"/>
+<org.eventb.core.constant name="cst153" org.eventb.core.comment="RAIL_ELEM: Point" org.eventb.core.identifier="P08"/>
+<org.eventb.core.constant name="cst154" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P08T"/>
+<org.eventb.core.constant name="cst155" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P08L"/>
+<org.eventb.core.constant name="cst156" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P08R"/>
+<org.eventb.core.constant name="cst157" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P08T_P08L"/>
+<org.eventb.core.constant name="cst158" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P08L_P08T"/>
+<org.eventb.core.constant name="cst159" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P08T_P08R"/>
+<org.eventb.core.constant name="cst179" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P08R_P08T"/>
+<org.eventb.core.constant name="cst161" org.eventb.core.comment="RAIL_ELEM: Point" org.eventb.core.identifier="P17"/>
+<org.eventb.core.constant name="cst162" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P17T"/>
+<org.eventb.core.constant name="cst163" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P17L"/>
+<org.eventb.core.constant name="cst164" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P17R"/>
+<org.eventb.core.constant name="cst165" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P17T_P17L"/>
+<org.eventb.core.constant name="cst166" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P17L_P17T"/>
+<org.eventb.core.constant name="cst167" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P17T_P17R"/>
+<org.eventb.core.constant name="cst175" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P17R_P17T"/>
+<org.eventb.core.constant name="cst169" org.eventb.core.comment="RAIL_ELEM: Point" org.eventb.core.identifier="P18"/>
+<org.eventb.core.constant name="cst170" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P18T"/>
+<org.eventb.core.constant name="cst171" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P18L"/>
+<org.eventb.core.constant name="cst172" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="P18R"/>
+<org.eventb.core.constant name="cst173" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P18T_P18L"/>
+<org.eventb.core.constant name="cst174" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P18L_P18T"/>
+<org.eventb.core.axiom name="axm1" org.eventb.core.label="RAIL_ELEM·data" org.eventb.core.predicate="partition(RAIL_ELEM,&#10;&#9;{T01}, {T02}, {T03}, {T04}, {T00},&#10;&#9;{P01}, {P02}, {P03}, {P04}, {P05}, {P06}, {P07}, {P08}, {P17}, {P18},&#10;&#9;{C00}&#10;)"/>
+<org.eventb.core.axiom name="axm2" org.eventb.core.label="RAIL_TERM·data" org.eventb.core.predicate="partition(RAIL_TERM,&#10;&#9;{E00}, {E99}&#10;)"/>
+<org.eventb.core.axiom name="axm3" org.eventb.core.label="RAIL_CTOR·data" org.eventb.core.predicate="partition(RAIL_CTOR,&#10;&#9;{T01A}, {T01B}, {T02A}, {T02B}, {T03A}, {T03B}, {T04A}, {T04B}, {T00A}, {T00B},&#10;&#9;{P01T}, {P01L}, {P01R}, {P02T}, {P02L}, {P02R}, {P03T}, {P03L}, {P03R}, {P04T}, {P04L}, {P04R},&#10;&#9;{P05T}, {P05L}, {P05R}, {P06T}, {P06L}, {P06R}, {P07T}, {P07L}, {P07R}, {P08T}, {P08L}, {P08R},&#10;&#9;{P17T}, {P17L}, {P17R}, {P18T}, {P18L}, {P18R},&#10;&#9;{C00A}, {C00B}, {C00C}, {C00D},&#10;&#9;{E00E}, {E99E}&#10;)"/>
+<org.eventb.core.axiom name="axm6" org.eventb.core.label="RAIL_SGMT·data" org.eventb.core.predicate="partition(RAIL_SGMT,&#10;&#9;{T01A_T01B}, {T01B_T01A},&#10;&#9;{T02A_T02B}, {T02B_T02A},&#10;&#9;{T03A_T03B}, {T03B_T03A},&#10;&#9;{T04A_T04B}, {T04B_T04A},&#10;&#9;{T00A_T00B}, {T00B_T00A},&#10;&#9;{P01T_P01L}, {P01L_P01T}, {P01T_P01R}, {P01R_P01T},&#10;&#9;{P02T_P02L}, {P02L_P02T}, {P02T_P02R}, {P02R_P02T},&#10;&#9;{P03T_P03L}, {P03L_P03T}, {P03T_P03R}, {P03R_P03T},&#10;&#9;{P04T_P04L}, {P04L_P04T}, {P04T_P04R}, {P04R_P04T},&#10;&#9;{P05T_P05L}, {P05L_P05T}, {P05T_P05R}, {P05R_P05T},&#10;&#9;{P06T_P06L}, {P06L_P06T}, {P06T_P06R}, {P06R_P06T},&#10;&#9;{P07T_P07L}, {P07L_P07T}, {P07T_P07R}, {P07R_P07T},&#10;&#9;{P08T_P08L}, {P08L_P08T}, {P08T_P08R}, {P08R_P08T},&#10;&#9;{P17T_P17L}, {P17L_P17T}, {P17T_P17R}, {P17R_P17T},&#10;&#9;{P18T_P18L}, {P18L_P18T}, {P18T_P18R}, {P18R_P18T},&#10;&#9;{C00A_C00D}, {C00D_C00A}, {C00B_C00C}, {C00C_C00B}&#10;)"/>
+<org.eventb.core.axiom name="axm4" org.eventb.core.label="RAIL_ELEM_CTOR·data" org.eventb.core.predicate="RAIL_ELEM_CTOR = {&#10;&#9;T01 ↦ {T01A, T01B},&#10;&#9;T02 ↦ {T02A, T02B},&#10;&#9;T03 ↦ {T03A, T03B},&#10;&#9;T04 ↦ {T04A, T04B},&#10;&#9;T00 ↦ {T00A, T00B},&#10;&#9;P01 ↦ {P01T, P01L, P01R},&#10;&#9;P02 ↦ {P02T, P02L, P02R},&#10;&#9;P03 ↦ {P03T, P03L, P03R},&#10;&#9;P04 ↦ {P04T, P04L, P04R},&#10;&#9;P05 ↦ {P05T, P05L, P05R},&#10;&#9;P06 ↦ {P06T, P06L, P06R},&#10;&#9;P07 ↦ {P07T, P07L, P07R},&#10;&#9;P08 ↦ {P08T, P08L, P08R},&#10;&#9;P17 ↦ {P17T, P17L, P17R},&#10;&#9;P18 ↦ {P18T, P18L, P18R},&#10;&#9;C00 ↦ {C00A, C00B, C00C, C00D}&#10;}"/>
+<org.eventb.core.axiom name="axm5" org.eventb.core.label="RAIL_TERM_CTOR·data" org.eventb.core.predicate="RAIL_TERM_CTOR = {&#10;&#9;E00 ↦ E00E,&#10;&#9;E99 ↦ E99E&#10;}"/>
+<org.eventb.core.axiom name="axm11" org.eventb.core.label="RAIL_SGMT_CTOR·data" org.eventb.core.predicate="RAIL_SGMT_CTOR = {&#10;&#9;T01A_T01B ↦ (T01A ↦ T01B),&#10;&#9;T01B_T01A ↦ (T01B ↦ T01A),&#10;&#9;T02A_T02B ↦ (T02A ↦ T02B),&#10;&#9;T02B_T02A ↦ (T02B ↦ T02A),&#10;&#9;T03A_T03B ↦ (T03A ↦ T03B),&#10;&#9;T03B_T03A ↦ (T03B ↦ T03A),&#10;&#9;T04A_T04B ↦ (T04A ↦ T04B),&#10;&#9;T04B_T04A ↦ (T04B ↦ T04A),&#10;&#9;T00A_T00B ↦ (T00A ↦ T00B),&#10;&#9;T00B_T00A ↦ (T00B ↦ T00A),&#10;&#9;P01T_P01L ↦ (P01T ↦ P01L),&#10;&#9;P01L_P01T ↦ (P01L ↦ P01T),&#10;&#9;P01T_P01R ↦ (P01T ↦ P01R),&#10;&#9;P01R_P01T ↦ (P01R ↦ P01T),&#10;&#9;P02T_P02L ↦ (P02T ↦ P02L),&#10;&#9;P02L_P02T ↦ (P02L ↦ P02T),&#10;&#9;P02T_P02R ↦ (P02T ↦ P02R),&#10;&#9;P02R_P02T ↦ (P02R ↦ P02T),&#10;&#9;P03T_P03L ↦ (P03T ↦ P03L),&#10;&#9;P03L_P03T ↦ (P03L ↦ P03T),&#10;&#9;P03T_P03R ↦ (P03T ↦ P03R),&#10;&#9;P03R_P03T ↦ (P03R ↦ P03T),&#10;&#9;P04T_P04L ↦ (P04T ↦ P04L),&#10;&#9;P04L_P04T ↦ (P04L ↦ P04T),&#10;&#9;P04T_P04R ↦ (P04T ↦ P04R),&#10;&#9;P04R_P04T ↦ (P04R ↦ P04T),&#10;&#9;P05T_P05L ↦ (P05T ↦ P05L),&#10;&#9;P05L_P05T ↦ (P05L ↦ P05T),&#10;&#9;P05T_P05R ↦ (P05T ↦ P05R),&#10;&#9;P05R_P05T ↦ (P05R ↦ P05T),&#10;&#9;P06T_P06L ↦ (P06T ↦ P06L),&#10;&#9;P06L_P06T ↦ (P06L ↦ P06T),&#10;&#9;P06T_P06R ↦ (P06T ↦ P06R),&#10;&#9;P06R_P06T ↦ (P06R ↦ P06T),&#10;&#9;P07T_P07L ↦ (P07T ↦ P07L),&#10;&#9;P07L_P07T ↦ (P07L ↦ P07T),&#10;&#9;P07T_P07R ↦ (P07T ↦ P07R),&#10;&#9;P07R_P07T ↦ (P07R ↦ P07T),&#10;&#9;P08T_P08L ↦ (P08T ↦ P08L),&#10;&#9;P08L_P08T ↦ (P08L ↦ P08T),&#10;&#9;P08T_P08R ↦ (P08T ↦ P08R),&#10;&#9;P08R_P08T ↦ (P08R ↦ P08T),&#10;&#9;P17T_P17L ↦ (P17T ↦ P17L),&#10;&#9;P17L_P17T ↦ (P17L ↦ P17T),&#10;&#9;P17T_P17R ↦ (P17T ↦ P17R),&#10;&#9;P17R_P17T ↦ (P17R ↦ P17T),&#10;&#9;P18T_P18L ↦ (P18T ↦ P18L),&#10;&#9;P18L_P18T ↦ (P18L ↦ P18T),&#10;&#9;P18T_P18R ↦ (P18T ↦ P18R),&#10;&#9;P18R_P18T ↦ (P18R ↦ P18T),&#10;&#9;C00A_C00D ↦ (C00A ↦ C00D),&#10;&#9;C00D_C00A ↦ (C00D ↦ C00A),&#10;&#9;C00B_C00C ↦ (C00B ↦ C00C),&#10;&#9;C00C_C00B ↦ (C00C ↦ C00B)&#10;}"/>
+<org.eventb.core.axiom name="axm7" org.eventb.core.label="RAIL_LINK·data" org.eventb.core.predicate="RAIL_LINK = {&#10;&#9;T01A ↦ P01T, T01B ↦ P06T,&#10;&#9;T02A ↦ P02T, T02B ↦ P05T,&#10;&#9;T03A ↦ P03T, T03B ↦ P08T,&#10;&#9;T04A ↦ P04T, T04B ↦ P07T,&#10;&#9;T00A ↦ P07L, T00B ↦ P08R,&#10;&#9;P01T ↦ T01A, P01L ↦ C00A, P01R ↦ P02L,&#10;&#9;P02T ↦ T02A, P02L ↦ P01R, P02R ↦ C00B,&#10;&#9;P03T ↦ T03A, P03L ↦ P04R, P03R ↦ C00C,&#10;&#9;P04T ↦ T04A, P04L ↦ C00D, P04R ↦ P03L,&#10;&#9;P05T ↦ T02B, P05L ↦ P17L, P05R ↦ P06L,&#10;&#9;P06T ↦ T01B, P06L ↦ P05R, P06R ↦ P18R,&#10;&#9;P07T ↦ T04B, P07L ↦ T00A, P07R ↦ P17R,&#10;&#9;P08T ↦ T03B, P08L ↦ P18L, P08R ↦ T00B,&#10;&#9;P17T ↦ P18T, P17L ↦ P05L, P17R ↦ P07R,&#10;&#9;P18T ↦ P17T, P18L ↦ P08L, P18R ↦ P06R,&#10;&#9;C00A ↦ P01L, C00B ↦ P02R, C00C ↦ P03R, C00D ↦ P04L,&#10;&#9;E00E ↦ E99E, E99E ↦ E00E&#10;}"/>
+<org.eventb.core.axiom name="axm8" org.eventb.core.label="RAIL_POS_ENUM·data" org.eventb.core.predicate="partition(RAIL_POS_ENUM,&#10;&#9;{RAIL_POS_X},&#10;&#9;{RAIL_POS_F},&#10;&#9;{RAIL_POS_L},&#10;&#9;{RAIL_POS_R}&#10;)"/>
+<org.eventb.core.axiom name="axm9" org.eventb.core.label="RAIL_ELEM_POS_CONN·data" org.eventb.core.predicate="RAIL_ELEM_POS_CONN = {&#10;&#9;T01 ↦ {&#10;&#9;&#9;RAIL_POS_F ↦ {T01A_T01B, T01B_T01A}&#10;&#9;},&#10;&#9;T02 ↦ {&#10;&#9;&#9;RAIL_POS_F ↦ {T02A_T02B, T02B_T02A}&#10;&#9;},&#10;&#9;T03 ↦ {&#10;&#9;&#9;RAIL_POS_F ↦ {T03A_T03B, T03B_T03A}&#10;&#9;},&#10;&#9;T04 ↦ {&#10;&#9;&#9;RAIL_POS_F ↦ {T04A_T04B, T04B_T04A}&#10;&#9;},&#10;&#9;T00 ↦ {&#10;&#9;&#9;RAIL_POS_F ↦ {T00A_T00B, T00B_T00A}&#10;&#9;},&#10;&#9;P01 ↦ {&#10;&#9;&#9;RAIL_POS_X ↦ ∅,&#10;&#9;&#9;RAIL_POS_L ↦ {P01T_P01L, P01L_P01T},&#10;&#9;&#9;RAIL_POS_R ↦ {P01T_P01R, P01R_P01T}&#10;&#9;},&#10;&#9;P02 ↦ {&#10;&#9;&#9;RAIL_POS_X ↦ ∅,&#10;&#9;&#9;RAIL_POS_L ↦ {P02T_P02L, P02L_P02T},&#10;&#9;&#9;RAIL_POS_R ↦ {P02T_P02R, P02R_P02T}&#10;&#9;},&#10;&#9;P03 ↦ {&#10;&#9;&#9;RAIL_POS_X ↦ ∅,&#10;&#9;&#9;RAIL_POS_L ↦ {P03T_P03L, P03L_P03T},&#10;&#9;&#9;RAIL_POS_R ↦ {P03T_P03R, P03R_P03T}&#10;&#9;},&#10;&#9;P04 ↦ {&#10;&#9;&#9;RAIL_POS_X ↦ ∅,&#10;&#9;&#9;RAIL_POS_L ↦ {P04T_P04L, P04L_P04T},&#10;&#9;&#9;RAIL_POS_R ↦ {P04T_P04R, P04R_P04T}&#10;&#9;},&#10;&#9;P05 ↦ {&#10;&#9;&#9;RAIL_POS_X ↦ ∅,&#10;&#9;&#9;RAIL_POS_L ↦ {P05T_P05L, P05L_P05T},&#10;&#9;&#9;RAIL_POS_R ↦ {P05T_P05R, P05R_P05T}&#10;&#9;},&#10;&#9;P06 ↦ {&#10;&#9;&#9;RAIL_POS_X ↦ ∅,&#10;&#9;&#9;RAIL_POS_L ↦ {P06T_P06L, P06L_P06T},&#10;&#9;&#9;RAIL_POS_R ↦ {P06T_P06R, P06R_P06T}&#10;&#9;},&#10;&#9;P07 ↦ {&#10;&#9;&#9;RAIL_POS_X ↦ ∅,&#10;&#9;&#9;RAIL_POS_L ↦ {P07T_P07L, P07L_P07T},&#10;&#9;&#9;RAIL_POS_R ↦ {P07T_P07R, P07R_P07T}&#10;&#9;},&#10;&#9;P08 ↦ {&#10;&#9;&#9;RAIL_POS_X ↦ ∅,&#10;&#9;&#9;RAIL_POS_L ↦ {P08T_P08L, P08L_P08T},&#10;&#9;&#9;RAIL_POS_R ↦ {P08T_P08R, P08R_P08T}&#10;&#9;},&#10;&#9;P17 ↦ {&#10;&#9;&#9;RAIL_POS_X ↦ ∅,&#10;&#9;&#9;RAIL_POS_L ↦ {P17T_P17L, P17L_P17T},&#10;&#9;&#9;RAIL_POS_R ↦ {P17T_P17R, P17R_P17T}&#10;&#9;},&#10;&#9;P18 ↦ {&#10;&#9;&#9;RAIL_POS_X ↦ ∅,&#10;&#9;&#9;RAIL_POS_L ↦ {P18T_P18L, P18L_P18T},&#10;&#9;&#9;RAIL_POS_R ↦ {P18T_P18R, P18R_P18T}&#10;&#9;},&#10;&#9;C00 ↦ {&#10;&#9;&#9;RAIL_POS_F ↦ {C00A_C00D, C00D_C00A, C00B_C00C, C00C_C00B}&#10;&#9;}&#10;}"/>
+<org.eventb.core.axiom name="axm10" org.eventb.core.label="RAIL_ELEM_POS_DEFAULT·data" org.eventb.core.predicate="RAIL_ELEM_POS_DEFAULT = {&#10;&#9;T01 ↦ RAIL_POS_F,&#10;&#9;T02 ↦ RAIL_POS_F,&#10;&#9;T03 ↦ RAIL_POS_F,&#10;&#9;T04 ↦ RAIL_POS_F,&#10;&#9;T00 ↦ RAIL_POS_F,&#10;&#9;P01 ↦ RAIL_POS_X,&#10;&#9;P02 ↦ RAIL_POS_X,&#10;&#9;P03 ↦ RAIL_POS_X,&#10;&#9;P04 ↦ RAIL_POS_X,&#10;&#9;P05 ↦ RAIL_POS_X,&#10;&#9;P06 ↦ RAIL_POS_X,&#10;&#9;P07 ↦ RAIL_POS_X,&#10;&#9;P08 ↦ RAIL_POS_X,&#10;&#9;P17 ↦ RAIL_POS_X,&#10;&#9;P18 ↦ RAIL_POS_X,&#10;&#9;C00 ↦ RAIL_POS_F&#10;}"/>
+<org.eventb.core.axiom name="cst129" org.eventb.core.label="TVD_SECT·data" org.eventb.core.predicate="partition(TVD_SECT,&#10;&#9;{VT01}, {VT02}, {VT03}, {VT04}, {VT00},&#10;&#9;{VP01}, {VP02}, {VP03}, {VP04}, {VP05}, {VP06}, {VP07}, {VP08}, {VP17}, {VP18},&#10;&#9;{VC00})"/>
+<org.eventb.core.axiom name="cst12:" org.eventb.core.label="TVD_SECT_SGMT·data" org.eventb.core.predicate="TVD_SECT_SGMT = {&#10;&#9;VT01 ↦ {T01A_T01B, T01B_T01A},&#10;&#9;VT02 ↦ {T02A_T02B, T02B_T02A},&#10;&#9;VT03 ↦ {T03A_T03B, T03B_T03A},&#10;&#9;VT04 ↦ {T04A_T04B, T04B_T04A},&#10;&#9;VT00 ↦ {T00A_T00B, T00B_T00A},&#10;&#9;VP01 ↦ {P01T_P01L, P01L_P01T, P01T_P01R, P01R_P01T},&#10;&#9;VP02 ↦ {P02T_P02L, P02L_P02T, P02T_P02R, P02R_P02T},&#10;&#9;VP03 ↦ {P03T_P03L, P03L_P03T, P03T_P03R, P03R_P03T},&#10;&#9;VP04 ↦ {P04T_P04L, P04L_P04T, P04T_P04R, P04R_P04T},&#10;&#9;VP05 ↦ {P05T_P05L, P05L_P05T, P05T_P05R, P05R_P05T},&#10;&#9;VP06 ↦ {P06T_P06L, P06L_P06T, P06T_P06R, P06R_P06T},&#10;&#9;VP07 ↦ {P07T_P07L, P07L_P07T, P07T_P07R, P07R_P07T},&#10;&#9;VP08 ↦ {P08T_P08L, P08L_P08T, P08T_P08R, P08R_P08T},&#10;&#9;VP17 ↦ {P17T_P17L, P17L_P17T, P17T_P17R, P17R_P17T},&#10;&#9;VP18 ↦ {P18T_P18L, P18L_P18T, P18T_P18R, P18R_P18T},&#10;&#9;VC00 ↦ {C00A_C00D, C00D_C00A, C00B_C00C, C00C_C00B}&#10;}"/>
+<org.eventb.core.axiom name="axm12" org.eventb.core.label="SIGNAL·data" org.eventb.core.predicate="partition(SIGNAL,&#10;&#9;{S01}, {S02}, {S03}, {S04}, {S05}, {S06}, {S07}, {S08},&#10;&#9;{S15}, {S16}, {S17}, {S18}, {S27}, {S28}&#10;)"/>
+<org.eventb.core.axiom name="axm13" org.eventb.core.label="SIGNAL_ASPECT_ENUM·data" org.eventb.core.predicate="partition(SIGNAL_ASPECT_ENUM, {SIGNAL_ASPECT_STOP}, {SIGNAL_ASPECT_PROCEED})"/>
+<org.eventb.core.axiom name="axm16" org.eventb.core.label="SIGNAL_CTOR·data" org.eventb.core.predicate="SIGNAL_CTOR = {&#10;&#9;S01 ↦ P01T,&#10;&#9;S02 ↦ P02T,&#10;&#9;S03 ↦ P03T,&#10;&#9;S04 ↦ P04T,&#10;&#9;S05 ↦ P05T,&#10;&#9;S06 ↦ P06T,&#10;&#9;S07 ↦ P07T,&#10;&#9;S08 ↦ P08T,&#10;&#9;S15 ↦ T02B,&#10;&#9;S16 ↦ T01B,&#10;&#9;S17 ↦ P07R,&#10;&#9;S18 ↦ P08L,&#10;&#9;S27 ↦ P07L,&#10;&#9;S28 ↦ P08R&#10;}"/>
+<org.eventb.core.axiom name="axm15" org.eventb.core.label="SIGNAL_ASPECT_AVAIL·data" org.eventb.core.predicate="SIGNAL_ASPECT_AVAIL = {&#10;&#9;S01 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S02 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S03 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S04 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S05 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S06 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S07 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S08 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S15 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S16 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S17 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S18 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S27 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED},&#10;&#9;S28 ↦ {SIGNAL_ASPECT_STOP, SIGNAL_ASPECT_PROCEED}&#10;}"/>
+<org.eventb.core.axiom name="axm14" org.eventb.core.label="SIGNAL_ASPECT_DEFAULT·data" org.eventb.core.predicate="SIGNAL_ASPECT_DEFAULT = SIGNAL_ASPECT_STOP"/>
+<org.eventb.core.axiom name="axm17" org.eventb.core.label="PATH_ENUM·data" org.eventb.core.predicate="partition(PATH_ENUM,&#10;&#9;{R15}, {R17}, {R26}, {R28}, {R37}, {R35}, {R48}, {R46},&#10;&#9;{R56}, {R58}, {R65}, {R67}, {R78}, {R76}, {R87}, {R85},&#10;&#9;{R79}, {R89}, {R74}, {R83}, {R70}, {R80}&#10;)"/>
+<org.eventb.core.axiom name="axm18" org.eventb.core.label="PATH_ELEM_POS·data" org.eventb.core.predicate="PATH_ELEM_POS = {&#10;&#9;R15 ↦ {P01 ↦ RAIL_POS_R, P02 ↦ RAIL_POS_L, T02 ↦ RAIL_POS_F},&#10;&#9;R17 ↦ {P01 ↦ RAIL_POS_L, C00 ↦ RAIL_POS_F, P04 ↦ RAIL_POS_L, T04 ↦ RAIL_POS_F},&#10;&#9;R26 ↦ {P02 ↦ RAIL_POS_L, P01 ↦ RAIL_POS_R, T01 ↦ RAIL_POS_F},&#10;&#9;R28 ↦ {P02 ↦ RAIL_POS_R, C00 ↦ RAIL_POS_F, P03 ↦ RAIL_POS_R, T03 ↦ RAIL_POS_F},&#10;&#9;R37 ↦ {P03 ↦ RAIL_POS_L, P04 ↦ RAIL_POS_R, T04 ↦ RAIL_POS_F},&#10;&#9;R35 ↦ {P03 ↦ RAIL_POS_R, C00 ↦ RAIL_POS_F, P02 ↦ RAIL_POS_R, T02 ↦ RAIL_POS_F},&#10;&#9;R48 ↦ {P04 ↦ RAIL_POS_R, P03 ↦ RAIL_POS_L, T03 ↦ RAIL_POS_F},&#10;&#9;R46 ↦ {P04 ↦ RAIL_POS_L, C00 ↦ RAIL_POS_F, P01 ↦ RAIL_POS_L, T01 ↦ RAIL_POS_F},&#10;&#10;&#9;R56 ↦ {P05 ↦ RAIL_POS_R, P06 ↦ RAIL_POS_L},&#10;&#9;R58 ↦ {P05 ↦ RAIL_POS_L, P17 ↦ RAIL_POS_L, P18 ↦ RAIL_POS_L},&#10;&#9;R65 ↦ {P06 ↦ RAIL_POS_L, P05 ↦ RAIL_POS_R},&#10;&#9;R67 ↦ {P06 ↦ RAIL_POS_R, P18 ↦ RAIL_POS_R, P17 ↦ RAIL_POS_R},&#10;&#9;R78 ↦ {P07 ↦ RAIL_POS_R, P17 ↦ RAIL_POS_R, P18 ↦ RAIL_POS_L},&#10;&#9;R76 ↦ {P07 ↦ RAIL_POS_R, P17 ↦ RAIL_POS_R, P18 ↦ RAIL_POS_R, P06 ↦ RAIL_POS_R},&#10;&#9;R87 ↦ {P08 ↦ RAIL_POS_L, P18 ↦ RAIL_POS_L, P17 ↦ RAIL_POS_R},&#10;&#9;R85 ↦ {P08 ↦ RAIL_POS_L, P18 ↦ RAIL_POS_L, P17 ↦ RAIL_POS_L, P05 ↦ RAIL_POS_L},&#10;&#10;&#9;R79 ↦ {P07 ↦ RAIL_POS_L, T00 ↦ RAIL_POS_F},&#10;&#9;R89 ↦ {P08 ↦ RAIL_POS_R, T00 ↦ RAIL_POS_F},&#10;&#9;R74 ↦ {P07 ↦ RAIL_POS_R, T04 ↦ RAIL_POS_F},&#10;&#9;R83 ↦ {P08 ↦ RAIL_POS_L, T03 ↦ RAIL_POS_F},&#10;&#9;R70 ↦ {P07 ↦ RAIL_POS_L, T04 ↦ RAIL_POS_F},&#10;&#9;R80 ↦ {P08 ↦ RAIL_POS_R, T03 ↦ RAIL_POS_F}&#10;}"/>
+<org.eventb.core.axiom name="axm19" org.eventb.core.label="PATH_SGMT_ALL·data" org.eventb.core.predicate="PATH_SGMT_ALL = {&#10;&#9;R15 ↦ {P01T_P01R, P02L_P02T, T02A_T02B},&#10;&#9;R17 ↦ {P01T_P01L, C00A_C00D, P04L_P04T, T04A_T04B},&#10;&#9;R26 ↦ {P02T_P02L, P01R_P01T, T01A_T01B},&#10;&#9;R28 ↦ {P02T_P02R, C00B_C00C, P03R_P03T, T03A_T03B},&#10;&#9;R37 ↦ {P03T_P03L, P04R_P04T, T04A_T04B},&#10;&#9;R35 ↦ {P03T_P03R, C00C_C00B, P02R_P02T, T02A_T02B},&#10;&#9;R48 ↦ {P04T_P04R, P03L_P03T, T03A_T03B},&#10;&#9;R46 ↦ {P04T_P04L, C00D_C00A, P01L_P01T, T01A_T01B},&#10;&#10;&#9;R56 ↦ {P05T_P05R, P06L_P06T},&#10;&#9;R58 ↦ {P05T_P05L, P17L_P17T, P18T_P18L},&#10;&#9;R65 ↦ {P06T_P06L, P05R_P05T},&#10;&#9;R67 ↦ {P06T_P06R, P18R_P18T, P17T_P17R},&#10;&#9;R78 ↦ {P07T_P07R, P17R_P17T, P18T_P18L},&#10;&#9;R76 ↦ {P07T_P07R, P17R_P17T, P18T_P18R, P06R_P06T},&#10;&#9;R87 ↦ {P08T_P08L, P18L_P18T, P17T_P17R},&#10;&#9;R85 ↦ {P08T_P08L, P18L_P18T, P17T_P17L, P05L_P05T},&#10;&#10;&#9;R79 ↦ {P07T_P07L, T00A_T00B},&#10;&#9;R89 ↦ {P08T_P08R, T00B_T00A},&#10;&#9;R74 ↦ {P07R_P07T, T04B_T04A},&#10;&#9;R83 ↦ {P08L_P08T, T03B_T03A},&#10;&#9;R70 ↦ {P07L_P07T, T04B_T04A},&#10;&#9;R80 ↦ {P08R_P08T, T03B_T03A}&#10;}"/>
+<org.eventb.core.axiom name="axm20" org.eventb.core.label="PATH_CTOR_BEG·data" org.eventb.core.predicate="PATH_CTOR_BEG = {&#10;&#9;R15 ↦ P01T,&#10;&#9;R17 ↦ P01T,&#10;&#9;R26 ↦ P02T,&#10;&#9;R28 ↦ P02T,&#10;&#9;R37 ↦ P03T,&#10;&#9;R35 ↦ P03T,&#10;&#9;R48 ↦ P04T,&#10;&#9;R46 ↦ P04T,&#10;&#10;&#9;R56 ↦ P05T,&#10;&#9;R58 ↦ P05T,&#10;&#9;R65 ↦ P06T,&#10;&#9;R67 ↦ P06T,&#10;&#9;R78 ↦ P07T,&#10;&#9;R76 ↦ P07T,&#10;&#9;R87 ↦ P08T,&#10;&#9;R85 ↦ P08T,&#10;&#10;&#9;R79 ↦ P07T,&#10;&#9;R89 ↦ P08T,&#10;&#9;R74 ↦ P07R,&#10;&#9;R83 ↦ P08L,&#10;&#9;R70 ↦ P07L,&#10;&#9;R80 ↦ P08R&#10;}"/>
+<org.eventb.core.axiom name="axm21" org.eventb.core.label="PATH_CTOR_END·data" org.eventb.core.predicate="PATH_CTOR_END = {&#10;&#9;R15 ↦ T02B,&#10;&#9;R17 ↦ T04B,&#10;&#9;R26 ↦ T01B,&#10;&#9;R28 ↦ T03B,&#10;&#9;R37 ↦ T04B,&#10;&#9;R35 ↦ T02B,&#10;&#9;R48 ↦ T03B,&#10;&#9;R46 ↦ T01B,&#10;&#10;&#9;R56 ↦ P06T,&#10;&#9;R58 ↦ P18L,&#10;&#9;R65 ↦ P05T,&#10;&#9;R67 ↦ P17R,&#10;&#9;R78 ↦ P18L,&#10;&#9;R76 ↦ P06T,&#10;&#9;R87 ↦ P17R,&#10;&#9;R85 ↦ P05T,&#10;&#10;&#9;R79 ↦ T00B,&#10;&#9;R89 ↦ T00A,&#10;&#9;R74 ↦ T04A,&#10;&#9;R83 ↦ T03A,&#10;&#9;R70 ↦ T04A,&#10;&#9;R80 ↦ T03A&#10;}"/>
+<org.eventb.core.axiom name="cst12;" org.eventb.core.label="PATH_SGMT_FST·data" org.eventb.core.predicate="PATH_SGMT_FST = {&#10;&#9;R15 ↦ P01T_P01R,&#10;&#9;R17 ↦ P01T_P01L,&#10;&#9;R26 ↦ P02T_P02L,&#10;&#9;R28 ↦ P02T_P02R,&#10;&#9;R37 ↦ P03T_P03L,&#10;&#9;R35 ↦ P03T_P03R,&#10;&#9;R48 ↦ P04T_P04R,&#10;&#9;R46 ↦ P04T_P04L,&#10;&#10;&#9;R56 ↦ P05T_P05R,&#10;&#9;R58 ↦ P05T_P05L,&#10;&#9;R65 ↦ P06T_P06L,&#10;&#9;R67 ↦ P06T_P06R,&#10;&#9;R78 ↦ P07T_P07R,&#10;&#9;R76 ↦ P07T_P07R,&#10;&#9;R87 ↦ P08T_P08L,&#10;&#9;R85 ↦ P08T_P08L,&#10;&#10;&#9;R79 ↦ P07T_P07L,&#10;&#9;R89 ↦ P08T_P08R,&#10;&#9;R74 ↦ P07R_P07T,&#10;&#9;R83 ↦ P08L_P08T,&#10;&#9;R70 ↦ P07L_P07T,&#10;&#9;R80 ↦ P08R_P08T&#10;}"/>
+<org.eventb.core.axiom name="cst12=" org.eventb.core.label="PATH_SGMT_LST·data" org.eventb.core.predicate="PATH_SGMT_LST = {&#10;&#9;R15 ↦ T02A_T02B,&#10;&#9;R17 ↦ T04A_T04B,&#10;&#9;R26 ↦ T01A_T01B,&#10;&#9;R28 ↦ T03A_T03B,&#10;&#9;R37 ↦ T04A_T04B,&#10;&#9;R35 ↦ T02A_T02B,&#10;&#9;R48 ↦ T03A_T03B,&#10;&#9;R46 ↦ T01A_T01B,&#10;&#10;&#9;R56 ↦ P06L_P06T,&#10;&#9;R58 ↦ P18T_P18L,&#10;&#9;R65 ↦ P05R_P05T,&#10;&#9;R67 ↦ P17T_P17R,&#10;&#9;R78 ↦ P18T_P18L,&#10;&#9;R76 ↦ P06R_P06T,&#10;&#9;R87 ↦ P17T_P17R,&#10;&#9;R85 ↦ P05L_P05T,&#10;&#10;&#9;R79 ↦ T00A_T00B,&#10;&#9;R89 ↦ T00B_T00A,&#10;&#9;R74 ↦ T04B_T04A,&#10;&#9;R83 ↦ T03B_T03A,&#10;&#9;R70 ↦ T04B_T04A,&#10;&#9;R80 ↦ T03B_T03A&#10;}"/>
+<org.eventb.core.axiom name="cst12&gt;" org.eventb.core.label="PATH_SGMT_NXT·data" org.eventb.core.predicate="PATH_SGMT_NXT = {&#10;&#9;R15 ↦ {P01T_P01R ↦ P02L_P02T, P02L_P02T ↦ T02A_T02B},&#10;&#9;R17 ↦ {P01T_P01L ↦ C00A_C00D, C00A_C00D ↦ P04L_P04T, P04L_P04T ↦ T04A_T04B},&#10;&#9;R26 ↦ {P02T_P02L ↦ P01R_P01T, P01R_P01T ↦ T01A_T01B},&#10;&#9;R28 ↦ {P02T_P02R ↦ C00B_C00C, C00B_C00C ↦ P03R_P03T, P03R_P03T ↦ T03A_T03B},&#10;&#9;R37 ↦ {P03T_P03L ↦ P04R_P04T, P04R_P04T ↦ T04A_T04B},&#10;&#9;R35 ↦ {P03T_P03R ↦ C00C_C00B, C00C_C00B ↦ P02R_P02T, P02R_P02T ↦ T02A_T02B},&#10;&#9;R48 ↦ {P04T_P04R ↦ P03L_P03T, P03L_P03T ↦ T03A_T03B},&#10;&#9;R46 ↦ {P04T_P04L ↦ C00D_C00A, C00D_C00A ↦ P01L_P01T, P01L_P01T ↦ T01A_T01B},&#10;&#10;&#9;R56 ↦ {P05T_P05R ↦ P06L_P06T},&#10;&#9;R58 ↦ {P05T_P05L ↦ P17L_P17T, P17L_P17T ↦ P18T_P18L},&#10;&#9;R65 ↦ {P06T_P06L ↦ P05R_P05T},&#10;&#9;R67 ↦ {P06T_P06R ↦ P18R_P18T, P18R_P18T ↦ P17T_P17R},&#10;&#9;R78 ↦ {P07T_P07R ↦ P17R_P17T, P17R_P17T ↦ P18T_P18L},&#10;&#9;R76 ↦ {P07T_P07R ↦ P17R_P17T, P17R_P17T ↦ P18T_P18R, P18T_P18R ↦ P06R_P06T},&#10;&#9;R87 ↦ {P08T_P08L ↦ P18L_P18T, P18L_P18T ↦ P17T_P17R},&#10;&#9;R85 ↦ {P08T_P08L ↦ P18L_P18T, P18L_P18T ↦ P17T_P17L, P17T_P17L ↦ P05L_P05T},&#10;&#10;&#9;R79 ↦ {P07T_P07L ↦ T00A_T00B},&#10;&#9;R89 ↦ {P08T_P08R ↦ T00B_T00A},&#10;&#9;R74 ↦ {P07R_P07T ↦ T04B_T04A},&#10;&#9;R83 ↦ {P08L_P08T ↦ T03B_T03A},&#10;&#9;R70 ↦ {P07L_P07T ↦ T04B_T04A},&#10;&#9;R80 ↦ {P08R_P08T ↦ T03B_T03A}&#10;&#10;}"/>
+<org.eventb.core.axiom name="cst12?" org.eventb.core.label="PATH_EXCL·data" org.eventb.core.predicate="PATH_EXCL = {&#10;&#9;R79 ↦ R83,&#10;&#9;R89 ↦ R74,&#10;&#9;R83 ↦ R79,&#10;&#9;R74 ↦ R89&#10;}"/>
+<org.eventb.core.constant name="cst17:" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P18T_P18R"/>
+<org.eventb.core.constant name="cst17;" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="P18R_P18T"/>
+<org.eventb.core.constant name="cst41" org.eventb.core.comment="RAIL_ELEM: Crossing" org.eventb.core.identifier="C00"/>
+<org.eventb.core.constant name="cst42" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="C00A"/>
+<org.eventb.core.constant name="cst43" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="C00B"/>
+<org.eventb.core.constant name="cst44" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="C00C"/>
+<org.eventb.core.constant name="cst45" org.eventb.core.comment="&#9;RAIL_CTOR" org.eventb.core.identifier="C00D"/>
+<org.eventb.core.constant name="cst86" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="C00A_C00D"/>
+<org.eventb.core.constant name="cst87" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="C00D_C00A"/>
+<org.eventb.core.constant name="cst88" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="C00B_C00C"/>
+<org.eventb.core.constant name="cst89" org.eventb.core.comment="&#9;RAIL_SGMT" org.eventb.core.identifier="C00C_C00B"/>
+<org.eventb.core.constant name="cst18@" org.eventb.core.comment="RAIL_TERM" org.eventb.core.identifier="E00"/>
+<org.eventb.core.constant name="cst18A" org.eventb.core.comment="RAIL_CTOR" org.eventb.core.identifier="E00E"/>
+<org.eventb.core.constant name="cst18B" org.eventb.core.identifier="E99"/>
+<org.eventb.core.constant name="cst18C" org.eventb.core.identifier="E99E"/>
+<org.eventb.core.constant name="cst90" org.eventb.core.comment="RAIL_POS_ENUM: Undefined" org.eventb.core.identifier="RAIL_POS_X"/>
+<org.eventb.core.constant name="cst91" org.eventb.core.comment="RAIL_POS_ENUM: Fixed" org.eventb.core.identifier="RAIL_POS_F"/>
+<org.eventb.core.constant name="cst92" org.eventb.core.comment="RAIL_POS_ENUM: Left" org.eventb.core.identifier="RAIL_POS_L"/>
+<org.eventb.core.constant name="cst93" org.eventb.core.comment="RAIL_POS_ENUM: Right" org.eventb.core.identifier="RAIL_POS_R"/>
+<org.eventb.core.constant name="cst94" org.eventb.core.comment="PATH" org.eventb.core.identifier="R15"/>
+<org.eventb.core.constant name="cst95" org.eventb.core.comment="PATH" org.eventb.core.identifier="R17"/>
+<org.eventb.core.constant name="cst96" org.eventb.core.comment="PATH" org.eventb.core.identifier="R26"/>
+<org.eventb.core.constant name="cst97" org.eventb.core.comment="PATH" org.eventb.core.identifier="R28"/>
+<org.eventb.core.constant name="cst98" org.eventb.core.comment="PATH" org.eventb.core.identifier="R37"/>
+<org.eventb.core.constant name="cst99" org.eventb.core.comment="PATH" org.eventb.core.identifier="R35"/>
+<org.eventb.core.constant name="cst100" org.eventb.core.comment="PATH" org.eventb.core.identifier="R48"/>
+<org.eventb.core.constant name="cst101" org.eventb.core.comment="PATH" org.eventb.core.identifier="R46"/>
+<org.eventb.core.constant name="cst102" org.eventb.core.comment="PATH" org.eventb.core.identifier="R56"/>
+<org.eventb.core.constant name="cst103" org.eventb.core.comment="PATH" org.eventb.core.identifier="R58"/>
+<org.eventb.core.constant name="cst104" org.eventb.core.comment="PATH" org.eventb.core.identifier="R65"/>
+<org.eventb.core.constant name="cst105" org.eventb.core.comment="PATH" org.eventb.core.identifier="R67"/>
+<org.eventb.core.constant name="cst106" org.eventb.core.comment="PATH" org.eventb.core.identifier="R78"/>
+<org.eventb.core.constant name="cst107" org.eventb.core.comment="PATH" org.eventb.core.identifier="R76"/>
+<org.eventb.core.constant name="cst187" org.eventb.core.comment="PATH" org.eventb.core.identifier="R87"/>
+<org.eventb.core.constant name="cst188" org.eventb.core.comment="PATH" org.eventb.core.identifier="R85"/>
+<org.eventb.core.constant name="cst189" org.eventb.core.comment="PATH" org.eventb.core.identifier="R79"/>
+<org.eventb.core.constant name="cst18:" org.eventb.core.comment="PATH" org.eventb.core.identifier="R89"/>
+<org.eventb.core.constant name="cst18;" org.eventb.core.comment="PATH" org.eventb.core.identifier="R74"/>
+<org.eventb.core.constant name="cst18=" org.eventb.core.comment="PATH" org.eventb.core.identifier="R83"/>
+<org.eventb.core.constant name="cst18&gt;" org.eventb.core.comment="PATH" org.eventb.core.identifier="R70"/>
+<org.eventb.core.constant name="cst18?" org.eventb.core.comment="PATH" org.eventb.core.identifier="R80"/>
+<org.eventb.core.constant name="cst108" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S01"/>
+<org.eventb.core.constant name="cst109" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S02"/>
+<org.eventb.core.constant name="cst110" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S03"/>
+<org.eventb.core.constant name="cst111" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S04"/>
+<org.eventb.core.constant name="cst112" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S05"/>
+<org.eventb.core.constant name="cst113" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S06"/>
+<org.eventb.core.constant name="cst114" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S07"/>
+<org.eventb.core.constant name="cst115" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S08"/>
+<org.eventb.core.constant name="cst116" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S15"/>
+<org.eventb.core.constant name="cst117" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S16"/>
+<org.eventb.core.constant name="cst183" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S17"/>
+<org.eventb.core.constant name="cst184" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S18"/>
+<org.eventb.core.constant name="cst185" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S27"/>
+<org.eventb.core.constant name="cst186" org.eventb.core.comment="SIGNAL" org.eventb.core.identifier="S28"/>
+<org.eventb.core.constant name="cst118" org.eventb.core.comment="SIGNAL_ASPECT_ENUM: Stop" org.eventb.core.identifier="SIGNAL_ASPECT_STOP"/>
+<org.eventb.core.constant name="cst119" org.eventb.core.comment="SIGNAL_ASPECT_ENUM: Proceed" org.eventb.core.identifier="SIGNAL_ASPECT_PROCEED"/>
+<org.eventb.core.constant name="cst11:" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VT01"/>
+<org.eventb.core.constant name="cst123" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VT02"/>
+<org.eventb.core.constant name="cst11;" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VT03"/>
+<org.eventb.core.constant name="cst11=" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VT04"/>
+<org.eventb.core.constant name="cst11&gt;" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VT00"/>
+<org.eventb.core.constant name="cst120" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VP01"/>
+<org.eventb.core.constant name="cst127" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VP02"/>
+<org.eventb.core.constant name="cst121" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VP03"/>
+<org.eventb.core.constant name="cst122" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VP04"/>
+<org.eventb.core.constant name="cst124" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VP05"/>
+<org.eventb.core.constant name="cst125" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VP06"/>
+<org.eventb.core.constant name="cst126" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VP07"/>
+<org.eventb.core.constant name="cst128" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VP08"/>
+<org.eventb.core.constant name="cst180" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VP17"/>
+<org.eventb.core.constant name="cst181" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VP18"/>
+<org.eventb.core.constant name="cst182" org.eventb.core.comment="TVD Section" org.eventb.core.identifier="VC00"/>
+</org.eventb.core.contextFile>
