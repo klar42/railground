@@ -1,0 +1,22 @@
+<svg width="1000" height="400" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker orient="auto" markerHeight="10" markerWidth="10" markerUnits="strokeWidth" refY="5" refX="0" viewBox="0 0 10 10" id="pf1">
+   <rect id="svg_7" height="10" width="1"/>
+  </marker>
+  <marker orient="auto" markerHeight="10" markerWidth="10" markerUnits="strokeWidth" refY="5" refX="1" viewBox="0 0 10 10" id="pf2">
+   <rect id="svg_8" height="10" width="1"/>
+  </marker>
+  <g id="track" stroke="#000" fill="#000">
+   <line id="track_line" x1="0" y1="0" x2="100" y2="0" marker-start="url(#pf1)" marker-end="url(#pf2)" stroke-width="1.5"/>
+   <text id="track_label" x="50" y="-5" stroke-width="0" text-anchor="middle" font-size="12">T4</text>
+  </g>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="1002" height="402" id="canvas_background" fill="none"/>
+ </g>
+ <g stroke="#000" stroke-width="1.5" fill="#000">
+  <title>Layer 1</title>
+  <text id="E2_label" x="90" y="105" stroke-width="0">E2</text>
+ </g>
+</svg>

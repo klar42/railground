@@ -1,0 +1,229 @@
+<svg width="1500" height="1000" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker orient="auto" markerHeight="10" markerWidth="10" markerUnits="userSpaceOnUse" refY="5" refX="0" viewBox="0 0 10 10" id="pf1">
+   <rect id="svg_7" height="10" width="1"/>
+  </marker>
+  <marker orient="auto" markerHeight="10" markerWidth="10" markerUnits="userSpaceOnUse" refY="5" refX="1" viewBox="0 0 10 10" id="pf2">
+   <rect id="svg_8" height="10" width="1"/>
+  </marker>
+ </defs>
+
+ <g stroke="#000" stroke-width="1" fill="#000">
+  <title>TRA</title>
+
+  <g transform="translate(900, 500)">
+    <path id="T01" d="M -150 0 L 0 0 C 150 0, 150 -200, 0 -200" fill="transparent" />
+    <text id="T01_label" x="100" y="-100" stroke-width="0" text-anchor="end">T01</text>
+  </g>
+
+  <g transform="translate(300, 500)">
+    <path id="T02" d="M 150 0 L 0 0 C -150 0, -150 -200, 0 -200" fill="transparent" />
+    <text id="T02_label" x="-100" y="-100" stroke-width="0" text-anchor="start">T02</text>
+  </g>
+
+  <g transform="translate(900, 600)">
+    <path id="T03" d="M -150 0 L 0 0 C 300 0, 300 -400, 0 -400" fill="transparent" />
+    <text id="T03_label" x="220" y="-200" stroke-width="0" text-anchor="end">T03</text>
+  </g>
+
+  <g transform="translate(300, 600)">
+    <path id="T04" d="M 150 0 L 0 0 C -300 0, -300 -400, 0 -400" fill="transparent" />
+    <text id="T04_label" x="-220" y="-200" stroke-width="0" text-anchor="start">T04</text>
+  </g>
+
+  <g transform="translate(450, 150)">
+    <path id="T00" d="M 0 0 L 100 -50 L 200 -50 L 300 0" fill="transparent" />
+    <text id="T00_label" x="150" y="-30" stroke-width="0" text-anchor="middle">T00</text>
+  </g>
+
+  <g transform="translate(450, 300)">
+    <path id="T56" d="M 0 0 L 300 0" fill="transparent" />
+    <text id="T56_label" x="150" y="20" stroke-width="0" text-anchor="middle">T56</text>
+  </g>
+
+  <g transform="translate(650, 525)">
+    <line id="C00AD" x1="0" y1="0" x2="-100" y2="50" marker-start="url(#pf1)" marker-end="url(#pf2)" />
+    <line id="C00BC" x1="-100" y1="0" x2="0" y2="50" marker-start="url(#pf1)" marker-end="url(#pf2)" />
+    <text id="C00_label" x="-50" y="15" stroke-width="0" text-anchor="middle">C00</text>
+  </g>
+
+  <g transform="translate(750, 500)">
+    <line id="P01T" x1="0" y1="0" x2="-50" y2="0" marker-start="url(#pf1)" />
+    <line id="P01R" x1="-50" y1="0" x2="-150" y2="0" marker-end="url(#pf2)" /> <!-- x2="-100" -->
+    <line id="P01L" x1="-50" y1="0" x2="-100" y2="25" marker-end="url(#pf2)" />
+    <text id="P01X" x="-50" y="17" stroke-width="0" text-anchor="start">P01</text>
+  </g>
+
+  <g transform="translate(450, 500)">
+    <line id="P02T" x1="0" y1="0" x2="50" y2="0" marker-start="url(#pf1)" />
+    <line id="P02L" x1="50" y1="0" x2="150" y2="0" marker-end="url(#pf2)" /> <!-- x2="100" -->
+    <line id="P02R" x1="50" y1="0" x2="100" y2="25" marker-end="url(#pf2)" />
+    <text id="P02X" x="50" y="17" stroke-width="0" text-anchor="end">P02</text>
+  </g>
+
+  <g transform="translate(750, 600)">
+    <line id="P03T" x1="0" y1="0" x2="-50" y2="0" marker-start="url(#pf1)" />
+    <line id="P03L" x1="-50" y1="0" x2="-150" y2="0" marker-end="url(#pf2)" /> <!-- x2="-100" -->
+    <line id="P03R" x1="-50" y1="0" x2="-100" y2="-25" marker-end="url(#pf2)" />
+    <text id="P03X" x="-50" y="-4" stroke-width="0" text-anchor="start">P03</text>
+  </g>
+
+  <g transform="translate(450, 600)">
+    <line id="P04T" x1="0" y1="0" x2="50" y2="0" marker-start="url(#pf1)" />
+    <line id="P04R" x1="50" y1="0" x2="150" y2="0" marker-end="url(#pf2)" /> <!-- x2="100" -->
+    <line id="P04L" x1="50" y1="0" x2="100" y2="-25" marker-end="url(#pf2)" />
+    <text id="P04X" x="50" y="-4" stroke-width="0" text-anchor="end">P04</text>
+  </g>
+
+  <g transform="translate(300, 300)">
+    <line id="P05T" x1="0" y1="0" x2="50" y2="0" marker-start="url(#pf1)" />
+    <line id="P05R" x1="50" y1="0" x2="150" y2="0" marker-end="url(#pf2)" /> <!-- x2="100" -->
+    <line id="P05L" x1="50" y1="0" x2="150" y2="-50" marker-end="url(#pf2)" /> <!-- x2="100" y2="-25" -->
+    <text id="P05X" x="50" y="-4" stroke-width="0" text-anchor="end">P05</text>
+  </g>
+
+  <g transform="translate(900, 300)">
+    <line id="P06T" x1="0" y1="0" x2="-50" y2="0" marker-start="url(#pf1)" />
+    <line id="P06L" x1="-50" y1="0" x2="-150" y2="0" marker-end="url(#pf2)" /> <!-- x2="-100" -->
+    <line id="P06R" x1="-50" y1="0" x2="-150" y2="-50" marker-end="url(#pf2)" /> <!-- x2="-100" y2="-25" -->
+    <text id="P06X" x="-50" y="-4" stroke-width="0" text-anchor="start">P06</text>
+  </g>
+
+  <g transform="translate(300, 200)">
+    <line id="P07T" x1="0" y1="0" x2="50" y2="0" marker-start="url(#pf1)" />
+    <line id="P07R" x1="50" y1="0" x2="150" y2="0" marker-end="url(#pf2)" /> <!-- x2="100" -->
+    <line id="P07L" x1="50" y1="0" x2="150" y2="-50" marker-end="url(#pf2)" /> <!-- x2="100" y2="-25" -->
+    <text id="P07X" x="50" y="-4" stroke-width="0" text-anchor="end">P07</text>
+  </g>
+
+  <g transform="translate(900, 200)">
+    <line id="P08T" x1="0" y1="0" x2="-50" y2="0" marker-start="url(#pf1)" />
+    <line id="P08L" x1="-50" y1="0" x2="-150" y2="0" marker-end="url(#pf2)" /> <!-- x2="-100" -->
+    <line id="P08R" x1="-50" y1="0" x2="-150" y2="-50" marker-end="url(#pf2)" /> <!-- x2="-100" y2="-25" -->
+    <text id="P08X" x="-50" y="-4" stroke-width="0" text-anchor="start">P08</text>
+  </g>
+
+  <g transform="translate(600, 200)">
+    <line id="P17T" x1="0" y1="0" x2="-50" y2="0" marker-start="url(#pf1)" />
+    <line id="P17R" x1="-50" y1="0" x2="-150" y2="0" marker-end="url(#pf2)" /> <!-- x2="-100" -->
+    <line id="P17L" x1="-50" y1="0" x2="-150" y2="50" marker-end="url(#pf2)" /> <!-- x2="-100" y2="25" -->
+    <text id="P17X" x="-50" y="17" stroke-width="0" text-anchor="start">P17</text>
+  </g>
+
+  <g transform="translate(600, 200)">
+    <line id="P18T" x1="0" y1="0" x2="50" y2="0" marker-start="url(#pf1)" />
+    <line id="P18L" x1="50" y1="0" x2="150" y2="0" marker-end="url(#pf2)" /> <!-- x2="100" -->
+    <line id="P18R" x1="50" y1="0" x2="150" y2="50" marker-end="url(#pf2)" /> <!-- x2="100" y2="25" -->
+    <text id="P18X" x="50" y="17" stroke-width="0" text-anchor="end">P18</text>
+  </g>
+
+  <g transform="translate(750, 500)">
+    <circle id="S01" cx="-40" cy="-20" r ="10" fill="none"/>
+    <line x1="-30" y1="-20" x2="0" y2="-20" marker-end="url(#pf2)" />
+    <text id="S01X" x="-3" y="-25" stroke-width="0" text-anchor="end">S01</text>
+    <text id="R17" x="-3" y="-45" stroke-width="0" text-anchor="end">S07←</text>
+    <text id="R15" x="-3" y="-65" stroke-width="0" text-anchor="end">S05←</text>
+  </g>
+
+  <g transform="translate(450, 500)">
+    <circle id="S02" cx="40" cy="-20" r ="10" fill="none"/>
+    <line x1="30" y1="-20" x2="0" y2="-20" marker-end="url(#pf2)" />
+    <text id="S02X" x="3" y="-25" stroke-width="0" text-anchor="start">S02</text>
+    <text id="R28" x="-3" y="-45" stroke-width="0" text-anchor="start">→S08</text>
+    <text id="R26" x="-3" y="-65" stroke-width="0" text-anchor="start">→S06</text>
+  </g>
+
+  <g transform="translate(750, 600)">
+    <circle id="S03" cx="-40" cy="20" r ="10" fill="none"/>
+    <line x1="-30" y1="20" x2="0" y2="20" marker-end="url(#pf2)" />
+    <text id="S03X" x="-3" y="35" stroke-width="0" text-anchor="end">S03</text>
+    <text id="R35" x="-3" y="55" stroke-width="0" text-anchor="end">S05←</text>
+    <text id="R37" x="-3" y="75" stroke-width="0" text-anchor="end">S07←</text>
+  </g>
+
+  <g transform="translate(450, 600)">
+    <circle id="S04" cx="40" cy="20" r ="10" fill="none"/>
+    <line x1="30" y1="20" x2="0" y2="20" marker-end="url(#pf2)" />
+    <text id="S04X" x="3" y="35" stroke-width="0" text-anchor="start">S04</text>
+    <text id="R46" x="-3" y="55" stroke-width="0" text-anchor="start">→S06</text>
+    <text id="R48" x="-3" y="75" stroke-width="0" text-anchor="start">→S08</text>
+  </g>
+
+  <g transform="translate(300, 300)">
+    <circle id="S05" cx="40" cy="20" r ="10" fill="none"/>
+    <line x1="30" y1="20" x2="0" y2="20" marker-end="url(#pf2)" />
+    <text id="S05X" x="3" y="35" stroke-width="0" text-anchor="start">S05</text>
+    <text id="R58" x="3" y="55" stroke-width="0" text-anchor="start">→S18</text>
+    <text id="R56" x="3" y="75" stroke-width="0" text-anchor="start">→S16</text>
+  </g>
+
+  <g transform="translate(900, 300)">
+    <circle id="S06" cx="-40" cy="20" r ="10" fill="none"/>
+    <line x1="-30" y1="20" x2="0" y2="20" marker-end="url(#pf2)" />
+    <text id="S06X" x="-3" y="35" stroke-width="0" text-anchor="end">S06</text>
+    <text id="R67" x="-3" y="55" stroke-width="0" text-anchor="end">S17←</text>
+    <text id="R65" x="-3" y="75" stroke-width="0" text-anchor="end">S15←</text>
+  </g>
+
+  <g transform="translate(300, 200)">
+    <circle id="S07" cx="40" cy="20" r ="10" fill="none"/>
+    <line x1="30" y1="20" x2="0" y2="20" marker-end="url(#pf2)" />
+    <text id="S07X" x="3" y="35" stroke-width="0" text-anchor="start">S07</text>
+    <text id="R79" x="-3" y="35" stroke-width="0" text-anchor="end">→S28</text>
+    <text id="R78" x="-3" y="55" stroke-width="0" text-anchor="end">→S18</text>
+    <text id="R76" x="-3" y="75" stroke-width="0" text-anchor="end">→S16</text>
+  </g>
+
+  <g transform="translate(900, 200)">
+    <circle id="S08" cx="-40" cy="20" r ="10" fill="none"/>
+    <line x1="-30" y1="20" x2="0" y2="20" marker-end="url(#pf2)" />
+    <text id="S08X" x="-3" y="35" stroke-width="0" text-anchor="end">S08</text>
+    <text id="R89" x="3" y="35" stroke-width="0" text-anchor="start">S27←</text>
+    <text id="R87" x="3" y="55" stroke-width="0" text-anchor="start">S17←</text>
+    <text id="R85" x="3" y="75" stroke-width="0" text-anchor="start">S15←</text>
+  </g>
+
+  <g transform="translate(300, 300)">
+    <circle id="S15" cx="-40" cy="20" r ="10" fill="none"/>
+    <line x1="-30" y1="20" x2="0" y2="20" marker-end="url(#pf2)" />
+    <text id="S15X" x="-3" y="35" stroke-width="0" text-anchor="end">S15</text>
+    <text id="R52" x="-3" y="55" stroke-width="0" text-anchor="end">S02←</text>
+  </g>
+
+  <g transform="translate(900, 300)">
+    <circle id="S16" cx="40" cy="20" r ="10" fill="none"/>
+    <line x1="30" y1="20" x2="0" y2="20" marker-end="url(#pf2)" />
+    <text id="S16X" x="3" y="35" stroke-width="0" text-anchor="start">S16</text>
+    <text id="R61" x="3" y="55" stroke-width="0" text-anchor="start">→S01</text>
+  </g>
+
+  <g transform="translate(450, 200)">
+    <circle id="S17" cx="-40" cy="20" r ="10" fill="none"/>
+    <line x1="-30" y1="20" x2="0" y2="20" marker-end="url(#pf2)" />
+    <text id="S17X" x="-3" y="35" stroke-width="0" text-anchor="end">S17</text>
+    <text id="R74" x="-23" y="55" stroke-width="0" text-anchor="end">S04←</text>
+  </g>
+
+  <g transform="translate(750, 200)">
+    <circle id="S18" cx="40" cy="20" r ="10" fill="none"/>
+    <line x1="30" y1="20" x2="0" y2="20" marker-end="url(#pf2)" />
+    <text id="S18X" x="3" y="35" stroke-width="0" text-anchor="start">S18</text>
+    <text id="R83" x="23" y="55" stroke-width="0" text-anchor="start">→S03</text>
+  </g>
+
+  <g transform="translate(450, 150)">
+    <circle id="S27" cx="-40" cy="-20" r ="10" fill="none"/>
+    <line x1="-30" y1="-20" x2="0" y2="-20" marker-end="url(#pf2)" />
+    <text id="S27X" x="-3" y="-25" stroke-width="0" text-anchor="end">S27</text>
+    <text id="R70" x="-3" y="-45" stroke-width="0" text-anchor="end">S04←</text>
+  </g>
+
+  <g transform="translate(750, 150)">
+    <circle id="S28" cx="40" cy="-20" r ="10" fill="none"/>
+    <line x1="30" y1="-20" x2="0" y2="-20" marker-end="url(#pf2)" />
+    <text id="S28X" x="3" y="-25" stroke-width="0" text-anchor="start">S28</text>
+    <text id="R80" x="3" y="-45" stroke-width="0" text-anchor="start">→S03</text>
+  </g>
+
+ </g>
+</svg>

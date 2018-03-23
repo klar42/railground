@@ -1,0 +1,10 @@
+659  [main] INFO  de.bmotion.prob.Standalone - ProB 2 Server started on port 17080
+1477 [Thread-0] INFO  de.bmotion.core.BMotionSocketServer - Socket.io started on host 0.0.0.0, port 19090
+18593 [nioEventLoopGroup-3-1] INFO  d.b.c.CommonSocketListenerProvider - Client connected
+19500 [nioEventLoopGroup-3-2] INFO  de.bmotion.prob.ProBVisualization - BMotionWeb: Loading model /homes/tofische/workspace.railground.rodin/railground/bmotion/../rg-model/DEMO_Station.bum
+29835 [nioEventLoopGroup-3-2] INFO  de.bmotion.core.InitSessionService - Created new BMotion session f37f7ff7-c91f-0886-84e9-d476b344d9ab
+31137 [nioEventLoopGroup-3-4] INFO  d.b.c.CommonSocketListenerProvider - Client connected
+41069 [nioEventLoopGroup-3-2] INFO  de.bmotion.prob.ProBVisualization - ProB Session f37f7ff7-c91f-0886-84e9-d476b344d9ab disconnected!
+41075 [nioEventLoopGroup-3-5] INFO  d.b.c.CommonSocketListenerProvider - Client disconnected
+42823 [nioEventLoopGroup-3-2] INFO  d.b.c.CommonSocketListenerProvider - Client disconnected
+42824 [nioEventLoopGroup-3-2] INFO  d.b.c.CommonSocketListenerProvider - Going to start session timer thread

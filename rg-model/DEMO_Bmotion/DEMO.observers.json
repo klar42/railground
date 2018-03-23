@@ -1,0 +1,76 @@
+{
+    "observers": [
+        {
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P1) = RAIL_POS_R",
+                "selector": "#P1R",
+                "true": "origin.attr('stroke', 'black')",
+                "false": "origin.attr('stroke', 'white')"
+            }
+        },
+        {
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P1) = RAIL_POS_L",
+                "selector": "#P1L",
+                "true": "origin.attr('stroke', 'black')",
+                "false": "origin.attr('stroke', 'white')"
+            }
+        },
+        {
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P2) = RAIL_POS_R",
+                "selector": "#P2R",
+                "true": "origin.attr('stroke', 'black')",
+                "false": "origin.attr('stroke', 'white')"
+            }
+        },
+        {
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P2) = RAIL_POS_L",
+                "selector": "#P2L",
+                "true": "origin.attr('stroke', 'black')",
+                "false": "origin.attr('stroke', 'white')"
+            }
+        },
+        {
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P3) = RAIL_POS_R",
+                "selector": "#P3R",
+                "true": "origin.attr('stroke', 'black')",
+                "false": "origin.attr('stroke', 'white')"
+            }
+        },
+        {
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P3) = RAIL_POS_L",
+                "selector": "#P3L",
+                "true": "origin.attr('stroke', 'black')",
+                "false": "origin.attr('stroke', 'white')"
+            }
+        },
+        {
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P4) = RAIL_POS_R",
+                "selector": "#P4R",
+                "true": "origin.attr('stroke', 'black')",
+                "false": "origin.attr('stroke', 'white')"
+            }
+        },
+        {
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P4) = RAIL_POS_L",
+                "selector": "#P4L",
+                "true": "origin.attr('stroke', 'black')",
+                "false": "origin.attr('stroke', 'white')"
+            }
+        }
+    ]
+}

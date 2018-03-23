@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poFile org.eventb.core.poStamp="4">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.poIdentifier name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
@@ -110,6 +110,8 @@
 <org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMF" org.eventb.core.predicate="SIGNAL_ASPECT_AVAIL∈SIGNAL → ℙ1(SIGNAL_ASPECT_ENUM)" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm4"/>
 <org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMG" org.eventb.core.predicate="SIGNAL_ASPECT_DEFAULT∈SIGNAL_ASPECT_ENUM" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm5"/>
 <org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMH" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL⇒SIGNAL_ASPECT_DEFAULT∈SIGNAL_ASPECT_AVAIL(sig)" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm6"/>
+<org.eventb.core.poIdentifier name="SIGNAL_ASPECT_PATH" org.eventb.core.type="ℙ(PATH_ENUM×SIGNAL_ASPECT_ENUM)"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMI" org.eventb.core.predicate="SIGNAL_ASPECT_PATH∈PATH_ENUM → SIGNAL_ASPECT_ENUM" org.eventb.core.source="/RailGround/L8_SignalDependency_C.buc|org.eventb.core.contextFile#L8_SignalDependency_C|org.eventb.core.axiom#axm1"/>
 <org.eventb.core.poIdentifier name="C1" org.eventb.core.type="RAIL_ELEM"/>
 <org.eventb.core.poIdentifier name="C1A" org.eventb.core.type="RAIL_CTOR"/>
 <org.eventb.core.poIdentifier name="C1A_C1D" org.eventb.core.type="RAIL_SGMT"/>
@@ -243,7 +245,7 @@
 <org.eventb.core.poIdentifier name="VT7" org.eventb.core.type="TVD_SECT"/>
 <org.eventb.core.poIdentifier name="VT8" org.eventb.core.type="TVD_SECT"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/DEMO_Station_C.bpo|org.eventb.core.poFile#DEMO_Station_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/DEMO_Station_C.bpo|org.eventb.core.poFile#DEMO_Station_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="4">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(RAIL_ELEM,{T1},{T2},{T3},{T4},{T5},{T6},{T7},{T8},{P1},{P2},{P3},{P4},{C1})" org.eventb.core.source="/RailGround/DEMO_Station_C.buc|org.eventb.core.contextFile#DEMO_Station_C|org.eventb.core.axiom#axm1"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="partition(RAIL_TERM,{E1},{E2},{E3},{E4})" org.eventb.core.source="/RailGround/DEMO_Station_C.buc|org.eventb.core.contextFile#DEMO_Station_C|org.eventb.core.axiom#axm2"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="partition(RAIL_CTOR,{E1E},{E2E},{E3E},{E4E},{T1A},{T1B},{T2A},{T2B},{T3A},{T3B},{T4A},{T4B},{T5A},{T5B},{T6A},{T6B},{T7A},{T7B},{T8A},{T8B},{P1T},{P1L},{P1R},{P2T},{P2L},{P2R},{P3T},{P3L},{P3R},{P4T},{P4L},{P4R},{C1A},{C1B},{C1C},{C1D})" org.eventb.core.source="/RailGround/DEMO_Station_C.buc|org.eventb.core.contextFile#DEMO_Station_C|org.eventb.core.axiom#axm3"/>
@@ -271,5 +273,6 @@
 <org.eventb.core.poPredicate name="PRD24" org.eventb.core.predicate="PATH_SGMT_LST={R01 ↦ T7A_T7B,R02 ↦ P2T_P2L,R03 ↦ T1B_T1A,R04 ↦ T2B_T2A,R05 ↦ T7A_T7B,R06 ↦ T6B_T6A,R07 ↦ P1T_P1R,R08 ↦ T8A_T8B,R09 ↦ T4A_T4B,R10 ↦ T3A_T3B,R11 ↦ T6B_T6A,R12 ↦ T5B_T5A,R13 ↦ T3A_T3B,R14 ↦ T2B_T2A}" org.eventb.core.source="/RailGround/DEMO_Station_C.buc|org.eventb.core.contextFile#DEMO_Station_C|org.eventb.core.axiom#cst12="/>
 <org.eventb.core.poPredicate name="PRD25" org.eventb.core.predicate="PATH_SGMT_NXT={R01 ↦ {T4B_T4A ↦ T3B_T3A,T3B_T3A ↦ P2T_P2R,P2T_P2R ↦ C1A_C1D,C1A_C1D ↦ P4R_P4T,P4R_P4T ↦ T7A_T7B},R02 ↦ {T4B_T4A ↦ T3B_T3A,T3B_T3A ↦ P2T_P2L},R03 ↦ (∅ ⦂ ℙ(RAIL_SGMT×RAIL_SGMT)),R04 ↦ {T6A_T6B ↦ P3T_P3L,P3T_P3L ↦ C1B_C1C,C1B_C1C ↦ P1L_P1T,P1L_P1T ↦ T2B_T2A},R05 ↦ {T6A_T6B ↦ P3T_P3R,P3T_P3R ↦ P4L_P4T,P4L_P4T ↦ T7A_T7B},R06 ↦ {T1A_T1B ↦ T2A_T2B,T2A_T2B ↦ P1T_P1L,P1T_P1L ↦ C1C_C1B,C1C_C1B ↦ P3L_P3T,P3L_P3T ↦ T6B_T6A},R07 ↦ {T1A_T1B ↦ T2A_T2B,T2A_T2B ↦ P1T_P1R},R08 ↦ (∅ ⦂ ℙ(RAIL_SGMT×RAIL_SGMT)),R09 ↦ (∅ ⦂ ℙ(RAIL_SGMT×RAIL_SGMT)),R10 ↦ {T7B_T7A ↦ P4T_P4R,P4T_P4R ↦ C1D_C1A,C1D_C1A ↦ P2R_P2T,P2R_P2T ↦ T3A_T3B},R11 ↦ {T7B_T7A ↦ P4T_P4L,P4T_P4L ↦ P3R_P3T,P3R_P3T ↦ T6B_T6A},R12 ↦ (∅ ⦂ ℙ(RAIL_SGMT×RAIL_SGMT)),R13 ↦ {P2L_P2T ↦ T3A_T3B},R14 ↦ {P1R_P1T ↦ T2B_T2A}}" org.eventb.core.source="/RailGround/DEMO_Station_C.buc|org.eventb.core.contextFile#DEMO_Station_C|org.eventb.core.axiom#cst12&gt;"/>
 <org.eventb.core.poPredicate name="PRD26" org.eventb.core.predicate="PATH_EXCL={R02 ↦ R05,R02 ↦ R11,R05 ↦ R02,R05 ↦ R07,R05 ↦ R13,R05 ↦ R14,R07 ↦ R05,R07 ↦ R11,R11 ↦ R02,R11 ↦ R07,R11 ↦ R13,R11 ↦ R14,R13 ↦ R05,R13 ↦ R11,R14 ↦ R05,R14 ↦ R11}" org.eventb.core.source="/RailGround/DEMO_Station_C.buc|org.eventb.core.contextFile#DEMO_Station_C|org.eventb.core.axiom#cst12?"/>
+<org.eventb.core.poPredicate name="PRD27" org.eventb.core.predicate="SIGNAL_ASPECT_PATH={R01 ↦ SIGNAL_ASPECT_PROCEED,R02 ↦ SIGNAL_ASPECT_PROCEED,R03 ↦ SIGNAL_ASPECT_PROCEED,R04 ↦ SIGNAL_ASPECT_PROCEED,R05 ↦ SIGNAL_ASPECT_PROCEED,R06 ↦ SIGNAL_ASPECT_PROCEED,R07 ↦ SIGNAL_ASPECT_PROCEED,R08 ↦ SIGNAL_ASPECT_PROCEED,R09 ↦ SIGNAL_ASPECT_PROCEED,R10 ↦ SIGNAL_ASPECT_PROCEED,R11 ↦ SIGNAL_ASPECT_PROCEED,R12 ↦ SIGNAL_ASPECT_PROCEED,R13 ↦ SIGNAL_ASPECT_PROCEED,R14 ↦ SIGNAL_ASPECT_PROCEED}" org.eventb.core.source="/RailGround/DEMO_Station_C.buc|org.eventb.core.contextFile#DEMO_Station_C|org.eventb.core.axiom#axm22"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

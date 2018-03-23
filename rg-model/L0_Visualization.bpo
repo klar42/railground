@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poFile org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.poIdentifier name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
@@ -110,8 +110,10 @@
 <org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMF" org.eventb.core.predicate="SIGNAL_ASPECT_AVAIL∈SIGNAL → ℙ1(SIGNAL_ASPECT_ENUM)" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm4"/>
 <org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMG" org.eventb.core.predicate="SIGNAL_ASPECT_DEFAULT∈SIGNAL_ASPECT_ENUM" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm5"/>
 <org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMH" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL⇒SIGNAL_ASPECT_DEFAULT∈SIGNAL_ASPECT_AVAIL(sig)" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm6"/>
+<org.eventb.core.poIdentifier name="SIGNAL_ASPECT_PATH" org.eventb.core.type="ℙ(PATH_ENUM×SIGNAL_ASPECT_ENUM)"/>
+<org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMI" org.eventb.core.predicate="SIGNAL_ASPECT_PATH∈PATH_ENUM → SIGNAL_ASPECT_ENUM" org.eventb.core.source="/RailGround/L8_SignalDependency_C.buc|org.eventb.core.contextFile#L8_SignalDependency_C|org.eventb.core.axiom#axm1"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="PATH_ACT" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="PATH_CURR" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="PATH_REL" org.eventb.core.type="ℙ(PATH_ENUM)"/>
@@ -147,7 +149,7 @@
 <org.eventb.core.poPredicate name="RAIL_ELEM_PATH_CURe" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL⇒SIGNAL_ASPECT_CURR(sig)∈SIGNAL_ASPECT_AVAIL(sig)" org.eventb.core.source="/RailGround/L7_Signals.bum|org.eventb.core.machineFile#L7_Signals|org.eventb.core.invariant#inv2"/>
 <org.eventb.core.poPredicate name="RAIL_ELEM_PATH_CURf" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL∧SIGNAL_ASPECT_CURR(sig)≠SIGNAL_ASPECT_DEFAULT⇒(∃path⦂PATH_ENUM·path∈PATH_CURR∧path∉PATH_REL∧SIGNAL_CTOR(sig)=PATH_CTOR_BEG(path))" org.eventb.core.source="/RailGround/L8_SignalDependency.bum|org.eventb.core.machineFile#L8_SignalDependency|org.eventb.core.invariant#inv1"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_K" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_K" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="RAIL_ELEM_POS_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS_ENUM)"/>
 <org.eventb.core.poIdentifier name="PATH_REQ'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="PATH_SGMT_REQ'" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
@@ -162,13 +164,13 @@
 <org.eventb.core.poIdentifier name="PATH_CURR'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM_PATH_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×PATH_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_K" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_K" org.eventb.core.poStamp="0"/>
-<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_L" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_K" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_K" org.eventb.core.poStamp="3"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_L" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="RAIL_ELEM_POS_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS_ENUM)"/>
 <org.eventb.core.poIdentifier name="pos" org.eventb.core.type="RAIL_POS_ENUM"/>
 <org.eventb.core.poIdentifier name="elem" org.eventb.core.type="RAIL_ELEM"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_L" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_L" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_L" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_L" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="elem∈RAIL_ELEM" org.eventb.core.source="/RailGround/L2_ElementPosition.bum|org.eventb.core.machineFile#L2_ElementPosition|org.eventb.core.event#evt1|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pos∈dom(RAIL_ELEM_POS_CONN(elem))" org.eventb.core.source="/RailGround/L2_ElementPosition.bum|org.eventb.core.machineFile#L2_ElementPosition|org.eventb.core.event#evt1|org.eventb.core.guard#\/"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="pos≠RAIL_ELEM_POS_CURR(elem)" org.eventb.core.source="/RailGround/L2_ElementPosition.bum|org.eventb.core.machineFile#L2_ElementPosition|org.eventb.core.event#evt1|org.eventb.core.guard#,"/>
@@ -176,35 +178,35 @@
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="elem∉dom(RAIL_ELEM_PATH_CURR)" org.eventb.core.source="/RailGround/L3_Paths.bum|org.eventb.core.machineFile#L3_Paths|org.eventb.core.event#evt1|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="elem∉dom(union(PATH_ELEM_POS[PATH_REQ]))" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt1|org.eventb.core.guard#grd1"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_M" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_M" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="RAIL_ELEM_POS_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS_ENUM)"/>
 <org.eventb.core.poIdentifier name="elem" org.eventb.core.type="RAIL_ELEM"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_M" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_M" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_M" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_M" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="elem∈dom(union(PATH_ELEM_POS[PATH_REQ]))" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt2|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="elem∉dom(RAIL_ELEM_PATH_CURR)" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt2|org.eventb.core.guard#internal2"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="elem∈RAIL_ELEM" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt2|org.eventb.core.guard#internal1"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="union(PATH_ELEM_POS[PATH_REQ])(elem)≠RAIL_ELEM_POS_CURR(elem)" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt2|org.eventb.core.guard#internal4"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="add_PATH_CURR/PATH_SGMT_CURR·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poSequent name="add_PATH_CURR/PATH_SGMT_CURR·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_N"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path∈dom(PATH_SGMT_ALL)∧PATH_SGMT_ALL∈PATH_ENUM ⇸ ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt4|org.eventb.core.action#act2"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt4|org.eventb.core.action#act2"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_N"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="add_PATH_CURR/PATH_SGMT_REQ·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poSequent name="add_PATH_CURR/PATH_SGMT_REQ·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_N"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path∈dom(PATH_SGMT_ALL)∧PATH_SGMT_ALL∈PATH_ENUM ⇸ ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt4|org.eventb.core.action#act5"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt4|org.eventb.core.action#act5"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_N"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="add_PATH_CURR/PATH_TVDS_CURR·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poSequent name="add_PATH_CURR/PATH_TVDS_CURR·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_N"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path∈dom(PATH_SGMT_ALL)∧PATH_SGMT_ALL∈PATH_ENUM ⇸ ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt4|org.eventb.core.action#act6"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt4|org.eventb.core.action#act6"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_N"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_N" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_N" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="PATH_REQ'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="PATH_SGMT_REQ'" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
 <org.eventb.core.poIdentifier name="PATH_SGMT_CURR'" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
@@ -213,7 +215,7 @@
 <org.eventb.core.poIdentifier name="PATH_CURR'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM_PATH_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×PATH_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_N" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_N" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_N" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_N" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="path∈PATH_ENUM" org.eventb.core.source="/RailGround/L3_Paths.bum|org.eventb.core.machineFile#L3_Paths|org.eventb.core.event#evt3|org.eventb.core.guard#grd1"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="path∉PATH_CURR" org.eventb.core.source="/RailGround/L3_Paths.bum|org.eventb.core.machineFile#L3_Paths|org.eventb.core.event#evt3|org.eventb.core.guard#grd2"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="path∉ran(RAIL_ELEM_PATH_CURR)" org.eventb.core.source="/RailGround/L3_Paths.bum|org.eventb.core.machineFile#L3_Paths|org.eventb.core.event#evt3|org.eventb.core.guard#grd6"/>
@@ -222,13 +224,13 @@
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="path∈PATH_REQ" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt3|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="PATH_EXCL[{path}]∩PATH_CURR=(∅ ⦂ ℙ(PATH_ENUM))" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt3|org.eventb.core.guard#*"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="rem_PATH_CURR/PATH_TVDS_CURR·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poSequent name="rem_PATH_CURR/PATH_TVDS_CURR·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_O"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path∈dom(PATH_SGMT_ALL)∧PATH_SGMT_ALL∈PATH_ENUM ⇸ ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt5|org.eventb.core.action#act8"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt5|org.eventb.core.action#act8"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_O"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_O" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_O" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="PATH_REL'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="PATH_ACT'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="PATH_SGMT_CURR'" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
@@ -239,110 +241,110 @@
 <org.eventb.core.poIdentifier name="PATH_CURR'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM_PATH_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×PATH_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_O" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_O" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_O" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_O" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="path∈PATH_CURR" org.eventb.core.source="/RailGround/L3_Paths.bum|org.eventb.core.machineFile#L3_Paths|org.eventb.core.event#evt4|org.eventb.core.guard#grd2"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="path∈PATH_ENUM" org.eventb.core.source="/RailGround/L3_Paths.bum|org.eventb.core.machineFile#L3_Paths|org.eventb.core.event#evt4|org.eventb.core.guard#grd1"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="path∈PATH_REL" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt4|org.eventb.core.guard#("/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="add_PATH_REQ/PATH_SGMT_REQ·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poSequent name="add_PATH_REQ/PATH_SGMT_REQ·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_P"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path∈dom(PATH_SGMT_ALL)∧PATH_SGMT_ALL∈PATH_ENUM ⇸ ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt6|org.eventb.core.action#act3"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt6|org.eventb.core.action#act3"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_P"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="add_PATH_REQ/PATH_SGMT_ACT·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poSequent name="add_PATH_REQ/PATH_SGMT_ACT·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_P"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path∈dom(PATH_SGMT_ALL)∧PATH_SGMT_ALL∈PATH_ENUM ⇸ ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt6|org.eventb.core.action#act5"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt6|org.eventb.core.action#act5"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_P"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_P" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_P" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="PATH_REQ'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="PATH_SGMT_REQ'" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
 <org.eventb.core.poIdentifier name="PATH_ACT'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="path" org.eventb.core.type="PATH_ENUM"/>
 <org.eventb.core.poIdentifier name="PATH_SGMT_ACT'" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_P" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_P" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_P" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_P" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="path∉PATH_CURR∪PATH_REQ" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt6|org.eventb.core.guard#grd2"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="path∈PATH_ENUM" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt6|org.eventb.core.guard#grd1"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="dom(PATH_ELEM_POS(path))∩dom(RAIL_ELEM_PATH_CURR)=(∅ ⦂ ℙ(RAIL_ELEM))" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt6|org.eventb.core.guard#grd4"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="dom(PATH_ELEM_POS(path))∩dom(union(PATH_ELEM_POS[PATH_REQ]))=(∅ ⦂ ℙ(RAIL_ELEM))" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt6|org.eventb.core.guard#grd5"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="rem_PATH_REQ/PATH_SGMT_REQ·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poSequent name="rem_PATH_REQ/PATH_SGMT_REQ·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_Q"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path∈dom(PATH_SGMT_ALL)∧PATH_SGMT_ALL∈PATH_ENUM ⇸ ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt7|org.eventb.core.action#act3"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt7|org.eventb.core.action#act3"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_Q"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="rem_PATH_REQ/PATH_SGMT_ACT·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poSequent name="rem_PATH_REQ/PATH_SGMT_ACT·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_Q"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path∈dom(PATH_SGMT_ALL)∧PATH_SGMT_ALL∈PATH_ENUM ⇸ ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt7|org.eventb.core.action#act5"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt7|org.eventb.core.action#act5"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_Q"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_Q" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_Q" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="PATH_REQ'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="PATH_SGMT_REQ'" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
 <org.eventb.core.poIdentifier name="PATH_ACT'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="path" org.eventb.core.type="PATH_ENUM"/>
 <org.eventb.core.poIdentifier name="PATH_SGMT_ACT'" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_Q" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_Q" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_Q" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_Q" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="path∈PATH_REQ" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt7|org.eventb.core.guard#grd2"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="path∈PATH_ENUM" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt7|org.eventb.core.guard#grd1"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="set_PATH_REL/PATH_SGMT_REL·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poSequent name="set_PATH_REL/PATH_SGMT_REL·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_R"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="path∈dom(PATH_SGMT_ALL)∧PATH_SGMT_ALL∈PATH_ENUM ⇸ ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt12|org.eventb.core.action#act2"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.event#evt12|org.eventb.core.action#act2"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTALLHYPL8_SignalDependency_R"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_R" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_R" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="PATH_REL'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="path" org.eventb.core.type="PATH_ENUM"/>
 <org.eventb.core.poIdentifier name="PATH_SGMT_REL'" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_R" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_R" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_R" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_R" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="path∈PATH_CURR" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt10|org.eventb.core.guard#grd2"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="path∈PATH_ENUM" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt10|org.eventb.core.guard#grd1"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="path∉PATH_REL" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt10|org.eventb.core.guard#grd4"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL∧SIGNAL_ASPECT_CURR(sig)≠SIGNAL_ASPECT_DEFAULT⇒SIGNAL_CTOR(sig)≠PATH_CTOR_BEG(path)" org.eventb.core.source="/RailGround/L8_SignalDependency.bum|org.eventb.core.machineFile#L8_SignalDependency|org.eventb.core.event#evt11|org.eventb.core.guard#grd5"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_S" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_S" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="stat" org.eventb.core.type="TVD_STATE_ENUM"/>
 <org.eventb.core.poIdentifier name="sect" org.eventb.core.type="TVD_SECT"/>
 <org.eventb.core.poIdentifier name="TVDS_STATE_CURR'" org.eventb.core.type="ℙ(TVD_SECT×TVD_STATE_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_S" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_S" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_S" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_S" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="sect∈TVD_SECT" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.event#var6|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="stat∈TVD_STATE_ENUM" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.event#var6|org.eventb.core.guard#*"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="stat≠TVDS_STATE_CURR(sect)" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.event#var6|org.eventb.core.guard#+"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="sect∉TVD_SGMT_SECT[union(PATH_SGMT_ALL[PATH_CURR])]" org.eventb.core.source="/RailGround/L6_OccupationImpact.bum|org.eventb.core.machineFile#L6_OccupationImpact|org.eventb.core.event#var:|org.eventb.core.guard#-"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_T" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_T" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="stat" org.eventb.core.type="TVD_STATE_ENUM"/>
 <org.eventb.core.poIdentifier name="sect" org.eventb.core.type="TVD_SECT"/>
 <org.eventb.core.poIdentifier name="TVDS_STATE_CURR'" org.eventb.core.type="ℙ(TVD_SECT×TVD_STATE_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_T" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_T" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_T" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_T" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="sect∈TVD_SECT" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.event#var6|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="stat∈TVD_STATE_ENUM" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.event#var6|org.eventb.core.guard#*"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="stat≠TVDS_STATE_CURR(sect)" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.event#var6|org.eventb.core.guard#+"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="sect∈TVD_SGMT_SECT[union(PATH_SGMT_ALL[PATH_CURR])]" org.eventb.core.source="/RailGround/L6_OccupationImpact.bum|org.eventb.core.machineFile#L6_OccupationImpact|org.eventb.core.event#var;|org.eventb.core.guard#grd1"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_U" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_U" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
 <org.eventb.core.poIdentifier name="SIGNAL_ASPECT_CURR'" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT_ENUM)"/>
 <org.eventb.core.poIdentifier name="sig" org.eventb.core.type="SIGNAL"/>
 <org.eventb.core.poIdentifier name="asp" org.eventb.core.type="SIGNAL_ASPECT_ENUM"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_U" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_U" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL8_SignalDependency_U" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#EVTIDENTL8_SignalDependency_U" org.eventb.core.poStamp="5">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="sig∈SIGNAL" org.eventb.core.source="/RailGround/L7_Signals.bum|org.eventb.core.machineFile#L7_Signals|org.eventb.core.event#evt2|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="asp∈SIGNAL_ASPECT_AVAIL(sig)" org.eventb.core.source="/RailGround/L7_Signals.bum|org.eventb.core.machineFile#L7_Signals|org.eventb.core.event#evt2|org.eventb.core.guard#,"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="asp≠SIGNAL_ASPECT_CURR(sig)" org.eventb.core.source="/RailGround/L7_Signals.bum|org.eventb.core.machineFile#L7_Signals|org.eventb.core.event#evt2|org.eventb.core.guard#."/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="asp∈SIGNAL_ASPECT_ENUM" org.eventb.core.source="/RailGround/L7_Signals.bum|org.eventb.core.machineFile#L7_Signals|org.eventb.core.event#evt2|org.eventb.core.guard#*"/>
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="asp≠SIGNAL_ASPECT_DEFAULT" org.eventb.core.source="/RailGround/L8_SignalDependency.bum|org.eventb.core.machineFile#L8_SignalDependency|org.eventb.core.event#evt4|org.eventb.core.guard#)"/>
-<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="∃path⦂PATH_ENUM·path∈PATH_CURR∧path∉PATH_REL∧SIGNAL_CTOR(sig)=PATH_CTOR_BEG(path)" org.eventb.core.source="/RailGround/L8_SignalDependency.bum|org.eventb.core.machineFile#L8_SignalDependency|org.eventb.core.event#evt4|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="∃path⦂PATH_ENUM·path∈PATH_CURR∧path∉PATH_REL∧SIGNAL_CTOR(sig)=PATH_CTOR_BEG(path)∧asp=SIGNAL_ASPECT_PATH(path)" org.eventb.core.source="/RailGround/L8_SignalDependency.bum|org.eventb.core.machineFile#L8_SignalDependency|org.eventb.core.event#evt4|org.eventb.core.guard#("/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTIDENTL8_SignalDependency_V" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="SIGNAL_ASPECT_CURR'" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT_ENUM)"/>
@@ -352,7 +354,7 @@
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="sig∈SIGNAL" org.eventb.core.source="/RailGround/L8_SignalDependency.bum|org.eventb.core.machineFile#L8_SignalDependency|org.eventb.core.event#evt6|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="SIGNAL_ASPECT_CURR(sig)≠SIGNAL_ASPECT_DEFAULT" org.eventb.core.source="/RailGround/L8_SignalDependency.bum|org.eventb.core.machineFile#L8_SignalDependency|org.eventb.core.event#evt6|org.eventb.core.guard#."/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization.bpo|org.eventb.core.poFile#L0_Visualization|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PATH_ACT∈ℙ(PATH_ENUM)" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.invariant#inv1"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PATH_SGMT_CURR∈ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.invariant#inv2"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="PATH_SGMT_REQ∈ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L0_Visualization.bum|org.eventb.core.machineFile#L0_Visualization|org.eventb.core.invariant#inv3"/>

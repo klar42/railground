@@ -1,0 +1,7 @@
+{
+    "id": "DEMO",
+    "template": "index.html",
+    "model": "../TRA_Station.bum",
+    "observers": "TRA.observers.json",
+    "events": "TRA.events.json"
+}

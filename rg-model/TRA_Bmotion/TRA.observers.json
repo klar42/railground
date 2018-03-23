@@ -1,0 +1,1666 @@
+
+{
+    "observers": [
+
+
+        {
+            "type": "predicate",
+            "data": {
+                "predicate": "(T01A_T01B : PATH_SGMT_CURR) or (T01B_T01A : PATH_SGMT_CURR)",
+                "selector": "#T01",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(T02A_T02B : PATH_SGMT_CURR) or (T02B_T02A : PATH_SGMT_CURR)",
+                "selector": "#T02",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(T03A_T03B : PATH_SGMT_CURR) or (T03B_T03A : PATH_SGMT_CURR)",
+                "selector": "#T03",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(T04A_T04B : PATH_SGMT_CURR) or (T04B_T04A : PATH_SGMT_CURR)",
+                "selector": "#T04",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(T56A_T56B : PATH_SGMT_CURR) or (T56B_T56A : PATH_SGMT_CURR)",
+                "selector": "#T56",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(T00A_T00B : PATH_SGMT_CURR) or (T00B_T00A : PATH_SGMT_CURR)",
+                "selector": "#T00",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(C00A_C00D : PATH_SGMT_CURR) or (C00D_C00A : PATH_SGMT_CURR)",
+                "selector": "#C00AD",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(C00B_C00C : PATH_SGMT_CURR) or (C00C_C00B : PATH_SGMT_CURR)",
+                "selector": "#C00BC",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P01) = RAIL_POS_L",
+                "selector": "#P01L",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1 ')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P01) = RAIL_POS_R",
+                "selector": "#P01R",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P01T_P01L : PATH_SGMT_CURR) or (P01L_P01T : PATH_SGMT_CURR) or (P01T_P01R : PATH_SGMT_CURR) or (P01R_P01T : PATH_SGMT_CURR)",
+                "selector": "#P01T",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P01T_P01L : PATH_SGMT_CURR) or (P01L_P01T : PATH_SGMT_CURR)",
+                "selector": "#P01L",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P01T_P01R : PATH_SGMT_CURR) or (P01R_P01T : PATH_SGMT_CURR)",
+                "selector": "#P01R",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "P01 : dom(union(PATH_ELEM_POS[PATH_REQ])) & union(PATH_ELEM_POS[PATH_REQ])(P01) ≠ RAIL_ELEM_POS_CURR(P01)",
+                "selector": "#P01X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P02) = RAIL_POS_L",
+                "selector": "#P02L",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1 ')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P02) = RAIL_POS_R",
+                "selector": "#P02R",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P02T_P02L : PATH_SGMT_CURR) or (P02L_P02T : PATH_SGMT_CURR) or (P02T_P02R : PATH_SGMT_CURR) or (P02R_P02T : PATH_SGMT_CURR)",
+                "selector": "#P02T",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P02T_P02L : PATH_SGMT_CURR) or (P02L_P02T : PATH_SGMT_CURR)",
+                "selector": "#P02L",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P02T_P02R : PATH_SGMT_CURR) or (P02R_P02T : PATH_SGMT_CURR)",
+                "selector": "#P02R",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "P02 : dom(union(PATH_ELEM_POS[PATH_REQ])) & union(PATH_ELEM_POS[PATH_REQ])(P02) ≠ RAIL_ELEM_POS_CURR(P02)",
+                "selector": "#P02X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P03) = RAIL_POS_L",
+                "selector": "#P03L",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1 ')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P03) = RAIL_POS_R",
+                "selector": "#P03R",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P03T_P03L : PATH_SGMT_CURR) or (P03L_P03T : PATH_SGMT_CURR) or (P03T_P03R : PATH_SGMT_CURR) or (P03R_P03T : PATH_SGMT_CURR)",
+                "selector": "#P03T",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P03T_P03L : PATH_SGMT_CURR) or (P03L_P03T : PATH_SGMT_CURR)",
+                "selector": "#P03L",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P03T_P03R : PATH_SGMT_CURR) or (P03R_P03T : PATH_SGMT_CURR)",
+                "selector": "#P03R",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "P03 : dom(union(PATH_ELEM_POS[PATH_REQ])) & union(PATH_ELEM_POS[PATH_REQ])(P03) ≠ RAIL_ELEM_POS_CURR(P03)",
+                "selector": "#P03X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P04) = RAIL_POS_L",
+                "selector": "#P04L",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1 ')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P04) = RAIL_POS_R",
+                "selector": "#P04R",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P04T_P04L : PATH_SGMT_CURR) or (P04L_P04T : PATH_SGMT_CURR) or (P04T_P04R : PATH_SGMT_CURR) or (P04R_P04T : PATH_SGMT_CURR)",
+                "selector": "#P04T",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P04T_P04L : PATH_SGMT_CURR) or (P04L_P04T : PATH_SGMT_CURR)",
+                "selector": "#P04L",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P04T_P04R : PATH_SGMT_CURR) or (P04R_P04T : PATH_SGMT_CURR)",
+                "selector": "#P04R",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "P04 : dom(union(PATH_ELEM_POS[PATH_REQ])) & union(PATH_ELEM_POS[PATH_REQ])(P04) ≠ RAIL_ELEM_POS_CURR(P04)",
+                "selector": "#P04X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P05) = RAIL_POS_L",
+                "selector": "#P05L",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1 ')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P05) = RAIL_POS_R",
+                "selector": "#P05R",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P05T_P05L : PATH_SGMT_CURR) or (P05L_P05T : PATH_SGMT_CURR) or (P05T_P05R : PATH_SGMT_CURR) or (P05R_P05T : PATH_SGMT_CURR)",
+                "selector": "#P05T",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P05T_P05L : PATH_SGMT_CURR) or (P05L_P05T : PATH_SGMT_CURR)",
+                "selector": "#P05L",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P05T_P05R : PATH_SGMT_CURR) or (P05R_P05T : PATH_SGMT_CURR)",
+                "selector": "#P05R",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "P05 : dom(union(PATH_ELEM_POS[PATH_REQ])) & union(PATH_ELEM_POS[PATH_REQ])(P05) ≠ RAIL_ELEM_POS_CURR(P05)",
+                "selector": "#P05X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P06) = RAIL_POS_L",
+                "selector": "#P06L",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1 ')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P06) = RAIL_POS_R",
+                "selector": "#P06R",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P06T_P06L : PATH_SGMT_CURR) or (P06L_P06T : PATH_SGMT_CURR) or (P06T_P06R : PATH_SGMT_CURR) or (P06R_P06T : PATH_SGMT_CURR)",
+                "selector": "#P06T",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P06T_P06L : PATH_SGMT_CURR) or (P06L_P06T : PATH_SGMT_CURR)",
+                "selector": "#P06L",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P06T_P06R : PATH_SGMT_CURR) or (P06R_P06T : PATH_SGMT_CURR)",
+                "selector": "#P06R",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "P06 : dom(union(PATH_ELEM_POS[PATH_REQ])) & union(PATH_ELEM_POS[PATH_REQ])(P06) ≠ RAIL_ELEM_POS_CURR(P06)",
+                "selector": "#P06X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P07) = RAIL_POS_L",
+                "selector": "#P07L",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1 ')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P07) = RAIL_POS_R",
+                "selector": "#P07R",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P07T_P07L : PATH_SGMT_CURR) or (P07L_P07T : PATH_SGMT_CURR) or (P07T_P07R : PATH_SGMT_CURR) or (P07R_P07T : PATH_SGMT_CURR)",
+                "selector": "#P07T",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P07T_P07L : PATH_SGMT_CURR) or (P07L_P07T : PATH_SGMT_CURR)",
+                "selector": "#P07L",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P07T_P07R : PATH_SGMT_CURR) or (P07R_P07T : PATH_SGMT_CURR)",
+                "selector": "#P07R",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "P07 : dom(union(PATH_ELEM_POS[PATH_REQ])) & union(PATH_ELEM_POS[PATH_REQ])(P07) ≠ RAIL_ELEM_POS_CURR(P07)",
+                "selector": "#P07X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P08) = RAIL_POS_L",
+                "selector": "#P08L",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1 ')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P08) = RAIL_POS_R",
+                "selector": "#P08R",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P08T_P08L : PATH_SGMT_CURR) or (P08L_P08T : PATH_SGMT_CURR) or (P08T_P08R : PATH_SGMT_CURR) or (P08R_P08T : PATH_SGMT_CURR)",
+                "selector": "#P08T",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P08T_P08L : PATH_SGMT_CURR) or (P08L_P08T : PATH_SGMT_CURR)",
+                "selector": "#P08L",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P08T_P08R : PATH_SGMT_CURR) or (P08R_P08T : PATH_SGMT_CURR)",
+                "selector": "#P08R",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "P08 : dom(union(PATH_ELEM_POS[PATH_REQ])) & union(PATH_ELEM_POS[PATH_REQ])(P08) ≠ RAIL_ELEM_POS_CURR(P08)",
+                "selector": "#P08X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P17) = RAIL_POS_L",
+                "selector": "#P17L",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1 ')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P17) = RAIL_POS_R",
+                "selector": "#P17R",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P17T_P17L : PATH_SGMT_CURR) or (P17L_P17T : PATH_SGMT_CURR) or (P17T_P17R : PATH_SGMT_CURR) or (P17R_P17T : PATH_SGMT_CURR)",
+                "selector": "#P17T",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P17T_P17L : PATH_SGMT_CURR) or (P17L_P17T : PATH_SGMT_CURR)",
+                "selector": "#P17L",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P17T_P17R : PATH_SGMT_CURR) or (P17R_P17T : PATH_SGMT_CURR)",
+                "selector": "#P17R",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "P17 : dom(union(PATH_ELEM_POS[PATH_REQ])) & union(PATH_ELEM_POS[PATH_REQ])(P17) ≠ RAIL_ELEM_POS_CURR(P17)",
+                "selector": "#P17X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P18) = RAIL_POS_L",
+                "selector": "#P18L",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1 ')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "RAIL_ELEM_POS_CURR(P18) = RAIL_POS_R",
+                "selector": "#P18R",
+                "true": "origin.attr('stroke-dasharray', '')",
+                "false": "origin.attr('stroke-dasharray', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P18T_P18L : PATH_SGMT_CURR) or (P18L_P18T : PATH_SGMT_CURR) or (P18T_P18R : PATH_SGMT_CURR) or (P18R_P18T : PATH_SGMT_CURR)",
+                "selector": "#P18T",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P18T_P18L : PATH_SGMT_CURR) or (P18L_P18T : PATH_SGMT_CURR)",
+                "selector": "#P18L",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "(P18T_P18R : PATH_SGMT_CURR) or (P18R_P18T : PATH_SGMT_CURR)",
+                "selector": "#P18R",
+                "true": "origin.attr('stroke-width', '3')",
+                "false": "origin.attr('stroke-width', '1')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "P18 : dom(union(PATH_ELEM_POS[PATH_REQ])) & union(PATH_ELEM_POS[PATH_REQ])(P18) ≠ RAIL_ELEM_POS_CURR(P18)",
+                "selector": "#P18X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S01) = SIGNAL_ASPECT_STOP",
+                "selector": "#S01",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S01) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S01",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S01) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S01",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S01) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S01X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S02) = SIGNAL_ASPECT_STOP",
+                "selector": "#S02",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S02) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S02",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S02) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S02",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S02) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S02X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S03) = SIGNAL_ASPECT_STOP",
+                "selector": "#S03",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S03) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S03",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S03) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S03",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S03) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S03X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S04) = SIGNAL_ASPECT_STOP",
+                "selector": "#S04",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S04) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S04",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S04) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S04",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S04) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S04X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S05) = SIGNAL_ASPECT_STOP",
+                "selector": "#S05",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S05) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S05",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S05) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S05",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S05) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S05X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S06) = SIGNAL_ASPECT_STOP",
+                "selector": "#S06",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S06) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S06",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S06) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S06",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S06) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S06X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S07) = SIGNAL_ASPECT_STOP",
+                "selector": "#S07",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S07) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S07",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S07) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S07",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S07) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S07X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S08) = SIGNAL_ASPECT_STOP",
+                "selector": "#S08",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S08) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S08",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S08) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S08",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S08) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S08X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S15) = SIGNAL_ASPECT_STOP",
+                "selector": "#S15",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S15) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S15",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S15) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S15",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S15) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S15X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S16) = SIGNAL_ASPECT_STOP",
+                "selector": "#S16",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S16) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S16",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S16) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S16",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S16) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S16X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S17) = SIGNAL_ASPECT_STOP",
+                "selector": "#S17",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S17) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S17",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S17) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S17",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S17) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S17X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S18) = SIGNAL_ASPECT_STOP",
+                "selector": "#S18",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S18) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S18",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S18) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S18",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S18) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S18X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S27) = SIGNAL_ASPECT_STOP",
+                "selector": "#S27",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S27) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S27",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S27) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S27",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S27) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S27X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S28) = SIGNAL_ASPECT_STOP",
+                "selector": "#S28",
+                "true": "origin.attr('fill', 'red')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S28) = SIGNAL_ASPECT_CAUTION",
+                "selector": "#S28",
+                "true": "origin.attr('fill', 'yellow')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_ASPECT_CURR(S28) = SIGNAL_ASPECT_PROCEED",
+                "selector": "#S28",
+                "true": "origin.attr('fill', 'green')",
+                "false": ""
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "SIGNAL_CTOR(S28) : PATH_CTOR_BEG[PATH_CURR]",
+                "selector": "#S28X",
+                "true": "origin.attr('fill', 'blue')",
+                "false": "origin.attr('fill', 'black')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R15 : PATH_CURR",
+                "selector": "#R15",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R15 : PATH_REQ",
+                "selector": "#R15",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R17 : PATH_CURR",
+                "selector": "#R17",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R17 : PATH_REQ",
+                "selector": "#R17",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R26 : PATH_CURR",
+                "selector": "#R26",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R26 : PATH_REQ",
+                "selector": "#R26",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R28 : PATH_CURR",
+                "selector": "#R28",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R28 : PATH_REQ",
+                "selector": "#R28",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R37 : PATH_CURR",
+                "selector": "#R37",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R37 : PATH_REQ",
+                "selector": "#R37",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R35 : PATH_CURR",
+                "selector": "#R35",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R35 : PATH_REQ",
+                "selector": "#R35",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R48 : PATH_CURR",
+                "selector": "#R48",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R48 : PATH_REQ",
+                "selector": "#R48",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R46 : PATH_CURR",
+                "selector": "#R46",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R46 : PATH_REQ",
+                "selector": "#R46",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R56 : PATH_CURR",
+                "selector": "#R56",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R56 : PATH_REQ",
+                "selector": "#R56",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R58 : PATH_CURR",
+                "selector": "#R58",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R58 : PATH_REQ",
+                "selector": "#R58",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R65 : PATH_CURR",
+                "selector": "#R65",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R65 : PATH_REQ",
+                "selector": "#R65",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R67 : PATH_CURR",
+                "selector": "#R67",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R67 : PATH_REQ",
+                "selector": "#R67",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R78 : PATH_CURR",
+                "selector": "#R78",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R78 : PATH_REQ",
+                "selector": "#R78",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R76 : PATH_CURR",
+                "selector": "#R76",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R76 : PATH_REQ",
+                "selector": "#R76",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R79 : PATH_CURR",
+                "selector": "#R79",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R79 : PATH_REQ",
+                "selector": "#R79",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R87 : PATH_CURR",
+                "selector": "#R87",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R87 : PATH_REQ",
+                "selector": "#R87",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R85 : PATH_CURR",
+                "selector": "#R85",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R85 : PATH_REQ",
+                "selector": "#R85",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R89 : PATH_CURR",
+                "selector": "#R89",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R89 : PATH_REQ",
+                "selector": "#R89",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R52 : PATH_CURR",
+                "selector": "#R52",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R52 : PATH_REQ",
+                "selector": "#R52",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R61 : PATH_CURR",
+                "selector": "#R61",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R61 : PATH_REQ",
+                "selector": "#R61",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R74 : PATH_CURR",
+                "selector": "#R74",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R74 : PATH_REQ",
+                "selector": "#R74",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R83 : PATH_CURR",
+                "selector": "#R83",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R83 : PATH_REQ",
+                "selector": "#R83",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R70 : PATH_CURR",
+                "selector": "#R70",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R70 : PATH_REQ",
+                "selector": "#R70",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R80 : PATH_CURR",
+                "selector": "#R80",
+                "true": "origin.attr('font-weight', 'bold')",
+                "false": "origin.attr('font-weight', 'normal')"
+            }
+        }
+        ,{
+            "type": "predicate",
+            "data": {
+                "predicate": "R80 : PATH_REQ",
+                "selector": "#R80",
+                "true": "origin.attr('font-style', 'italic')",
+                "false": "origin.attr('font-style', 'normal')"
+            }
+        }
+
+
+    ]
+}
+

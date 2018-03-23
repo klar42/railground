@@ -7040,4 +7040,6 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 </org.eventb.core.prProof>
+<org.eventb.core.prProof name="set_SIGNAL_ASPECT_PATH/path·depend/WD"/>
+<org.eventb.core.prProof name="set_SIGNAL_ASPECT_PATH/SIGNAL_PATH·depend/INV"/>
 </org.eventb.core.prFile>

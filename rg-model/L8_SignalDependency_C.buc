@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.contextFile org.eventb.core.comment="Signal dependency on Path." org.eventb.core.configuration="org.eventb.core.fwd" version="3">
 <org.eventb.core.extendsContext name="'" org.eventb.core.target="L7_Signals_C"/>
+<org.eventb.core.constant name="cst1" org.eventb.core.comment="[Abstract] Full speed allowed for the particular Path" org.eventb.core.identifier="SIGNAL_ASPECT_PATH"/>
+<org.eventb.core.axiom name="axm1" org.eventb.core.label="SIGNAL_ASPECT_PATH·type" org.eventb.core.predicate="SIGNAL_ASPECT_PATH ∈ PATH_ENUM → SIGNAL_ASPECT_ENUM"/>
 </org.eventb.core.contextFile>

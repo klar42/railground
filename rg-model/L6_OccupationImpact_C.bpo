@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
 <org.eventb.core.poIdentifier name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.poIdentifier name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
@@ -100,5 +100,5 @@
 <org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMA" org.eventb.core.predicate="TVD_SGMT_SECT∈RAIL_SGMT → TVD_SECT" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#4"/>
 <org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMB" org.eventb.core.predicate="partition(TVD_STATE_ENUM,{TVD_STATE_VACANT},{TVD_STATE_OCCUPIED})" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#\/"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L6_OccupationImpact_C.bpo|org.eventb.core.poFile#L6_OccupationImpact_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L6_OccupationImpact_C.bpo|org.eventb.core.poFile#L6_OccupationImpact_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2"/>
 </org.eventb.core.poFile>

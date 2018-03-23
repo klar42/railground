@@ -1,0 +1,1120 @@
+
+{
+    "events": [
+
+
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_PATH",
+                        "predicate": "elem=P01"
+                    }
+                ],
+                "selector": "#P01X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_PATH",
+                        "predicate": "elem=P02"
+                    }
+                ],
+                "selector": "#P02X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_PATH",
+                        "predicate": "elem=P03"
+                    }
+                ],
+                "selector": "#P03X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_PATH",
+                        "predicate": "elem=P04"
+                    }
+                ],
+                "selector": "#P04X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_PATH",
+                        "predicate": "elem=P05"
+                    }
+                ],
+                "selector": "#P05X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_PATH",
+                        "predicate": "elem=P06"
+                    }
+                ],
+                "selector": "#P06X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_PATH",
+                        "predicate": "elem=P07"
+                    }
+                ],
+                "selector": "#P07X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_PATH",
+                        "predicate": "elem=P08"
+                    }
+                ],
+                "selector": "#P08X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_PATH",
+                        "predicate": "elem=P17"
+                    }
+                ],
+                "selector": "#P17X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_PATH",
+                        "predicate": "elem=P18"
+                    }
+                ],
+                "selector": "#P18X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S01"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S01"
+                    }
+                ],
+                "selector": "#S01X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S02"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S02"
+                    }
+                ],
+                "selector": "#S02X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S03"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S03"
+                    }
+                ],
+                "selector": "#S03X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S04"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S04"
+                    }
+                ],
+                "selector": "#S04X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S05"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S05"
+                    }
+                ],
+                "selector": "#S05X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S06"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S06"
+                    }
+                ],
+                "selector": "#S06X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S07"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S07"
+                    }
+                ],
+                "selector": "#S07X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S08"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S08"
+                    }
+                ],
+                "selector": "#S08X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S15"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S15"
+                    }
+                ],
+                "selector": "#S15X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S16"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S16"
+                    }
+                ],
+                "selector": "#S16X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S17"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S17"
+                    }
+                ],
+                "selector": "#S17X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S18"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S18"
+                    }
+                ],
+                "selector": "#S18X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S27"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S27"
+                    }
+                ],
+                "selector": "#S27X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_SIGNAL_ASPECT_DEFAULT",
+                        "predicate": "sig=S28"
+                    },
+                    {
+                        "name": "set_SIGNAL_ASPECT_PATH",
+                        "predicate": "sig=S28"
+                    }
+                ],
+                "selector": "#S28X"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R15"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R15"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R15"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R15"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R15"
+                    }
+                ],
+                "selector": "#R15"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R17"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R17"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R17"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R17"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R17"
+                    }
+                ],
+                "selector": "#R17"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R26"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R26"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R26"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R26"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R26"
+                    }
+                ],
+                "selector": "#R26"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R28"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R28"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R28"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R28"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R28"
+                    }
+                ],
+                "selector": "#R28"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R37"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R37"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R37"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R37"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R37"
+                    }
+                ],
+                "selector": "#R37"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R35"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R35"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R35"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R35"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R35"
+                    }
+                ],
+                "selector": "#R35"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R48"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R48"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R48"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R48"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R48"
+                    }
+                ],
+                "selector": "#R48"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R46"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R46"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R46"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R46"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R46"
+                    }
+                ],
+                "selector": "#R46"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R56"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R56"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R56"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R56"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R56"
+                    }
+                ],
+                "selector": "#R56"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R58"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R58"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R58"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R58"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R58"
+                    }
+                ],
+                "selector": "#R58"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R65"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R65"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R65"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R65"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R65"
+                    }
+                ],
+                "selector": "#R65"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R67"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R67"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R67"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R67"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R67"
+                    }
+                ],
+                "selector": "#R67"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R78"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R78"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R78"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R78"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R78"
+                    }
+                ],
+                "selector": "#R78"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R76"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R76"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R76"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R76"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R76"
+                    }
+                ],
+                "selector": "#R76"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R79"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R79"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R79"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R79"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R79"
+                    }
+                ],
+                "selector": "#R79"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R87"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R87"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R87"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R87"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R87"
+                    }
+                ],
+                "selector": "#R87"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R85"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R85"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R85"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R85"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R85"
+                    }
+                ],
+                "selector": "#R85"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R89"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R89"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R89"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R89"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R89"
+                    }
+                ],
+                "selector": "#R89"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R52"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R52"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R52"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R52"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R52"
+                    }
+                ],
+                "selector": "#R52"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R61"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R61"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R61"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R61"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R61"
+                    }
+                ],
+                "selector": "#R61"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R74"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R74"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R74"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R74"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R74"
+                    }
+                ],
+                "selector": "#R74"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R83"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R83"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R83"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R83"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R83"
+                    }
+                ],
+                "selector": "#R83"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R70"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R70"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R70"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R70"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R70"
+                    }
+                ],
+                "selector": "#R70"
+            }
+        }
+
+
+        ,{
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "add_PATH_REQ",
+                        "predicate": "path=R80"
+                    }
+                    ,{
+                        "name": "rem_PATH_REQ",
+                        "predicate": "path=R80"
+                    }
+                    ,{
+                        "name": "add_PATH_CURR",
+                        "predicate": "path=R80"
+                    }
+                    ,{
+                        "name": "rem_PATH_CURR",
+                        "predicate": "path=R80"
+                    }
+                    ,{
+                        "name": "set_PATH_REL",
+                        "predicate": "path=R80"
+                    }
+                ],
+                "selector": "#R80"
+            }
+        }
+
+
+    ]
+}
+

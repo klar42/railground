@@ -69,8 +69,8 @@
 <org.eventb.core.event name="evt10" org.eventb.core.comment="Set new current state of the particular TVD Section which is a part of some current Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_TVDS_STATE_PATH">
 <org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_TVDS_STATE_PATH"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="evt3" org.eventb.core.comment="Set Signal to some Proceed signal aspect." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_SIGNAL_ASPECT_PROCEED">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_SIGNAL_ASPECT_PROCEED"/>
+<org.eventb.core.event name="evt3" org.eventb.core.comment="Set Signal to some non-default signal aspect." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_SIGNAL_ASPECT_PATH">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_SIGNAL_ASPECT_PATH"/>
 </org.eventb.core.event>
 <org.eventb.core.event name="evt11" org.eventb.core.comment="Set Signal to Default signal aspect." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_SIGNAL_ASPECT_DEFAULT">
 <org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_SIGNAL_ASPECT_DEFAULT"/>

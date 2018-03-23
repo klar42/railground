@@ -1,0 +1,150 @@
+{
+    "events": [
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_POS_CURR",
+                        "predicate": "alert(origin);\nalert(container);\nreturn origin.attr elem=P1 & pos=RAIL_POS_R;\n",
+                        "predicateJs": true
+                    }
+                ],
+                "selector": "#P1_ER",
+                "callback": "return x"
+            }
+        },
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_POS_CURR",
+                        "predicate": "elem=P1 & pos=RAIL_POS_L"
+                    }
+                ],
+                "selector": "#P1_EL"
+            }
+        },
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_POS_CURR",
+                        "predicate": "elem=P1 & pos=RAIL_POS_X"
+                    }
+                ],
+                "selector": "#P1_EX"
+            }
+        },
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_POS_CURR",
+                        "predicate": "elem=P2 & pos=RAIL_POS_R"
+                    }
+                ],
+                "selector": "#P2_ER"
+            }
+        },
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_POS_CURR",
+                        "predicate": "elem=P2 & pos=RAIL_POS_L"
+                    }
+                ],
+                "selector": "#P2_EL"
+            }
+        },
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_POS_CURR",
+                        "predicate": "elem=P2 & pos=RAIL_POS_X"
+                    }
+                ],
+                "selector": "#P2_EX"
+            }
+        },
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_POS_CURR",
+                        "predicate": "elem=P3 & pos=RAIL_POS_R"
+                    }
+                ],
+                "selector": "#P3_ER"
+            }
+        },
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_POS_CURR",
+                        "predicate": "elem=P3 & pos=RAIL_POS_L"
+                    }
+                ],
+                "selector": "#P3_EL"
+            }
+        },
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_POS_CURR",
+                        "predicate": "elem=P3 & pos=RAIL_POS_X"
+                    }
+                ],
+                "selector": "#P3_EX"
+            }
+        },
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_POS_CURR",
+                        "predicate": "elem=P4 & pos=RAIL_POS_R"
+                    }
+                ],
+                "selector": "#P4_ER"
+            }
+        },
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_POS_CURR",
+                        "predicate": "elem=P4 & pos=RAIL_POS_L"
+                    }
+                ],
+                "selector": "#P4_EL"
+            }
+        },
+        {
+            "type": "executeEvent",
+            "data": {
+                "events": [
+                    {
+                        "name": "set_RAIL_ELEM_POS_CURR",
+                        "predicate": "elem=P4 & pos=RAIL_POS_X"
+                    }
+                ],
+                "selector": "#P4_EX"
+            }
+        }
+    ]
+}

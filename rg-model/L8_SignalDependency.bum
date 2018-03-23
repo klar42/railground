@@ -30,10 +30,10 @@
 <org.eventb.core.event name="evt13" org.eventb.core.comment="Set new current state of the particular TVD Section which is a part of some current Path." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_TVDS_STATE_PATH">
 <org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_TVDS_STATE_PATH"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="evt4" org.eventb.core.comment="Set Signal to some Proceed signal aspect." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_SIGNAL_ASPECT_PROCEED">
+<org.eventb.core.event name="evt4" org.eventb.core.comment="Set Signal to some non-default signal aspect." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="set_SIGNAL_ASPECT_PATH">
 <org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_SIGNAL_ASPECT_CURR"/>
 <org.eventb.core.guard name=")" org.eventb.core.comment="Aspect is not a default one." org.eventb.core.label="asp·default" org.eventb.core.predicate="asp ≠ SIGNAL_ASPECT_DEFAULT"/>
-<org.eventb.core.guard name="(" org.eventb.core.comment="There is a current path in rear of the signal." org.eventb.core.label="path·depend" org.eventb.core.predicate="∃ path · path ∈ PATH_CURR ∧ path ∉ PATH_REL ∧ SIGNAL_CTOR(sig) = PATH_CTOR_BEG(path)"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="There is a current path in rear of the signal." org.eventb.core.label="path·depend" org.eventb.core.predicate="∃ path · path ∈ PATH_CURR ∧ path ∉ PATH_REL ∧ SIGNAL_CTOR(sig) = PATH_CTOR_BEG(path) ∧ asp = SIGNAL_ASPECT_PATH(path)"/>
 </org.eventb.core.event>
 <org.eventb.core.event name="evt6" org.eventb.core.comment="Set Signal to Default signal aspect." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="set_SIGNAL_ASPECT_DEFAULT">
 <org.eventb.core.refinesEvent name="'" org.eventb.core.target="set_SIGNAL_ASPECT_CURR"/>
