@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:classdiagrams="http://soton.ac.uk/models/eventb/classdiagrams/2015" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_Iy8SEEZDEee9SKnLUWiTsA" type="Classdiagrams" measurementUnit="Pixel">
-  <styles xmi:type="notation:DiagramStyle" xmi:id="_Iy8SEUZDEee9SKnLUWiTsA"/>
-  <element xmi:type="classdiagrams:Classdiagram" href="M6_VacancyDetection.bum#http://soton.ac.uk/models/eventb/classdiagrams/2015::Classdiagram::M6_VacancyDetection.cdm"/>
-</notation:Diagram>
