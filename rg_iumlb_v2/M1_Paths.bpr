@@ -2,53 +2,57 @@
 <org.eventb.core.prFile version="1">
 <org.eventb.core.prProof name="INITIALISATION/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p3,p4"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP (trivial)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼">
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH">
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p3">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="(∅ ⦂ ℙ(PATH))∪(∅ ⦂ ℙ(PATH))=(∅ ⦂ ℙ(PATH))∪(∅ ⦂ ℙ(PATH))"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition((∅ ⦂ ℙ(PATH))∪(∅ ⦂ ℙ(PATH)),∅ ⦂ ℙ(PATH),∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="(∅ ⦂ ℙ(PATH))∩(∅ ⦂ ℙ(PATH))=(∅ ⦂ ℙ(PATH))"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="INITIALISATION/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p3,p4"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP (trivial)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼">
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p3">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="(∅ ⦂ ℙ(PATH))=(∅ ⦂ ℙ(PATH))∪(∅ ⦂ ℙ(PATH))"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(∅ ⦂ ℙ(PATH),∅ ⦂ ℙ(PATH),∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH">
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="(∅ ⦂ ℙ(PATH))∩(∅ ⦂ ℙ(PATH))=(∅ ⦂ ℙ(PATH))"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="INITIALISATION/path_rel_substateof_path_curr/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
 <org.eventb.core.lang name="L"/>
@@ -68,45 +72,90 @@
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=TRUE⇒FALSE=TRUE"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="add_path_req/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="add_path_req/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p10,p12,p5,p7,p8,p11,p6,p4,p1,p3"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p9,p2,p10,p12,p5,p7,p8,p11,p6,p4,p1,p3">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p3,p4,p5,p6,p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC4" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p1">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC4"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="p∉path_req∪path_curr"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="p∉path_req∪path_curr"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition((path_req∪{p})∪path_curr,path_req∪{p},path_curr)"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="path_req∈BOOL">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_curr=TRUE⇒partition({TRUE},{path_rel}∩{TRUE},{path_act}∩{TRUE})">
+<org.eventb.core.prIdent name="path_act" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel=TRUE⇒path_curr=TRUE">
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act=TRUE⇒path_curr=TRUE">
+<org.eventb.core.prIdent name="path_act" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_curr∈BOOL">
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="remove_path_req/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="remove_path_req/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p10,p12,p4,p7,p8,p11,p5,p3,p1,p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p9,p6,p10,p12,p4,p7,p8,p11,p5,p3,p1,p2">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p3,p4,p5,p6,p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC4" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p1">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC4"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="path_req∈BOOL">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_curr=TRUE⇒partition({TRUE},{path_rel}∩{TRUE},{path_act}∩{TRUE})">
+<org.eventb.core.prIdent name="path_act" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel=TRUE⇒path_curr=TRUE">
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition((path_req ∖ {p})∪path_curr,path_req ∖ {p},path_curr)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="p∈path_req"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act=TRUE⇒path_curr=TRUE">
+<org.eventb.core.prIdent name="path_act" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_curr∈BOOL">
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="add_path_curr/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="PATH">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p7,p10,p8,p11,p5,p3,p1,p2"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p9,p4,p6,p7,p10,p8,p11,p5,p3,p1,p2">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
 <org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
 </org.eventb.core.prRule>
@@ -120,26 +169,25 @@
 <org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition((path_req ∖ {p})∪path_curr,path_req ∖ {p},path_curr)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_rel⊆path_curr"/>
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="p∈path_req"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
 <org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition((path_req ∖ {p})∪(path_curr∪{p}),path_req ∖ {p},path_curr∪{p})"/>
 <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
 <org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="add_path_curr/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="add_path_curr/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p5,p6,p8,p4,p11,p13,p9,p7,p1,p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p12,p3,p10,p5,p6,p8,p4,p11,p13,p9,p7,p1,p2">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p7,p10,p8,p11,p5,p3,p9,p2"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p4,p6,p7,p10,p8,p11,p5,p3,p9,p2">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
 <org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
 </org.eventb.core.prRule>
@@ -153,51 +201,15 @@
 <org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition((path_req ∖ {p})∪(path_curr∪{p}),path_req ∖ {p},path_curr∪{p})"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈path_req"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="add_path_curr/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p5,p6,p8,p4,p11,p13,p9,p7,p12,p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p3,p10,p5,p6,p8,p4,p11,p13,p9,p7,p12,p2">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈path_req"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="path_curr⊆PATH"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_rel⊆path_curr"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="p∈path_req"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(path_curr∪{p},path_rel,path_act∪{p})"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
@@ -274,36 +286,45 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="set_path_rel/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="set_path_rel/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p10,p12,p5,p7,p8,p11,p6,p3,p9,p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p4,p10,p12,p5,p7,p8,p11,p6,p3,p9,p2">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
 <org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
 <org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_act"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="path_act∈BOOL">
+<org.eventb.core.prIdent name="path_act" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_rel=TRUE⇒path_curr=TRUE">
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="p∈path_act"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_rel∈BOOL">
+<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_act=TRUE⇒path_curr=TRUE">
+<org.eventb.core.prIdent name="path_act" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="TRUE∈{path_req,path_curr}⇒partition({TRUE},{path_req}∩{TRUE},{path_curr}∩{TRUE})">
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_curr∈BOOL">
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(path_curr,path_rel∪{p},path_act ∖ {p})"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
@@ -364,69 +385,88 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="remove_path_curr/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="remove_path_curr/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p10,p12,p5,p7,p8,p11,p6,p3,p1,p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p9,p4,p10,p12,p5,p7,p8,p11,p6,p3,p1,p2">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC4" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p1">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC4"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_req∈BOOL">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_curr=TRUE⇒partition({TRUE},{path_rel}∩{TRUE},{path_act}∩{TRUE})">
+<org.eventb.core.prIdent name="path_act" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="p∈path_rel"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_rel=TRUE⇒path_curr=TRUE">
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(path_req∪(path_curr ∖ {p}),path_req,path_curr ∖ {p})"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_rel∈BOOL">
+<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="path_act=TRUE⇒path_curr=TRUE">
+<org.eventb.core.prIdent name="path_act" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_curr∈BOOL">
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="remove_path_curr/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="remove_path_curr/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p10,p12,p5,p7,p8,p11,p6,p3,p9,p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p4,p10,p12,p5,p7,p8,p11,p6,p3,p9,p2">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
 <org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
 <org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="path_act∈BOOL">
+<org.eventb.core.prIdent name="path_act" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="p∈path_rel"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_rel=TRUE⇒path_curr=TRUE">
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_rel∈BOOL">
+<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_act=TRUE⇒path_curr=TRUE">
+<org.eventb.core.prIdent name="path_act" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="TRUE∈{path_req,path_curr}⇒partition({TRUE},{path_req}∩{TRUE},{path_curr}∩{TRUE})">
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(path_curr ∖ {p},path_rel ∖ {p},path_act)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_curr∈BOOL">
+<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
@@ -493,141 +533,273 @@
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="INITIALISATION/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p3,p4"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP (trivial)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼">
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(PATH))⊆(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH">
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="INITIALISATION/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p3,p4"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP (trivial)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼">
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(PATH))⊆(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH">
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="INITIALISATION/path_curr_invariant1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p3,p4"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP (trivial)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p⦂PATH·p∈(∅ ⦂ ℙ(PATH))⇒Path_Exc[{p}]∩(∅ ⦂ ℙ(PATH))=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="add_path_curr/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="add_path_curr/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(path_req∪path_curr,path_req,path_curr))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p5,p6,p8,p4,p11,p13,p7,p12,p1,p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p9,p3,p10,p5,p6,p8,p4,p11,p13,p7,p12,p1,p2">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(path_curr,path_rel,path_act))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with path_curr=path_rel∪path_act" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p24">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p19" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p21" org.eventb.core.prInfHyps="p22"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="DESELECT3" org.eventb.core.prHyps="p19,p21,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p24" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p25">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p25" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
 <org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="Path_Exc[{p}]∩(path_rel∪path_act)=(∅ ⦂ ℙ(PATH))">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤⇒Path_Exc=Path_Exc∼">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_curr=path_rel∪path_act"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="path_rel⊆path_curr"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="path_req∩path_curr=(∅ ⦂ ℙ(PATH))">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_req∪path_curr=path_req∪path_curr">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="path_rel⊆path_rel∪path_act"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_rel⊆path_curr∪{p}"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈path_req"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="finite(PATH)"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="path_req∩(path_rel∪path_act)=(∅ ⦂ ℙ(PATH))">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="path_rel⊆path_rel∪path_act∪{p}"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="path_req⊆PATH">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="Path_Exc=Path_Exc∼">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel∩path_act=(∅ ⦂ ℙ(PATH))"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="path_curr⊆PATH"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤⇒finite(PATH)"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="add_path_curr/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="add_path_curr/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(path_req∪path_curr,path_req,path_curr))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p5,p6,p8,p4,p11,p13,p9,p12,p1,p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p7,p3,p10,p5,p6,p8,p4,p11,p13,p9,p12,p1,p2">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(path_curr,path_rel,path_act))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with path_curr=path_rel∪path_act" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p5">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p25">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p20" org.eventb.core.prInfHyps="p21"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p22" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="DESELECT3" org.eventb.core.prHyps="p20,p22,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p25" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p26">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p26" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
 <org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="Path_Exc[{p}]∩(path_rel∪path_act)=(∅ ⦂ ℙ(PATH))">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="⊤⇒Path_Exc=Path_Exc∼">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="path_act⊆path_rel∪path_act"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_curr=path_rel∪path_act"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="path_act⊆path_rel∪path_act∪{p}"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="path_req∩path_curr=(∅ ⦂ ℙ(PATH))">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_act∪{p}⊆path_curr∪{p}"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈path_req"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_req∪path_curr=path_req∪path_curr">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_act⊆path_curr∪{p}"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="finite(PATH)"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="path_req∩(path_rel∪path_act)=(∅ ⦂ ℙ(PATH))">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="path_act⊆path_curr"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="path_req⊆PATH">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="Path_Exc=Path_Exc∼">
+<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)">
+<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel∩path_act=(∅ ⦂ ℙ(PATH))"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="path_curr⊆PATH"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤⇒finite(PATH)"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="add_path_curr/path_curr_invariant1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
@@ -663,12 +835,12 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="set_path_rel/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="set_path_rel/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p10,p12,p5,p7,p8,p11,p3,p9,p1,p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p10,p12,p5,p7,p8,p11,p3,p9,p1,p2">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p6,p9,p7,p10,p3,p8,p1,p2"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p4,p6,p9,p7,p10,p3,p8,p1,p2">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
 <org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
 </org.eventb.core.prRule>
@@ -682,26 +854,24 @@
 <org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_act"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_act"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_rel⊆path_curr"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_rel∪{p}⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_req⊆PATH"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="path_curr⊆PATH"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="set_path_rel/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="set_path_rel/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p10,p12,p5,p7,p8,p11,p6,p9,p1,p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p4,p10,p12,p5,p7,p8,p11,p6,p9,p1,p2">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p6,p9,p7,p10,p5,p8,p1,p2"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p4,p6,p9,p7,p10,p5,p8,p1,p2">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
 <org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
 </org.eventb.core.prRule>
@@ -715,26 +885,24 @@
 <org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_act"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_act ∖ {p}⊆path_curr"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_act"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_rel⊆path_curr"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_req⊆PATH"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_act ∖ {p}⊆path_curr"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="path_curr⊆PATH"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="remove_path_curr/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="remove_path_curr/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p10,p12,p5,p7,p8,p11,p3,p9,p1,p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p10,p12,p5,p7,p8,p11,p3,p9,p1,p2">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p6,p9,p7,p10,p3,p8,p1,p2"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p4,p6,p9,p7,p10,p3,p8,p1,p2">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
 <org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
 </org.eventb.core.prRule>
@@ -749,25 +917,23 @@
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_rel ∖ {p}⊆path_curr ∖ {p}"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_rel⊆path_curr"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_req⊆PATH"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="path_curr⊆PATH"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="remove_path_curr/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="remove_path_curr/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p10,p12,p5,p7,p8,p11,p6,p9,p1,p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p4,p10,p12,p5,p7,p8,p11,p6,p9,p1,p2">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p6,p9,p7,p10,p5,p8,p1,p2"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p4,p6,p9,p7,p10,p5,p8,p1,p2">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
 <org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
 </org.eventb.core.prRule>
@@ -781,26 +947,24 @@
 <org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_act⊆path_curr ∖ {p}"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_rel⊆path_curr"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_req⊆PATH"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="path_curr⊆PATH"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="remove_path_curr/path_curr_invariant1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
+<org.eventb.core.prProof name="remove_path_curr/path_curr_invariant1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="PATH">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p10,p12,p5,p7,p8,p11,p6,p3,p9,p1"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p4,p10,p12,p5,p7,p8,p11,p6,p3,p9,p1">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p6,p9,p7,p10,p5,p3,p8,p1"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p4,p6,p9,p7,p10,p5,p3,p8,p1">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
 <org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
 </org.eventb.core.prRule>
@@ -814,17 +978,15 @@
 <org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p0⦂PATH·p0∈path_curr ∖ {p}⇒Path_Exc[{p0}]∩(path_curr ∖ {p})=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_rel⊆path_curr"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_req⊆PATH"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p0⦂PATH·p0∈path_curr ∖ {p}⇒Path_Exc[{p0}]∩(path_curr ∖ {p})=(∅ ⦂ ℙ(PATH))"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="path_curr⊆PATH"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
@@ -1571,505 +1733,5 @@
 <org.eventb.core.prPred name="p18" org.eventb.core.predicate="path_curr_statemachine1(p)=path_rel"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="requestPath/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p3,p4,p5,p6,p7,p8,p10,p11,p12"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="p∉path_req∪path_curr"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition((path_req∪{p})∪path_curr,path_req∪{p},path_curr)"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="cancelPath/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p7,p8,p10,p11,p12"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition((path_req ∖ {p})∪path_curr,path_req ∖ {p},path_curr)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="p∈path_req"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="activatePath/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p7,p8,p4,p11,p12,p5,p13,p6"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_rel⊆path_curr∪{p}"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈path_req"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="activatePath/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p8,p9,p4,p11,p12,p5,p13,p6"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_act∪{p}⊆path_curr∪{p}"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈path_req"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="activatePath/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p7,p8,p9,p4,p11,p5,p13,p6"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition((path_req ∖ {p})∪(path_curr∪{p}),path_req ∖ {p},path_curr∪{p})"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈path_req"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="activatePath/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p2,p7,p8,p9,p4,p11,p12,p5,p13,p6"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈path_req"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(path_curr∪{p},path_rel,path_act∪{p})"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="activatePath/path_curr_invariant1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p7,p8,p9,p4,p11,p12,p5,p13,p6"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈path_req"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p0⦂PATH·p0∈path_curr∪{p}⇒Path_Exc[{p0}]∩(path_curr∪{p})=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="releasePath/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p3,p5,p7,p8,p9,p10,p11,p12"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_act"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_rel∪{p}⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="releasePath/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p5,p6,p7,p8,p9,p10,p11,p12"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_act"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_act ∖ {p}⊆path_curr"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="releasePath/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p2,p3,p5,p6,p7,p8,p9,p10,p11,p12"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_act"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(path_curr,path_rel∪{p},path_act ∖ {p})"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="removePath/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p3,p5,p7,p8,p9,p10,p11,p12"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_rel ∖ {p}⊆path_curr ∖ {p}"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="removePath/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p5,p6,p7,p8,p9,p10,p11,p12"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="path_act⊆path_curr ∖ {p}"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="removePath/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p3,p5,p6,p7,p8,p10,p11,p12"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(path_req∪(path_curr ∖ {p}),path_req,path_curr ∖ {p})"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="removePath/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p2,p3,p5,p6,p7,p8,p9,p10,p11,p12"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(path_curr ∖ {p},path_rel ∖ {p},path_act)"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
-</org.eventb.core.prProof>
-<org.eventb.core.prProof name="removePath/path_curr_invariant1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="PATH">
-<org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p3,p5,p6,p7,p8,p9,p10,p11,p12"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
-<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-<org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
-<org.eventb.core.prIdent name="path_act" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_curr" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_rel" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="path_req" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(path_curr,path_rel,path_act)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PATH·p∈path_curr⇒Path_Exc[{p}]∩path_curr=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈path_rel"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p0⦂PATH·p0∈path_curr ∖ {p}⇒Path_Exc[{p0}]∩(path_curr ∖ {p})=(∅ ⦂ ℙ(PATH))"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="path_act⊆path_curr"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="path_rel⊆path_curr"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="path_req⊆PATH"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(path_req∪path_curr,path_req,path_curr)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="path_curr⊆PATH"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 </org.eventb.core.prProof>
 </org.eventb.core.prFile>

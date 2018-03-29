@@ -5,7 +5,7 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_H9O6AkavEee9SKnLUWiTsA" fontName=".SF NS Text"/>
     <styles xmi:type="notation:LineStyle" xmi:id="_H9O6A0avEee9SKnLUWiTsA"/>
     <element xmi:type="statemachines:Initial" href="M4_VacancyDetection.bum#http://soton.ac.uk/models/eventb/statemachines/2014::Initial::M4_VacancyDetection.path_state.path_state_initial1"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H9O6BEavEee9SKnLUWiTsA" x="48" y="12"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H9O6BEavEee9SKnLUWiTsA" x="52" y="60"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_H9O6BUavEee9SKnLUWiTsA" type="2008">
     <children xmi:type="notation:DecorationNode" xmi:id="_H9PhEEavEee9SKnLUWiTsA" type="5009"/>
@@ -20,7 +20,7 @@
     <styles xmi:type="notation:DescriptionStyle" xmi:id="_H9O6BkavEee9SKnLUWiTsA"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_H9O6B0avEee9SKnLUWiTsA" fontName=".SF NS Text"/>
     <element xmi:type="statemachines:State" href="M4_VacancyDetection.bum#http://soton.ac.uk/models/eventb/statemachines/2014::State::M4_VacancyDetection.path_state.path_req"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H9O6CEavEee9SKnLUWiTsA" x="36" y="76"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H9O6CEavEee9SKnLUWiTsA" x="36" y="123"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_H9PhF0avEee9SKnLUWiTsA" type="2008">
     <children xmi:type="notation:DecorationNode" xmi:id="_H9PhG0avEee9SKnLUWiTsA" type="5009"/>
@@ -74,7 +74,7 @@
     <styles xmi:type="notation:DescriptionStyle" xmi:id="_H9PhGEavEee9SKnLUWiTsA"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_H9PhGUavEee9SKnLUWiTsA" fontName=".SF NS Text"/>
     <element xmi:type="statemachines:State" href="M4_VacancyDetection.bum#http://soton.ac.uk/models/eventb/statemachines/2014::State::M4_VacancyDetection.path_state.path_curr"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H9PhGkavEee9SKnLUWiTsA" x="184" y="48" width="169" height="233"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H9PhGkavEee9SKnLUWiTsA" x="184" y="48" width="169" height="209"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_H9PhIkavEee9SKnLUWiTsA" type="2007">
     <styles xmi:type="notation:DescriptionStyle" xmi:id="_H9PhI0avEee9SKnLUWiTsA"/>
@@ -104,7 +104,6 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_H9ZSEkavEee9SKnLUWiTsA" fontName=".SF NS Text"/>
     <element xmi:type="statemachines:Transition" href="M4_VacancyDetection.bum#http://soton.ac.uk/models/eventb/statemachines/2014::Transition::M4_VacancyDetection.path_state._mvDqEPNNEeaEvfyRgzOTMA"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_H9ZSE0avEee9SKnLUWiTsA" points="[25, -11, -145, 31]$[92, -11, -78, 31]$[92, -31, -78, 11]$[146, -31, -24, 11]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KQH9cMk3EeePDtCbLMRMGg" id="(0.9591836734693877,0.275)"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_H9agMEavEee9SKnLUWiTsA" type="4001" source="_H9O6BUavEee9SKnLUWiTsA" target="_H9PhIkavEee9SKnLUWiTsA">
     <children xmi:type="notation:DecorationNode" xmi:id="_H9agNEavEee9SKnLUWiTsA" type="6001">
@@ -143,14 +142,5 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_66qWkkblEee9SKnLUWiTsA" fontName=".SF NS Text"/>
     <element xmi:type="statemachines:Transition" href="M4_VacancyDetection.bum#http://soton.ac.uk/models/eventb/statemachines/2014::Transition::M4_VacancyDetection.path_state.path_curr.path_curr_statemachine1._66q9oEblEee9SKnLUWiTsA"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_66qWk0blEee9SKnLUWiTsA" points="[24, -8, 24, -8]$[52, -8, 52, -8]$[52, 12, 52, 12]$[24, 12, 24, 12]"/>
-  </edges>
-  <edges xmi:type="notation:Edge" xmi:id="_5xKacMijEeeqeKXGEqshWw" type="4001" source="_H9O6BUavEee9SKnLUWiTsA" target="_H9O6BUavEee9SKnLUWiTsA">
-    <children xmi:type="notation:DecorationNode" xmi:id="_5xLBgMijEeeqeKXGEqshWw" type="6001">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_5xLBgcijEeeqeKXGEqshWw" x="9" y="-26"/>
-    </children>
-    <styles xmi:type="notation:RoutingStyle" xmi:id="_5xKaccijEeeqeKXGEqshWw" routing="Rectilinear"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_5xKacsijEeeqeKXGEqshWw" fontName=".SF NS Text"/>
-    <element xmi:type="statemachines:Transition" href="M4_VacancyDetection.bum#http://soton.ac.uk/models/eventb/statemachines/2014::Transition::M4_VacancyDetection.path_state._5xMPoMijEeeqeKXGEqshWw"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5xKac8ijEeeqeKXGEqshWw" points="[25, 10, 25, 10]$[44, 10, 44, 10]$[44, 32, 44, 32]$[16, 32, 16, 32]$[16, 20, 16, 20]"/>
   </edges>
 </notation:Diagram>
