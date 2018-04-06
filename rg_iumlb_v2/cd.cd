@@ -287,4 +287,16 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LlGHIjmXEeiKSN5gp7eduA" id="(0.5,0.0)"/>
     </edges>
   </notation:Diagram>
+  <notation:Diagram xmi:id="_mRtvMDmhEeiKSN5gp7eduA" type="Classdiagrams" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_mRtvMTmhEeiKSN5gp7eduA"/>
+    <element xmi:type="classdiagrams:Classdiagram" href="C5_Signal_ctx.buc#http://soton.ac.uk/models/eventb/classdiagrams/2015::Classdiagram::C5_Signal_ctx.cd"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_6gWWQDmiEeiKSN5gp7eduA" type="Classdiagrams" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_6gWWQTmiEeiKSN5gp7eduA"/>
+    <element xmi:type="classdiagrams:Classdiagram" href="C1_Paths_ctx.buc#http://soton.ac.uk/models/eventb/classdiagrams/2015::Classdiagram::C1_Paths_ctx.cd"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_7zJa4TmiEeiKSN5gp7eduA" type="Classdiagrams" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_7zJa4jmiEeiKSN5gp7eduA"/>
+    <element xmi:type="classdiagrams:Classdiagram" href="C4_VacancyDetection_ctx.buc#http://soton.ac.uk/models/eventb/classdiagrams/2015::Classdiagram::C4_VacancyDetection_ctx.cd"/>
+  </notation:Diagram>
 </xmi:XMI>
