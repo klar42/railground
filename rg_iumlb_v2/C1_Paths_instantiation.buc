@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C1_Paths_ctx"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTMC" org.eventb.core.identifier="R01"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTMD" org.eventb.core.identifier="R02"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTME" org.eventb.core.identifier="R03"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTMF" org.eventb.core.identifier="R04"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTMG" org.eventb.core.identifier="R05"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTMH" org.eventb.core.identifier="R06"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTMI" org.eventb.core.identifier="R07"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTMJ" org.eventb.core.identifier="R08"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTMK" org.eventb.core.identifier="R09"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTML" org.eventb.core.identifier="R10"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTMM" org.eventb.core.identifier="R11"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTMN" org.eventb.core.identifier="R12"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTMO" org.eventb.core.identifier="R13"/>
+<org.eventb.core.constant name="_sNQDAPNLEeaEvfyRgzOTMP" org.eventb.core.identifier="R14"/>
+<org.eventb.core.axiom name="_sNQDAPNLEeaEvfyRgzOTMQ" org.eventb.core.label="PATH_ENUM_data" org.eventb.core.predicate="partition(PATH, {R01}, {R02}, {R03}, {R04}, {R05}, {R06}, {R07}, {R08}, {R09}, {R10}, {R11}, {R12}, {R13}, {R14})"/>
+<org.eventb.core.axiom name="_sNQDAPNLEeaEvfyRgzOTMR" org.eventb.core.label="PATH_EXCL_data" org.eventb.core.predicate="Path_Exc = {&#10;&#9;R02 ↦ R05,&#10;&#9;R02 ↦ R11,&#10;&#9;R05 ↦ R02,&#10;&#9;R05 ↦ R07,&#10;&#9;R05 ↦ R13,&#10;&#9;R05 ↦ R14,&#10;&#9;R07 ↦ R05,&#10;&#9;R07 ↦ R11,&#10;&#9;R11 ↦ R02,&#10;&#9;R11 ↦ R07,&#10;&#9;R11 ↦ R13,&#10;&#9;R11 ↦ R14,&#10;&#9;R13 ↦ R05,&#10;&#9;R13 ↦ R11,&#10;&#9;R14 ↦ R05,&#10;&#9;R14 ↦ R11&#10;}"/>
+</org.eventb.core.contextFile>

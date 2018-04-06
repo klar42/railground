@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
 <org.eventb.core.refinesMachine name="'" org.eventb.core.target="M4_VacancyDetection"/>
-<org.eventb.core.seesContext name="_tBcYsPNOEeaEvfyRgzOTMI" org.eventb.core.target="C5_Signal_ctx"/>
+<org.eventb.core.seesContext name="_tBcYsPNOEeaEvfyRgzOTMI" org.eventb.core.target="C5_Signal_instantiation"/>
 <org.eventb.core.variable name="_GhZQEEw_Eee4odaLqqo1kA" org.eventb.core.comment="" org.eventb.core.generated="true" org.eventb.core.identifier="path_req" org.eventb.emf.persistence.generator_ID="ac.soton.eventb.statemachines._JfYq4PNNEeaEvfyRgzOTMA" org.eventb.emf.persistence.priority="10"/>
 <org.eventb.core.variable name="_GhZQEUw_Eee4odaLqqo1kA" org.eventb.core.comment="" org.eventb.core.generated="true" org.eventb.core.identifier="path_curr" org.eventb.emf.persistence.generator_ID="ac.soton.eventb.statemachines._JfYq4PNNEeaEvfyRgzOTMA" org.eventb.emf.persistence.priority="10"/>
 <org.eventb.core.variable name="_GhZQEkw_Eee4odaLqqo1kA" org.eventb.core.comment="" org.eventb.core.generated="true" org.eventb.core.identifier="path_rel" org.eventb.emf.persistence.generator_ID="ac.soton.eventb.statemachines._JfYq4PNNEeaEvfyRgzOTMA" org.eventb.emf.persistence.priority="10"/>
