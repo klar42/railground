@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C4_VacancyDetection_instantiation"/>
+<org.eventb.core.extendsContext name="7" org.eventb.core.target="C5_Signal_ctx"/>
+<org.eventb.core.constant name=")" org.eventb.core.identifier="S1"/>
+<org.eventb.core.constant name="*" org.eventb.core.identifier="S2"/>
+<org.eventb.core.constant name="+" org.eventb.core.identifier="S3"/>
+<org.eventb.core.constant name="," org.eventb.core.identifier="S4"/>
+<org.eventb.core.constant name="-" org.eventb.core.identifier="S5"/>
+<org.eventb.core.constant name="." org.eventb.core.identifier="S6"/>
+<org.eventb.core.constant name="/" org.eventb.core.identifier="S7"/>
+<org.eventb.core.constant name="0" org.eventb.core.identifier="S8"/>
+<org.eventb.core.constant name="`" org.eventb.core.identifier="S9"/>
+<org.eventb.core.constant name="_" org.eventb.core.identifier="S0"/>
+<org.eventb.core.axiom name="1" org.eventb.core.label="SIGNAL_enum" org.eventb.core.predicate="partition(SIGNAL, {S1}, {S2}, {S3}, {S4}, {S5}, {S6}, {S7}, {S8}, {S9}, {S0})"/>
+<org.eventb.core.constant name="3" org.eventb.core.identifier="SIGNAL_ASPECT_STOP"/>
+<org.eventb.core.constant name="4" org.eventb.core.identifier="SIGNAL_ASPECT_PROCEED"/>
+<org.eventb.core.axiom name="6" org.eventb.core.label="SIGNAL_ASPECT_enum" org.eventb.core.predicate="partition(SIGNAL_ASPECT, {SIGNAL_ASPECT_STOP}, {SIGNAL_ASPECT_PROCEED})"/>
+<org.eventb.core.axiom name="8" org.eventb.core.label="RAIL_STOR_enum" org.eventb.core.predicate="partition(RAIL_CTOR,&#10;&#9;{E1E}, {E2E}, {E3E}, {E4E},&#10;&#9;{T1A}, {T1B}, {T2A}, {T2B}, {T3A}, {T3B}, {T4A}, {T4B}, {T5A}, {T5B}, {T6A}, {T6B}, {T7A}, {T7B}, {T8A}, {T8B},&#10;&#9;{P1T}, {P1L}, {P1R}, {P2T}, {P2L}, {P2R}, {P3T}, {P3L}, {P3R}, {P4T}, {P4L}, {P4R},&#10;&#9;{C1A}, {C1B}, {C1C}, {C1D}&#10;)"/>
+<org.eventb.core.constant name="9" org.eventb.core.identifier="E1E"/>
+<org.eventb.core.constant name=":" org.eventb.core.identifier="E2E"/>
+<org.eventb.core.constant name=";" org.eventb.core.identifier="E3E"/>
+<org.eventb.core.constant name="=" org.eventb.core.identifier="E4E"/>
+<org.eventb.core.constant name="&gt;" org.eventb.core.identifier="T1A"/>
+<org.eventb.core.constant name="?" org.eventb.core.identifier="T1B"/>
+<org.eventb.core.constant name="@" org.eventb.core.identifier="T2A"/>
+<org.eventb.core.constant name="A" org.eventb.core.identifier="T2B"/>
+<org.eventb.core.constant name="B" org.eventb.core.identifier="T3A"/>
+<org.eventb.core.constant name="C" org.eventb.core.identifier="T3B"/>
+<org.eventb.core.constant name="D" org.eventb.core.identifier="T4A"/>
+<org.eventb.core.constant name="E" org.eventb.core.identifier="T4B"/>
+<org.eventb.core.constant name="F" org.eventb.core.identifier="T5A"/>
+<org.eventb.core.constant name="G" org.eventb.core.identifier="T5B"/>
+<org.eventb.core.constant name="H" org.eventb.core.identifier="T6A"/>
+<org.eventb.core.constant name="I" org.eventb.core.identifier="T6B"/>
+<org.eventb.core.constant name="J" org.eventb.core.identifier="T7A"/>
+<org.eventb.core.constant name="K" org.eventb.core.identifier="T7B"/>
+<org.eventb.core.constant name="L" org.eventb.core.identifier="T8A"/>
+<org.eventb.core.constant name="M" org.eventb.core.identifier="T8B"/>
+<org.eventb.core.constant name="N" org.eventb.core.identifier="P1T"/>
+<org.eventb.core.constant name="O" org.eventb.core.identifier="P1L"/>
+<org.eventb.core.constant name="P" org.eventb.core.identifier="P1R"/>
+<org.eventb.core.constant name="Q" org.eventb.core.identifier="P2T"/>
+<org.eventb.core.constant name="R" org.eventb.core.identifier="P2L"/>
+<org.eventb.core.constant name="S" org.eventb.core.identifier="P2R"/>
+<org.eventb.core.constant name="T" org.eventb.core.identifier="P3T"/>
+<org.eventb.core.constant name="U" org.eventb.core.identifier="P3L"/>
+<org.eventb.core.constant name="V" org.eventb.core.identifier="P3R"/>
+<org.eventb.core.constant name="W" org.eventb.core.identifier="P4T"/>
+<org.eventb.core.constant name="X" org.eventb.core.identifier="P4L"/>
+<org.eventb.core.constant name="Y" org.eventb.core.identifier="P4R"/>
+<org.eventb.core.constant name="Z" org.eventb.core.identifier="C1A"/>
+<org.eventb.core.constant name="[" org.eventb.core.identifier="C1B"/>
+<org.eventb.core.constant name="\" org.eventb.core.identifier="C1C"/>
+<org.eventb.core.constant name="]" org.eventb.core.identifier="C1D"/>
+<org.eventb.core.axiom name="^" org.eventb.core.label="SIGNAL_ASPECT_AVAIL_data" org.eventb.core.predicate="Signal_Aspect_Avail = {&#10;&#9;S1 ↦ SIGNAL_ASPECT_STOP, S1 ↦ SIGNAL_ASPECT_PROCEED,&#10;&#9;S2 ↦ SIGNAL_ASPECT_STOP, S2 ↦ SIGNAL_ASPECT_PROCEED,&#10;&#9;S3 ↦ SIGNAL_ASPECT_STOP, S3 ↦ SIGNAL_ASPECT_PROCEED,&#10;&#9;S4 ↦ SIGNAL_ASPECT_STOP, S4 ↦ SIGNAL_ASPECT_PROCEED,&#10;&#9;S5 ↦ SIGNAL_ASPECT_STOP, S5 ↦ SIGNAL_ASPECT_PROCEED,&#10;&#9;S6 ↦ SIGNAL_ASPECT_STOP, S6 ↦ SIGNAL_ASPECT_PROCEED,&#10;&#9;S7 ↦ SIGNAL_ASPECT_STOP, S7 ↦ SIGNAL_ASPECT_PROCEED,&#10;&#9;S8 ↦ SIGNAL_ASPECT_STOP, S8 ↦ SIGNAL_ASPECT_PROCEED,&#10;&#9;S9 ↦ SIGNAL_ASPECT_STOP, S9 ↦ SIGNAL_ASPECT_PROCEED,&#10;&#9;S0 ↦ SIGNAL_ASPECT_STOP, S0 ↦ SIGNAL_ASPECT_PROCEED&#10;}"/>
+<org.eventb.core.axiom name="a" org.eventb.core.label="SIGNAL_ASPECT_DEFAULT_data" org.eventb.core.predicate="Signal_Aspect_Default = SIGNAL_ASPECT_STOP"/>
+<org.eventb.core.axiom name="c" org.eventb.core.label="Elem_Ctor_data" org.eventb.core.predicate="Elem_Ctor =  {T1A, T1B,&#10;&#9;T2A, T2B,&#10;&#9;T3A, T3B,&#10;&#9;T4A, T4B,&#10;&#9;T5A, T5B,&#10;&#9;T6A, T6B,&#10;&#9;T7A, T7B,&#10;&#9;T8A, T8B,&#10;&#9;P1T, P1L, P1R,&#10;&#9;P2T, P2L, P2R,&#10;&#9;P3T, P3L, P3R,&#10;&#9;P4T, P4L, P4R,&#10;&#9;C1A, C1B, C1C, C1D}"/>
+<org.eventb.core.axiom name="b" org.eventb.core.label="RAIL_ELEM_CTOR_data" org.eventb.core.predicate="Rail_Elem_Ctor = {&#10;&#9;T1A ↦ T1, T1B ↦ T1,&#10;&#9;T2A ↦ T2, T2B ↦ T2,&#10;&#9;T3A ↦ T3, T3B ↦ T3,&#10;&#9;T4A ↦ T4, T4B ↦ T4,&#10;&#9;T5A ↦ T5, T5B ↦ T5,&#10;&#9;T6A ↦ T6, T6B ↦ T6,&#10;&#9;T7A ↦ T7, T7B ↦ T7,&#10;&#9;T8A ↦ T8, T8B ↦ T8,&#10;&#9;P1T ↦ P1, P1L ↦ P1, P1R ↦ P1,&#10;&#9;P2T ↦ P2, P2L ↦ P2, P2R ↦ P2,&#10;&#9;P3T ↦ P3, P3L ↦ P3, P3R ↦ P3,&#10;&#9;P4T ↦ P4, P4L ↦ P4, P4R ↦ P4,&#10;&#9;C1A ↦ C1, C1B ↦ C1, C1C ↦ C1, C1D ↦ C1&#10;}"/>
+<org.eventb.core.axiom name="d" org.eventb.core.label="RAIL_SGMT_CTOR_data" org.eventb.core.predicate="Sgmt_Ctor = {&#10;&#9;T1A_T1B ↦ (T1A ↦ T1B),&#10;&#9;T1B_T1A ↦ (T1B ↦ T1A),&#10;&#9;T2A_T2B ↦ (T2A ↦ T2B),&#10;&#9;T2B_T2A ↦ (T2B ↦ T2A),&#10;&#9;T3A_T3B ↦ (T3A ↦ T3B),&#10;&#9;T3B_T3A ↦ (T3B ↦ T3A),&#10;&#9;T4A_T4B ↦ (T4A ↦ T4B),&#10;&#9;T4B_T4A ↦ (T4B ↦ T4A),&#10;&#9;T5A_T5B ↦ (T5A ↦ T5B),&#10;&#9;T5B_T5A ↦ (T5B ↦ T5A),&#10;&#9;T6A_T6B ↦ (T6A ↦ T6B),&#10;&#9;T6B_T6A ↦ (T6B ↦ T6A),&#10;&#9;T7A_T7B ↦ (T7A ↦ T7B),&#10;&#9;T7B_T7A ↦ (T7B ↦ T7A),&#10;&#9;T8A_T8B ↦ (T8A ↦ T8B),&#10;&#9;T8B_T8A ↦ (T8B ↦ T8A),&#10;&#9;P1T_P1L ↦ (P1T ↦ P1L),&#10;&#9;P1L_P1T ↦ (P1L ↦ P1T),&#10;&#9;P1T_P1R ↦ (P1T ↦ P1R),&#10;&#9;P1R_P1T ↦ (P1R ↦ P1T),&#10;&#9;P2T_P2L ↦ (P2T ↦ P2L),&#10;&#9;P2L_P2T ↦ (P2L ↦ P2T),&#10;&#9;P2T_P2R ↦ (P2T ↦ P2R),&#10;&#9;P2R_P2T ↦ (P2R ↦ P2T),&#10;&#9;P3T_P3L ↦ (P3T ↦ P3L),&#10;&#9;P3L_P3T ↦ (P3L ↦ P3T),&#10;&#9;P3T_P3R ↦ (P3T ↦ P3R),&#10;&#9;P3R_P3T ↦ (P3R ↦ P3T),&#10;&#9;P4T_P4L ↦ (P4T ↦ P4L),&#10;&#9;P4L_P4T ↦ (P4L ↦ P4T),&#10;&#9;P4T_P4R ↦ (P4T ↦ P4R),&#10;&#9;P4R_P4T ↦ (P4R ↦ P4T),&#10;&#9;C1A_C1D ↦ (C1A ↦ C1D),&#10;&#9;C1D_C1A ↦ (C1D ↦ C1A),&#10;&#9;C1B_C1C ↦ (C1B ↦ C1C),&#10;&#9;C1C_C1B ↦ (C1C ↦ C1B)&#10;}"/>
+<org.eventb.core.axiom name="i" org.eventb.core.label="PATH_CTOR_BEG_data" org.eventb.core.predicate="Path_Ctor_Beg = {&#10;&#9;R01 ↦ T4B,&#10;&#9;R02 ↦ T4B,&#10;&#9;R03 ↦ T1B,&#10;&#9;R04 ↦ T6A,&#10;&#9;R05 ↦ T6A,&#10;&#9;R06 ↦ T1A,&#10;&#9;R07 ↦ T1A,&#10;&#9;R08 ↦ T8A,&#10;&#9;R09 ↦ T4A,&#10;&#9;R10 ↦ T7B,&#10;&#9;R11 ↦ T7B,&#10;&#9;R12 ↦ T5B,&#10;&#9;R13 ↦ P2L,&#10;&#9;R14 ↦ P1R&#10;}"/>
+<org.eventb.core.axiom name="h" org.eventb.core.label="SIGNAL_CTOR_data" org.eventb.core.predicate="Signal_Ctor = {&#10;&#9;S1 ↦ T4B,&#10;&#9;S2 ↦ T1B,&#10;&#9;S3 ↦ T6A,&#10;&#9;S4 ↦ T8A,&#10;&#9;S5 ↦ T1A,&#10;&#9;S6 ↦ T4A,&#10;&#9;S7 ↦ T7B,&#10;&#9;S8 ↦ T5B,&#10;&#9;S9 ↦ P2L,&#10;&#9;S0 ↦ P1R&#10;}"/>
+<org.eventb.core.axiom name="g" org.eventb.core.label="PATH_CTOR_END_data" org.eventb.core.predicate="Path_Ctor_End = {&#10;&#9;R01 ↦ T7B,&#10;&#9;R02 ↦ P2L,&#10;&#9;R03 ↦ T1A,&#10;&#9;R04 ↦ T2A,&#10;&#9;R05 ↦ T7B,&#10;&#9;R06 ↦ T6A,&#10;&#9;R07 ↦ P1R,&#10;&#9;R08 ↦ T8B,&#10;&#9;R09 ↦ T4B,&#10;&#9;R10 ↦ T3B,&#10;&#9;R11 ↦ T6A,&#10;&#9;R12 ↦ T5A,&#10;&#9;R13 ↦ T3B,&#10;&#9;R14 ↦ T2A&#10;}"/>
+<org.eventb.core.axiom name="f" org.eventb.core.label="RAIL_LINK_data" org.eventb.core.predicate="Rail_Link = {&#10;&#9;E1E ↦ T1A,&#10;&#9;E2E ↦ T4B,&#10;&#9;E3E ↦ T5A,&#10;&#9;E4E ↦ T8B,&#10;&#9;T1A ↦ E1E, T1B ↦ T2A,&#10;&#9;T2A ↦ T1B, T2B ↦ P1T,&#10;&#9;T3A ↦ P2T, T3B ↦ T4A,&#10;&#9;T4A ↦ T3B, T4B ↦ E2E,&#10;&#9;T5A ↦ E3E, T5B ↦ T6A,&#10;&#9;T6A ↦ T5B, T6B ↦ P3T,&#10;&#9;T7A ↦ P4T, T7B ↦ T8A,&#10;&#9;T8A ↦ T7B, T8B ↦ E4E,&#10;&#9;P1T ↦ T2B, P1L ↦ C1C, P1R ↦ P2L,&#10;&#9;P2T ↦ T3A, P2L ↦ P1R, P2R ↦ C1A,&#10;&#9;P3T ↦ T6B, P3L ↦ C1B, P3R ↦ P4L,&#10;&#9;P4T ↦ T7A, P4L ↦ P3R, P4R ↦ C1D,&#10;&#9;C1A ↦ P2R, C1B ↦ P3L, C1C ↦ P1L, C1D ↦ P4R&#10;}"/>
+</org.eventb.core.contextFile>

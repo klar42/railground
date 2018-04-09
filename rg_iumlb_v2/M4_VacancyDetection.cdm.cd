@@ -90,7 +90,7 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_Ny1TgkZDEee9SKnLUWiTsA" fontName=".SF NS Text"/>
     <styles xmi:type="notation:LineStyle" xmi:id="_Ny1Tg0ZDEee9SKnLUWiTsA"/>
     <element xmi:type="classdiagrams:Class" href="M4_VacancyDetection.bum#http://soton.ac.uk/models/eventb/classdiagrams/2015::Class::M4_VacancyDetection.cdm.TVD_SECT"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ny1ThEZDEee9SKnLUWiTsA" x="240" y="32" width="525" height="109"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ny1ThEZDEee9SKnLUWiTsA" x="240" y="32" width="517" height="109"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_BY_GUEtDEeeKDPSDiTUmqg" type="2003">
     <children xmi:type="notation:DecorationNode" xmi:id="_BY_tYEtDEeeKDPSDiTUmqg" type="5007"/>

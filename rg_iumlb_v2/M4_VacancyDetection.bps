@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="cdm_inv1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/attribType_tvd_state_curr/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/cdm_inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="activatePath/cdm_inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="releasePath/path_curr_statemachine1_guards3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="releasePath/cdm_inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="setOccupied/cdm_guards8/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="setOccupied/cdm_guards9/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="setOccupied/attribType_tvd_state_curr/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="setOccupied/cdm_inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="releaseElements/cdm_guards5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="releaseElements/attribType_tvd_state_curr/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="releaseElements/cdm_inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="cdm_inv1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/assocMult_tvd_state_curr/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/cdm_inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_path_curr/cdm_inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_path_rel/path_curr_statemachine1_guards3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_path_rel/cdm_inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_tvd_state_curr/cdm_guards8/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_tvd_state_curr/cdm_guards9/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_tvd_state_curr/assocMult_tvd_state_curr/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_tvd_state_curr/cdm_inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="release_path_sect/path_curr_statemachine1_guards1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="release_path_sect/assocMult_tvd_state_curr/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="release_path_sect/cdm_inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

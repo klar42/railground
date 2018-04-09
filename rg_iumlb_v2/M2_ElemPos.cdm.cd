@@ -18,7 +18,7 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_L0bjAkqqEeeKDPSDiTUmqg" fontName=".SF NS Text"/>
     <styles xmi:type="notation:LineStyle" xmi:id="_L0bjA0qqEeeKDPSDiTUmqg"/>
     <element xmi:type="classdiagrams:Class" href="M2_ElemPos.bum#http://soton.ac.uk/models/eventb/classdiagrams/2015::Class::M2_ElemPos.cdm.RAIL_ELEM"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0bjBEqqEeeKDPSDiTUmqg" x="56" y="28" width="548"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0bjBEqqEeeKDPSDiTUmqg" x="56" y="28" width="504"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_L0bjD0qqEeeKDPSDiTUmqg" type="2003">
     <children xmi:type="notation:DecorationNode" xmi:id="_L0cKEEqqEeeKDPSDiTUmqg" type="5007"/>
