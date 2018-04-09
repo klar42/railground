@@ -16,56 +16,58 @@
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p11"/>
-<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p14"/>
-<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p8"/>
 <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p42">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
-<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
-<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
-<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
-<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
-<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p26"/>
-<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
-<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
-<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p31" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p32"/>
-<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p34"/>
-<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p36"/>
-<org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p37"/>
-<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
-<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40"/>
-<org.eventb.core.prHypAction name="REWRITE15" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p41"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p42" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p56">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p44"/>
-<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p45"/>
-<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p46"/>
-<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
-<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48"/>
-<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p49"/>
-<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p50"/>
-<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p51"/>
-<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p52"/>
-<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
-<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54"/>
-<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p41" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p55"/>
-<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p,seg)" org.eventb.core.prGoal="p56" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p57">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p44">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p31" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p32"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p36"/>
+<org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p37"/>
+<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="REWRITE15" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="REWRITE16" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p42"/>
+<org.eventb.core.prHypAction name="REWRITE17" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p44" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p60">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p45"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p46"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p49"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p50"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p51"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p52"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p55"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p41" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p57"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p42" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p58"/>
+<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p43" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p59"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p,seg)" org.eventb.core.prGoal="p60" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p61">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
 <org.eventb.core.prIdent name="seg" org.eventb.core.type="RAIL_SGMT"/>
-<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p57" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p59" org.eventb.core.prHyps="p58">
-<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p59" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p60">
-<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p60" org.eventb.core.prHyps="p1">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p61">
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p61" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p62">
-<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p62" org.eventb.core.prHyps=""/>
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p61" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p63" org.eventb.core.prHyps="p62">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p63" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p64">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p64" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p65">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p65" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p66">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p66" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -73,15 +75,15 @@
 <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
-<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p63">
-<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p63" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p67">
+<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p67" org.eventb.core.prHyps="p1"/>
 </org.eventb.core.prAnte>
-<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p64">
-<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p64" org.eventb.core.prHyps="p2">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p65">
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p65" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p62">
-<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p62" org.eventb.core.prHyps=""/>
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p68">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p68" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p69">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p69" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p66">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p66" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -89,8 +91,8 @@
 <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e1"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
-<org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p66">
-<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p66" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p70">
+<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p70" org.eventb.core.prHyps="p2"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -115,8 +117,19 @@
 <org.eventb.core.prIdent name="Path_Ctor_Beg" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 <org.eventb.core.prIdent name="Sgmt_Ctor" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
-<org.eventb.core.prPred name="p47" org.eventb.core.predicate="finite(RAIL_POS)">
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="finite(RAIL_POS)">
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))⇒Path_Elem_Pos(p)(elem)∈dom(Rail_Elem_Pos_Conn(elem)))">
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒(∀ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒Rail_Elem_Ctor(ctor1)=Rail_Sgmt_Elem(sgmt))">
+<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Ctor" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Path_Ctor_Beg∈PATH → Elem_Ctor"/>
 <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀tvdState⦂TVD_STATE·tvdState∈TVD_STATE⇒TVD_STATE={Vacant,Occupied}∧¬Vacant=Occupied">
@@ -124,58 +137,58 @@
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p34" org.eventb.core.predicate="⊤⇒finite(RAIL_SGMT)"/>
-<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀pos⦂RAIL_POS·pos∈RAIL_POS⇒finite(RAIL_POS)">
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="⊤⇒finite(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀pos⦂RAIL_POS·pos∈RAIL_POS⇒finite(RAIL_POS)">
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p49" org.eventb.core.predicate="∀p⦂PATH·finite(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="∀p⦂PATH·finite(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p65" org.eventb.core.predicate="seg∈RAIL_SGMT">
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))⇒Path_Elem_Pos(p)(elem)∈dom(Rail_Elem_Pos_Conn(elem)))">
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p69" org.eventb.core.predicate="seg∈RAIL_SGMT">
 <org.eventb.core.prIdent name="seg" org.eventb.core.type="RAIL_SGMT"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p57" org.eventb.core.predicate="seg∈Path_Sgmt[{p}]⇒p∈dom(Path_Ctor_Beg)∧Path_Ctor_Beg∈PATH ⇸ RAIL_CTOR∧seg∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR">
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒Default_Elem_Pos(elem)∈dom(Rail_Elem_Pos_Conn(elem))">
+<org.eventb.core.prIdent name="Default_Elem_Pos" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="seg∈Path_Sgmt[{p}]⇒p∈dom(Path_Ctor_Beg)∧Path_Ctor_Beg∈PATH ⇸ RAIL_CTOR∧seg∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
 <org.eventb.core.prIdent name="seg" org.eventb.core.type="RAIL_SGMT"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀tvdState⦂TVD_STATE·tvdState∈TVD_STATE⇒⊤∧¬⊥">
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p51" org.eventb.core.predicate="finite(RAIL_SGMT)"/>
-<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∃elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))∧Path_Sgmt[{p}]=Rail_Elem_Pos_Conn(elem)(Path_Elem_Pos(p)(elem)))">
-<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
-<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
-<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
-<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀p⦂PATH·⊤⇒¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="finite(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀p⦂PATH·⊤⇒¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀p⦂PATH·⊤⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀p⦂PATH·⊤⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p37" org.eventb.core.predicate="Elem_Ctor∈ℙ(RAIL_CTOR)"/>
-<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀sig⦂SIGNAL·⊤⇒Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]">
-<org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
-<org.eventb.core.prIdent name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Default" org.eventb.core.type="SIGNAL_ASPECT"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒finite(RAIL_ELEM)">
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒finite(RAIL_ELEM)">
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p59" org.eventb.core.predicate="p∈dom(Path_Ctor_Beg)∧Path_Ctor_Beg∈PATH ⇸ RAIL_CTOR∧seg∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR">
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="p∈dom(Path_Ctor_Beg)∧Path_Ctor_Beg∈PATH ⇸ RAIL_CTOR∧seg∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
 <org.eventb.core.prIdent name="seg" org.eventb.core.type="RAIL_SGMT"/>
 </org.eventb.core.prPred>
@@ -184,39 +197,50 @@
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT,ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒Rail_Elem_Ctor(ctor1)=Rail_Sgmt_Elem(sgmt)">
+<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Ctor" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p39" org.eventb.core.predicate="⊤⇒finite(RAIL_CTOR)"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)"/>
 <org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀ctor⦂RAIL_CTOR·ctor∈RAIL_CTOR⇒finite(RAIL_CTOR)"/>
-<org.eventb.core.prPred name="p53" org.eventb.core.predicate="finite(RAIL_CTOR)"/>
-<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀p⦂PATH·⊤⇒finite(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·Default_Elem_Pos(elem)∈dom(Rail_Elem_Pos_Conn(elem))">
+<org.eventb.core.prIdent name="Default_Elem_Pos" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="finite(RAIL_CTOR)"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀p⦂PATH·⊤⇒finite(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH">
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH">
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p64" org.eventb.core.predicate="seg∈dom(Sgmt_Ctor)">
+<org.eventb.core.prPred name="p68" org.eventb.core.predicate="seg∈dom(Sgmt_Ctor)">
 <org.eventb.core.prIdent name="seg" org.eventb.core.type="RAIL_SGMT"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀seg⦂RAIL_SGMT·seg∈Path_Sgmt[{p}]⇒p∈dom(Path_Ctor_Beg)∧Path_Ctor_Beg∈PATH ⇸ RAIL_CTOR∧seg∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR)"/>
-<org.eventb.core.prPred name="p54" org.eventb.core.predicate="∀p⦂PATH·¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀elem⦂RAIL_ELEM,pos⦂RAIL_POS·elem ↦ pos∈Path_Elem_Pos(p)⇒(∃sgmt⦂RAIL_SGMT·sgmt∈Path_Sgmt[{p}]∩Rail_Elem_Pos_Conn(elem)(pos)))">
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀sig⦂SIGNAL·Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]">
-<org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
-<org.eventb.core.prIdent name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Default" org.eventb.core.type="SIGNAL_ASPECT"/>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="∀p⦂PATH·¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TVD_STATE={Vacant,Occupied}">
 <org.eventb.core.prIdent name="Occupied" org.eventb.core.type="TVD_STATE"/>
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2))">
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2))">
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
 </org.eventb.core.prPred>
@@ -225,13 +249,7 @@
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL⇒Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]">
-<org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
-<org.eventb.core.prIdent name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Default" org.eventb.core.type="SIGNAL_ASPECT"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p44" org.eventb.core.predicate="Path_Exc=Path_Exc∼">
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="Path_Exc=Path_Exc∼">
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀tvdState⦂TVD_STATE·tvdState∈TVD_STATE⇒partition(TVD_STATE,{Vacant},{Occupied})">
@@ -239,110 +257,123 @@
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p63" org.eventb.core.predicate="Path_Ctor_Beg∈PATH ⇸ RAIL_CTOR"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧sgmt1≠sgmt2⇒Rail_Sgmt_Elem(sgmt1)≠Rail_Sgmt_Elem(sgmt2))">
+<org.eventb.core.prPred name="p67" org.eventb.core.predicate="Path_Ctor_Beg∈PATH ⇸ RAIL_CTOR"/>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="∀p⦂PATH,elem⦂RAIL_ELEM,pos⦂RAIL_POS·elem ↦ pos∈Path_Elem_Pos(p)⇒(∃sgmt⦂RAIL_SGMT·sgmt∈Path_Sgmt[{p}]∩Rail_Elem_Pos_Conn(elem)(pos))">
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧sgmt1≠sgmt2⇒Rail_Sgmt_Elem(sgmt1)≠Rail_Sgmt_Elem(sgmt2))">
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p50" org.eventb.core.predicate="∀p⦂PATH·card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="∀p⦂PATH·card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="⊤⇒Path_Exc=Path_Exc∼">
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤⇒Path_Exc=Path_Exc∼">
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Sgmt_Ctor∈RAIL_SGMT → Elem_Ctor × Elem_Ctor"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="⊤⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒⊤">
-<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Vacant=Occupied">
 <org.eventb.core.prIdent name="Occupied" org.eventb.core.type="TVD_STATE"/>
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p46" org.eventb.core.predicate="finite(RAIL_ELEM)">
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒Default_Elem_Pos(elem)∈dom(Rail_Elem_Pos_Conn(elem))">
+<org.eventb.core.prIdent name="Default_Elem_Pos" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="finite(RAIL_ELEM)">
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p62" org.eventb.core.predicate="⊤"/>
-<org.eventb.core.prPred name="p55" org.eventb.core.predicate="∀p⦂PATH,sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2)">
+<org.eventb.core.prPred name="p66" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·⊤⇒(∀ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒Rail_Elem_Ctor(ctor1)=Rail_Sgmt_Elem(sgmt))">
+<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Ctor" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀p⦂PATH,elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))⇒Path_Elem_Pos(p)(elem)∈dom(Rail_Elem_Pos_Conn(elem))">
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="∀p⦂PATH,sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2)">
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p61" org.eventb.core.predicate="p∈PATH">
+<org.eventb.core.prPred name="p65" org.eventb.core.predicate="p∈PATH">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p23" org.eventb.core.predicate="⊤⇒finite(RAIL_ELEM)">
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="⊤⇒finite(RAIL_ELEM)">
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p26" org.eventb.core.predicate="Path_Sgmt∈PATH ↔ RAIL_SGMT"/>
-<org.eventb.core.prPred name="p56" org.eventb.core.predicate="∀p⦂PATH,seg⦂RAIL_SGMT·seg∈Path_Sgmt[{p}]⇒p∈dom(Path_Ctor_Beg)∧Path_Ctor_Beg∈PATH ⇸ RAIL_CTOR∧seg∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR"/>
-<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒finite(RAIL_SGMT)"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="Path_Sgmt∈PATH ↔ RAIL_SGMT"/>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="∀p⦂PATH,seg⦂RAIL_SGMT·seg∈Path_Sgmt[{p}]⇒p∈dom(Path_Ctor_Beg)∧Path_Ctor_Beg∈PATH ⇸ RAIL_CTOR∧seg∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒finite(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p45" org.eventb.core.predicate="finite(PATH)"/>
-<org.eventb.core.prPred name="p25" org.eventb.core.predicate="⊤⇒finite(RAIL_POS)">
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="finite(PATH)"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="⊤⇒finite(RAIL_POS)">
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀seg⦂RAIL_SGMT·seg∈Path_Sgmt[{p}]⇒p∈dom(Path_Ctor_Beg)∧Path_Ctor_Beg∈PATH ⇸ RAIL_CTOR∧seg∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR)"/>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀seg⦂RAIL_SGMT·seg∈Path_Sgmt[{p}]⇒p∈dom(Path_Ctor_Beg)∧Path_Ctor_Beg∈PATH ⇸ RAIL_CTOR∧seg∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR)"/>
 <org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2))">
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2))">
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∃elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))∧Path_Sgmt[{p}]=Rail_Elem_Pos_Conn(elem)(Path_Elem_Pos(p)(elem)))">
-<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
-<org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
-<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
-<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p66" org.eventb.core.predicate="Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼">
+<org.eventb.core.prPred name="p70" org.eventb.core.predicate="Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼">
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p58" org.eventb.core.predicate="seg∈Path_Sgmt[{p}]">
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="seg∈Path_Sgmt[{p}]">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
 <org.eventb.core.prIdent name="seg" org.eventb.core.type="RAIL_SGMT"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p60" org.eventb.core.predicate="p∈dom(Path_Ctor_Beg)">
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="p∈dom(Path_Ctor_Beg)">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PATH"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p43" org.eventb.core.predicate="Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p48" org.eventb.core.predicate="∀p⦂PATH·∃elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))∧Path_Sgmt[{p}]=Rail_Elem_Pos_Conn(elem)(Path_Elem_Pos(p)(elem))">
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀elem⦂RAIL_ELEM,pos⦂RAIL_POS·elem ↦ pos∈Path_Elem_Pos(p)⇒(∃sgmt⦂RAIL_SGMT·sgmt∈Path_Sgmt[{p}]∩Rail_Elem_Pos_Conn(elem)(pos)))">
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 <org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒⊤"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="⊤⇒finite(PATH)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="⊤⇒finite(PATH)"/>
 <org.eventb.core.prExpr name="e1" org.eventb.core.expression="RAIL_SGMT"/>
 <org.eventb.core.prExpr name="e0" org.eventb.core.expression="PATH"/>
-<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
 <org.eventb.core.prReas name="r9" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
-<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
-<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="cd_axm4/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="elem" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="PATH,RAIL_CTOR,RAIL_ELEM,RAIL_SGMT,SIGNAL" org.eventb.core.psManual="true">
 <org.eventb.core.lang name="L"/>
@@ -436,11 +467,11 @@
 <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p78">
 <org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p79,p15,p16,p64,p65"/>
+<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p65,p16,p64,p79,p15"/>
 <org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p56,p73,p55,p58,p11,p12"/>
-<org.eventb.core.prRule name="r10" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p78" org.eventb.core.prHyps="p7,p4,p3,p10,p1,p9,p74,p56,p73,p55,p58,p11,p12">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p73,p56,p58,p11,p55,p12"/>
+<org.eventb.core.prRule name="r10" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p78" org.eventb.core.prHyps="p1,p74,p56,p3,p4,p73,p7,p55,p58,p9,p10,p11,p12">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R2000"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -457,11 +488,11 @@
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p81" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p82"/>
 <org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p79,p15,p16,p64,p65,p74"/>
+<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p65,p74,p16,p64,p79,p15"/>
 <org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p56,p58,p82,p73,p55"/>
-<org.eventb.core.prRule name="r10" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p80" org.eventb.core.prHyps="p7,p4,p3,p10,p1,p9,p56,p58,p82,p73,p55">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p73,p56,p58,p82,p55"/>
+<org.eventb.core.prRule name="r10" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p80" org.eventb.core.prHyps="p1,p56,p58,p82,p3,p4,p9,p73,p7,p10,p55">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R2000"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -749,19 +780,19 @@
 <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Rail_Sgmt_Elem∈RAIL_SGMT → RAIL_ELEM"/>
 <org.eventb.core.prPred name="p29" org.eventb.core.predicate="⊤⇒finite(PATH)"/>
 <org.eventb.core.prExpr name="e0" org.eventb.core.expression="Elem_Ctor ↔ RAIL_ELEM"/>
-<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 <org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.finiteRelImg"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
-<org.eventb.core.prReas name="r12" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.finiteRelation:0"/>
-<org.eventb.core.prReas name="r9" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allD"/>
 <org.eventb.core.prReas name="r11" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
-<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
-<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allD"/>
 <org.eventb.core.prReas name="r10" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r9" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r12" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.finiteRelation:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="cd_axm6/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="ctor1,ctor2,sgmt" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7" org.eventb.core.prSets="RAIL_CTOR,RAIL_ELEM,RAIL_SGMT">
 <org.eventb.core.lang name="L"/>
@@ -777,60 +808,55 @@
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="p9,p10" org.eventb.core.prInfHyps="p13"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p22">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
-<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p19"/>
-<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
-<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p13"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p22" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p50">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p23"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
-<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27"/>
-<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29"/>
-<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
-<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p31" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p32"/>
-<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p33"/>
-<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
-<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p37"/>
-<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
-<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40"/>
-<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p41" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p42"/>
-<org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p43"/>
-<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p44"/>
-<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p45" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p46"/>
-<org.eventb.core.prHypAction name="REWRITE15" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
-<org.eventb.core.prHypAction name="REWRITE16" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48"/>
-<org.eventb.core.prHypAction name="REWRITE17" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p49"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p50" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p66">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p51"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p52"/>
-<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
-<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54"/>
-<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p55"/>
-<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56"/>
-<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p57"/>
-<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p58"/>
-<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p59"/>
-<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p42" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p60"/>
-<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p44" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p61"/>
-<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p46" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p62"/>
-<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p47" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p63"/>
-<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p48" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p64"/>
-<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p49" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p65"/>
-<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p66" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p67">
-<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees sgmt)" org.eventb.core.prGoal="p67" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p68">
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p45">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p29"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p31" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p32"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p36"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40"/>
+<org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p41"/>
+<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p42"/>
+<org.eventb.core.prHypAction name="REWRITE15" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
+<org.eventb.core.prHypAction name="REWRITE16" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p44"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p45" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p60">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p46"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p49"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p50"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p51"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p52"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p55"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p42" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p57"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p43" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p58"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p44" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p59"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p60" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p61">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees sgmt)" org.eventb.core.prGoal="p61" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p62">
 <org.eventb.core.prIdent name="sgmt" org.eventb.core.type="RAIL_SGMT"/>
-<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p68" org.eventb.core.prHyps="p1">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p69">
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p69" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p70">
-<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p70" org.eventb.core.prHyps=""/>
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p62" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p63">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p63" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p64">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p64" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -840,26 +866,26 @@
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
-<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p71">
-<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p71" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p65">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p65" org.eventb.core.prHyps="p1"/>
 </org.eventb.core.prAnte>
-<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p72">
-<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees sgmt,ctor1,ctor2)" org.eventb.core.prGoal="p72" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p73">
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p66">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees sgmt,ctor1,ctor2)" org.eventb.core.prGoal="p66" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p67">
 <org.eventb.core.prIdent name="sgmt" org.eventb.core.type="RAIL_SGMT"/>
 <org.eventb.core.prIdent name="ctor1" org.eventb.core.type="RAIL_CTOR"/>
 <org.eventb.core.prIdent name="ctor2" org.eventb.core.type="RAIL_CTOR"/>
-<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p73" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p75" org.eventb.core.prHyps="p74">
-<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p75" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p76">
+<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p67" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p69" org.eventb.core.prHyps="p68">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p69" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p70">
 <org.eventb.core.prRule name="r10" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p77,p60,p78,p79,p9,p80,p62,p81,p10"/>
+<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p71,p72,p73,p9,p74,p75,p10"/>
 <org.eventb.core.prRule name="r10" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p54,p59"/>
-<org.eventb.core.prRule name="r11" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p76" org.eventb.core.prHyps="p54,p59,p1,p74,p61,p3,p4">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p49,p51"/>
+<org.eventb.core.prRule name="r11" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p70" org.eventb.core.prHyps="p49,p51,p1,p68,p57,p3,p4">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R2000"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -867,15 +893,15 @@
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
-<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p82">
-<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p82" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p76">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p76" org.eventb.core.prHyps="p3"/>
 </org.eventb.core.prAnte>
-<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p83">
-<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p83" org.eventb.core.prHyps="p6">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p69">
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p69" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p70">
-<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p70" org.eventb.core.prHyps=""/>
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p77">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p77" org.eventb.core.prHyps="p6">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p63">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p63" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p64">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p64" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -883,8 +909,8 @@
 <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
-<org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p84">
-<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p84" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p78">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p78" org.eventb.core.prHyps="p6"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -911,14 +937,19 @@
 <org.eventb.core.prIdent name="Rail_Elem_Ctor" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="Sgmt_Ctor" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
-<org.eventb.core.prPred name="p55" org.eventb.core.predicate="finite(RAIL_POS)">
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="finite(RAIL_POS)">
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p65" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈ran(Rail_Elem_Ctor)"/>
-<org.eventb.core.prPred name="p68" org.eventb.core.predicate="sgmt∈dom(Sgmt_Ctor)">
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))⇒Path_Elem_Pos(p)(elem)∈dom(Rail_Elem_Pos_Conn(elem)))">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="sgmt∈dom(Sgmt_Ctor)">
 <org.eventb.core.prIdent name="sgmt" org.eventb.core.type="RAIL_SGMT"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p79" org.eventb.core.predicate="Path_Ctor_Beg∈PATH → Elem_Ctor">
+<org.eventb.core.prPred name="p73" org.eventb.core.predicate="Path_Ctor_Beg∈PATH → Elem_Ctor">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Ctor_Beg" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
 </org.eventb.core.prPred>
@@ -927,100 +958,104 @@
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p40" org.eventb.core.predicate="⊤⇒finite(RAIL_SGMT)"/>
-<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀pos⦂RAIL_POS·pos∈RAIL_POS⇒finite(RAIL_POS)">
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="⊤⇒finite(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀pos⦂RAIL_POS·pos∈RAIL_POS⇒finite(RAIL_POS)">
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p57" org.eventb.core.predicate="∀p⦂PATH·finite(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀p⦂PATH·finite(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒(∀ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·sgmt∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR∧(Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM))"/>
-<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))⇒Path_Elem_Pos(p)(elem)∈dom(Rail_Elem_Pos_Conn(elem)))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
-<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒sgmt∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR∧(∀ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀tvdState⦂TVD_STATE·tvdState∈TVD_STATE⇒⊤∧¬⊥">
-<org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p59" org.eventb.core.predicate="finite(RAIL_SGMT)"/>
-<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∃elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))∧Path_Sgmt[{p}]=Rail_Elem_Pos_Conn(elem)(Path_Elem_Pos(p)(elem)))">
-<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
-<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 <org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p47" org.eventb.core.predicate="∀p⦂PATH·⊤⇒¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒(∀ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·sgmt∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR∧(Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM))"/>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒Default_Elem_Pos(elem)∈dom(Rail_Elem_Pos_Conn(elem))">
+<org.eventb.core.prIdent name="Default_Elem_Pos" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒sgmt∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR∧(∀ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM)"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀tvdState⦂TVD_STATE·tvdState∈TVD_STATE⇒⊤∧¬⊥">
+<org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="finite(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀p⦂PATH·⊤⇒¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p78" org.eventb.core.predicate="Signal_Aspect_Avail∈SIGNAL  SIGNAL_ASPECT">
+<org.eventb.core.prPred name="p72" org.eventb.core.predicate="Signal_Aspect_Avail∈SIGNAL  SIGNAL_ASPECT">
 <org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
 <org.eventb.core.prIdent name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
 <org.eventb.core.prIdent name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p39" org.eventb.core.predicate="∀p⦂PATH·⊤⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀p⦂PATH·⊤⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀ector⦂RAIL_CTOR·ector∈Elem_Ctor⇒finite(Elem_Ctor)"/>
-<org.eventb.core.prPred name="p43" org.eventb.core.predicate="Elem_Ctor∈ℙ(RAIL_CTOR)"/>
-<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀sig⦂SIGNAL·⊤⇒Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]">
-<org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
-<org.eventb.core.prIdent name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Default" org.eventb.core.type="SIGNAL_ASPECT"/>
-</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="Elem_Ctor∈ℙ(RAIL_CTOR)"/>
 <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒finite(RAIL_ELEM)"/>
 <org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Elem_Pos(p)≠(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p44" org.eventb.core.predicate="⊤⇒finite(RAIL_CTOR)"/>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="⊤⇒finite(RAIL_CTOR)"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀ctor⦂RAIL_CTOR·ctor∈RAIL_CTOR⇒finite(RAIL_CTOR)"/>
-<org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)">
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p61" org.eventb.core.predicate="finite(RAIL_CTOR)"/>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·Default_Elem_Pos(elem)∈dom(Rail_Elem_Pos_Conn(elem))">
+<org.eventb.core.prIdent name="Default_Elem_Pos" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="finite(RAIL_CTOR)"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Rail_Elem_Ctor∈Elem_Ctor ↠ RAIL_ELEM"/>
-<org.eventb.core.prPred name="p37" org.eventb.core.predicate="∀p⦂PATH·⊤⇒finite(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀p⦂PATH·⊤⇒finite(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p50" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·⊤⇒sgmt∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR∧(∀ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM)"/>
-<org.eventb.core.prPred name="p23" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH">
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·⊤⇒sgmt∈dom(Sgmt_Ctor)∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR∧(∀ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p67" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈dom(Sgmt_Ctor)"/>
-<org.eventb.core.prPred name="p63" org.eventb.core.predicate="∀p⦂PATH·¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈dom(Sgmt_Ctor)"/>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀elem⦂RAIL_ELEM,pos⦂RAIL_POS·elem ↦ pos∈Path_Elem_Pos(p)⇒(∃sgmt⦂RAIL_SGMT·sgmt∈Path_Sgmt[{p}]∩Rail_Elem_Pos_Conn(elem)(pos)))">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="∀p⦂PATH·¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p72" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT,ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM"/>
-<org.eventb.core.prPred name="p60" org.eventb.core.predicate="∀sig⦂SIGNAL·Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]">
-<org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
-<org.eventb.core.prIdent name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Default" org.eventb.core.type="SIGNAL_ASPECT"/>
-</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p66" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT,ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM"/>
 <org.eventb.core.prPred name="p9" org.eventb.core.predicate="TVD_STATE={Vacant,Occupied}">
 <org.eventb.core.prIdent name="Occupied" org.eventb.core.type="TVD_STATE"/>
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p48" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2))">
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 </org.eventb.core.prPred>
@@ -1029,21 +1064,15 @@
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL⇒Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]">
-<org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
-<org.eventb.core.prIdent name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Default" org.eventb.core.type="SIGNAL_ASPECT"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p74" org.eventb.core.predicate="Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2">
+<org.eventb.core.prPred name="p68" org.eventb.core.predicate="Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2">
 <org.eventb.core.prIdent name="ctor1" org.eventb.core.type="RAIL_CTOR"/>
 <org.eventb.core.prIdent name="ctor2" org.eventb.core.type="RAIL_CTOR"/>
 <org.eventb.core.prIdent name="sgmt" org.eventb.core.type="RAIL_SGMT"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p80" org.eventb.core.predicate="Rail_Link∈RAIL_CTOR ⤖ RAIL_CTOR">
+<org.eventb.core.prPred name="p74" org.eventb.core.predicate="Rail_Link∈RAIL_CTOR ⤖ RAIL_CTOR">
 <org.eventb.core.prIdent name="Rail_Link" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p52" org.eventb.core.predicate="Path_Exc=Path_Exc∼">
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="Path_Exc=Path_Exc∼">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
@@ -1052,223 +1081,216 @@
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈ran(Rail_Elem_Ctor)"/>
-<org.eventb.core.prPred name="p82" org.eventb.core.predicate="Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧sgmt1≠sgmt2⇒Rail_Sgmt_Elem(sgmt1)≠Rail_Sgmt_Elem(sgmt2))">
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="∀p⦂PATH,elem⦂RAIL_ELEM,pos⦂RAIL_POS·elem ↦ pos∈Path_Elem_Pos(p)⇒(∃sgmt⦂RAIL_SGMT·sgmt∈Path_Sgmt[{p}]∩Rail_Elem_Pos_Conn(elem)(pos))">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p76" org.eventb.core.predicate="Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧sgmt1≠sgmt2⇒Rail_Sgmt_Elem(sgmt1)≠Rail_Sgmt_Elem(sgmt2))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p58" org.eventb.core.predicate="∀p⦂PATH·card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="∀p⦂PATH·card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p45" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∃seg⦂RAIL_SGMT,ctor2⦂RAIL_CTOR·seg∈Path_Sgmt[{p}]∧Path_Ctor_Beg(p) ↦ ctor2=Sgmt_Ctor(seg))">
-<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="Path_Ctor_Beg" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
-<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p27" org.eventb.core.predicate="⊤⇒Path_Exc=Path_Exc∼">
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="⊤⇒Path_Exc=Path_Exc∼">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Sgmt_Ctor∈RAIL_SGMT → Elem_Ctor × Elem_Ctor"/>
-<org.eventb.core.prPred name="p25" org.eventb.core.predicate="⊤⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="⊤⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p84" org.eventb.core.predicate="Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒⊤"/>
-<org.eventb.core.prPred name="p66" org.eventb.core.predicate="(∀sgmt⦂RAIL_SGMT·sgmt∈dom(Sgmt_Ctor))∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR∧(∀sgmt⦂RAIL_SGMT,ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM)"/>
-<org.eventb.core.prPred name="p46" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∃seg⦂RAIL_SGMT,ctor2⦂RAIL_CTOR·seg∈Path_Sgmt[{p}]∧Path_Ctor_Beg(p) ↦ ctor2=Sgmt_Ctor(seg))">
-<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="Path_Ctor_Beg" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
-<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p62" org.eventb.core.predicate="∀p⦂PATH·∃seg⦂RAIL_SGMT,ctor2⦂RAIL_CTOR·seg∈Path_Sgmt[{p}]∧Path_Ctor_Beg(p) ↦ ctor2=Sgmt_Ctor(seg)">
-<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="Path_Ctor_Beg" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
-<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p78" org.eventb.core.predicate="Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM"/>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="(∀sgmt⦂RAIL_SGMT·sgmt∈dom(Sgmt_Ctor))∧Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR∧(∀sgmt⦂RAIL_SGMT,ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM)"/>
 <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Vacant=Occupied">
 <org.eventb.core.prIdent name="Occupied" org.eventb.core.type="TVD_STATE"/>
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p81" org.eventb.core.predicate="Signal_Ctor∈SIGNAL → Elem_Ctor">
+<org.eventb.core.prPred name="p75" org.eventb.core.predicate="Signal_Ctor∈SIGNAL → Elem_Ctor">
 <org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
 <org.eventb.core.prIdent name="Signal_Ctor" org.eventb.core.type="ℙ(SIGNAL×RAIL_CTOR)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p76" org.eventb.core.predicate="ctor1∈dom(Rail_Elem_Ctor)">
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒Default_Elem_Pos(elem)∈dom(Rail_Elem_Pos_Conn(elem))">
+<org.eventb.core.prIdent name="Default_Elem_Pos" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p70" org.eventb.core.predicate="ctor1∈dom(Rail_Elem_Ctor)">
 <org.eventb.core.prIdent name="ctor1" org.eventb.core.type="RAIL_CTOR"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p54" org.eventb.core.predicate="finite(RAIL_ELEM)"/>
-<org.eventb.core.prPred name="p70" org.eventb.core.predicate="⊤"/>
-<org.eventb.core.prPred name="p77" org.eventb.core.predicate="Path_Ctor_End∈PATH ↔ Elem_Ctor">
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="finite(RAIL_ELEM)"/>
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p71" org.eventb.core.predicate="Path_Ctor_End∈PATH ↔ Elem_Ctor">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Ctor_End" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p64" org.eventb.core.predicate="∀p⦂PATH,sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2)">
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="∀p⦂PATH,elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))⇒Path_Elem_Pos(p)(elem)∈dom(Rail_Elem_Pos_Conn(elem))">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="∀p⦂PATH,sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2)">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p30" org.eventb.core.predicate="⊤⇒finite(RAIL_ELEM)"/>
-<org.eventb.core.prPred name="p33" org.eventb.core.predicate="Path_Sgmt∈PATH ↔ RAIL_SGMT">
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="⊤⇒finite(RAIL_ELEM)"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="Path_Sgmt∈PATH ↔ RAIL_SGMT">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p69" org.eventb.core.predicate="sgmt∈RAIL_SGMT">
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="sgmt∈RAIL_SGMT">
 <org.eventb.core.prIdent name="sgmt" org.eventb.core.type="RAIL_SGMT"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒finite(RAIL_SGMT)"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒card(Rail_Elem_Ctor∼[{elem}])≥1"/>
-<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p53" org.eventb.core.predicate="finite(PATH)">
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="finite(PATH)">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p73" org.eventb.core.predicate="Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM">
+<org.eventb.core.prPred name="p67" org.eventb.core.predicate="Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM">
 <org.eventb.core.prIdent name="ctor1" org.eventb.core.type="RAIL_CTOR"/>
 <org.eventb.core.prIdent name="ctor2" org.eventb.core.type="RAIL_CTOR"/>
 <org.eventb.core.prIdent name="sgmt" org.eventb.core.type="RAIL_SGMT"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p32" org.eventb.core.predicate="⊤⇒finite(RAIL_POS)">
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="⊤⇒finite(RAIL_POS)">
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p49" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒elem∈ran(Rail_Elem_Ctor)"/>
 <org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2))">
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∃elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))∧Path_Sgmt[{p}]=Rail_Elem_Pos_Conn(elem)(Path_Elem_Pos(p)(elem)))">
-<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
-<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
-<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p71" org.eventb.core.predicate="Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR"/>
-<org.eventb.core.prPred name="p75" org.eventb.core.predicate="ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM">
+<org.eventb.core.prPred name="p65" org.eventb.core.predicate="Sgmt_Ctor∈RAIL_SGMT ⇸ RAIL_CTOR × RAIL_CTOR"/>
+<org.eventb.core.prPred name="p69" org.eventb.core.predicate="ctor1∈dom(Rail_Elem_Ctor)∧Rail_Elem_Ctor∈RAIL_CTOR ⇸ RAIL_ELEM∧sgmt∈dom(Rail_Sgmt_Elem)∧Rail_Sgmt_Elem∈RAIL_SGMT ⇸ RAIL_ELEM">
 <org.eventb.core.prIdent name="ctor1" org.eventb.core.type="RAIL_CTOR"/>
 <org.eventb.core.prIdent name="sgmt" org.eventb.core.type="RAIL_SGMT"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼">
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p51" org.eventb.core.predicate="Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p56" org.eventb.core.predicate="∀p⦂PATH·∃elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))∧Path_Sgmt[{p}]=Rail_Elem_Pos_Conn(elem)(Path_Elem_Pos(p)(elem))">
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀elem⦂RAIL_ELEM,pos⦂RAIL_POS·elem ↦ pos∈Path_Elem_Pos(p)⇒(∃sgmt⦂RAIL_SGMT·sgmt∈Path_Sgmt[{p}]∩Rail_Elem_Pos_Conn(elem)(pos)))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 <org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒⊤">
-<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p83" org.eventb.core.predicate="sgmt∈dom(Rail_Sgmt_Elem)">
+<org.eventb.core.prPred name="p77" org.eventb.core.predicate="sgmt∈dom(Rail_Sgmt_Elem)">
 <org.eventb.core.prIdent name="sgmt" org.eventb.core.type="RAIL_SGMT"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Rail_Sgmt_Elem∈RAIL_SGMT → RAIL_ELEM"/>
-<org.eventb.core.prPred name="p29" org.eventb.core.predicate="⊤⇒finite(PATH)">
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="⊤⇒finite(PATH)">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prExpr name="e0" org.eventb.core.expression="RAIL_SGMT"/>
-<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
-<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
-<org.eventb.core.prReas name="r9" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-<org.eventb.core.prReas name="r10" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
-<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
 <org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
 <org.eventb.core.prReas name="r11" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r10" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r9" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="cd_axm4/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="elem" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="RAIL_CTOR,RAIL_ELEM">
+<org.eventb.core.prProof name="cd_axm4/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="elem" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.prSets="RAIL_CTOR,RAIL_ELEM,RAIL_SGMT">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TVD_STATE,{Vacant},{Occupied}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8"/>
-<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TVD_STATE,{Vacant},{Occupied}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
-<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p14"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p7,p8" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="p11,p12" org.eventb.core.prInfHyps="p15"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
-<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p17"/>
-<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p11"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p46">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
-<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
-<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
-<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
-<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
-<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p29"/>
-<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p31"/>
-<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p33"/>
-<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
-<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p37"/>
-<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
-<org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p40"/>
-<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p41"/>
-<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p42" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
-<org.eventb.core.prHypAction name="REWRITE15" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p44"/>
-<org.eventb.core.prHypAction name="REWRITE16" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p45"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p46" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p61">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48"/>
-<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p49"/>
-<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p50"/>
-<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p51"/>
-<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p31" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p52"/>
-<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
-<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54"/>
-<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p55"/>
-<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56"/>
-<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p41" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p57"/>
-<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p43" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p58"/>
-<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p44" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p59"/>
-<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p45" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p60"/>
-<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees elem)" org.eventb.core.prGoal="p61" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p62">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p20">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p20" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p52">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p31"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p32"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p36"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p41" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p42"/>
+<org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p43"/>
+<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p44"/>
+<org.eventb.core.prHypAction name="REWRITE15" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p45"/>
+<org.eventb.core.prHypAction name="REWRITE16" org.eventb.core.prHidden="p46" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
+<org.eventb.core.prHypAction name="REWRITE17" org.eventb.core.prHidden="p48" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p49"/>
+<org.eventb.core.prHypAction name="REWRITE18" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p50"/>
+<org.eventb.core.prHypAction name="REWRITE19" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p51"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p52" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p70">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p55"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p57"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p58"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p59"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p60"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p61"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p62"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p42" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p63"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p44" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p64"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p45" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p65"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p47" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p66"/>
+<org.eventb.core.prHypAction name="REWRITE14" org.eventb.core.prHidden="p49" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p67"/>
+<org.eventb.core.prHypAction name="REWRITE15" org.eventb.core.prHidden="p50" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p68"/>
+<org.eventb.core.prHypAction name="REWRITE16" org.eventb.core.prHidden="p51" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p69"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees elem)" org.eventb.core.prGoal="p70" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p71">
 <org.eventb.core.prIdent name="elem" org.eventb.core.type="RAIL_ELEM"/>
 <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p63,p56,p64,p65,p7,p66,p58,p67,p8"/>
+<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p72,p67,p73,p74,p11,p66,p75,p12"/>
 <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p50"/>
-<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p62" org.eventb.core.prHyps="p1,p57,p3,p50,p4">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p56,p58,p8"/>
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p71" org.eventb.core.prHyps="p65,p56,p58,p2,p3,p64,p5,p6,p8">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R2000"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -1294,285 +1316,290 @@
 <org.eventb.core.prIdent name="Elem_Ctor" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
 <org.eventb.core.prIdent name="Rail_Elem_Ctor" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_ELEM)"/>
 <org.eventb.core.prIdent name="Rail_Link" org.eventb.core.type="ℙ(RAIL_CTOR×RAIL_CTOR)"/>
-<org.eventb.core.prPred name="p51" org.eventb.core.predicate="finite(RAIL_POS)">
+<org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="Sgmt_Ctor" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="finite(RAIL_POS)">
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p61" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈ran(Rail_Elem_Ctor)"/>
-<org.eventb.core.prPred name="p65" org.eventb.core.predicate="Path_Ctor_Beg∈PATH → Elem_Ctor">
-<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="Path_Ctor_Beg" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀tvdState⦂TVD_STATE·tvdState∈TVD_STATE⇒TVD_STATE={Vacant,Occupied}∧¬Vacant=Occupied">
-<org.eventb.core.prIdent name="Occupied" org.eventb.core.type="TVD_STATE"/>
-<org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
-<org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p37" org.eventb.core.predicate="⊤⇒finite(RAIL_SGMT)">
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀pos⦂RAIL_POS·pos∈RAIL_POS⇒finite(RAIL_POS)">
-<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p53" org.eventb.core.predicate="∀p⦂PATH·finite(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p70" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈ran(Rail_Elem_Ctor)"/>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))⇒Path_Elem_Pos(p)(elem)∈dom(Rail_Elem_Pos_Conn(elem)))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
-<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
-<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀tvdState⦂TVD_STATE·tvdState∈TVD_STATE⇒⊤∧¬⊥">
-<org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p55" org.eventb.core.predicate="finite(RAIL_SGMT)">
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∃elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))∧Path_Sgmt[{p}]=Rail_Elem_Pos_Conn(elem)(Path_Elem_Pos(p)(elem)))">
-<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
-<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
 <org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p44" org.eventb.core.predicate="∀p⦂PATH·⊤⇒¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒(∀ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒Rail_Elem_Ctor(ctor1)=Rail_Sgmt_Elem(sgmt))"/>
+<org.eventb.core.prPred name="p74" org.eventb.core.predicate="Path_Ctor_Beg∈PATH → Elem_Ctor">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Ctor_Beg" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀tvdState⦂TVD_STATE·tvdState∈TVD_STATE⇒TVD_STATE={Vacant,Occupied}∧¬Vacant=Occupied">
+<org.eventb.core.prIdent name="Occupied" org.eventb.core.type="TVD_STATE"/>
+<org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
+<org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="⊤⇒finite(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀pos⦂RAIL_POS·pos∈RAIL_POS⇒finite(RAIL_POS)">
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="∀p⦂PATH·finite(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p64" org.eventb.core.predicate="Signal_Aspect_Avail∈SIGNAL  SIGNAL_ASPECT">
-<org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
-<org.eventb.core.prIdent name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
-<org.eventb.core.prIdent name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))⇒Path_Elem_Pos(p)(elem)∈dom(Rail_Elem_Pos_Conn(elem)))">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀p⦂PATH·⊤⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀ector⦂RAIL_CTOR·ector∈Elem_Ctor⇒finite(Elem_Ctor)"/>
-<org.eventb.core.prPred name="p40" org.eventb.core.predicate="Elem_Ctor∈ℙ(RAIL_CTOR)"/>
-<org.eventb.core.prPred name="p39" org.eventb.core.predicate="∀sig⦂SIGNAL·⊤⇒Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]">
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒Default_Elem_Pos(elem)∈dom(Rail_Elem_Pos_Conn(elem))">
+<org.eventb.core.prIdent name="Default_Elem_Pos" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀tvdState⦂TVD_STATE·tvdState∈TVD_STATE⇒⊤∧¬⊥">
+<org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="finite(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="∀p⦂PATH·⊤⇒¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p73" org.eventb.core.predicate="Signal_Aspect_Avail∈SIGNAL  SIGNAL_ASPECT">
+<org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
+<org.eventb.core.prIdent name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
+<org.eventb.core.prIdent name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀p⦂PATH·⊤⇒card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀ector⦂RAIL_CTOR·ector∈Elem_Ctor⇒finite(Elem_Ctor)"/>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="Elem_Ctor∈ℙ(RAIL_CTOR)"/>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="∀sig⦂SIGNAL·⊤⇒Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]">
 <org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
 <org.eventb.core.prIdent name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
 <org.eventb.core.prIdent name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
 <org.eventb.core.prIdent name="Signal_Aspect_Default" org.eventb.core.type="SIGNAL_ASPECT"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒finite(RAIL_ELEM)"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Elem_Pos(p)≠(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒finite(RAIL_ELEM)"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Elem_Pos(p)≠(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p41" org.eventb.core.predicate="⊤⇒finite(RAIL_CTOR)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀ctor⦂RAIL_CTOR·ctor∈RAIL_CTOR⇒finite(RAIL_CTOR)"/>
-<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)">
+<org.eventb.core.prPred name="p65" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT,ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒Rail_Elem_Ctor(ctor1)=Rail_Sgmt_Elem(sgmt)"/>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="⊤⇒finite(RAIL_CTOR)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀ctor⦂RAIL_CTOR·ctor∈RAIL_CTOR⇒finite(RAIL_CTOR)"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p57" org.eventb.core.predicate="finite(RAIL_CTOR)"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Rail_Elem_Ctor∈Elem_Ctor ↠ RAIL_ELEM"/>
-<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀p⦂PATH·⊤⇒finite(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·Default_Elem_Pos(elem)∈dom(Rail_Elem_Pos_Conn(elem))">
+<org.eventb.core.prIdent name="Default_Elem_Pos" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="finite(RAIL_CTOR)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Rail_Elem_Ctor∈Elem_Ctor ↠ RAIL_ELEM"/>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀p⦂PATH·⊤⇒finite(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH">
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p59" org.eventb.core.predicate="∀p⦂PATH·¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀elem⦂RAIL_ELEM,pos⦂RAIL_POS·elem ↦ pos∈Path_Elem_Pos(p)⇒(∃sgmt⦂RAIL_SGMT·sgmt∈Path_Sgmt[{p}]∩Rail_Elem_Pos_Conn(elem)(pos)))">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p68" org.eventb.core.predicate="∀p⦂PATH·¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p56" org.eventb.core.predicate="∀sig⦂SIGNAL·Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]">
+<org.eventb.core.prPred name="p67" org.eventb.core.predicate="∀sig⦂SIGNAL·Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]">
 <org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
 <org.eventb.core.prIdent name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
 <org.eventb.core.prIdent name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
 <org.eventb.core.prIdent name="Signal_Aspect_Default" org.eventb.core.type="SIGNAL_ASPECT"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="TVD_STATE={Vacant,Occupied}">
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="TVD_STATE={Vacant,Occupied}">
 <org.eventb.core.prIdent name="Occupied" org.eventb.core.type="TVD_STATE"/>
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p45" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2))">
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(TVD_STATE,{Vacant},{Occupied})">
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="partition(TVD_STATE,{Vacant},{Occupied})">
 <org.eventb.core.prIdent name="Occupied" org.eventb.core.type="TVD_STATE"/>
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Rail_Link∈RAIL_CTOR ⤖ RAIL_CTOR"/>
-<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL⇒Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]">
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Rail_Link∈RAIL_CTOR ⤖ RAIL_CTOR"/>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL⇒Signal_Aspect_Default∈Signal_Aspect_Avail[{sig}]">
 <org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
 <org.eventb.core.prIdent name="SIGNAL_ASPECT" org.eventb.core.type="ℙ(SIGNAL_ASPECT)"/>
 <org.eventb.core.prIdent name="Signal_Aspect_Avail" org.eventb.core.type="ℙ(SIGNAL×SIGNAL_ASPECT)"/>
 <org.eventb.core.prIdent name="Signal_Aspect_Default" org.eventb.core.type="SIGNAL_ASPECT"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p48" org.eventb.core.predicate="Path_Exc=Path_Exc∼">
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="Path_Exc=Path_Exc∼">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀tvdState⦂TVD_STATE·tvdState∈TVD_STATE⇒partition(TVD_STATE,{Vacant},{Occupied})">
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀tvdState⦂TVD_STATE·tvdState∈TVD_STATE⇒partition(TVD_STATE,{Vacant},{Occupied})">
 <org.eventb.core.prIdent name="Occupied" org.eventb.core.type="TVD_STATE"/>
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈ran(Rail_Elem_Ctor)"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧sgmt1≠sgmt2⇒Rail_Sgmt_Elem(sgmt1)≠Rail_Sgmt_Elem(sgmt2))">
-<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p54" org.eventb.core.predicate="∀p⦂PATH·card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="∀p⦂PATH,elem⦂RAIL_ELEM,pos⦂RAIL_POS·elem ↦ pos∈Path_Elem_Pos(p)⇒(∃sgmt⦂RAIL_SGMT·sgmt∈Path_Sgmt[{p}]∩Rail_Elem_Pos_Conn(elem)(pos))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∃seg⦂RAIL_SGMT,ctor2⦂RAIL_CTOR·seg∈Path_Sgmt[{p}]∧Path_Ctor_Beg(p) ↦ ctor2=Sgmt_Ctor(seg))">
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒elem∈ran(Rail_Elem_Ctor)"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧sgmt1≠sgmt2⇒Rail_Sgmt_Elem(sgmt1)≠Rail_Sgmt_Elem(sgmt2))">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="∀p⦂PATH·card(Path_Sgmt[{p}])=card(Path_Elem_Pos(p))">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∃seg⦂RAIL_SGMT,ctor2⦂RAIL_CTOR·seg∈Path_Sgmt[{p}]∧Path_Ctor_Beg(p) ↦ ctor2=Sgmt_Ctor(seg))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Ctor_Beg" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="Sgmt_Ctor" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p23" org.eventb.core.predicate="⊤⇒Path_Exc=Path_Exc∼">
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="⊤⇒Path_Exc=Path_Exc∼">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p66" org.eventb.core.predicate="Sgmt_Ctor∈RAIL_SGMT → Elem_Ctor × Elem_Ctor">
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="Sgmt_Ctor" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="⊤⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Sgmt_Ctor∈RAIL_SGMT → Elem_Ctor × Elem_Ctor"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="⊤⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒⊤"/>
-<org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∃seg⦂RAIL_SGMT,ctor2⦂RAIL_CTOR·seg∈Path_Sgmt[{p}]∧Path_Ctor_Beg(p) ↦ ctor2=Sgmt_Ctor(seg))">
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∃seg⦂RAIL_SGMT,ctor2⦂RAIL_CTOR·seg∈Path_Sgmt[{p}]∧Path_Ctor_Beg(p) ↦ ctor2=Sgmt_Ctor(seg))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Ctor_Beg" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="Sgmt_Ctor" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p58" org.eventb.core.predicate="∀p⦂PATH·∃seg⦂RAIL_SGMT,ctor2⦂RAIL_CTOR·seg∈Path_Sgmt[{p}]∧Path_Ctor_Beg(p) ↦ ctor2=Sgmt_Ctor(seg)">
+<org.eventb.core.prPred name="p66" org.eventb.core.predicate="∀p⦂PATH·∃seg⦂RAIL_SGMT,ctor2⦂RAIL_CTOR·seg∈Path_Sgmt[{p}]∧Path_Ctor_Beg(p) ↦ ctor2=Sgmt_Ctor(seg)">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Ctor_Beg" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="Sgmt_Ctor" org.eventb.core.type="ℙ(RAIL_SGMT×(RAIL_CTOR×RAIL_CTOR))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Vacant=Occupied">
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Vacant=Occupied">
 <org.eventb.core.prIdent name="Occupied" org.eventb.core.type="TVD_STATE"/>
 <org.eventb.core.prIdent name="TVD_STATE" org.eventb.core.type="ℙ(TVD_STATE)"/>
 <org.eventb.core.prIdent name="Vacant" org.eventb.core.type="TVD_STATE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p67" org.eventb.core.predicate="Signal_Ctor∈SIGNAL → Elem_Ctor">
+<org.eventb.core.prPred name="p75" org.eventb.core.predicate="Signal_Ctor∈SIGNAL → Elem_Ctor">
 <org.eventb.core.prIdent name="SIGNAL" org.eventb.core.type="ℙ(SIGNAL)"/>
 <org.eventb.core.prIdent name="Signal_Ctor" org.eventb.core.type="ℙ(SIGNAL×RAIL_CTOR)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p50" org.eventb.core.predicate="finite(RAIL_ELEM)"/>
-<org.eventb.core.prPred name="p63" org.eventb.core.predicate="Path_Ctor_End∈PATH ↔ Elem_Ctor">
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒Default_Elem_Pos(elem)∈dom(Rail_Elem_Pos_Conn(elem))">
+<org.eventb.core.prIdent name="Default_Elem_Pos" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS)"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="finite(RAIL_ELEM)"/>
+<org.eventb.core.prPred name="p72" org.eventb.core.predicate="Path_Ctor_End∈PATH ↔ Elem_Ctor">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Ctor_End" org.eventb.core.type="ℙ(PATH×RAIL_CTOR)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p60" org.eventb.core.predicate="∀p⦂PATH,sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2)">
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·⊤⇒(∀ctor1⦂RAIL_CTOR,ctor2⦂RAIL_CTOR·Sgmt_Ctor(sgmt)=ctor1 ↦ ctor2⇒Rail_Elem_Ctor(ctor1)=Rail_Sgmt_Elem(sgmt))"/>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="∀p⦂PATH,elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))⇒Path_Elem_Pos(p)(elem)∈dom(Rail_Elem_Pos_Conn(elem))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
+<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
+<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
+<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p26" org.eventb.core.predicate="⊤⇒finite(RAIL_ELEM)"/>
-<org.eventb.core.prPred name="p29" org.eventb.core.predicate="Path_Sgmt∈PATH ↔ RAIL_SGMT">
+<org.eventb.core.prPred name="p69" org.eventb.core.predicate="∀p⦂PATH,sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2)">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="⊤⇒finite(RAIL_ELEM)"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="Path_Sgmt∈PATH ↔ RAIL_SGMT">
+<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·elem∈RAIL_ELEM⇒card(Rail_Elem_Ctor∼[{elem}])≥1"/>
-<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒finite(RAIL_SGMT)">
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT·sgmt∈RAIL_SGMT⇒finite(RAIL_SGMT)"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p49" org.eventb.core.predicate="finite(PATH)">
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="finite(PATH)">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p28" org.eventb.core.predicate="⊤⇒finite(RAIL_POS)">
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="⊤⇒finite(RAIL_POS)">
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p46" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒elem∈ran(Rail_Elem_Ctor)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀elem⦂RAIL_ELEM·⊤⇒elem∈ran(Rail_Elem_Ctor)"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒¬Path_Elem_Pos(p)=(∅ ⦂ ℙ(RAIL_ELEM×RAIL_POS))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2))">
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒(∀sgmt1⦂RAIL_SGMT,sgmt2⦂RAIL_SGMT·sgmt1∈Path_Sgmt[{p}]∧sgmt2∈Path_Sgmt[{p}]∧¬sgmt1=sgmt2⇒¬Rail_Sgmt_Elem(sgmt1)=Rail_Sgmt_Elem(sgmt2))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="Rail_Sgmt_Elem" org.eventb.core.type="ℙ(RAIL_SGMT×RAIL_ELEM)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∃elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))∧Path_Sgmt[{p}]=Rail_Elem_Pos_Conn(elem)(Path_Elem_Pos(p)(elem)))">
-<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-<org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
-<org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
-<org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼">
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(Path_Elem_Pos(p))">
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(Path_Elem_Pos(p))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p62" org.eventb.core.predicate="elem∈ran(Rail_Elem_Ctor)">
+<org.eventb.core.prPred name="p71" org.eventb.core.predicate="elem∈ran(Rail_Elem_Ctor)">
 <org.eventb.core.prIdent name="elem" org.eventb.core.type="RAIL_ELEM"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p47" org.eventb.core.predicate="Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀p⦂PATH·∃elem⦂RAIL_ELEM·elem∈dom(Path_Elem_Pos(p))∧Path_Sgmt[{p}]=Rail_Elem_Pos_Conn(elem)(Path_Elem_Pos(p)(elem))">
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀p⦂PATH·⊤⇒(∀elem⦂RAIL_ELEM,pos⦂RAIL_POS·elem ↦ pos∈Path_Elem_Pos(p)⇒(∃sgmt⦂RAIL_SGMT·sgmt∈Path_Sgmt[{p}]∩Rail_Elem_Pos_Conn(elem)(pos)))">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 <org.eventb.core.prIdent name="Path_Elem_Pos" org.eventb.core.type="ℙ(PATH×ℙ(RAIL_ELEM×RAIL_POS))"/>
 <org.eventb.core.prIdent name="Path_Sgmt" org.eventb.core.type="ℙ(PATH×RAIL_SGMT)"/>
 <org.eventb.core.prIdent name="RAIL_POS" org.eventb.core.type="ℙ(RAIL_POS)"/>
-<org.eventb.core.prIdent name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
 <org.eventb.core.prIdent name="Rail_Elem_Pos_Conn" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_POS×ℙ(RAIL_SGMT)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒⊤">
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="Rail_Sgmt_Elem∈RAIL_SGMT → RAIL_ELEM"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="⊤⇒finite(PATH)">
 <org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p25" org.eventb.core.predicate="⊤⇒finite(PATH)">
-<org.eventb.core.prIdent name="PATH" org.eventb.core.type="ℙ(PATH)"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
 <org.eventb.core.prReas name="r6" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 </org.eventb.core.prProof>
 </org.eventb.core.prFile>
