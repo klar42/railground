@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
 <org.eventb.core.extendsContext name="'" org.eventb.core.target="C4_VacancyDetection_instantiation"/>
+<org.eventb.core.extendsContext name="7" org.eventb.core.target="C5_Signal_ctx"/>
 <org.eventb.core.constant name=")" org.eventb.core.identifier="S1"/>
 <org.eventb.core.constant name="*" org.eventb.core.identifier="S2"/>
 <org.eventb.core.constant name="+" org.eventb.core.identifier="S3"/>
@@ -15,7 +16,6 @@
 <org.eventb.core.constant name="3" org.eventb.core.identifier="SIGNAL_ASPECT_STOP"/>
 <org.eventb.core.constant name="4" org.eventb.core.identifier="SIGNAL_ASPECT_PROCEED"/>
 <org.eventb.core.axiom name="6" org.eventb.core.label="SIGNAL_ASPECT_enum" org.eventb.core.predicate="partition(SIGNAL_ASPECT, {SIGNAL_ASPECT_STOP}, {SIGNAL_ASPECT_PROCEED})"/>
-<org.eventb.core.extendsContext name="7" org.eventb.core.target="C5_Signal_ctx"/>
 <org.eventb.core.axiom name="8" org.eventb.core.label="RAIL_STOR_enum" org.eventb.core.predicate="partition(RAIL_CTOR,&#10;&#9;{E1E}, {E2E}, {E3E}, {E4E},&#10;&#9;{T1A}, {T1B}, {T2A}, {T2B}, {T3A}, {T3B}, {T4A}, {T4B}, {T5A}, {T5B}, {T6A}, {T6B}, {T7A}, {T7B}, {T8A}, {T8B},&#10;&#9;{P1T}, {P1L}, {P1R}, {P2T}, {P2L}, {P2R}, {P3T}, {P3L}, {P3R}, {P4T}, {P4L}, {P4R},&#10;&#9;{C1A}, {C1B}, {C1C}, {C1D}&#10;)"/>
 <org.eventb.core.constant name="9" org.eventb.core.identifier="E1E"/>
 <org.eventb.core.constant name=":" org.eventb.core.identifier="E2E"/>
