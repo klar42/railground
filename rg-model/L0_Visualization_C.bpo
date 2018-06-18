@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="3">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.poIdentifier name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
@@ -113,5 +113,5 @@
 <org.eventb.core.poIdentifier name="SIGNAL_ASPECT_PATH" org.eventb.core.type="ℙ(PATH_ENUM×SIGNAL_ASPECT_ENUM)"/>
 <org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMI" org.eventb.core.predicate="SIGNAL_ASPECT_PATH∈PATH_ENUM → SIGNAL_ASPECT_ENUM" org.eventb.core.source="/RailGround/L8_SignalDependency_C.buc|org.eventb.core.contextFile#L8_SignalDependency_C|org.eventb.core.axiom#axm1"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization_C.bpo|org.eventb.core.poFile#L0_Visualization_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L0_Visualization_C.bpo|org.eventb.core.poFile#L0_Visualization_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
 </org.eventb.core.poFile>

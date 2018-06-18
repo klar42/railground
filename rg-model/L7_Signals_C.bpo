@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="3">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.poIdentifier name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
@@ -105,20 +105,20 @@
 <org.eventb.core.poIdentifier name="SIGNAL_ASPECT_DEFAULT" org.eventb.core.type="SIGNAL_ASPECT_ENUM"/>
 <org.eventb.core.poIdentifier name="SIGNAL_CTOR" org.eventb.core.type="ℙ(SIGNAL×RAIL_CTOR)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="SIGNAL_ASPECT_DEFAULT·avail/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="3">
+<org.eventb.core.poSequent name="SIGNAL_ASPECT_DEFAULT·avail/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L7_Signals_C.bpo|org.eventb.core.poFile#L7_Signals_C|org.eventb.core.poPredicateSet#HYPL6_OccupationImpact_H"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL⇒sig∈dom(SIGNAL_ASPECT_AVAIL)∧SIGNAL_ASPECT_AVAIL∈SIGNAL ⇸ ℙ(SIGNAL_ASPECT_ENUM)" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm6"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm6"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L7_Signals_C.bpo|org.eventb.core.poFile#L7_Signals_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/RailGround/L7_Signals_C.bpo|org.eventb.core.poFile#L7_Signals_C|org.eventb.core.poPredicateSet#HYPL6_OccupationImpact_H"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="HYPL6_OccupationImpact_H" org.eventb.core.parentSet="/RailGround/L7_Signals_C.bpo|org.eventb.core.poFile#L7_Signals_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="HYPL6_OccupationImpact_H" org.eventb.core.parentSet="/RailGround/L7_Signals_C.bpo|org.eventb.core.poFile#L7_Signals_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="finite(SIGNAL)" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm1"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="finite(SIGNAL_ASPECT_ENUM)" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm2"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="SIGNAL_CTOR∈SIGNAL → RAIL_CTOR" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm3"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="SIGNAL_ASPECT_AVAIL∈SIGNAL → ℙ1(SIGNAL_ASPECT_ENUM)" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm4"/>
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="SIGNAL_ASPECT_DEFAULT∈SIGNAL_ASPECT_ENUM" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm5"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L7_Signals_C.bpo|org.eventb.core.poFile#L7_Signals_C|org.eventb.core.poPredicateSet#HYPL6_OccupationImpact_H" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L7_Signals_C.bpo|org.eventb.core.poFile#L7_Signals_C|org.eventb.core.poPredicateSet#HYPL6_OccupationImpact_H" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="∀sig⦂SIGNAL·sig∈SIGNAL⇒SIGNAL_ASPECT_DEFAULT∈SIGNAL_ASPECT_AVAIL(sig)" org.eventb.core.source="/RailGround/L7_Signals_C.buc|org.eventb.core.contextFile#L7_Signals_C|org.eventb.core.axiom#axm6"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

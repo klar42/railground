@@ -96,8 +96,8 @@
 <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/RailGround/L2_ElementPosition.bpo|org.eventb.core.poFile#L2_ElementPosition|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
 </org.eventb.core.poSequent>
 <org.eventb.core.poPredicateSet name="EVTIDENTL2_ElementPosition_G" org.eventb.core.parentSet="/RailGround/L2_ElementPosition.bpo|org.eventb.core.poFile#L2_ElementPosition|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poIdentifier name="RAIL_ELEM_POS_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS_ENUM)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM_CONN_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+<org.eventb.core.poIdentifier name="RAIL_ELEM_POS_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS_ENUM)"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTALLHYPL2_ElementPosition_G" org.eventb.core.parentSet="/RailGround/L2_ElementPosition.bpo|org.eventb.core.poFile#L2_ElementPosition|org.eventb.core.poPredicateSet#EVTIDENTL2_ElementPosition_G" org.eventb.core.poStamp="0"/>
 <org.eventb.core.poSequent name="set_RAIL_ELEM_POS_CURR/pos·valid/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
@@ -154,11 +154,11 @@
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RailGround/L2_ElementPosition.bpo|org.eventb.core.poFile#L2_ElementPosition|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L2_ElementPosition.bpo|org.eventb.core.poFile#L2_ElementPosition|org.eventb.core.poSequent#set_RAIL_ELEM_POS_CURR\/conn·valid\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
 </org.eventb.core.poSequent>
 <org.eventb.core.poPredicateSet name="EVTIDENTL2_ElementPosition_H" org.eventb.core.parentSet="/RailGround/L2_ElementPosition.bpo|org.eventb.core.poFile#L2_ElementPosition|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poIdentifier name="RAIL_ELEM_POS_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS_ENUM)"/>
-<org.eventb.core.poIdentifier name="pos" org.eventb.core.type="RAIL_POS_ENUM"/>
-<org.eventb.core.poIdentifier name="conn" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM_CONN_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
+<org.eventb.core.poIdentifier name="pos" org.eventb.core.type="RAIL_POS_ENUM"/>
 <org.eventb.core.poIdentifier name="elem" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="conn" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
+<org.eventb.core.poIdentifier name="RAIL_ELEM_POS_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS_ENUM)"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTHYPL2_ElementPosition_H(" org.eventb.core.parentSet="/RailGround/L2_ElementPosition.bpo|org.eventb.core.poFile#L2_ElementPosition|org.eventb.core.poPredicateSet#EVTIDENTL2_ElementPosition_H" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="elem∈RAIL_ELEM" org.eventb.core.source="/RailGround/L2_ElementPosition.bum|org.eventb.core.machineFile#L2_ElementPosition|org.eventb.core.event#evt1|org.eventb.core.guard#)"/>

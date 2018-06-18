@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="3">
-<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.poIdentifier name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
@@ -100,7 +100,7 @@
 <org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMA" org.eventb.core.predicate="TVD_SGMT_SECT∈RAIL_SGMT → TVD_SECT" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#4"/>
 <org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUMB" org.eventb.core.predicate="partition(TVD_STATE_ENUM,{TVD_STATE_VACANT},{TVD_STATE_OCCUPIED})" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#\/"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="PATH_CURR" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="PATH_REL" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="PATH_REQ" org.eventb.core.type="ℙ(PATH_ENUM)"/>
@@ -125,7 +125,7 @@
 <org.eventb.core.poPredicate name="RAIL_ELEM_PATH_CURa" org.eventb.core.predicate="PATH_REL∈ℙ(PATH_ENUM)" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.invariant#var="/>
 <org.eventb.core.poPredicate name="RAIL_ELEM_PATH_CURb" org.eventb.core.predicate="∀path⦂PATH_ENUM·path∈PATH_CURR⇒PATH_EXCL[{path}]∩PATH_CURR=(∅ ⦂ ℙ(PATH_ENUM))" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.invariant#var:"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="INITIALISATION/TVDS_STATE_CURR·type/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poSequent name="INITIALISATION/TVDS_STATE_CURR·type/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTALLHYPL5_VacancyDetection_E"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TVD_SECT × {TVD_STATE_VACANT}∈TVD_SECT → TVD_STATE_ENUM" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.invariant#var5"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#("/>
@@ -134,21 +134,21 @@
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poSequent#INITIALISATION\/TVDS_STATE_CURR·type\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_E" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="2">
-<org.eventb.core.poIdentifier name="RAIL_ELEM_POS_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS_ENUM)"/>
-<org.eventb.core.poIdentifier name="PATH_REQ'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_E" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="PATH_REL'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
-<org.eventb.core.poIdentifier name="TVDS_STATE_CURR'" org.eventb.core.type="ℙ(TVD_SECT×TVD_STATE_ENUM)"/>
-<org.eventb.core.poIdentifier name="PATH_CURR'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM_PATH_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×PATH_ENUM)"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_E" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_E" org.eventb.core.poStamp="2"/>
-<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_F" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="PATH_REQ'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
+<org.eventb.core.poIdentifier name="PATH_CURR'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
+<org.eventb.core.poIdentifier name="TVDS_STATE_CURR'" org.eventb.core.type="ℙ(TVD_SECT×TVD_STATE_ENUM)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM_POS_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS_ENUM)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_E" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_E" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_F" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="pos" org.eventb.core.type="RAIL_POS_ENUM"/>
 <org.eventb.core.poIdentifier name="elem" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="RAIL_ELEM_POS_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_F" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_F" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_F" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_F" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="elem∈RAIL_ELEM" org.eventb.core.source="/RailGround/L2_ElementPosition.bum|org.eventb.core.machineFile#L2_ElementPosition|org.eventb.core.event#evt1|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pos∈dom(RAIL_ELEM_POS_CONN(elem))" org.eventb.core.source="/RailGround/L2_ElementPosition.bum|org.eventb.core.machineFile#L2_ElementPosition|org.eventb.core.event#evt1|org.eventb.core.guard#\/"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="pos≠RAIL_ELEM_POS_CURR(elem)" org.eventb.core.source="/RailGround/L2_ElementPosition.bum|org.eventb.core.machineFile#L2_ElementPosition|org.eventb.core.event#evt1|org.eventb.core.guard#,"/>
@@ -156,23 +156,23 @@
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="elem∉dom(RAIL_ELEM_PATH_CURR)" org.eventb.core.source="/RailGround/L3_Paths.bum|org.eventb.core.machineFile#L3_Paths|org.eventb.core.event#evt1|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="elem∉dom(union(PATH_ELEM_POS[PATH_REQ]))" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt1|org.eventb.core.guard#grd1"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_G" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
-<org.eventb.core.poIdentifier name="RAIL_ELEM_POS_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS_ENUM)"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_G" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="elem" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="RAIL_ELEM_POS_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×RAIL_POS_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_G" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_G" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_G" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_G" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="elem∈dom(union(PATH_ELEM_POS[PATH_REQ]))" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt2|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="elem∉dom(RAIL_ELEM_PATH_CURR)" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt2|org.eventb.core.guard#internal2"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="elem∈RAIL_ELEM" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt2|org.eventb.core.guard#internal1"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="union(PATH_ELEM_POS[PATH_REQ])(elem)≠RAIL_ELEM_POS_CURR(elem)" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt2|org.eventb.core.guard#internal4"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_H" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
-<org.eventb.core.poIdentifier name="PATH_REQ'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
-<org.eventb.core.poIdentifier name="path" org.eventb.core.type="PATH_ENUM"/>
-<org.eventb.core.poIdentifier name="PATH_CURR'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_H" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="RAIL_ELEM_PATH_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×PATH_ENUM)"/>
+<org.eventb.core.poIdentifier name="path" org.eventb.core.type="PATH_ENUM"/>
+<org.eventb.core.poIdentifier name="PATH_REQ'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
+<org.eventb.core.poIdentifier name="PATH_CURR'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_H" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_H" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_H" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_H" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="path∈PATH_ENUM" org.eventb.core.source="/RailGround/L3_Paths.bum|org.eventb.core.machineFile#L3_Paths|org.eventb.core.event#evt3|org.eventb.core.guard#grd1"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="path∉PATH_CURR" org.eventb.core.source="/RailGround/L3_Paths.bum|org.eventb.core.machineFile#L3_Paths|org.eventb.core.event#evt3|org.eventb.core.guard#grd2"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="path∉ran(RAIL_ELEM_PATH_CURR)" org.eventb.core.source="/RailGround/L3_Paths.bum|org.eventb.core.machineFile#L3_Paths|org.eventb.core.event#evt3|org.eventb.core.guard#grd6"/>
@@ -181,51 +181,51 @@
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="path∈PATH_REQ" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt3|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="PATH_EXCL[{path}]∩PATH_CURR=(∅ ⦂ ℙ(PATH_ENUM))" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt3|org.eventb.core.guard#*"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_I" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_I" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="PATH_REL'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
+<org.eventb.core.poIdentifier name="RAIL_ELEM_PATH_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="path" org.eventb.core.type="PATH_ENUM"/>
 <org.eventb.core.poIdentifier name="PATH_CURR'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
-<org.eventb.core.poIdentifier name="RAIL_ELEM_PATH_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×PATH_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_I" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_I" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_I" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_I" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="path∈PATH_CURR" org.eventb.core.source="/RailGround/L3_Paths.bum|org.eventb.core.machineFile#L3_Paths|org.eventb.core.event#evt4|org.eventb.core.guard#grd2"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="path∈PATH_ENUM" org.eventb.core.source="/RailGround/L3_Paths.bum|org.eventb.core.machineFile#L3_Paths|org.eventb.core.event#evt4|org.eventb.core.guard#grd1"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="path∈PATH_REL" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt4|org.eventb.core.guard#("/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_J" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
-<org.eventb.core.poIdentifier name="PATH_REQ'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_J" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="path" org.eventb.core.type="PATH_ENUM"/>
+<org.eventb.core.poIdentifier name="PATH_REQ'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_J" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_J" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_J" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_J" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="path∉PATH_CURR∪PATH_REQ" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt6|org.eventb.core.guard#grd2"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="path∈PATH_ENUM" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt6|org.eventb.core.guard#grd1"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="dom(PATH_ELEM_POS(path))∩dom(RAIL_ELEM_PATH_CURR)=(∅ ⦂ ℙ(RAIL_ELEM))" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt6|org.eventb.core.guard#grd4"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="dom(PATH_ELEM_POS(path))∩dom(union(PATH_ELEM_POS[PATH_REQ]))=(∅ ⦂ ℙ(RAIL_ELEM))" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt6|org.eventb.core.guard#grd5"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_K" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
-<org.eventb.core.poIdentifier name="PATH_REQ'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_K" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="path" org.eventb.core.type="PATH_ENUM"/>
+<org.eventb.core.poIdentifier name="PATH_REQ'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_K" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_K" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_K" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_K" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="path∈PATH_REQ" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt7|org.eventb.core.guard#grd2"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="path∈PATH_ENUM" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt7|org.eventb.core.guard#grd1"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_L" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_L" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="PATH_REL'" org.eventb.core.type="ℙ(PATH_ENUM)"/>
 <org.eventb.core.poIdentifier name="path" org.eventb.core.type="PATH_ENUM"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_L" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_L" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_L" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_L" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="path∈PATH_CURR" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt10|org.eventb.core.guard#grd2"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="path∈PATH_ENUM" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt10|org.eventb.core.guard#grd1"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="path∉PATH_REL" org.eventb.core.source="/RailGround/L4_PathLifecycle.bum|org.eventb.core.machineFile#L4_PathLifecycle|org.eventb.core.event#evt10|org.eventb.core.guard#grd4"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="set_TVDS_STATE_CURR/stat·diff/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="3">
+<org.eventb.core.poSequent name="set_TVDS_STATE_CURR/stat·diff/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTHYPL5_VacancyDetection_M("/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="sect∈dom(TVDS_STATE_CURR)∧TVDS_STATE_CURR∈TVD_SECT ⇸ TVD_STATE_ENUM" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.event#var6|org.eventb.core.guard#+"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.event#var6|org.eventb.core.guard#+"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTHYPL5_VacancyDetection_M("/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="set_TVDS_STATE_CURR/TVDS_STATE_CURR·type/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
+<org.eventb.core.poSequent name="set_TVDS_STATE_CURR/TVDS_STATE_CURR·type/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTALLHYPL5_VacancyDetection_M"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TVDS_STATE_CURR{sect ↦ stat}∈TVD_SECT → TVD_STATE_ENUM" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.invariant#var5"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.event#var6"/>
@@ -233,19 +233,19 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poSequent#set_TVDS_STATE_CURR\/TVDS_STATE_CURR·type\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_M" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTIDENTL5_VacancyDetection_M" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="stat" org.eventb.core.type="TVD_STATE_ENUM"/>
 <org.eventb.core.poIdentifier name="sect" org.eventb.core.type="TVD_SECT"/>
 <org.eventb.core.poIdentifier name="TVDS_STATE_CURR'" org.eventb.core.type="ℙ(TVD_SECT×TVD_STATE_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPL5_VacancyDetection_M(" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_M" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTHYPL5_VacancyDetection_M(" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTIDENTL5_VacancyDetection_M" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="sect∈TVD_SECT" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.event#var6|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="stat∈TVD_STATE_ENUM" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.event#var6|org.eventb.core.guard#*"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_M" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTHYPL5_VacancyDetection_M(" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTALLHYPL5_VacancyDetection_M" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#EVTHYPL5_VacancyDetection_M(" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="stat≠TVDS_STATE_CURR(sect)" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.event#var6|org.eventb.core.guard#+"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection.bpo|org.eventb.core.poFile#L5_VacancyDetection|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TVDS_STATE_CURR∈TVD_SECT → TVD_STATE_ENUM" org.eventb.core.source="/RailGround/L5_VacancyDetection.bum|org.eventb.core.machineFile#L5_VacancyDetection|org.eventb.core.invariant#var5"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

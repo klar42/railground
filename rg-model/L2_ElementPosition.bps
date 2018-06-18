@@ -11,5 +11,5 @@
 <org.eventb.core.psStatus name="set_RAIL_ELEM_POS_CURR/RAIL_ELEM_POS_CURR·type/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="set_RAIL_ELEM_POS_CURR/RAIL_ELEM_POS_CURR·valid/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="set_RAIL_ELEM_POS_CURR/RAIL_ELEM_CONN_CURR·glue/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="set_RAIL_ELEM_POS_CURR/conn·valid/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="set_RAIL_ELEM_POS_CURR/conn·valid/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

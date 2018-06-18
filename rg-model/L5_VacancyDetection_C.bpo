@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="3">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.poIdentifier name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
@@ -93,36 +93,36 @@
 <org.eventb.core.poIdentifier name="TVD_STATE_OCCUPIED" org.eventb.core.type="TVD_STATE_ENUM"/>
 <org.eventb.core.poIdentifier name="TVD_STATE_VACANT" org.eventb.core.type="TVD_STATE_ENUM"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="TVD_SECT_SGMT·disjunct/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="3">
+<org.eventb.core.poSequent name="TVD_SECT_SGMT·disjunct/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#HYPL2_ElementPosition_E"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀sect1⦂TVD_SECT,sect2⦂TVD_SECT·sect1∈TVD_SECT∧sect2∈TVD_SECT∧sect1≠sect2⇒sect1∈dom(TVD_SECT_SGMT)∧TVD_SECT_SGMT∈TVD_SECT ⇸ ℙ(RAIL_SGMT)∧sect2∈dom(TVD_SECT_SGMT)" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#+"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#+"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#HYPL2_ElementPosition_E"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="TVD_SGMT_SECT·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="3">
+<org.eventb.core.poSequent name="TVD_SGMT_SECT·value/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#HYPL2_ElementPosition_G"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀sgmt⦂RAIL_SGMT,sect⦂TVD_SECT·sgmt∈RAIL_SGMT∧sect∈TVD_SECT⇒sect∈dom(TVD_SECT_SGMT)∧TVD_SECT_SGMT∈TVD_SECT ⇸ ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#3"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#3"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#HYPL2_ElementPosition_G"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="TVD_SGMT_SECT·type/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="3">
+<org.eventb.core.poSequent name="TVD_SGMT_SECT·type/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#HYPL2_ElementPosition_H"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TVD_SGMT_SECT∈RAIL_SGMT → TVD_SECT" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#4"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#4"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#HYPL2_ElementPosition_H"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="HYPL2_ElementPosition_E" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="HYPL2_ElementPosition_E" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="finite(TVD_SECT)" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#."/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TVD_SECT_SGMT∈TVD_SECT → ℙ(RAIL_SGMT)" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYPL2_ElementPosition_G" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#HYPL2_ElementPosition_E" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="HYPL2_ElementPosition_G" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#HYPL2_ElementPosition_E" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀sect1⦂TVD_SECT,sect2⦂TVD_SECT·sect1∈TVD_SECT∧sect2∈TVD_SECT∧sect1≠sect2⇒TVD_SECT_SGMT(sect1)∩TVD_SECT_SGMT(sect2)=(∅ ⦂ ℙ(RAIL_SGMT))" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#+"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="union(ran(TVD_SECT_SGMT))=RAIL_SGMT" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#,"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYPL2_ElementPosition_H" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#HYPL2_ElementPosition_G" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="HYPL2_ElementPosition_H" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#HYPL2_ElementPosition_G" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="TVD_SGMT_SECT={sgmt⦂RAIL_SGMT,sect⦂TVD_SECT·sgmt∈RAIL_SGMT∧sect∈TVD_SECT∧sgmt∈TVD_SECT_SGMT(sect) ∣ sgmt ↦ sect}" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#3"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#HYPL2_ElementPosition_H" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L5_VacancyDetection_C.bpo|org.eventb.core.poFile#L5_VacancyDetection_C|org.eventb.core.poPredicateSet#HYPL2_ElementPosition_H" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="TVD_SGMT_SECT∈RAIL_SGMT → TVD_SECT" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#4"/>
 <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="partition(TVD_STATE_ENUM,{TVD_STATE_VACANT},{TVD_STATE_OCCUPIED})" org.eventb.core.source="/RailGround/L5_VacancyDetection_C.buc|org.eventb.core.contextFile#L5_VacancyDetection_C|org.eventb.core.axiom#\/"/>
 </org.eventb.core.poPredicateSet>

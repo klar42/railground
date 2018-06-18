@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="2">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.poIdentifier name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
@@ -84,7 +84,7 @@
 <org.eventb.core.poPredicate name="RAIL_ELEM_CONN_DEFAUM7" org.eventb.core.predicate="∀path⦂PATH_ENUM·path∈PATH_ENUM⇒ran(PATH_SGMT_NXT(path))∪{PATH_SGMT_FST(path)}=PATH_SGMT_ALL(path)" org.eventb.core.source="/RailGround/L3_Paths_C.buc|org.eventb.core.contextFile#L3_Paths_C|org.eventb.core.axiom#axm1C"/>
 <org.eventb.core.poIdentifier name="PATH_EXCL" org.eventb.core.type="ℙ(PATH_ENUM×PATH_ENUM)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L4_PathLifecycle_C.bpo|org.eventb.core.poFile#L4_PathLifecycle_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/L4_PathLifecycle_C.bpo|org.eventb.core.poFile#L4_PathLifecycle_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PATH_EXCL∈PATH_ENUM ↔ PATH_ENUM" org.eventb.core.source="/RailGround/L4_PathLifecycle_C.buc|org.eventb.core.contextFile#L4_PathLifecycle_C|org.eventb.core.axiom#)"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PATH_EXCL=PATH_EXCL∼" org.eventb.core.source="/RailGround/L4_PathLifecycle_C.buc|org.eventb.core.contextFile#L4_PathLifecycle_C|org.eventb.core.axiom#axm1"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="PATH_EXCL∩(id ⦂ ℙ(PATH_ENUM×PATH_ENUM))=(∅ ⦂ ℙ(PATH_ENUM×PATH_ENUM))" org.eventb.core.source="/RailGround/L4_PathLifecycle_C.buc|org.eventb.core.contextFile#L4_PathLifecycle_C|org.eventb.core.axiom#axm2"/>

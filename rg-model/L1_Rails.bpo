@@ -91,9 +91,9 @@
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
 </org.eventb.core.poSequent>
 <org.eventb.core.poPredicateSet name="EVTIDENTRAIL_ELEM_CONN_CURT" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poIdentifier name="conn" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM_CONN_CURR'" org.eventb.core.type="ℙ(RAIL_ELEM×ℙ(RAIL_SGMT))"/>
 <org.eventb.core.poIdentifier name="elem" org.eventb.core.type="RAIL_ELEM"/>
+<org.eventb.core.poIdentifier name="conn" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTHYPRAIL_ELEM_CONN_CURT'" org.eventb.core.parentSet="/RailGround/L1_Rails.bpo|org.eventb.core.poFile#L1_Rails|org.eventb.core.poPredicateSet#EVTIDENTRAIL_ELEM_CONN_CURT" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="elem∈RAIL_ELEM" org.eventb.core.source="/RailGround/L1_Rails.bum|org.eventb.core.machineFile#L1_Rails|org.eventb.core.event#evt1|org.eventb.core.guard#)"/>

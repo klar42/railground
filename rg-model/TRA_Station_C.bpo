@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="23">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="22">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="RAIL_CTOR" org.eventb.core.type="ℙ(RAIL_CTOR)"/>
 <org.eventb.core.poIdentifier name="RAIL_ELEM" org.eventb.core.type="ℙ(RAIL_ELEM)"/>
 <org.eventb.core.poIdentifier name="RAIL_SGMT" org.eventb.core.type="ℙ(RAIL_SGMT)"/>
@@ -298,7 +298,7 @@
 <org.eventb.core.poIdentifier name="VT04" org.eventb.core.type="TVD_SECT"/>
 <org.eventb.core.poIdentifier name="VT56" org.eventb.core.type="TVD_SECT"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/TRA_Station_C.bpo|org.eventb.core.poFile#TRA_Station_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="23">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RailGround/TRA_Station_C.bpo|org.eventb.core.poFile#TRA_Station_C|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(RAIL_ELEM,{T01},{T02},{T03},{T04},{T56},{T00},{P01},{P02},{P03},{P04},{P05},{P06},{P07},{P08},{P17},{P18},{C00})" org.eventb.core.source="/RailGround/TRA_Station_C.buc|org.eventb.core.contextFile#TRA_Station_C|org.eventb.core.axiom#axm1"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="partition(RAIL_TERM,{E00},{E99})" org.eventb.core.source="/RailGround/TRA_Station_C.buc|org.eventb.core.contextFile#TRA_Station_C|org.eventb.core.axiom#axm2"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="partition(RAIL_CTOR,{T01A},{T01B},{T02A},{T02B},{T03A},{T03B},{T04A},{T04B},{T56A},{T56B},{T00A},{T00B},{P01T},{P01L},{P01R},{P02T},{P02L},{P02R},{P03T},{P03L},{P03R},{P04T},{P04L},{P04R},{P05T},{P05L},{P05R},{P06T},{P06L},{P06R},{P07T},{P07L},{P07R},{P08T},{P08L},{P08R},{P17T},{P17L},{P17R},{P18T},{P18L},{P18R},{C00A},{C00B},{C00C},{C00D},{E00E},{E99E})" org.eventb.core.source="/RailGround/TRA_Station_C.buc|org.eventb.core.contextFile#TRA_Station_C|org.eventb.core.axiom#axm3"/>
