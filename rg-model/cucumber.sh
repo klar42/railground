@@ -1,3 +1,11 @@
+if [ -z "$CUCUMBER_JVM_HOME" ]; then
+    echo "Please set the environment variable CUCUMBER_JVM_HOME"
+    exit 1
+fi
+if [ -z "$PROB_HOME" ]; then
+    echo "Please set the environment variable PROB_HOME"
+    exit 1
+fi
 if [ -z "$1" ]; then
     echo "Usage: cucumber.sh <Event-B Machine file>.bum"
     exit 1
