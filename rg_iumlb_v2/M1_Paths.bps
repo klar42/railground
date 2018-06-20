@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="INITIALISATION/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/path_curr_invariant1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="add_path_req/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="remove_path_req/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="add_path_curr/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="add_path_curr/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="add_path_curr/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="add_path_curr/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="add_path_curr/path_curr_invariant1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="set_path_rel/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="set_path_rel/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="set_path_rel/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="remove_path_curr/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="remove_path_curr/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="remove_path_curr/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="remove_path_curr/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="remove_path_curr/path_curr_invariant1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/path_curr_invariant1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_path_req/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove_path_req/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_path_curr/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_path_curr/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_path_curr/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_path_curr/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_path_curr/path_curr_invariant1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_path_rel/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_path_rel/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_path_rel/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove_path_curr/typeof_path_rel/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove_path_curr/typeof_path_act/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove_path_curr/distinct_states_in_path_state/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove_path_curr/distinct_states_in_path_curr_statemachine1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove_path_curr/path_curr_invariant1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

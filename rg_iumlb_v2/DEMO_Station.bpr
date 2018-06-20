@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="set_signal_aspect_default/cdm_guards2/GRD"/>
+<org.eventb.core.prProof name="set_signal_aspect_default/cdm_actions1/SIM"/>
+</org.eventb.core.prFile>

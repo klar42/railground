@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
 <org.eventb.core.refinesMachine name="'" org.eventb.core.target="M1_Paths"/>
-<org.eventb.core.seesContext name="_tBcYsPNOEeaEvfyRgzOTMI" org.eventb.core.target="C2_ElemPos_instantiation"/>
+<org.eventb.core.seesContext name="_tBcYsPNOEeaEvfyRgzOTMI" org.eventb.core.target="C2_ElemPos_ctx"/>
 <org.eventb.core.event name="_tBcYsPNOEeaEvfyRgzOTMC" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
 <org.eventb.core.action name="'" org.eventb.core.assignment="rail_elem_path_curr ≔ ∅" org.eventb.core.comment="manually classdiagram initialisation bug" org.eventb.core.label="act1"/>
 <org.eventb.core.action name="(" org.eventb.core.assignment="rail_elem_pos_curr ≔ Default_Elem_Pos" org.eventb.core.comment="manually classdiagram initialisation bug" org.eventb.core.label="act2"/>
