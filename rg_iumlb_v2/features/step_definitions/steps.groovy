@@ -247,7 +247,7 @@ public class World {
     }
 
     // iUML-B
-    def cdNodes = [:]
+    def cdNodes = []
     def smNodes = [:]
     def machineNode = iumlb_load()
 
@@ -268,8 +268,12 @@ public class World {
 
     boolean isMethodDisabled(methodName, classId, String formula = null) {
         def (className, classInst) = getClassInstance(classId)
-        String selfName = getClassSelfName(className, classInst)
-        return isEventDisabled(methodName, mergeFormulas("${selfName} = ${classInst}", formula))
+        String selfName = getClassSelfNameRaw(className, classInst)
+        if (selfName != "") {
+            return isEventDisabled(methodName, mergeFormulas("${selfName} = ${classInst}", formula))
+        } else {
+            return isEventDisabled(methodName, formula)
+        }
     }
 
     boolean isAttribute(String classId, String attrName, String value, boolean not) {
@@ -301,8 +305,8 @@ public class World {
 
     boolean isTransitionDisabled(transName, smId, String formula = null) {
         def (smName, smInst) = getStateMachine(smId)
-        String selfName = getSelfName(smName, smInst)
-        if (selfName != null) {
+        String selfName = getSelfNameRaw(smName, smInst)
+        if (selfName != "") {
             return isEventDisabled(transName, mergeFormulas("${selfName} = ${smInst}", formula))
         } else {
             return isEventDisabled(transName, formula)
@@ -313,21 +317,22 @@ public class World {
         def (smName, smInst) = getStateMachine(smId)
         String ref = not ? "FALSE" : "TRUE"
         assert hasState(smName, stateName) : "Invalid state ${stateName} for state machine ${smName}"
+        String stateAttr = stateName.tokenize(".").last()
         String tr = smNodes[smName][0].attribute("translation")
         String selfName = getSelfName(smName, smInst)
         switch(tr) {
             case null: // MULTIVAR
                 if (selfName != null) {
-                    return isFormula("${smInst} ∈ ${stateName}", ref)
+                    return isFormula("${smInst} ∈ ${stateAttr}", ref)
                 } else {
-                    return isFormula("${stateName} = TRUE", ref)
+                    return isFormula("${stateAttr} = TRUE", ref)
                 }
                 break;
             case "SINGLEVAR":
                 if (selfName != null) {
-                    return isFormula("${smName}(${smInst}) = ${stateName}", ref)
+                    return isFormula("${smName}(${smInst}) = ${stateAttr}", ref)
                 } else {
-                    return isFormula("${smName} = ${stateName}", ref)
+                    return isFormula("${smName} = ${stateAttr}", ref)
                 }
                 break;
             default:
@@ -368,11 +373,7 @@ public class World {
                     def nodeName = serializedNode.attribute('name')
                     switch (eClassifier) {   // ePackageURI
                         case "Classdiagram": // http://soton.ac.uk/models/eventb/classdiagrams/2015
-                            if (cdNodes[nodeName] != null) {
-                                cdNodes[nodeName] << serializedNode
-                            } else {
-                                cdNodes[nodeName] = [serializedNode]
-                            }
+                            cdNodes << serializedNode
                             break;
                         case "Statemachine": // http://soton.ac.uk/models/eventb/statemachines/2014
                             if (smNodes[nodeName] != null) {
@@ -393,9 +394,15 @@ public class World {
         return eventbNode
     }
 
+    // Get the state machine self name.
+    private String getSelfNameRaw(String smName, String smInst) {
+        String selfName = smNodes[smName][0].attribute("selfName")
+        return selfName
+    }
+
     // Get the state machine self name or null if not lifted.
     private String getSelfName(String smName, String smInst) {
-        String selfName = smNodes[smName][0].attribute("selfName")
+        String selfName = getSelfNameRaw(smName, smInst)
         if (smInst != null) {
             // Lifted state machine, selfName must not be empty
             assert selfName != "" : "Superfluous instance for unlifted state machine ${smName}"
@@ -408,9 +415,8 @@ public class World {
     }
 
     // Get the class self name (instance must not be null).
-    private String getClassSelfName(String className, String classsInst) {
-        assert instance != null : "Missing instance for class ${className}"
-        for (cdNode in cdNodes[className]) {
+    private String getClassSelfNameRaw(String className, String classInst) {
+        for (cdNode in cdNodes) {
             for (classNode in cdNode."classes") {
                 if (classNode.attribute("name") == className) {
                     String selfName = classNode.attribute("selfName")
@@ -420,17 +426,34 @@ public class World {
                 }
             }
         }
-        assert false : "Missing selfName for class ${className}"
+        return null
+    }
+
+    // Get the class self name (instance must not be null).
+    private String getClassSelfName(String className, String classInst) {
+        assert classInst != null : "Missing instance for class ${className}"
+        String selfName = getClassSelfNameRaw(className, classInst)
+        assert selfName != null : "Missing selfName for class ${className}"
+        return selfName
+    }
+
+    // Get the given state node for the given state machine node
+    private Node getStateNode(Node smNode, String stateName) {
+        for (node in smNode.children()) {
+            if ((node.name() == "nodes") && (node.attribute("name") == stateName)) {
+                return node;
+            }
+        }
+        return null;
     }
 
     // Check if the state machine has the particular state
     private boolean hasState(String smName, String stateName) {
-        for (node in smNodes[smName][0].children()) {
-            if ((node.name() == "nodes") && (node.attribute("name") == stateName)) {
-                return true;
-            }
-        }
-        return false;
+        Node smNode = smNodes[smName][0]
+        List<String> names = stateName.tokenize(".")
+        // TO-DO: Check nested state machines
+        Node node = getStateNode(smNode, names[0])
+        return node != null;
     }
 }
 

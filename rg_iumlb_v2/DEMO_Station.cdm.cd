@@ -194,11 +194,6 @@
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_l0mAY0tGEeeKDPSDiTUmqg" points="[39, -27, -181, -5]$[160, -27, -60, -5]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_l0mncEtGEeeKDPSDiTUmqg" id="(0.4507042253521127,0.8939393939393939)"/>
   </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_cETVkEtHEeeKDPSDiTUmqg" type="4006" source="_PFCp0EtHEeeKDPSDiTUmqg" target="__BGFEEtGEeeKDPSDiTUmqg">
-    <styles xmi:type="notation:FontStyle" xmi:id="_cETVkUtHEeeKDPSDiTUmqg" fontName=".SF NS Text"/>
-    <element xsi:nil="true"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cETVkktHEeeKDPSDiTUmqg" points="[-32, -33, 106, 111]$[-106, -111, 32, 33]"/>
-  </edges>
   <edges xmi:type="notation:Edge" xmi:id="_20NGsEtHEeeKDPSDiTUmqg" type="4005" source="_JdQpQEcmEee9SKnLUWiTsA" target="_PFCp0EtHEeeKDPSDiTUmqg">
     <children xmi:type="notation:DecorationNode" xmi:id="_20NGtEtHEeeKDPSDiTUmqg" type="6004">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_20NtwEtHEeeKDPSDiTUmqg" y="46"/>
