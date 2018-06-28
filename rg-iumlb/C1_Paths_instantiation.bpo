@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="PATH" org.eventb.core.type="ℙ(PATH)"/>
+<org.eventb.core.poIdentifier name="Path_Exc" org.eventb.core.type="ℙ(PATH×PATH)"/>
+<org.eventb.core.poPredicate name="Path_Exd" org.eventb.core.predicate="Path_Exc∈PATH ↔ PATH" org.eventb.core.source="/Railground_iUML-B/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1ky17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Path_Exe" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc∩(id ⦂ ℙ(PATH×PATH))=(∅ ⦂ ℙ(PATH×PATH))" org.eventb.core.source="/Railground_iUML-B/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1kC17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Path_Exf" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒Path_Exc=Path_Exc∼" org.eventb.core.source="/Railground_iUML-B/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1kS17EeejRqf7k59b7w"/>
+<org.eventb.core.poPredicate name="Path_Exg" org.eventb.core.predicate="∀p⦂PATH·p∈PATH⇒finite(PATH)" org.eventb.core.source="/Railground_iUML-B/C1_Paths_ctx.buc|org.eventb.core.contextFile#C1_Paths_ctx|org.eventb.core.axiom#_Yfs1ki17EeejRqf7k59b7w"/>
+<org.eventb.core.poIdentifier name="R01" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R02" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R03" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R04" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R05" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R06" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R07" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R08" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R09" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R10" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R11" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R12" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R13" org.eventb.core.type="PATH"/>
+<org.eventb.core.poIdentifier name="R14" org.eventb.core.type="PATH"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Railground_iUML-B/C1_Paths_instantiation.bpo|org.eventb.core.poFile#C1_Paths_instantiation|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(PATH,{R01},{R02},{R03},{R04},{R05},{R06},{R07},{R08},{R09},{R10},{R11},{R12},{R13},{R14})" org.eventb.core.source="/Railground_iUML-B/C1_Paths_instantiation.buc|org.eventb.core.contextFile#C1_Paths_instantiation|org.eventb.core.axiom#axm1"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Path_Exc={R02 ↦ R05,R02 ↦ R11,R05 ↦ R02,R05 ↦ R07,R05 ↦ R13,R05 ↦ R14,R07 ↦ R05,R07 ↦ R11,R11 ↦ R02,R11 ↦ R07,R11 ↦ R13,R11 ↦ R14,R13 ↦ R05,R13 ↦ R11,R14 ↦ R05,R14 ↦ R11}" org.eventb.core.source="/Railground_iUML-B/C1_Paths_instantiation.buc|org.eventb.core.contextFile#C1_Paths_instantiation|org.eventb.core.axiom#axm2"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

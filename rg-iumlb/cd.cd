@@ -1053,4 +1053,8 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G9CswS2fEeejRqf7k59b7w" id="(0.7575757575757576,0.3787878787878788)"/>
     </edges>
   </notation:Diagram>
+  <notation:Diagram xmi:id="_VeW-QHqxEeiFZ9YT4HOHng" type="Classdiagrams" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_VeW-QXqxEeiFZ9YT4HOHng"/>
+    <element xmi:type="classdiagrams:Classdiagram" href="C4_Rails_instantiation.buc#http://soton.ac.uk/models/eventb/classdiagrams/2015::Classdiagram::C4_Rails_instantiation.cd"/>
+  </notation:Diagram>
 </xmi:XMI>

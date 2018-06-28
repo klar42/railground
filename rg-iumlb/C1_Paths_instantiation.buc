@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C1_Paths_ctx"/>
+<org.eventb.core.constant name="cst1" org.eventb.core.comment="PATH" org.eventb.core.identifier="R01"/>
+<org.eventb.core.constant name="cst2" org.eventb.core.comment="PATH" org.eventb.core.identifier="R02"/>
+<org.eventb.core.constant name="cst3" org.eventb.core.comment="PATH" org.eventb.core.identifier="R03"/>
+<org.eventb.core.constant name="cst4" org.eventb.core.comment="PATH" org.eventb.core.identifier="R04"/>
+<org.eventb.core.constant name="cst5" org.eventb.core.comment="PATH" org.eventb.core.identifier="R05"/>
+<org.eventb.core.constant name="cst6" org.eventb.core.comment="PATH" org.eventb.core.identifier="R06"/>
+<org.eventb.core.constant name="cst7" org.eventb.core.comment="PATH" org.eventb.core.identifier="R07"/>
+<org.eventb.core.constant name="cst8" org.eventb.core.comment="PATH" org.eventb.core.identifier="R08"/>
+<org.eventb.core.constant name="cst9" org.eventb.core.comment="PATH" org.eventb.core.identifier="R09"/>
+<org.eventb.core.constant name="cst10" org.eventb.core.comment="PATH" org.eventb.core.identifier="R10"/>
+<org.eventb.core.constant name="cst11" org.eventb.core.comment="PATH" org.eventb.core.identifier="R11"/>
+<org.eventb.core.constant name="cst12" org.eventb.core.comment="PATH" org.eventb.core.identifier="R12"/>
+<org.eventb.core.constant name="cst13" org.eventb.core.comment="PATH" org.eventb.core.identifier="R13"/>
+<org.eventb.core.constant name="cst14" org.eventb.core.comment="PATH" org.eventb.core.identifier="R14"/>
+<org.eventb.core.axiom name="axm1" org.eventb.core.label="PATH·data" org.eventb.core.predicate="partition(PATH, {R01}, {R02}, {R03}, {R04}, {R05}, {R06}, {R07}, {R08}, {R09}, {R10}, {R11}, {R12}, {R13}, {R14})"/>
+<org.eventb.core.axiom name="axm2" org.eventb.core.label="Path_Exc·data" org.eventb.core.predicate="Path_Exc = {&#10;&#9;R02 ↦ R05,&#10;&#9;R02 ↦ R11,&#10;&#9;R05 ↦ R02,&#10;&#9;R05 ↦ R07,&#10;&#9;R05 ↦ R13,&#10;&#9;R05 ↦ R14,&#10;&#9;R07 ↦ R05,&#10;&#9;R07 ↦ R11,&#10;&#9;R11 ↦ R02,&#10;&#9;R11 ↦ R07,&#10;&#9;R11 ↦ R13,&#10;&#9;R11 ↦ R14,&#10;&#9;R13 ↦ R05,&#10;&#9;R13 ↦ R11,&#10;&#9;R14 ↦ R05,&#10;&#9;R14 ↦ R11&#10;}"/>
+<ac.soton.eventb.emf.core.extension.persistence.serialisedExtension ac.soton.eventb.emf.core.extension.persistence.eClassifier="Classdiagram" ac.soton.eventb.emf.core.extension.persistence.ePackageURI="http://soton.ac.uk/models/eventb/classdiagrams/2015" ac.soton.eventb.emf.core.extension.persistence.extensionId="ac.soton.eventb.classdiagrams._sJ_ToPNLEeaEvfyRgzOTMA" ac.soton.eventb.emf.core.extension.persistence.serialised="&lt;classdiagrams:Classdiagram xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:classdiagrams=&quot;http://soton.ac.uk/models/eventb/classdiagrams/2015&quot; xmlns:context=&quot;http://emf.eventb.org/models/core/context/2014&quot; name=&quot;cd&quot; extensionId=&quot;ac.soton.eventb.classdiagrams._sJ_ToPNLEeaEvfyRgzOTMA&quot;&gt;&#10;  &lt;annotations source=&quot;http:///org/eventb/core/RodinInternalAnnotations&quot;&gt;&#10;    &lt;details key=&quot;name&quot; value=&quot;_sNQDAPNLEeaEvfyRgzOTMA&quot;/&gt;&#10;  &lt;/annotations&gt;&#10;  &lt;classes name=&quot;PATH&quot; selfName=&quot;p&quot;&gt;&#10;    &lt;elaborates xsi:type=&quot;context:CarrierSet&quot; href=&quot;platform:/resource/Railground_iUML-B/C1_Paths_ctx.buc#http://emf.eventb.org/models/core/context/2014::CarrierSet::C1_Paths_ctx.PATH&quot;/&gt;&#10;    &lt;refines href=&quot;platform:/resource/Railground_iUML-B/C1_Paths_ctx.buc#http://soton.ac.uk/models/eventb/classdiagrams/2015::Class::C1_Paths_ctx.cd.PATH&quot;/&gt;&#10;  &lt;/classes&gt;&#10;  &lt;refines href=&quot;platform:/resource/Railground_iUML-B/C1_Paths_ctx.buc#http://soton.ac.uk/models/eventb/classdiagrams/2015::Classdiagram::C1_Paths_ctx.cd&quot;/&gt;&#10;&lt;/classdiagrams:Classdiagram&gt;&#10;" name="_sNQDAPNLEeaEvfyRgzOTMA"/>
+</org.eventb.core.contextFile>
