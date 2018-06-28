@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
 <org.eventb.core.seesContext name="_tBcYsPNOEeaEvfyRgzOTMB" org.eventb.core.target="C1_Paths_ctx"/>
 <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
 <org.eventb.core.action name="_kMhlEC2nEeejRqf7k59b7w" org.eventb.core.assignment="path_req ≔  ∅ " org.eventb.core.comment="" org.eventb.core.generated="true" org.eventb.core.label="init_path_req" org.eventb.emf.persistence.generator_ID="ac.soton.eventb.statemachines._JfYq4PNNEeaEvfyRgzOTMA" org.eventb.emf.persistence.priority="10"/>

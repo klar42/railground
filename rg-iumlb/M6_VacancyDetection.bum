@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
 <org.eventb.core.refinesMachine name="'" org.eventb.core.target="M5_SignalDependency"/>
 <org.eventb.core.seesContext name="_tBcYsPNOEeaEvfyRgzOTMR" org.eventb.core.target="C6_VacancyDetection_ctx"/>
 <org.eventb.core.variable name="_XiQBEC6HEeejRqf7k59b7w" org.eventb.core.comment="" org.eventb.core.generated="true" org.eventb.core.identifier="path_req" org.eventb.emf.persistence.generator_ID="ac.soton.eventb.statemachines._JfYq4PNNEeaEvfyRgzOTMA" org.eventb.emf.persistence.priority="10"/>
